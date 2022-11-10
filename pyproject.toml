@@ -18,6 +18,9 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dynamic = ["version"]
+dependencies = [
+    "dbfread==2.0.7",
+]
 
 [project.optional-dependencies]
 test = [
@@ -161,10 +164,6 @@ indent-after-paren=4
 indent-string='    '
 max-line-length=120
 max-module-lines=1000
-no-space-check= [
-    "trailing-comma",
-    "dict-separator"
-]
 single-line-class-stmt="no"
 single-line-if-stmt="no"
 
