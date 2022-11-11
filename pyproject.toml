@@ -95,6 +95,7 @@ testpaths = "tests"
 junit_family = "xunit2"
 markers = [
     "slow: marks tests as slow",
+    "integration: marks tests as integration",
     "unit: fast offline tests",
 ]
 
