@@ -43,9 +43,9 @@ test = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/microsoft/python-package-template/tree/main#readme"
-Source = "https://github.com/microsoft/python-package-template"
-Tracker = "https://github.com/microsoft/python-package-template/issues"
+Documentation = "https://github.com/skoufas/skoufas-dbf-reader#readme"
+Source = "https://github.com/skoufas/skoufas-dbf-reader"
+Tracker = "https://github.com/skoufas/skoufas-dbf-reader/issues"
 
 [tool.flit.module]
 name = "skoufas_dbf_reader"
