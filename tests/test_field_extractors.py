@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from skoufas_dbf_reader.field_extractors import (
-    all_entries,
     author_part_from_a01,
     dewey_from_a04,
     has_author,
@@ -12,18 +11,6 @@ from skoufas_dbf_reader.field_extractors import (
     subtitle_from_a03,
     title_from_a02,
 )
-
-
-def test_all_entries():
-    entries = all_entries()
-    assert entries
-    assert type(entries) == list
-    assert len(entries) > 0
-    entry = entries[0]
-    assert type(entry) == dict
-    assert entry[0] == 0
-
-    assert entries[1000][0] == 1000
 
 
 def test_no_author():

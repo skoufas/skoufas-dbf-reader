@@ -1,6 +1,7 @@
 """ Utilities for conversions """
 import os
-from typing import Any
+from functools import cache
+from typing import Any, Optional
 
 import yaml
 
@@ -19,5 +20,11 @@ def none_if_empty_or_stripped(i: Optional[str]) -> Optional[str]:
     if not i.strip():
         return None
     return i.strip()
+
+
+@cache
+def all_entries() -> list[dict[int, str]]:
+    """All entries converted from a DBF file"""
+    return read_yaml_data("entries")
 
 

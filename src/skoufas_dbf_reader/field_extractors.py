@@ -2,13 +2,7 @@
 from functools import cache
 from typing import Optional
 
-from skoufas_dbf_reader.utilities import read_yaml_data, none_if_empty_or_stripped
-
-
-@cache
-def all_entries() -> list[dict[int, str]]:
-    """All entries converted from a DBF file"""
-    return read_yaml_data("entries")
+from skoufas_dbf_reader.utilities import none_if_empty_or_stripped, read_yaml_data
 
 
 def has_author(a01: Optional[str]) -> bool:
