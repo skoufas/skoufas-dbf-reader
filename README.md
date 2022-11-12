@@ -36,3 +36,100 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 | A28 | | θεσεις κλειδια |
 | A29 | | θεσεις κλειδια |
 | A30 | | θεσεις κλειδια |
+
+## Columns required
+
+### BookEntry
+
+- Title
+- Subtitle
+- DeclaredAuthors
+- Dewey
+- Edition
+- EditionDate
+- EditorId (FK: Editor)
+- CuratorId (FK: Curator)
+- Pages
+- PagesText
+- Volumes
+- Notes
+- Material
+- HasCD
+- HasDVD
+- ISBN
+
+### Author
+
+- Name
+- Surname
+- Fullname
+
+### Authorship (Many-to-Many)
+
+- AuthorId (FK: Author)
+- BookEntryId (FK: BookEntry)
+
+### Translator
+
+- Name
+- Surname
+- Fullname
+
+### Curator
+
+- Name
+- Surname
+- Fullname
+
+### Editor
+
+- Name
+- Place
+
+### Translation
+
+- TranslatorId (FK: Translator)
+- BookEntryId (FK: BookEntry)
+
+### Entry Numbers (one-to-many)
+
+- Number (unique)
+- BookEntryId (FK: BookEntry)
+
+### Topic
+
+- Name
+
+### BookInTopic (many-to-many)
+
+- TopicId (FK: Topic)
+- BookEntryId (FK: BookEntry)
+
+### Donor
+
+- Name
+- Surname
+- Fullname
+
+### Donation (Many-to-Many)
+
+- DonorId (FK: Donor)
+- BookEntryId (FK: BookEntry)
+
+### Customer
+
+- Name
+- Surname
+- FullName
+- IdNumber
+- IdType
+- PhoneNumber
+- Email
+
+### Loan
+
+- CustomerId (FK: Customer)
+- BookEntryId (FK: BookEntry)
+- StartDateTime
+- EndDateTime
+- Note
