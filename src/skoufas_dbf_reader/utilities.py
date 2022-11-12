@@ -25,6 +25,11 @@ def none_if_empty_or_stripped(i: Optional[str]) -> Optional[str]:
 @cache
 def all_entries() -> list[dict[int, str]]:
     """All entries converted from a DBF file"""
-    return read_yaml_data("entries")
+    data = read_yaml_data("entries")
+    for entry in data:
+        for i in range(0, 31):
+            if i not in entry:
+                entry[i] = None
+    return data
 
 
