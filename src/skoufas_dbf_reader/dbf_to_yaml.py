@@ -8,10 +8,12 @@ import yaml
 
 def convert_dbf_to_yaml(from_dbf_file: str, to_yaml_file: str):
     """Convert dbf files to human readable yaml"""
-    entries: list[OrderedDict[int, str]] = list()
+    entries: list[OrderedDict[int, str | int]] = list()
     with dbfread.DBF(filename=from_dbf_file, encoding="CP737") as dbf:
+        count: int
+        record: OrderedDict[str, str]
         for count, record in enumerate(dbf):
-            entry: dict[int, str] = {}
+            entry: OrderedDict[int, str | int] = OrderedDict()
             entry[0] = count
             for (name, value) in record.items():
                 if not value:
