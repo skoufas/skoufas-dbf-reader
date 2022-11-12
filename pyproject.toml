@@ -42,6 +42,9 @@ test = [
     "shellcheck-py==0.8.0.4"
 ]
 
+[project.scripts]
+dbf-to-yaml = "skoufas_dbf_reader.dbf_to_yaml:main"
+
 [project.urls]
 Documentation = "https://github.com/skoufas/skoufas-dbf-reader#readme"
 Source = "https://github.com/skoufas/skoufas-dbf-reader"
