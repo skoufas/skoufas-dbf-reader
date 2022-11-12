@@ -26,6 +26,12 @@ def language_codes() -> dict[str, str]:
     return read_yaml_data("language_codes")
 
 
+@cache
+def dewey_corrections() -> dict[str, str]:
+    """Map of invalid dewey codes found and manual overrides"""
+    return read_yaml_data("invalid_dewey")
+
+
 def has_language(a01: Optional[str]) -> bool:
     """Check values for language at the end"""
     if not a01:
@@ -74,7 +80,12 @@ def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
 
 
 def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
-    """Cleanup"""
-    return none_if_empty_or_stripped(a04)
+    """Cleanup and replace known issues"""
+    value = none_if_empty_or_stripped(a04)
+    if value:
+        return none_if_empty_or_stripped(dewey_corrections().get(value, value))
+    return None
+
+
 
 
