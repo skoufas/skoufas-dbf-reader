@@ -1,6 +1,13 @@
 from __future__ import annotations
 
-from skoufas_dbf_reader.field_extractors import has_author
+from skoufas_dbf_reader.field_extractors import has_author, no_author_values
+
+
+def test_no_author():
+    no_author = no_author_values()
+    assert no_author
+    assert type(no_author) == list
+    assert len(no_author) > 0
 
 
 def test_has_author():
