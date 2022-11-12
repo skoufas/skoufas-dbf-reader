@@ -1,6 +1,13 @@
 from __future__ import annotations
 
-from skoufas_dbf_reader.field_extractors import has_author, no_author_values
+from skoufas_dbf_reader.field_extractors import (
+    author_part_from_a01,
+    has_author,
+    has_language,
+    language_codes,
+    language_from_a01,
+    no_author_values,
+)
 
 
 def test_no_author():
@@ -28,3 +35,44 @@ def test_has_author():
     assert not has_author("Χ. Σ.")
     assert not has_author("Χ.Χ")
     assert not has_author("Χ.Χ.")
+
+
+def test_language_codes():
+    assert language_codes()
+    assert type(language_codes()) == dict
+    assert len(language_codes()) > 0
+
+
+def test_has_language():
+    assert not has_language(None)
+    assert not has_language("")
+    assert not has_language("GAL")
+    assert not has_language("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ")
+    assert has_language("ΩUENEAU RAYMOND                    GAL")
+    assert not has_language("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι")
+    assert has_language("BITSIOS,DIMITRIS                  AGL")
+    assert has_language("FINLAY GEORG                        GER")
+
+
+def test_author_part_from_a01():
+    assert not author_part_from_a01(None)
+    assert not author_part_from_a01("")
+    assert not author_part_from_a01("X,S")
+    assert author_part_from_a01("GAL") == "GAL"
+    assert author_part_from_a01("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ") == "ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ"
+    assert author_part_from_a01("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι") == "ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ"
+    assert author_part_from_a01("ΩUENEAU RAYMOND                    GAL") == "ΩUENEAU RAYMOND"
+    assert author_part_from_a01("BITSIOS,DIMITRIS                  AGL") == "BITSIOS,DIMITRIS"
+    assert author_part_from_a01("FINLAY GEORG                        GER") == "FINLAY GEORG"
+    assert author_part_from_a01("ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ    .") == "ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ"
+
+
+def test_language_from_a01():
+    assert not language_from_a01(None)
+    assert not language_from_a01("")
+    assert not language_from_a01("GAL")
+    assert not language_from_a01("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ")
+    assert not language_from_a01("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι")
+    assert language_from_a01("ΩUENEAU RAYMOND                    GAL") == "FR"
+    assert language_from_a01("BITSIOS,DIMITRIS                  AGL") == "EN"
+    assert language_from_a01("FINLAY GEORG                        GER") == "DE"

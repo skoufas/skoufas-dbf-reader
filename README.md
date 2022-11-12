@@ -2,7 +2,7 @@
 
 Functions to read and convert from the DBF file used to track books in the Skoufas library
 
-## Columns in DBF
+## Columns in DBF file
 
 | Column | Name (english) | Name (Greek) |
 |--------|----------------|--------------|

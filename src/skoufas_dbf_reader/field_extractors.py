@@ -19,3 +19,47 @@ def no_author_values() -> list[str]:
     """List of values implying there's no author"""
     return read_yaml_data("no_author")
 
+
+@cache
+def language_codes() -> dict[str, str]:
+    """Map of language codes in A01 to ISO language codes"""
+    return read_yaml_data("language_codes")
+
+
+def has_language(a01: Optional[str]) -> bool:
+    """Check values for language at the end"""
+    if not a01:
+        return False
+    for code in language_codes().keys():
+        if a01.endswith(f" {code}"):
+            return True
+    return False
+
+
+def author_part_from_a01(a01: Optional[str]) -> Optional[str]:
+    """Get author from A01 DBF record"""
+    if not a01:
+        return None
+    if not has_author(a01):
+        return None
+    strip_finals = list(language_codes().keys()) + [
+        " Ι",
+        " .",
+    ]
+    for final in strip_finals:
+        if a01.endswith(" " + final):
+            a01 = a01.replace(final, "")
+    return a01.strip()
+
+
+def language_from_a01(a01: Optional[str]) -> Optional[str]:
+    """Check values for language at the end"""
+    if not a01:
+        return None
+    if has_language(a01):
+        for language, isolanguage in language_codes().items():
+            if a01.endswith(language):
+                return isolanguage
+    return None
+
+
