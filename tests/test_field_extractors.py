@@ -2,11 +2,14 @@ from __future__ import annotations
 
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
+    dewey_from_a04,
     has_author,
     has_language,
     language_codes,
     language_from_a01,
     no_author_values,
+    subtitle_from_a03,
+    title_from_a02,
 )
 
 
@@ -76,3 +79,27 @@ def test_language_from_a01():
     assert language_from_a01("ΩUENEAU RAYMOND                    GAL") == "FR"
     assert language_from_a01("BITSIOS,DIMITRIS                  AGL") == "EN"
     assert language_from_a01("FINLAY GEORG                        GER") == "DE"
+
+
+def test_title_from_a02():
+    assert title_from_a02(None) is None
+    assert title_from_a02("") is None
+    assert title_from_a02(" ") is None
+    assert title_from_a02("GAL ") == "GAL"
+    assert title_from_a02(" GAL") == "GAL"
+
+
+def test_subtitle_from_a03():
+    assert subtitle_from_a03(None) is None
+    assert subtitle_from_a03("") is None
+    assert subtitle_from_a03(" ") is None
+    assert subtitle_from_a03("GAL ") == "GAL"
+    assert subtitle_from_a03(" GAL") == "GAL"
+
+
+def test_dewey_from_a04():
+    assert dewey_from_a04(None) is None
+    assert dewey_from_a04("") is None
+    assert dewey_from_a04(" ") is None
+    assert dewey_from_a04("001.009ΚΟΝ ") == "001.009ΚΟΝ"
+    assert dewey_from_a04(" 001.009ΚΟΝ") == "001.009ΚΟΝ"

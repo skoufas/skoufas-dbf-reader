@@ -11,3 +11,13 @@ def read_yaml_data(code: str) -> Any:
         parsed_yaml = yaml.safe_load(stream)
         return parsed_yaml[code]
 
+
+def none_if_empty_or_stripped(i: Optional[str]) -> Optional[str]:
+    """Cleanup"""
+    if not i:
+        return None
+    if not i.strip():
+        return None
+    return i.strip()
+
+

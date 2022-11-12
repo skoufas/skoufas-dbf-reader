@@ -2,7 +2,7 @@
 from functools import cache
 from typing import Optional
 
-from skoufas_dbf_reader.utilities import read_yaml_data
+from skoufas_dbf_reader.utilities import read_yaml_data, none_if_empty_or_stripped
 
 
 def has_author(a01: Optional[str]) -> bool:
@@ -61,5 +61,20 @@ def language_from_a01(a01: Optional[str]) -> Optional[str]:
             if a01.endswith(language):
                 return isolanguage
     return None
+
+
+def title_from_a02(a02: Optional[str]) -> Optional[str]:
+    """Cleanup"""
+    return none_if_empty_or_stripped(a02)
+
+
+def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
+    """Cleanup"""
+    return none_if_empty_or_stripped(a03)
+
+
+def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
+    """Cleanup"""
+    return none_if_empty_or_stripped(a04)
 
 
