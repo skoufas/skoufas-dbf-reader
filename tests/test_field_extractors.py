@@ -3,6 +3,7 @@ from __future__ import annotations
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     dewey_from_a04,
+    entry_numbers_from_a05_a06,
     has_author,
     has_language,
     language_codes,
@@ -108,3 +109,18 @@ def test_dewey_from_a04():
     assert dewey_from_a04("624.183Χ.Σ") == "624.183 ΧΣ"
 
     assert dewey_from_a04("HOEMANN") is None
+
+
+def test_entry_numbers_from_a05_a06():
+    assert entry_numbers_from_a05_a06(None, None) == []
+    assert entry_numbers_from_a05_a06("", "") == []
+    assert entry_numbers_from_a05_a06(" ", None) == []
+    assert entry_numbers_from_a05_a06(None, "") == []
+    assert entry_numbers_from_a05_a06("2710-2709", None) == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06("2710-2709", "foobar") == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06("2710-2709", "-") == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06("2710-2709", "-10450") == ["2710", "2709", "10450"]
+    assert entry_numbers_from_a05_a06("2710-2709", "1747-1746-1745-") == ["2710", "2709", "1747", "1746", "1745"]
+    assert entry_numbers_from_a05_a06("10-1", "4") == ["10", "14"]
+    assert entry_numbers_from_a05_a06("10-1", "5") == ["10", "15"]
+    assert entry_numbers_from_a05_a06("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ") == ["10", "1448"]

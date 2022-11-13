@@ -36,6 +36,12 @@ def dewey_corrections() -> dict[str, str]:
     return read_yaml_data("invalid_dewey")
 
 
+@cache
+def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+    """Map of invalid dewey codes found and manual overrides"""
+    return read_yaml_data("field06_corrections")
+
+
 def has_language(a01: Optional[str]) -> bool:
     """Check values for language at the end"""
     if not a01:
@@ -108,12 +114,36 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
 
     dewey_match = dewey_re.fullmatch(value)
     if dewey_match:
-        return f"{dewey_match[1]} {dewey_match[2]}"
+        return f"{dewey_match[1]} {dewey_match[2]}".strip()
     return None
 
 
-# from collections import OrderedDict
-# import os
+def entry_numbers_from_a05_a06(a05: Optional[str], a06: Optional[str]) -> list[str]:
+    """Cleanup, read additional numbers from a06"""
+    value5 = none_if_empty_or_stripped(a05)
+    if not value5:
+        value5 = ""
+    value6 = none_if_empty_or_stripped(a06)
+    if value6:
+        if value6 in field06_corrections():
+            correction = field06_corrections()[value6]
+            if correction is None:
+                value6 = ""
+            elif isinstance(correction, str):
+                value6 = "-" + str(correction)
+            else:
+                value6 = dict(correction).get("series", "")
+                if not isinstance(value6, str):
+                    raise Exception(f"Invalid correction for field A06 [{a06}]")
+                if correction.get("use_dash", True):
+                    value6 = "-" + value6
+        else:
+            value6 = ""
+    else:
+        value6 = ""
+    value = value5 + value6
+    entries = [v.strip() for v in value.split("-") if v.strip()]
+    return entries
 
 
 # def entry_number_from_a05(a05: Optional[str]) -> Optional[str]:
