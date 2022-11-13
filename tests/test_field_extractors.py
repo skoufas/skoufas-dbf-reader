@@ -105,4 +105,6 @@ def test_dewey_from_a04():
     assert dewey_from_a04("001.009ΚΟΝ ") == "001.009 ΚΟΝ"
     assert dewey_from_a04(" 001.009ΚΟΝ") == "001.009 ΚΟΝ"
     assert dewey_from_a04("O.50ΠΕΡ") == "0.50 ΠΕΡ"
+    assert dewey_from_a04("624.183Χ.Σ") == "624.183 ΧΣ"
+
     assert dewey_from_a04("HOEMANN") is None
