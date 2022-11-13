@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from skoufas_dbf_reader.utilities import all_entries, none_if_empty_or_stripped, read_yaml_data
+from skoufas_dbf_reader.utilities import all_entries, none_if_empty_or_stripped, read_yaml_data, romanize
 
 
 def test_yaml_data():
@@ -31,3 +31,7 @@ def test_all_entries():
     assert entries[1000][0] == 1000
 
 
+def test_romanize():
+    assert romanize("Γειά") == "Geia"
+    assert romanize("") == ""
+    assert romanize(None) == ""

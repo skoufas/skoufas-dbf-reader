@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import pytest
 import yaml
-from skoufas_dbf_reader.utilities import all_entries
+from skoufas_dbf_reader.utilities import all_entries, romanize
 from skoufas_dbf_reader.field_extractors import *
 from collections import defaultdict
 
@@ -56,13 +56,21 @@ def test_report_single_extracted_fields(reports_directory: str):
         field_values["entry_number_lists"].append(entry_numbers)
         for entry_number in entry_numbers:
             field_values["entry_numbers"].append(entry_number)
+        translator = translator_from_a06(entry[6])
+        if translator:
+            field_values["translator"].append(translator)
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:
             if values and isinstance(values[0], list):
                 yaml.dump(values, outfile, default_flow_style=False, allow_unicode=True)
             else:
-                yaml.dump(list(sorted(set(values))), outfile, default_flow_style=False, allow_unicode=True)
+                yaml.dump(
+                    list(sorted(set(values), key=lambda x: romanize(x))),
+                    outfile,
+                    default_flow_style=False,
+                    allow_unicode=True,
+                )
 
 
 def test_report_dewey(reports_directory: str):

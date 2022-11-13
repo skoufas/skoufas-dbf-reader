@@ -11,6 +11,7 @@ from skoufas_dbf_reader.field_extractors import (
     no_author_values,
     subtitle_from_a03,
     title_from_a02,
+    translator_from_a06,
 )
 
 
@@ -124,3 +125,15 @@ def test_entry_numbers_from_a05_a06():
     assert entry_numbers_from_a05_a06("10-1", "4") == ["10", "14"]
     assert entry_numbers_from_a05_a06("10-1", "5") == ["10", "15"]
     assert entry_numbers_from_a05_a06("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ") == ["10", "1448"]
+
+
+def test_translator_from_a06():
+    assert translator_from_a06(None) is None
+    assert translator_from_a06("") is None
+    assert translator_from_a06(" ") is None
+    assert translator_from_a06("hello") == "hello"
+    # Part of field06_corrections
+    assert translator_from_a06("-") is None
+    assert translator_from_a06("1203") is None
+    assert translator_from_a06("3ΕΚΔ") is None
+    assert translator_from_a06("2847 ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚ") == "ΝΙΚΟΛΑΟΣ ΠΑΠΑΡΡΟΔΟΥ"

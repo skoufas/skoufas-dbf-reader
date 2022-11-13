@@ -38,8 +38,14 @@ def dewey_corrections() -> dict[str, str]:
 
 @cache
 def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
-    """Map of invalid dewey codes found and manual overrides"""
+    """Map of invalid entry numbers found and manual overrides"""
     return read_yaml_data("field06_corrections")
+
+
+@cache
+def translator_corrections() -> dict[str, str]:
+    """Map of translator names found and manual overrides"""
+    return read_yaml_data("translator_corrections")
 
 
 def has_language(a01: Optional[str]) -> bool:
@@ -146,19 +152,25 @@ def entry_numbers_from_a05_a06(a05: Optional[str], a06: Optional[str]) -> list[s
     return entries
 
 
-# def entry_number_from_a05(a05: Optional[str]) -> Optional[str]:
-#     """Cleanup
-#     >>> entry_number_from_a05(None) # None
-#     >>> entry_number_from_a05('') # None
-#     >>> entry_number_from_a05(' ') # None
-#     >>> entry_number_from_a05('2710-2709')
-#     '2710-2709'
-#     """
-#     if not a05:
-#         return None
-#     if not a05.strip():
-#         return None
-#     return a05.strip()
+def translator_from_a06(a06: Optional[str]) -> Optional[str]:
+    """Cleanup, replace special cases"""
+    value = none_if_empty_or_stripped(a06)
+    if not value:
+        return None
+    if value in field06_corrections():
+        correction = field06_corrections()[value]
+        if correction is None:
+            return None
+        elif isinstance(correction, str):
+            return None
+        else:
+            value = dict(correction).get("translator", None)
+            if not value:
+                return None
+            if not isinstance(value, str):
+                raise Exception(f"Invalid correction for field A06 [{a06}]")
+    value = translator_corrections().get(value, value)
+    return value
 
 
 # def translator_from_a06(a06: Optional[str]) -> Optional[str]:

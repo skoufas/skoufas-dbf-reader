@@ -11,7 +11,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 | A03 | subtitle | Υποτιτλος |
 | A04 | Dewey | Ταξινομικος αριθμος |
 | A05 | entry_number | αριθμος εισαγωγης |
-| A06 | translator | μεταφραστης (+ entry number) |
+| A06 | translator, edition, entry_number | μεταφραστης, εκδοση, αριθμος εισαγωγης |
 | A07 | edition | εκδοση |
 | A08 | editor | εκδοτης |
 | A09 | edition place | τοπος εκδοσης |
@@ -36,6 +36,16 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 | A28 | | θεσεις κλειδια |
 | A29 | | θεσεις κλειδια |
 | A30 | | θεσεις κλειδια |
+
+## Checks required
+
+- Duplicated Entry Numbers (~800)
+- Non-numeric entry numbers (~130)
+- Missing entry numbers (~200)
+- Weird author names
+    - 12760EZ,GABRIEL GARCIA
+    - 15767ΗΓΟΠΟΥΛΟΣ,ΧΡΗΣΤΟΣ
+- Weird deweys and replacements (~300)
 
 ## Columns required
 
