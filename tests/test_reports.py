@@ -53,6 +53,22 @@ def test_report_single_extracted_fields(reports_directory: str):
             yaml.dump(list(sorted(values)), outfile, default_flow_style=False, allow_unicode=True)
 
 
+def test_report_weird_dewey(reports_directory: str):
+    values: set[str] = set()
+    for entry in all_entries():
+        value = none_if_empty_or_stripped(entry[4])
+        if not value:
+            continue
+        value = none_if_empty_or_stripped(dewey_corrections().get(value, value))
+        if not value:
+            continue
+        dewey_match = dewey_re.fullmatch(value)
+        if not dewey_match:
+            values.add(value)
+    with open(os.path.join(reports_directory, f"calculated_field_weird_deweys.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(list(sorted(values)), outfile, default_flow_style=False, allow_unicode=True)
+
+
 def test_report_entry_numbers(reports_directory: str):
     non_numeric: set[str] = set()
     all_entry_numbers: set[str] = set()

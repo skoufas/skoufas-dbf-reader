@@ -1,8 +1,12 @@
 """ Functions that extract information given specific strings """
+import re
 from functools import cache
 from typing import Optional
 
 from skoufas_dbf_reader.utilities import none_if_empty_or_stripped, read_yaml_data
+
+""" A regular expression for reading dewey numbers """
+dewey_re = re.compile(r"([0-9\.]+)\s*([^0-9\.]*)")
 
 
 def has_author(a01: Optional[str]) -> bool:
@@ -82,8 +86,14 @@ def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
 def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     """Cleanup and replace known issues"""
     value = none_if_empty_or_stripped(a04)
-    if value:
-        return none_if_empty_or_stripped(dewey_corrections().get(value, value))
+    if not value:
+        return None
+    value = none_if_empty_or_stripped(dewey_corrections().get(value, value))
+    if not value:
+        return None
+    dewey_match = dewey_re.fullmatch(value)
+    if dewey_match:
+        return f"{dewey_match[1]} {dewey_match[2]}"
     return None
 
 
