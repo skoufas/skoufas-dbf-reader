@@ -136,4 +136,4 @@ def test_translator_from_a06():
     assert translator_from_a06("-") is None
     assert translator_from_a06("1203") is None
     assert translator_from_a06("3ΕΚΔ") is None
-    assert translator_from_a06("2847 ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚ") == "ΝΙΚΟΛΑΟΣ ΠΑΠΑΡΡΟΔΟΥ"
+    assert translator_from_a06("2847 ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚ") == "ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚΟΛΑΟΣ"

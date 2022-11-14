@@ -170,6 +170,8 @@ def translator_from_a06(a06: Optional[str]) -> Optional[str]:
             if not isinstance(value, str):
                 raise Exception(f"Invalid correction for field A06 [{a06}]")
     value = translator_corrections().get(value, value)
+    if not value:
+        return None
     return value
 
 

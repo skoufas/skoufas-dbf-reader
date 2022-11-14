@@ -114,3 +114,17 @@ def test_report_entry_numbers(reports_directory: str):
         yaml.dump(dict(non_numeric), outfile, default_flow_style=False, allow_unicode=True)
     with open(os.path.join(reports_directory, f"entry_numbers_duplicate.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(dict(duplicate_entry_numbers), outfile, default_flow_style=False, allow_unicode=True)
+
+
+def test_report_translators(reports_directory: str):
+    weird_translators: list[str] = []
+    valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
+    for entry in all_entries():
+        translator = translator_from_a06(entry[6])
+        if translator:
+            translators = translator.split("!!")
+            for translator in translators:
+                if not valid_translator_re.fullmatch(translator):
+                    weird_translators.append(translator)
+    with open(os.path.join(reports_directory, f"weird_translators.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
