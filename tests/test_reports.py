@@ -77,6 +77,9 @@ def test_report_single_extracted_fields(reports_directory: str):
                 field_values["editor"].append(f"{editor[0]} // {editor[1]} ({entry[0]})")
             else:
                 field_values["editor"].append(f"{editor[0]} // {editor[1]}")
+        edition_year = edition_year_from_a09_a10(entry[9], entry[10])
+        if edition_year:
+            field_values["edition_year"].append(str(edition_year))
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:

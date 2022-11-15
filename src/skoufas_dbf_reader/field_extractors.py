@@ -58,6 +58,12 @@ def field09_corrections() -> dict[str, Optional[str | dict[str, str]]]:
 
 
 @cache
+def field10_corrections() -> dict[str, Optional[str]]:
+    """Map of year and manual overrides"""
+    return read_yaml_data("field10_corrections")
+
+
+@cache
 def translator_corrections() -> dict[str, str]:
     """Map of translator names found and manual overrides"""
     return read_yaml_data("translator_corrections")
@@ -291,64 +297,23 @@ def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tupl
     return (a08, a09)
 
 
-# invalid_dates = [
-#     "142Σ",
-#     "193",
-#     "62Σ",
-#     "9180",
-#     "9331",
-#     "2099",
-#     "383Σ",
-#     "5775",
-#     "X.E",
-#     "Α950",
-#     "Α964",
-#     "Α982",
-#     "Α985",
-#     "Α989",
-#     "ΑΡΤΑ",
-#     "ΑΩΕ",
-#     "Ι964",
-#     "ΩΝ",
-#     "X.X",
-#     "Χ.Τ",
-#     "Χ.Ε",
-#     "Χ.Χ",
-# ]
-# valid_edition_date_re = re.compile(r"\d{4}|MCMX|MCML")
+def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optional[int]:
+    """Cleanup,handle special cases"""
+    a09 = none_if_empty_or_stripped(a09)
+    if a09 and a09 in field09_corrections():
+        correction = field09_corrections().get(a09)
+        if correction and isinstance(correction, dict) and "year" in correction:
+            return int(correction["year"])
 
-
-# def edition_date_from_a10(A10):
-#     """Cleanup
-#     >>> edition_date_from_a10(None) # None
-#     >>> edition_date_from_a10('') # None
-#     >>> edition_date_from_a10(' ') # None
-#     >>> edition_date_from_a10('Χ.Τ') # None
-#     >>> edition_date_from_a10('ΑΡΤΑ') # None
-#     >>> edition_date_from_a10('Α989') # None
-#     >>> edition_date_from_a10('MCMX')
-#     'MCMX'
-#     >>> edition_date_from_a10('2010')
-#     '2010'
-#     >>> edition_date_from_a10('197Ο')
-#     '1970'
-#     >>> edition_date_from_a10('foobar')
-#     Traceback (most recent call last):
-#       ...
-#     Exception: invalid date [foobar]
-#     """
-#     if not A10:
-#         return None
-#     A10 = A10.strip()
-#     if not A10:
-#         return None
-#     if A10 in invalid_dates:
-#         return None
-#     if A10 == "197Ο":  # bah...
-#         return "1970"
-#     if not valid_edition_date_re.fullmatch(A10):
-#         raise Exception(f"invalid date [{A10}]")
-#     return A10
+    a10 = none_if_empty_or_stripped(a10)
+    if not a10:
+        return None
+    corrected = field10_corrections().get(a10, a10)
+    if not corrected:
+        return None
+    if not corrected.isnumeric():
+        raise Exception(f"invalid date [{a10}]")
+    return int(corrected)
 
 
 # valid_pages_re = re.compile(r"(\d+)\s*(Σ|S|ΣΕΛ|Δ|Σ Ρ|ΣΑ|ΣΙΣ|Σ Ε|ΣΕΓ|Σ18|ΣΚΑ|ΣΑΜ|Σ Ο|s|Σ Λ|Σ  Α|Σ Ι|σ|Φ)*")

@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import pytest
+
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     dewey_from_a04,
+    edition_year_from_a09_a10,
     edition_from_a07,
     editor_from_a08_a09,
     entry_numbers_from_a05_a06_a07_a08,
@@ -184,3 +187,20 @@ def test_editor_from_a08_a09():
     assert editor_from_a08_a09("hello", "AMSTERDAN") == ("hello", "AMSTERDAM")
     assert editor_from_a08_a09("hello", "ΑΘΗΝΑ 1984") == ("hello", "ΑΘΗΝΑ")
     assert editor_from_a08_a09("hello", "X.T") == ("hello", None)
+
+
+def test_edition_year_from_a09_a10():
+    assert edition_year_from_a09_a10(None, None) is None
+    assert edition_year_from_a09_a10("", None) is None
+    assert edition_year_from_a09_a10(" ", "") is None
+    assert edition_year_from_a09_a10("", "Χ.Τ") is None
+    assert edition_year_from_a09_a10("", "ΑΡΤΑ") is None
+    assert edition_year_from_a09_a10("", "Α989") == 1989
+    assert edition_year_from_a09_a10("", "MCMX") == 1910
+    assert edition_year_from_a09_a10("", "2010") == 2010
+    assert edition_year_from_a09_a10("", "197Ο") == 1970
+    assert edition_year_from_a09_a10("1867", "197Ο") == 1867
+
+    with pytest.raises(Exception) as e_info:
+        edition_year_from_a09_a10("", "foobar")
+    assert e_info.exconly() == "Exception: invalid date [foobar]"
