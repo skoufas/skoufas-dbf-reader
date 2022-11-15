@@ -28,9 +28,9 @@ def language_codes() -> dict[str, str]:
 
 
 @cache
-def dewey_corrections() -> dict[str, str]:
+def field04_corrections() -> dict[str, str]:
     """Map of invalid dewey codes found and manual overrides"""
-    return read_yaml_data("invalid_dewey")
+    return read_yaml_data("field04_corrections")
 
 
 @cache
@@ -121,7 +121,7 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     value = none_if_empty_or_stripped(a04)
     if not value:
         return None
-    value = none_if_empty_or_stripped(dewey_corrections().get(value, value))
+    value = none_if_empty_or_stripped(field04_corrections().get(value, value))
     if not value:
         return None
 
