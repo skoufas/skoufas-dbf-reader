@@ -26,9 +26,9 @@ def test_all_entries():
     assert len(entries) > 0
     entry = entries[0]
     assert type(entry) == dict
-    assert entry[0] == 0
+    assert entry[0] == 1
 
-    assert entries[1000][0] == 1000
+    assert entries[1000][0] == 1001
 
 
 def test_romanize():
