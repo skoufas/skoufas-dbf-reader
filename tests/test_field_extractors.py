@@ -3,7 +3,7 @@ from __future__ import annotations
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     dewey_from_a04,
-    entry_numbers_from_a05_a06,
+    entry_numbers_from_a05_a06_a07_a08,
     has_author,
     has_language,
     language_codes,
@@ -113,19 +113,34 @@ def test_dewey_from_a04():
     assert dewey_from_a04("HOEMANN") is None
 
 
-def test_entry_numbers_from_a05_a06():
-    assert entry_numbers_from_a05_a06(None, None) == []
-    assert entry_numbers_from_a05_a06("", "") == []
-    assert entry_numbers_from_a05_a06(" ", None) == []
-    assert entry_numbers_from_a05_a06(None, "") == []
-    assert entry_numbers_from_a05_a06("2710-2709", None) == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06("2710-2709", "foobar") == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06("2710-2709", "-") == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06("2710-2709", "-10450") == ["2710", "2709", "10450"]
-    assert entry_numbers_from_a05_a06("2710-2709", "1747-1746-1745-") == ["2710", "2709", "1747", "1746", "1745"]
-    assert entry_numbers_from_a05_a06("10-1", "4") == ["10", "14"]
-    assert entry_numbers_from_a05_a06("10-1", "5") == ["10", "15"]
-    assert entry_numbers_from_a05_a06("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ") == ["10", "1448"]
+def test_entry_numbers_from_a05_a06_a07_a08():
+    assert entry_numbers_from_a05_a06_a07_a08(None, None, None, None) == []
+    assert entry_numbers_from_a05_a06_a07_a08("", "", "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08(" ", None, "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08(None, "", "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", None, None, None) == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "foobar", "baz", "yum") == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "-", "baz", "yum") == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "-10450", "baz", "yum") == ["2710", "2709", "10450"]
+    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "1747-1746-1745-", "baz", "yum") == [
+        "2710",
+        "2709",
+        "1747",
+        "1746",
+        "1745",
+    ]
+    assert entry_numbers_from_a05_a06_a07_a08("10-1", "4", "baz", "yum") == ["10", "14"]
+    assert entry_numbers_from_a05_a06_a07_a08("10-1", "5", "baz", "yum") == ["10", "15"]
+    assert entry_numbers_from_a05_a06_a07_a08("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ", "baz", "yum") == ["10", "1448"]
+    assert entry_numbers_from_a05_a06_a07_a08(
+        "4225-4226-4228-4229-", "4227-4290-4536-4535-", "4537", "ΕΥΡΩΠΑΙΚ.ΚΕΝΤΡ.ΤΕΧΝΗ"
+    ) == ["4225", "4226", "4228", "4229", "4227", "4290", "4536", "4535", "4537"]
+    assert entry_numbers_from_a05_a06_a07_a08(
+        "5280-5285-5286-5283-",
+        "5284-5278-5277-5279-",
+        "5281-",
+        "5282-6548-6547",
+    ) == "5280-5285-5286-5283-5284-5278-5277-5279-5281-5282-6548-6547".split("-")
 
 
 def test_translator_from_a06():

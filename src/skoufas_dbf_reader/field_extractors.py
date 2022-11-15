@@ -40,6 +40,18 @@ def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
 
 
 @cache
+def field07_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+    """Map of entry numbers and manual overrides"""
+    return read_yaml_data("field07_corrections")
+
+
+@cache
+def field08_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+    """Map of entry numbers and manual overrides"""
+    return read_yaml_data("field08_corrections")
+
+
+@cache
 def translator_corrections() -> dict[str, str]:
     """Map of translator names found and manual overrides"""
     return read_yaml_data("translator_corrections")
@@ -132,13 +144,15 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
         if dewey_match:
             return f"{dewey_match[1]}".strip()
     for dewey_re in dewey_re2:
-    dewey_match = dewey_re.fullmatch(value)
-    if dewey_match:
-        return f"{dewey_match[1]} {dewey_match[2]}".strip()
+        dewey_match = dewey_re.fullmatch(value)
+        if dewey_match:
+            return f"{dewey_match[1]} {dewey_match[2]}".strip()
     return None
 
 
-def entry_numbers_from_a05_a06(a05: Optional[str], a06: Optional[str]) -> list[str]:
+def entry_numbers_from_a05_a06_a07_a08(
+    a05: Optional[str], a06: Optional[str], a07: Optional[str], a08: Optional[str]
+) -> list[str]:
     """Cleanup, read additional numbers from a06"""
     value5 = none_if_empty_or_stripped(a05)
     if not value5:
@@ -161,7 +175,44 @@ def entry_numbers_from_a05_a06(a05: Optional[str], a06: Optional[str]) -> list[s
             value6 = ""
     else:
         value6 = ""
-    value = value5 + value6
+
+    value7 = none_if_empty_or_stripped(a07)
+    if value7:
+        if value7 in field07_corrections():
+            correction = field07_corrections()[value7]
+            if correction is None:
+                value7 = ""
+            elif isinstance(correction, str):
+                value7 = ""
+            else:
+                value7 = dict(correction).get("series", "")
+                if not isinstance(value7, str):
+                    raise Exception(f"Invalid correction for field A07 [{a07}]")
+                value7 = "-" + value7
+        else:
+            value7 = ""
+    else:
+        value7 = ""
+
+    value8 = none_if_empty_or_stripped(a08)
+    if value8:
+        if value8 in field08_corrections():
+            correction = field08_corrections()[value8]
+            if correction is None:
+                value8 = ""
+            elif isinstance(correction, str):
+                value8 = ""
+            else:
+                value8 = dict(correction).get("series", "")
+                if not isinstance(value8, str):
+                    raise Exception(f"Invalid correction for field A08 [{a08}]")
+                value8 = "-" + value8
+        else:
+            value8 = ""
+    else:
+        value8 = ""
+
+    value = value5 + value6 + value7 + value8
     entries = [v.strip() for v in value.split("-") if v.strip()]
     return entries
 

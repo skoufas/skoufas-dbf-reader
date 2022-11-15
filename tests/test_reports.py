@@ -52,7 +52,7 @@ def test_report_single_extracted_fields(reports_directory: str):
         dewey = dewey_from_a04(entry[4])
         if dewey:
             field_values["dewey"].append(dewey)
-        entry_numbers = entry_numbers_from_a05_a06(entry[5], entry[6])
+        entry_numbers = entry_numbers_from_a05_a06_a07_a08(entry[5], entry[6], entry[7], entry[8])
         field_values["entry_number_lists"].append(entry_numbers)
         for entry_number in entry_numbers:
             field_values["entry_numbers"].append(entry_number)
@@ -115,19 +115,21 @@ def test_report_entry_numbers(reports_directory: str):
     non_numeric: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     duplicate_entry_numbers: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     for entry in all_entries():
-        entry_numbers = entry_numbers_from_a05_a06(entry[5], entry[6])
+        entry_numbers = entry_numbers_from_a05_a06_a07_a08(entry[5], entry[6], entry[7], entry[8])
         if not entry_numbers:
-            no_entry_numbers.append(minimal_entry(entry, [0, 1, 2, 5, 6]))
+            no_entry_numbers.append(minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19]))
         else:
             for n in entry_numbers:
                 if n in all_entry_numbers:
                     if not duplicate_entry_numbers[n]:
                         duplicate_entry_numbers[n].append(all_entry_numbers[n])
-                    duplicate_entry_numbers[n].append(minimal_entry(entry, [0, 1, 2, 5, 6]))
+                    duplicate_entry_numbers[n].append(
+                        minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19])
+                    )
                 else:
-                    all_entry_numbers[n] = minimal_entry(entry, [0, 1, 2, 5, 6])
+                    all_entry_numbers[n] = minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19])
                 if not n.isnumeric():
-                    non_numeric[n].append(minimal_entry(entry, [0, 1, 2, 5, 6]))
+                    non_numeric[n].append(minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19]))
     with open(os.path.join(reports_directory, f"entry_numbers_no_entry_numbers.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(no_entry_numbers, outfile, default_flow_style=False, allow_unicode=True)
     with open(os.path.join(reports_directory, f"entry_numbers_non_numeric.yml"), "w", encoding="utf-8") as outfile:
