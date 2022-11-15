@@ -80,6 +80,9 @@ def test_report_single_extracted_fields(reports_directory: str):
         edition_year = edition_year_from_a09_a10(entry[9], entry[10])
         if edition_year:
             field_values["edition_year"].append(str(edition_year))
+        pages = pages_from_a11(entry[11])
+        if pages:
+            field_values["pages"].append(str(pages))
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:

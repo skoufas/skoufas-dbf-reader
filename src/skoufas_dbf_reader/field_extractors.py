@@ -64,6 +64,12 @@ def field10_corrections() -> dict[str, Optional[str]]:
 
 
 @cache
+def field11_corrections() -> dict[str, Optional[str]]:
+    """Map of pages and manual overrides"""
+    return read_yaml_data("field11_corrections")
+
+
+@cache
 def translator_corrections() -> dict[str, str]:
     """Map of translator names found and manual overrides"""
     return read_yaml_data("translator_corrections")
@@ -316,68 +322,20 @@ def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optiona
     return int(corrected)
 
 
-# valid_pages_re = re.compile(r"(\d+)\s*(Σ|S|ΣΕΛ|Δ|Σ Ρ|ΣΑ|ΣΙΣ|Σ Ε|ΣΕΓ|Σ18|ΣΚΑ|ΣΑΜ|Σ Ο|s|Σ Λ|Σ  Α|Σ Ι|σ|Φ)*")
-# known_page_replacements = {
-#     "29ΙΣ": 291,
-#     "183Σ11": 183,
-#     "'": None,
-#     "Χ.Χ": None,
-#     "ΑΘΗΝΑ": None,
-#     "ΕΛΛΗΝΙ": None,
-#     "507Σ#Ξ": 507,
-#     "ΧΧΙΙΙ": 23,
-#     "123-40": None,
-#     "129-75": None,
-#     "145-92": None,
-#     "146-14": None,
-#     "204-47": None,
-#     "311-28": None,
-#     "31-9": None,
-#     "362-75": None,
-#     "37-50Σ": None,
-#     "415-31": None,
-#     "425-30": None,
-#     "484-96": None,
-#     "495-99": None,
-#     "555-73": None,
-#     "616-45": None,
-#     "884-56": None,
-#     "90-119": None,
-#     "9-39": None,
-#     "133CAN": None,
-# }
+valid_pages_re = re.compile(r"(\d+)\s*(Σ|S|ΣΕΛ|Δ|Σ Ρ|ΣΑ|ΣΙΣ|Σ Ε|ΣΕΓ|Σ18|ΣΚΑ|ΣΑΜ|Σ Ο|s|Σ Λ|Σ  Α|Σ11|Σ#Ξ|Σ Ι|σ|Φ)*")
 
 
-# def pages_from_a11(A11):
-#     """Cleanup
-#     >>> pages_from_a11(None) # None
-#     >>> pages_from_a11('') # None
-#     >>> pages_from_a11(' ') # None
-#     >>> pages_from_a11('foobar')
-#     Traceback (most recent call last):
-#       ...
-#     Exception: invalid pages [foobar]
-#     >>> pages_from_a11('127Σ')
-#     127
-#     >>> pages_from_a11('447Σ Ε')
-#     447
-#     >>> pages_from_a11('256ΣΕΓ')
-#     256
-#     >>> pages_from_a11('29ΙΣ')
-#     291
-#     """
-
-#     if not A11:
-#         return None
-#     A11 = A11.strip()
-#     if not A11:
-#         return None
-#     if A11 in known_page_replacements:
-#         return known_page_replacements[A11]
-#     m = valid_pages_re.fullmatch(A11)
-#     if not m:
-#         raise Exception(f"invalid pages [{A11}]")
-#     return int(m.group(1))
+def pages_from_a11(a11: Optional[str]) -> Optional[int]:
+    a11 = none_if_empty_or_stripped(a11)
+    if not a11:
+        return None
+    corrected = field11_corrections().get(a11, a11)
+    if not corrected:
+        return None
+    pages_match = valid_pages_re.fullmatch(corrected)
+    if not pages_match:
+        raise Exception(f"invalid pages [{a11}]")
+    return int(pages_match.group(1))
 
 
 # topic_in_paren_re = re.compile(r".*?\((.*)\).*")

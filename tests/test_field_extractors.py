@@ -14,6 +14,7 @@ from skoufas_dbf_reader.field_extractors import (
     language_codes,
     language_from_a01,
     no_author_values,
+    pages_from_a11,
     subtitle_from_a03,
     title_from_a02,
     translator_from_a06,
@@ -204,3 +205,16 @@ def test_edition_year_from_a09_a10():
     with pytest.raises(Exception) as e_info:
         edition_year_from_a09_a10("", "foobar")
     assert e_info.exconly() == "Exception: invalid date [foobar]"
+
+
+def test_pages_from_a11():
+    assert pages_from_a11(None) is None
+    assert pages_from_a11("") is None
+    assert pages_from_a11(" ") is None
+    with pytest.raises(Exception) as e_info:
+        pages_from_a11("foobar")
+    assert e_info.exconly() == "Exception: invalid pages [foobar]"
+    assert pages_from_a11("127Σ") == 127
+    assert pages_from_a11("447Σ Ε") == 447
+    assert pages_from_a11("256ΣΕΓ") == 256
+    assert pages_from_a11("29ΙΣ") == 291
