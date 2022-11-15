@@ -82,14 +82,25 @@ def test_report_single_extracted_fields(reports_directory: str):
                 )
 
 
+def is_valid_dewey_strict(d: str):
+    strict_dewey_res = [
+        re.compile(r"[0-9]{3}\.[0-9]+ [^0-9]+"),
+        re.compile(r"[0-9]{3}\.[0-9]+"),
+        re.compile(r"[0-9]{3} [^0-9]+"),
+        re.compile(r"[0-9]{3}"),
+    ]
+    for dewey_re in strict_dewey_res:
+        if dewey_re.fullmatch(d):
+            return True
+    return False
+
+
 def test_report_dewey(reports_directory: str):
     weird_dewey: list[dict[int, str]] = list()
-    strict_dewey_re = re.compile(r"[0-9\.]+ [^0-9\.]+")
-
     for entry in all_entries():
         dewey = dewey_from_a04(entry[4])
         if dewey:
-            if not strict_dewey_re.fullmatch(dewey):
+            if not is_valid_dewey_strict(dewey):
                 weird_dewey.append(minimal_entry(entry, [0, 1, 2, 4, 5, 6]))
         else:
             if none_if_empty_or_stripped(entry[4]):

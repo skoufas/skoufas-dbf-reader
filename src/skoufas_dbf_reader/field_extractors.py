@@ -5,9 +5,6 @@ from typing import Optional
 
 from skoufas_dbf_reader.utilities import none_if_empty_or_stripped, read_yaml_data
 
-""" A regular expression for reading dewey numbers """
-dewey_re = re.compile(r"([0-9\.]+)\s*([^0-9\.]*)")
-
 
 def has_author(a01: Optional[str]) -> bool:
     """Check values for marks of missing author"""
@@ -95,6 +92,18 @@ def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
     return none_if_empty_or_stripped(a03)
 
 
+dewey_re1 = [
+    re.compile(r"([0-9]{3})"),
+    re.compile(r"([0-9]{3}\.[0-9]+)"),
+]
+dewey_re2 = [
+    re.compile(r"([0-9]{3}\.[0-9]+)\s+([^0-9\.]*)"),
+    re.compile(r"([0-9]{3}\.[0-9]+)([^0-9\.]*)"),
+    re.compile(r"([0-9]{3})\s+([^0-9\.]*)"),
+    re.compile(r"([0-9]{3})([^0-9\.]*)"),
+]
+
+
 def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     """Cleanup and replace known issues"""
     value = none_if_empty_or_stripped(a04)
@@ -118,6 +127,11 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     value = value.replace("Χ.Χ.", "ΧΧ")
     value = value.replace("Χ.Χ", "ΧΧ")
 
+    for dewey_re in dewey_re1:
+        dewey_match = dewey_re.fullmatch(value)
+        if dewey_match:
+            return f"{dewey_match[1]}".strip()
+    for dewey_re in dewey_re2:
     dewey_match = dewey_re.fullmatch(value)
     if dewey_match:
         return f"{dewey_match[1]} {dewey_match[2]}".strip()
