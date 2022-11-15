@@ -240,23 +240,18 @@ def translator_from_a06(a06: Optional[str]) -> Optional[str]:
     return value
 
 
-# from collections import OrderedDict
-# import os
-
-
-# def edition_from_a07(a07: Optional[str]) -> Optional[str]:
-#     """Cleanup
-#     >>> edition_from_a07(None) # None
-#     >>> edition_from_a07('') # None
-#     >>> edition_from_a07(' ') # None
-#     >>> edition_from_a07('6ΕΚΔ')
-#     '6ΕΚΔ'
-#     """
-#     if not a07:
-#         return None
-#     if not a07.strip():
-#         return None
-#     return a07.strip()
+def edition_from_a07(a07: Optional[str]) -> Optional[str]:
+    """Cleanup, replace special cases"""
+    value = none_if_empty_or_stripped(a07)
+    if not value:
+        return None
+    if value in field07_corrections():
+        value = field07_corrections().get(value)
+        if not isinstance(value, str):
+            return None
+    if not value:
+        return None
+    return value
 
 
 # def editor_from_a01_a08(A1, A8):

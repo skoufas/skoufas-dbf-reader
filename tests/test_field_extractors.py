@@ -3,6 +3,7 @@ from __future__ import annotations
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     dewey_from_a04,
+    edition_from_a07,
     entry_numbers_from_a05_a06_a07_a08,
     has_author,
     has_language,
@@ -153,3 +154,17 @@ def test_translator_from_a06():
     assert translator_from_a06("1203") is None
     assert translator_from_a06("3ΕΚΔ") is None
     assert translator_from_a06("2847 ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚ") == "ΠΑΠΑΡΡΟΔΟΥ,ΝΙΚΟΛΑΟΣ"
+
+
+def test_edition_from_a07():
+    assert edition_from_a07(None) is None
+    assert edition_from_a07("") is None
+    assert edition_from_a07(" ") is None
+    assert edition_from_a07("2") == "2"
+    assert edition_from_a07("6ΕΚΔ") == "6"
+    # invalid
+    assert edition_from_a07("ΠΡΟΣΚΗ") is None
+    # year
+    assert edition_from_a07("1932") is None
+    # series
+    assert edition_from_a07("4537") is None

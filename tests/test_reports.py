@@ -68,6 +68,9 @@ def test_report_single_extracted_fields(reports_directory: str):
                         field_values["translator_name_abbreviations"].append(translator_surname_name[1])
                     else:
                         field_values["translator_names"].append(translator_surname_name[1])
+        edition = edition_from_a07(entry[7])
+        if edition:
+            field_values["edition"].append(edition)
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:
