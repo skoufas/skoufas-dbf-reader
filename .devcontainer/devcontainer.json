@@ -4,7 +4,9 @@
 	"build": {
 		"context": "..",
 		"dockerfile": "Dockerfile",
-		"args": {}
+		"args": {
+			"XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}"
+		}
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
@@ -14,15 +16,15 @@
 		"files.trimTrailingWhitespace": true,
 		"files.autoSave": "onFocusChange",
 		"python.analysis.typeCheckingMode": "strict",
-		// "python.defaultInterpreterPath": "/opt/conda/bin/python",
-		// "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-		// "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-		// "python.formatting.blackArgs": [
-		// 	"--config",
-		// 	"pyproject.toml"
-		// ],
-		// "python.formatting.provider": "black",
-		// "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.blackArgs": [
+			"--config",
+			"pyproject.toml"
+		],
+		"python.formatting.provider": "black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
 		"python.linting.enabled": true,
 		"python.linting.lintOnSave": true,
 		"python.linting.banditArgs": [

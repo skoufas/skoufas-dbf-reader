@@ -1,5 +1,6 @@
 ARG VARIANT=3-bullseye
 FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
+ARG XDG_RUNTIME_DIR=/run/user/1000
 
 RUN python -m pip install --upgrade pip \
     && python -m pip install \
@@ -10,6 +11,8 @@ RUN python -m pip install --upgrade pip \
 
 COPY .pre-commit-config.yaml .
 RUN git init . && pre-commit install-hooks
+
+RUN mkdir -p ${XDG_RUNTIME_DIR}
 
 # COPY requirements.txt /tmp/pip-tmp/
 
