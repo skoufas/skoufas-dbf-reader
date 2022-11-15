@@ -46,9 +46,15 @@ def field07_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
 
 
 @cache
-def field08_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
-    """Map of entry numbers and manual overrides"""
+def field08_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+    """Map of editors and manual overrides"""
     return read_yaml_data("field08_corrections")
+
+
+@cache
+def field09_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+    """Map of editor places and manual overrides"""
+    return read_yaml_data("field09_corrections")
 
 
 @cache
@@ -254,69 +260,35 @@ def edition_from_a07(a07: Optional[str]) -> Optional[str]:
     return value
 
 
-# def editor_from_a01_a08(A1, A8):
-#     """Cleanup
-#     >>> editor_from_a01_a08(None, None) # None
-#     >>> editor_from_a01_a08(None, '') # None
-#     >>> editor_from_a01_a08(None, ' ') # None
-#     >>> editor_from_a01_a08('woo', 'Χ.Ε') # None
-#     >>> editor_from_a01_a08('hello', 'X.S') # None
-#     >>> editor_from_a01_a08('author', '6ΕΚΔ')
-#     '6ΕΚΔ'
-#     """
-#     if not A8:
-#         return None
-#     if A8 in [
-#         "Χ.Ε",
-#         "X.S",
-#     ]:
-#         return None
-#     if not A8.strip():
-#         return None
-#     return A8.strip()
-
-
-# date_in_edition_place_re = re.compile(r"\d+")
-
-# place_replacement_map = {
-#     " ΑΘΗΑΝ": "ΑΘΗΝΑ",
-#     "ATHEN": "ΑΘΗΝΑ",
-#     "ATHENES": "ΑΘΗΝΑ",
-#     "ATHENS": "ΑΘΗΝΑ",
-#     "AUHNA": "ΑΘΗΝΑ",
-#     "AΘΗΝΑ": "ΑΘΗΝΑ",
-#     "AMSTERDAN": "AMSTERDAM",
-#     "ANSTERDAM": "AMSTERDAM",
-#     "LEIPTZ": "LEIPZIG",
-#     "LEIPTZIG": "LEIPZIG",
-#     "LEIPZIK": "LEIPZIG",
-#     "LEIPZIQ": "LEIPZIG",
-#     "LEIRZIG": "LEIPZIG",
-#     "LEPZIG": "LEIPZIG",
-# }
-
-
-# def edition_place_from_a09_a10(A9, A10):
-#     """Cleanup
-#     >>> edition_place_from_a09_a10(None, None) # None
-#     >>> edition_place_from_a09_a10(None, '') # None
-#     >>> edition_place_from_a09_a10(None, ' ') # None
-#     >>> edition_place_from_a09_a10('woo', '')
-#     'woo'
-#     >>> edition_place_from_a09_a10('2010', 'woo') # None
-#     >>> edition_place_from_a09_a10('LEPZIG', 'woo')
-#     'LEIPZIG'
-#     """
-#     if not A9:
-#         return None
-#     if A9 in place_replacement_map:
-#         return place_replacement_map[A9]
-#     A9 = A9.strip()
-#     if not A9:
-#         return None
-#     if date_in_edition_place_re.fullmatch(A9):
-#         return None
-#     return A9
+def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tuple[Optional[str], Optional[str]]]:
+    """Cleanup, replace special cases"""
+    a08 = none_if_empty_or_stripped(a08)
+    if not a08:
+        a08 = None
+    else:
+        if a08 in field08_corrections():
+            correction = field08_corrections().get(a08)
+            if not correction:
+                a08 = None
+            elif isinstance(correction, dict):
+                a08 = correction.get("editor", None)
+            else:
+                a08 = correction
+    a09 = none_if_empty_or_stripped(a09)
+    if not a09:
+        a09 = None
+    else:
+        if a09 in field09_corrections():
+            correction = field09_corrections().get(a09)
+            if not correction:
+                a09 = None
+            elif isinstance(correction, dict):
+                a09 = correction.get("place", None)
+            else:
+                a09 = correction
+    if not a08 and not a09:
+        return None
+    return (a08, a09)
 
 
 # invalid_dates = [

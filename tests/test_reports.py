@@ -71,6 +71,12 @@ def test_report_single_extracted_fields(reports_directory: str):
         edition = edition_from_a07(entry[7])
         if edition:
             field_values["edition"].append(edition)
+        editor = editor_from_a08_a09(entry[8], entry[9])
+        if editor:
+            if not editor[0] or not editor[1]:
+                field_values["editor"].append(f"{editor[0]} // {editor[1]} ({entry[0]})")
+            else:
+                field_values["editor"].append(f"{editor[0]} // {editor[1]}")
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:

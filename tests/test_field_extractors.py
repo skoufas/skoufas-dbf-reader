@@ -4,6 +4,7 @@ from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     dewey_from_a04,
     edition_from_a07,
+    editor_from_a08_a09,
     entry_numbers_from_a05_a06_a07_a08,
     has_author,
     has_language,
@@ -168,3 +169,18 @@ def test_edition_from_a07():
     assert edition_from_a07("1932") is None
     # series
     assert edition_from_a07("4537") is None
+
+
+def test_editor_from_a08_a09():
+    assert editor_from_a08_a09(None, None) is None
+    assert editor_from_a08_a09("", "") is None
+    assert editor_from_a08_a09(" ", " ") is None
+    assert editor_from_a08_a09("hello", " ") == ("hello", None)
+    assert editor_from_a08_a09("", "city") == (None, "city")
+    assert editor_from_a08_a09("5282-6548-6547", "city") == (None, "city")
+    assert editor_from_a08_a09('"Η ΔΑΜΑΣΚΟΣ"', "city") == ("Η ΔΑΜΑΣΚΟΣ", "city")
+    assert editor_from_a08_a09("X.E", "city") == (None, "city")
+    assert editor_from_a08_a09("hello", "1867") == ("hello", None)
+    assert editor_from_a08_a09("hello", "AMSTERDAN") == ("hello", "AMSTERDAM")
+    assert editor_from_a08_a09("hello", "ΑΘΗΝΑ 1984") == ("hello", "ΑΘΗΝΑ")
+    assert editor_from_a08_a09("hello", "X.T") == ("hello", None)
