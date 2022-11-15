@@ -175,19 +175,8 @@ def translator_from_a06(a06: Optional[str]) -> Optional[str]:
     return value
 
 
-# def translator_from_a06(a06: Optional[str]) -> Optional[str]:
-#     """Cleanup
-#     >>> translator_from_a06(None) # None
-#     >>> translator_from_a06('') # None
-#     >>> translator_from_a06(' ') # None
-#     >>> translator_from_a06('2710-2709')
-#     '2710-2709'
-#     """
-#     if not a06:
-#         return None
-#     if not a06.strip():
-#         return None
-#     return a06.strip()
+# from collections import OrderedDict
+# import os
 
 
 # def edition_from_a07(a07: Optional[str]) -> Optional[str]:

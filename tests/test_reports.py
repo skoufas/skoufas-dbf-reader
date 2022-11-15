@@ -58,7 +58,16 @@ def test_report_single_extracted_fields(reports_directory: str):
             field_values["entry_numbers"].append(entry_number)
         translator = translator_from_a06(entry[6])
         if translator:
-            field_values["translator"].append(translator)
+            translators = translator.split("!!")
+            for single_translator in translators:
+                field_values["translator"].append(single_translator)
+                translator_surname_name = single_translator.split(",", maxsplit=1)
+                if len(translator_surname_name) == 2:
+                    field_values["translator_family_name"].append(translator_surname_name[0])
+                    if translator_surname_name[1].endswith("."):
+                        field_values["translator_name_abbreviations"].append(translator_surname_name[1])
+                    else:
+                        field_values["translator_names"].append(translator_surname_name[1])
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:

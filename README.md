@@ -46,6 +46,8 @@ Functions to read and convert from the DBF file used to track books in the Skouf
     - 12760EZ,GABRIEL GARCIA
     - 15767ΗΓΟΠΟΥΛΟΣ,ΧΡΗΣΤΟΣ
 - Weird deweys and replacements (~300)
+- Loan -> Book Entry or Entry number?
+- Translator corrections
 
 ## Columns required
 
@@ -72,6 +74,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 
 - Name
 - Surname
+- Middlename
 - Fullname
 
 ### Authorship (Many-to-Many)
@@ -83,12 +86,14 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 
 - Name
 - Surname
+- Middlename
 - Fullname
 
 ### Curator
 
 - Name
 - Surname
+- Middlename
 - Fullname
 
 ### Editor
@@ -119,6 +124,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 
 - Name
 - Surname
+- Middlename
 - Fullname
 
 ### Donation (Many-to-Many)
@@ -130,6 +136,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 
 - Name
 - Surname
+- Middlename
 - FullName
 - IdNumber
 - IdType
