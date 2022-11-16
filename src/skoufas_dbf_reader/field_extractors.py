@@ -388,3 +388,13 @@ def curator_from_a16(a16: Optional[str]) -> Optional[str]:
         return field16_corrections()[a16]
     else:
         return a16
+
+
+# def has_cd_from_a17_a30()
+# def copies_from_a17_a30()
+# def donation_from_a17_a30()
+# def isbn_from_a17---_a30()
+# def notes_from_a17---_a30()
+# def offprint_from_a17_a30()
+# def volume_from_a17_a30()
+# def material_from_xxx_a30()
