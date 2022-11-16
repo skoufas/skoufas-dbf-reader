@@ -359,8 +359,9 @@ def topics_from_a12_to_a15(a12_a15: Optional[list[Optional[str]]]) -> list[str]:
             match = topic_in_paren_re.fullmatch(line)
             if match:
                 in_parenthesis = match[1].strip()
-                in_parenthesis = topic_replacements().get(in_parenthesis, in_parenthesis).strip()
-                topics[in_parenthesis] = None
+                in_parenthesis = topic_replacements().get(in_parenthesis, in_parenthesis)
+                if in_parenthesis and in_parenthesis.strip():
+                    topics[in_parenthesis.strip()] = None
                 # remove match and parenthesis
                 line = line.replace(match[1], "").replace("()", "")
             for topic in line.split("-"):
