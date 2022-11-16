@@ -1,91 +1,30 @@
 """ Functions that extract information given specific strings """
 import re
-from functools import cache
 from collections import OrderedDict
+from functools import cache
 from typing import Optional
 
-from skoufas_dbf_reader.utilities import none_if_empty_or_stripped, read_yaml_data
-
-
-def has_author(a01: Optional[str]) -> bool:
-    """Check values for marks of missing author"""
-    if not a01:
-        return False
-    if a01 in no_author_values():
-        return False
-    return True
-
-
-@cache
-def no_author_values() -> list[str]:
-    """List of values implying there's no author"""
-    return read_yaml_data("no_author")
-
-
-@cache
-def language_codes() -> dict[str, str]:
-    """Map of language codes in A01 to ISO language codes"""
-    return read_yaml_data("language_codes")
-
-
-@cache
-def field04_corrections() -> dict[str, str]:
-    """Map of invalid dewey codes found and manual overrides"""
-    return read_yaml_data("field04_corrections")
-
-
-@cache
-def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
-    """Map of invalid entry numbers found and manual overrides"""
-    return read_yaml_data("field06_corrections")
-
-
-@cache
-def field07_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
-    """Map of entry numbers and manual overrides"""
-    return read_yaml_data("field07_corrections")
-
-
-@cache
-def field08_corrections() -> dict[str, Optional[str | dict[str, str]]]:
-    """Map of editors and manual overrides"""
-    return read_yaml_data("field08_corrections")
-
-
-@cache
-def field09_corrections() -> dict[str, Optional[str | dict[str, str]]]:
-    """Map of editor places and manual overrides"""
-    return read_yaml_data("field09_corrections")
-
-
-@cache
-def field10_corrections() -> dict[str, Optional[str]]:
-    """Map of year and manual overrides"""
-    return read_yaml_data("field10_corrections")
-
-
-@cache
-def field11_corrections() -> dict[str, Optional[str]]:
-    """Map of pages and manual overrides"""
-    return read_yaml_data("field11_corrections")
-
-
-@cache
-def field16_corrections() -> dict[str, Optional[str]]:
-    """Map of curators and manual overrides"""
-    return read_yaml_data("field16_corrections")
-
-
-@cache
-def topic_replacements() -> dict[str, Optional[str]]:
-    """Map of topic name manual overrides"""
-    return read_yaml_data("topic_replacements")
-
-
-@cache
-def translator_corrections() -> dict[str, str]:
-    """Map of translator names found and manual overrides"""
-    return read_yaml_data("translator_corrections")
+from skoufas_dbf_reader.correction_data import (
+    dewey_re1,
+    dewey_re2,
+    field04_corrections,
+    field06_corrections,
+    field07_corrections,
+    field08_corrections,
+    field09_corrections,
+    field10_corrections,
+    field11_corrections,
+    field16_corrections,
+    has_author,
+    has_cd_re,
+    has_dvd_re,
+    language_codes,
+    topic_in_paren_re,
+    topic_replacements,
+    translator_corrections,
+    valid_pages_re,
+)
+from skoufas_dbf_reader.utilities import none_if_empty_or_stripped
 
 
 def has_language(a01: Optional[str]) -> bool:
@@ -133,18 +72,6 @@ def title_from_a02(a02: Optional[str]) -> Optional[str]:
 def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
     """Cleanup"""
     return none_if_empty_or_stripped(a03)
-
-
-dewey_re1 = [
-    re.compile(r"([0-9]{3})"),
-    re.compile(r"([0-9]{3}\.[0-9]+)"),
-]
-dewey_re2 = [
-    re.compile(r"([0-9]{3}\.[0-9]+)\s+([^0-9\.]*)"),
-    re.compile(r"([0-9]{3}\.[0-9]+)([^0-9\.]*)"),
-    re.compile(r"([0-9]{3})\s+([^0-9\.]*)"),
-    re.compile(r"([0-9]{3})([^0-9\.]*)"),
-]
 
 
 def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
@@ -335,9 +262,6 @@ def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optiona
     return int(corrected)
 
 
-valid_pages_re = re.compile(r"(\d+)\s*(Σ|S|ΣΕΛ|Δ|Σ Ρ|ΣΑ|ΣΙΣ|Σ Ε|ΣΕΓ|Σ18|ΣΚΑ|ΣΑΜ|Σ Ο|s|Σ Λ|Σ  Α|Σ11|Σ#Ξ|Σ Ι|σ|Φ)*")
-
-
 def pages_from_a11(a11: Optional[str]) -> Optional[int]:
     """Cleanup, return an int from various expressions"""
     a11 = none_if_empty_or_stripped(a11)
@@ -352,15 +276,14 @@ def pages_from_a11(a11: Optional[str]) -> Optional[int]:
     return int(pages_match.group(1))
 
 
-topic_in_paren_re = re.compile(r".*?\((.*)\).*")
-
-
-def topics_from_a12_to_a15(a12_a15: Optional[list[Optional[str]]]) -> list[str]:
+def topics_from_a12_to_a15_a20_a22_to_a24(
+    many_lines: Optional[list[Optional[str]]],
+) -> list[str]:
     """Cleanup, make unique, handle special cases"""
-    if not a12_a15:
+    if not many_lines:
         return []
     topics: OrderedDict[str, None] = OrderedDict()
-    for line in a12_a15:
+    for line in many_lines:
         line = none_if_empty_or_stripped(line)
         if line:
             match = topic_in_paren_re.fullmatch(line)
@@ -390,11 +313,30 @@ def curator_from_a16(a16: Optional[str]) -> Optional[str]:
         return a16
 
 
-# def has_cd_from_a17_a30()
+def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
+    """Look for CD in the lines passed"""
+    if not many_lines:
+        return False
+    for line in many_lines:
+        if line and has_cd_re.search(line):
+            return True
+    return False
+
+
+def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
+    """Look for DVD in the lines passed"""
+    if not many_lines:
+        return False
+    for line in many_lines:
+        if line and has_dvd_re.search(line):
+            return True
+    return False
+
+
 # def copies_from_a17_a30()
 # def donation_from_a17_a30()
-# def isbn_from_a17---_a30()
-# def notes_from_a17---_a30()
+# def isbn_from_a17_a18_a19_a30()
+# def notes_from_a17_a21_a30()
 # def offprint_from_a17_a30()
-# def volume_from_a17_a30()
-# def material_from_xxx_a30()
+# def volume_from_a17_a18_a20_a30()
+# def material_from_a18_xxx_a30()

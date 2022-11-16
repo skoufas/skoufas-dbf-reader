@@ -2,24 +2,26 @@ from __future__ import annotations
 
 import pytest
 
+from skoufas_dbf_reader.correction_data import no_author_values
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
     curator_from_a16,
     dewey_from_a04,
-    edition_year_from_a09_a10,
     edition_from_a07,
+    edition_year_from_a09_a10,
     editor_from_a08_a09,
     entry_numbers_from_a05_a06_a07_a08,
     has_author,
     has_language,
     language_codes,
     language_from_a01,
-    no_author_values,
     pages_from_a11,
     subtitle_from_a03,
     title_from_a02,
-    topics_from_a12_to_a15,
+    topics_from_a12_to_a15_a20_a22_to_a24,
     translator_from_a06,
+    has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30,
+    has_dvd_from_a30,
 )
 
 
@@ -222,22 +224,22 @@ def test_pages_from_a11():
     assert pages_from_a11("29ΙΣ") == 291
 
 
-def test_topics_from_a12_to_a15():
-    assert topics_from_a12_to_a15(None) == []
-    assert topics_from_a12_to_a15([]) == []
-    assert topics_from_a12_to_a15(["", ""]) == []
-    assert topics_from_a12_to_a15(["\\"]) == []
-    assert topics_from_a12_to_a15(["'"]) == []
-    assert topics_from_a12_to_a15(["A", "B"]) == ["A", "B"]
-    assert topics_from_a12_to_a15(["A-B", "B"]) == ["A", "B"]
-    assert topics_from_a12_to_a15(["19 ΑΙΩΝΑ", "B"]) == ["19 ΑΙΩΝΑΣ", "B"]
-    assert topics_from_a12_to_a15(["foobar-(12-13)"]) == ["12-13", "foobar"]
-    assert topics_from_a12_to_a15(["foobar(12-13)"]) == ["12-13", "foobar"]
-    assert topics_from_a12_to_a15(["foo bar(12-13)"]) == ["12-13", "foo bar"]
-    assert topics_from_a12_to_a15(["foo-bar-(12-13)"]) == ["12-13", "foo", "bar"]
-    assert topics_from_a12_to_a15(["foo bar(1213)"]) == ["1213", "foo bar"]
-    assert topics_from_a12_to_a15(["foo bar(1213qw)"]) == ["1213qw", "foo bar"]
-    assert topics_from_a12_to_a15(["foobar-(19 ΑΙΩΝΑ)"]) == ["19 ΑΙΩΝΑΣ", "foobar"]
+def test_topics_from_a12_to_a15_a20_a22_to_a24():
+    assert topics_from_a12_to_a15_a20_a22_to_a24(None) == []
+    assert topics_from_a12_to_a15_a20_a22_to_a24([]) == []
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["", ""]) == []
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["\\"]) == []
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["'"]) == []
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["A", "B"]) == ["A", "B"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["A-B", "B"]) == ["A", "B"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["19 ΑΙΩΝΑ", "B"]) == ["19 ΑΙΩΝΑΣ", "B"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foobar-(12-13)"]) == ["12-13", "foobar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foobar(12-13)"]) == ["12-13", "foobar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foo bar(12-13)"]) == ["12-13", "foo bar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foo-bar-(12-13)"]) == ["12-13", "foo", "bar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foo bar(1213)"]) == ["1213", "foo bar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foo bar(1213qw)"]) == ["1213qw", "foo bar"]
+    assert topics_from_a12_to_a15_a20_a22_to_a24(["foobar-(19 ΑΙΩΝΑ)"]) == ["19 ΑΙΩΝΑΣ", "foobar"]
 
 
 def test_curator_from_a16():
@@ -248,3 +250,17 @@ def test_curator_from_a16():
     assert curator_from_a16("ΘΕΣΣΑΛΙΑ") is None
     assert curator_from_a16("#") is None
     assert curator_from_a16("ΒΡΑΣΑΣ,ΝΙΚΟΣ") == "ΒΡΑΣΣΑΣ,ΝΙΚΟΛΑΟΣ"
+
+
+def test_has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30():
+    assert not has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(None)
+    assert not has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30([None, "", "", "gooh", "wordwithcdinside hello"])
+    assert has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(["", "ΠΕΡΙΕΧΕΙ CD"])
+    assert has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(["", "ΤΟΜΟΙ Α-Β-Γ  2 ΑΝΤΙΤΥΠΑ ΠΕΡΙΕΧΕΙ CD"])
+    assert has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(["", "ΤΟΜΟΙ Α-Β-Γ  2 ΑΝΤΙΤΥΠΑ ΠΕΡΙΕΧΕΙ CD"])
+
+
+def test_has_dvd_from_a30():
+    assert not has_dvd_from_a30(None)
+    assert not has_dvd_from_a30([None, "", "", "gooh", "wordwithDVDinside hello"])
+    assert has_dvd_from_a30(["", "ΠΕΡΙΕΧΕΟ DVD"])

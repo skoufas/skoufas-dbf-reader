@@ -83,12 +83,16 @@ def test_report_single_extracted_fields(reports_directory: str):
         pages = pages_from_a11(entry[11])
         if pages:
             field_values["pages"].append(str(pages))
-        topic_list = topics_from_a12_to_a15(
+        topic_list = topics_from_a12_to_a15_a20_a22_to_a24(
             [
                 entry[12],
                 entry[13],
                 entry[14],
                 entry[15],
+                entry[20],
+                entry[22],
+                entry[23],
+                entry[24],
             ]
         )
         field_values["topic_lists"].append(topic_list)
@@ -179,3 +183,33 @@ def test_report_translators(reports_directory: str):
                     weird_translators.append(translator)
     with open(os.path.join(reports_directory, f"weird_translators.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
+
+
+def test_report_cd_dcd(reports_directory: str):
+    entries_with_cd: list[dict[int, str]] = list()
+    entries_with_dvd: list[dict[int, str]] = list()
+    for entry in all_entries():
+        if has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
+            [
+                entry[2],
+                entry[3],
+                entry[12],
+                entry[13],
+                entry[14],
+                entry[17],
+                entry[18],
+                entry[22],
+                entry[30],
+            ]
+        ):
+            entries_with_cd.append(minimal_entry(entry, list(range(0, 31))))
+        if has_dvd_from_a30(
+            [
+                entry[30],
+            ]
+        ):
+            entries_with_dvd.append(minimal_entry(entry, list(range(0, 31))))
+    with open(os.path.join(reports_directory, f"entries_with_cd.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
+    with open(os.path.join(reports_directory, f"entries_with_dvd.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(entries_with_dvd, outfile, default_flow_style=False, allow_unicode=True)
