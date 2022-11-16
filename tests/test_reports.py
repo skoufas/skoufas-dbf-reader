@@ -104,6 +104,9 @@ def test_report_single_extracted_fields(reports_directory: str):
         copies = copies_from_a17_a30(entry[17], entry[30])
         if copies:
             field_values["copies"].append(str(copies))
+        donation = donation_from_a17_a30(entry[17], entry[30])
+        if donation:
+            field_values["donation"].append(donation)
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:
@@ -216,3 +219,20 @@ def test_report_cd_dcd(reports_directory: str):
         yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
     with open(os.path.join(reports_directory, f"entries_with_dvd.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(entries_with_dvd, outfile, default_flow_style=False, allow_unicode=True)
+
+
+def test_report_donors(reports_directory: str):
+    count_map: defaultdict[str, int] = defaultdict(int)
+    for entry in all_entries():
+        donors = donation_from_a17_a30(entry[17], entry[30])
+        if donors:
+            for donor in donors.split("!!"):
+                count_map[donor] = count_map[donor] + 1
+
+    with open(os.path.join(reports_directory, f"donors_count.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(
+            dict(sorted(count_map.items(), key=lambda x: x[1], reverse=True)),
+            outfile,
+            default_flow_style=False,
+            allow_unicode=True,
+        )

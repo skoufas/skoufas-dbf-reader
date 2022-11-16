@@ -253,3 +253,11 @@ def test_copies_from_a17_a30():
     assert copies_from_a17_a30("ΑΝΤΙΤΥΠΑ 2", None) == 2
     assert copies_from_a17_a30(None, "5 ΑΝΤΙΤΥΠΑ") == 5
     assert copies_from_a17_a30(None, "ΑΝΑΤΥΠΟ") is None
+
+
+def test_donation_from_a17_a30():
+    assert donation_from_a17_a30(None, None) is None
+    assert donation_from_a17_a30("weewv", "ecwecwc") is None
+    assert donation_from_a17_a30("ΒΙΒΙΟΘΗΚΗ ΓΑΡΟΥΦΑΛΙΑ", None) == "ΒΙΒΛΙΟΘΗΚΗ ΓΑΡΟΥΦΑΛΙΑ"
+    assert donation_from_a17_a30(None, "ΔΩΡΑ ΟΛΓΑ ΜΑΝΟΥ") == "ΜΑΝΟΥ,ΟΛΓΑ"
+    assert donation_from_a17_a30(None, "ΑΝΑΤΥΠΟ") is None
