@@ -16,7 +16,7 @@ def reports_directory() -> str:
 
 
 def minimal_entry(input_entry: dict[int, str], fields: list[int]) -> dict[int, str]:
-    return {i: input_entry[i] for i in fields}
+    return {i: input_entry[i] for i in fields if input_entry[i]}
 
 
 def test_report_single_fields(reports_directory: str):
@@ -191,9 +191,10 @@ def test_report_translators(reports_directory: str):
         yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
 
 
-def test_report_cd_dcd(reports_directory: str):
+def test_report_bools(reports_directory: str):
     entries_with_cd: list[dict[int, str]] = list()
     entries_with_dvd: list[dict[int, str]] = list()
+    entries_with_offprint: list[dict[int, str]] = list()
     for entry in all_entries():
         if has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
             [
@@ -215,10 +216,14 @@ def test_report_cd_dcd(reports_directory: str):
             ]
         ):
             entries_with_dvd.append(minimal_entry(entry, list(range(0, 31))))
+        if offprint_from_a17_a30(entry[17], entry[30]):
+            entries_with_offprint.append(minimal_entry(entry, list(range(0, 31))))
     with open(os.path.join(reports_directory, f"entries_with_cd.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
     with open(os.path.join(reports_directory, f"entries_with_dvd.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(entries_with_dvd, outfile, default_flow_style=False, allow_unicode=True)
+    with open(os.path.join(reports_directory, f"entries_with_offprint.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(entries_with_offprint, outfile, default_flow_style=False, allow_unicode=True)
 
 
 def test_report_donors(reports_directory: str):

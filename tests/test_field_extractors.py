@@ -261,3 +261,11 @@ def test_donation_from_a17_a30():
     assert donation_from_a17_a30("ΒΙΒΙΟΘΗΚΗ ΓΑΡΟΥΦΑΛΙΑ", None) == "ΒΙΒΛΙΟΘΗΚΗ ΓΑΡΟΥΦΑΛΙΑ"
     assert donation_from_a17_a30(None, "ΔΩΡΑ ΟΛΓΑ ΜΑΝΟΥ") == "ΜΑΝΟΥ,ΟΛΓΑ"
     assert donation_from_a17_a30(None, "ΑΝΑΤΥΠΟ") is None
+
+
+def test_offprint_from_a17_a30():
+    assert not offprint_from_a17_a30(None, None)
+    assert not offprint_from_a17_a30("", "")
+    assert not offprint_from_a17_a30("weewv", "ecwecwc")
+    assert offprint_from_a17_a30("weewv", "ΑΝΑΤΥΠΟ")
+    assert offprint_from_a17_a30("ΑΝΑΤΥΠΟ", "foo")
