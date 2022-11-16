@@ -17,6 +17,7 @@ from skoufas_dbf_reader.field_extractors import (
     pages_from_a11,
     subtitle_from_a03,
     title_from_a02,
+    topics_from_a12_to_a15,
     translator_from_a06,
 )
 
@@ -218,3 +219,21 @@ def test_pages_from_a11():
     assert pages_from_a11("447Σ Ε") == 447
     assert pages_from_a11("256ΣΕΓ") == 256
     assert pages_from_a11("29ΙΣ") == 291
+
+
+def test_topics_from_a12_to_a15():
+    assert topics_from_a12_to_a15(None) == []
+    assert topics_from_a12_to_a15([]) == []
+    assert topics_from_a12_to_a15(["", ""]) == []
+    assert topics_from_a12_to_a15(["\\"]) == []
+    assert topics_from_a12_to_a15(["'"]) == []
+    assert topics_from_a12_to_a15(["A", "B"]) == ["A", "B"]
+    assert topics_from_a12_to_a15(["A-B", "B"]) == ["A", "B"]
+    assert topics_from_a12_to_a15(["19 ΑΙΩΝΑ", "B"]) == ["19 ΑΙΩΝΑΣ", "B"]
+    assert topics_from_a12_to_a15(["foobar-(12-13)"]) == ["12-13", "foobar"]
+    assert topics_from_a12_to_a15(["foobar(12-13)"]) == ["12-13", "foobar"]
+    assert topics_from_a12_to_a15(["foo bar(12-13)"]) == ["12-13", "foo bar"]
+    assert topics_from_a12_to_a15(["foo-bar-(12-13)"]) == ["12-13", "foo", "bar"]
+    assert topics_from_a12_to_a15(["foo bar(1213)"]) == ["1213", "foo bar"]
+    assert topics_from_a12_to_a15(["foo bar(1213qw)"]) == ["1213qw", "foo bar"]
+    assert topics_from_a12_to_a15(["foobar-(19 ΑΙΩΝΑ)"]) == ["19 ΑΙΩΝΑΣ", "foobar"]

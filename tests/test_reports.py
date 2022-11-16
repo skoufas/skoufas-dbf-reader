@@ -83,6 +83,17 @@ def test_report_single_extracted_fields(reports_directory: str):
         pages = pages_from_a11(entry[11])
         if pages:
             field_values["pages"].append(str(pages))
+        topic_list = topics_from_a12_to_a15(
+            [
+                entry[12],
+                entry[13],
+                entry[14],
+                entry[15],
+            ]
+        )
+        field_values["topic_lists"].append(topic_list)
+        for topic in topic_list:
+            field_values["topics"].append(topic)
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:
