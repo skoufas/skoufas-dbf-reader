@@ -71,6 +71,12 @@ def field11_corrections() -> dict[str, Optional[str]]:
 
 
 @cache
+def field16_corrections() -> dict[str, Optional[str]]:
+    """Map of curators and manual overrides"""
+    return read_yaml_data("field16_corrections")
+
+
+@cache
 def topic_replacements() -> dict[str, Optional[str]]:
     """Map of topic name manual overrides"""
     return read_yaml_data("topic_replacements")
@@ -333,6 +339,7 @@ valid_pages_re = re.compile(r"(\d+)\s*(Σ|S|ΣΕΛ|Δ|Σ Ρ|ΣΑ|ΣΙΣ|Σ Ε|Σ
 
 
 def pages_from_a11(a11: Optional[str]) -> Optional[int]:
+    """Cleanup, return an int from various expressions"""
     a11 = none_if_empty_or_stripped(a11)
     if not a11:
         return None
@@ -372,24 +379,12 @@ def topics_from_a12_to_a15(a12_a15: Optional[list[Optional[str]]]) -> list[str]:
     return list(topics.keys())
 
 
-# def curator_from_a16(A16):
-#     """Cleanup
-#     >>> curator_from_a16(None) # None
-#     >>> curator_from_a16('') # None
-#     >>> curator_from_a16(' ') # None
-#     >>> curator_from_a16('woo')
-#     'woo'
-#     >>> curator_from_a16('ΘΕΣΣΑΛΙΑ') # None
-#     >>> curator_from_a16('#') # None
-#     """
-#     if not A16:
-#         return None
-#     if A16 in [
-#         "ΘΕΣΣΑΛΙΑ",
-#         "#",
-#         "ΔΩΡΕΑ ΑΚΑΔΗΜΙΑ ΑΘΗΝΩ",
-#     ]:
-#         return None
-#     if not A16.strip():
-#         return None
-#     return A16.strip()
+def curator_from_a16(a16: Optional[str]) -> Optional[str]:
+    """Cleanup"""
+    a16 = none_if_empty_or_stripped(a16)
+    if not a16:
+        return None
+    if a16 in field16_corrections():
+        return field16_corrections()[a16]
+    else:
+        return a16

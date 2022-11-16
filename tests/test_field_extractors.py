@@ -4,6 +4,7 @@ import pytest
 
 from skoufas_dbf_reader.field_extractors import (
     author_part_from_a01,
+    curator_from_a16,
     dewey_from_a04,
     edition_year_from_a09_a10,
     edition_from_a07,
@@ -237,3 +238,13 @@ def test_topics_from_a12_to_a15():
     assert topics_from_a12_to_a15(["foo bar(1213)"]) == ["1213", "foo bar"]
     assert topics_from_a12_to_a15(["foo bar(1213qw)"]) == ["1213qw", "foo bar"]
     assert topics_from_a12_to_a15(["foobar-(19 ΑΙΩΝΑ)"]) == ["19 ΑΙΩΝΑΣ", "foobar"]
+
+
+def test_curator_from_a16():
+    assert curator_from_a16(None) is None
+    assert curator_from_a16("") is None
+    assert curator_from_a16(" ") is None
+    assert curator_from_a16("woo") == "woo"
+    assert curator_from_a16("ΘΕΣΣΑΛΙΑ") is None
+    assert curator_from_a16("#") is None
+    assert curator_from_a16("ΒΡΑΣΑΣ,ΝΙΚΟΣ") == "ΒΡΑΣΣΑΣ,ΝΙΚΟΛΑΟΣ"
