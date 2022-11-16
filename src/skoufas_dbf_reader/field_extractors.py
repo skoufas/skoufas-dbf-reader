@@ -15,6 +15,8 @@ from skoufas_dbf_reader.correction_data import (
     field10_corrections,
     field11_corrections,
     field16_corrections,
+    field17_corrections,
+    field30_corrections,
     has_author,
     has_cd_re,
     has_dvd_re,
@@ -333,10 +335,34 @@ def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
     return False
 
 
-# def copies_from_a17_a30()
+def copies_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[int]:
+    """Use corrections to look for number of copies"""
+    a17 = none_if_empty_or_stripped(a17)
+    if a17:
+        correction = field17_corrections().get(a17)
+        if correction and isinstance(correction, dict):
+            copies = correction.get("copies")
+            if copies:
+                if isinstance(copies, int):
+                    return copies
+                else:
+                    raise Exception(f"Invalid correction for A17 [{a17}]")
+    a30 = none_if_empty_or_stripped(a30)
+    if a30:
+        correction = field30_corrections().get(a30)
+        if correction and isinstance(correction, dict):
+            copies = correction.get("copies")
+            if copies:
+                if isinstance(copies, int):
+                    return copies
+                else:
+                    raise Exception(f"Invalid correction for A30 [{a30}]")
+    return None
+
+
 # def donation_from_a17_a30()
-# def isbn_from_a17_a18_a19_a30()
 # def notes_from_a17_a21_a30()
 # def offprint_from_a17_a30()
 # def volume_from_a17_a18_a20_a30()
 # def material_from_a18_xxx_a30()
+# def isbn_from_a17_a18_a19_a30()

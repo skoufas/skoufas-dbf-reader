@@ -76,6 +76,18 @@ def field16_corrections() -> dict[str, Optional[str]]:
 
 
 @cache
+def field17_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+    """Map of manual overrides"""
+    return read_yaml_data("field17_corrections")
+
+
+@cache
+def field30_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+    """Map of manual overrides"""
+    return read_yaml_data("field30_corrections")
+
+
+@cache
 def topic_replacements() -> dict[str, Optional[str]]:
     """Map of topic name manual overrides"""
     return read_yaml_data("topic_replacements")

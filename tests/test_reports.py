@@ -101,6 +101,9 @@ def test_report_single_extracted_fields(reports_directory: str):
         curator = curator_from_a16(entry[16])
         if curator:
             field_values["curator"].append(curator)
+        copies = copies_from_a17_a30(entry[17], entry[30])
+        if copies:
+            field_values["copies"].append(str(copies))
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:

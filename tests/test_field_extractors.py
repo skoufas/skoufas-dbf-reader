@@ -3,26 +3,7 @@ from __future__ import annotations
 import pytest
 
 from skoufas_dbf_reader.correction_data import no_author_values
-from skoufas_dbf_reader.field_extractors import (
-    author_part_from_a01,
-    curator_from_a16,
-    dewey_from_a04,
-    edition_from_a07,
-    edition_year_from_a09_a10,
-    editor_from_a08_a09,
-    entry_numbers_from_a05_a06_a07_a08,
-    has_author,
-    has_language,
-    language_codes,
-    language_from_a01,
-    pages_from_a11,
-    subtitle_from_a03,
-    title_from_a02,
-    topics_from_a12_to_a15_a20_a22_to_a24,
-    translator_from_a06,
-    has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30,
-    has_dvd_from_a30,
-)
+from skoufas_dbf_reader.field_extractors import *
 
 
 def test_no_author():
@@ -264,3 +245,11 @@ def test_has_dvd_from_a30():
     assert not has_dvd_from_a30(None)
     assert not has_dvd_from_a30([None, "", "", "gooh", "wordwithDVDinside hello"])
     assert has_dvd_from_a30(["", "ΠΕΡΙΕΧΕΟ DVD"])
+
+
+def test_copies_from_a17_a30():
+    assert copies_from_a17_a30(None, None) is None
+    assert copies_from_a17_a30("weewv", "ecwecwc") is None
+    assert copies_from_a17_a30("ΑΝΤΙΤΥΠΑ 2", None) == 2
+    assert copies_from_a17_a30(None, "5 ΑΝΤΙΤΥΠΑ") == 5
+    assert copies_from_a17_a30(None, "ΑΝΑΤΥΠΟ") is None

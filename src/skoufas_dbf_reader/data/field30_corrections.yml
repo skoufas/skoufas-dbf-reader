@@ -352,25 +352,18 @@ field30_corrections:
     volume: ΠΕΜΠΤΟΣ ΤΟΜΟΣ Ο ΔΡΟΜΟΣ ΠΡΟΣ ΤΟ ΜΕΛΛΟΝ
   ΠΕΝΤΕ ΤΟΜΟΙ:
     volume: ΠΕΝΤΕ ΤΟΜΟΙ
-  ΠΕΡΙΕΧΕΙ  CD:
-    cd: true
+  ΠΕΡΙΕΧΕΙ  CD: null
   ΠΕΡΙΕΧΕΙ 12 ΧΑΡΤΕΣ:
     material: 12 ΧΑΡΤΕΣ
-  ΠΕΡΙΕΧΕΙ CD:
-    cd: true
+  ΠΕΡΙΕΧΕΙ CD: null
   ΠΕΡΙΕΧΕΙ CD (2 ΑΝΤΙΤΥΠΑ:
-    cd: true
     copies: 2
   ΠΕΡΙΕΧΕΙ CD (2 ΑΝΤΙΤΥΠΑ):
-    cd: true
     copies: 2
   ΠΕΡΙΕΧΕΙ CD - ΤΟΜΟΙ Α-Β:
-    cd: true
     volume: ΤΟΜΟΙ Α-Β
-  ΠΕΡΙΕΧΕΟ DVD:
-    dvd: true
-  ΠΕΡΙΧΕΙ CD:
-    cd: true
+  ΠΕΡΙΕΧΕΟ DVD: null
+  ΠΕΡΙΧΕΙ CD: null
   Τ.Μ 1-20:
     volume: Τ.Μ 1-20
   Τ.Μ 10 ΤΟΜΟΙ:
@@ -587,7 +580,6 @@ field30_corrections:
     volume: ΤΟΜΟΙ Α-Β-Γ
   ΤΟΜΟΙ Α-Β-Γ  2 ΑΝΤΙΤΥΠΑ ΠΕΡΙΕΧΕΙ CD:
     volume: ΤΟΜΟΙ Α-Β-Γ 2 ΑΝΤΙΤΥΠΑ
-    cd: true
   ΤΟΜΟΙ Α-Β-Γ-Δ:
     volume: ΤΟΜΟΙ Α-Β-Γ-Δ
   ΤΟΜΟΙ Α-Β-Γ-Δ-Ε:
