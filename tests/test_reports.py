@@ -52,7 +52,9 @@ def test_report_single_extracted_fields(reports_directory: str):
         dewey = dewey_from_a04(entry[4])
         if dewey:
             field_values["dewey"].append(dewey)
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08(entry[5], entry[6], entry[7], entry[8])
+        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
+            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        )
         field_values["entry_number_lists"].append(entry_numbers)
         for entry_number in entry_numbers:
             field_values["entry_numbers"].append(entry_number)
@@ -101,12 +103,29 @@ def test_report_single_extracted_fields(reports_directory: str):
         curator = curator_from_a16(entry[16])
         if curator:
             field_values["curator"].append(curator)
-        copies = copies_from_a17_a30(entry[17], entry[30])
+        copies = copies_from_a17_a18_a30(entry[17], entry[18], entry[30])
         if copies:
             field_values["copies"].append(str(copies))
         donation = donation_from_a17_a30(entry[17], entry[30])
         if donation:
             field_values["donation"].append(donation)
+        volume = volume_from_a17_a18_a20_a30(entry[17], entry[18], entry[20], entry[30])
+        if volume:
+            field_values["volume"].append(volume)
+        material = material_from_a18_a30(entry[18], entry[30])
+        if material:
+            field_values["material"].append(material)
+        notes = notes_from_a17_a18_a21_a30(entry[17], entry[18], entry[21], entry[30])
+        if notes:
+            field_values["notes"].append(notes)
+        isbn = isbn_from_a17_a18_a19_a22_a30(entry[17], entry[18], entry[19], entry[22], entry[30])
+        if isbn:
+            if not check_isbn(isbn):
+                field_values["isbn"].append(isbn)
+            if not check_issn(isbn):
+                field_values["issn"].append(isbn)
+            if not check_ean(isbn):
+                field_values["ean"].append(isbn)
 
     for k, values in field_values.items():
         with open(os.path.join(reports_directory, f"calculated_field_{k}.yml"), "w", encoding="utf-8") as outfile:
@@ -154,7 +173,9 @@ def test_report_entry_numbers(reports_directory: str):
     non_numeric: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     duplicate_entry_numbers: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     for entry in all_entries():
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08(entry[5], entry[6], entry[7], entry[8])
+        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
+            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        )
         if not entry_numbers:
             no_entry_numbers.append(minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19]))
         else:
@@ -216,7 +237,7 @@ def test_report_bools(reports_directory: str):
             ]
         ):
             entries_with_dvd.append(minimal_entry(entry, list(range(0, 31))))
-        if offprint_from_a17_a30(entry[17], entry[30]):
+        if offprint_from_a17_a21_a30(entry[17], entry[21], entry[30]):
             entries_with_offprint.append(minimal_entry(entry, list(range(0, 31))))
     with open(os.path.join(reports_directory, f"entries_with_cd.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
@@ -241,3 +262,213 @@ def test_report_donors(reports_directory: str):
             default_flow_style=False,
             allow_unicode=True,
         )
+
+
+def check_isbn(isbn: str) -> Optional[str]:
+    isbn = isbn.replace("-", "").replace(" ", "").upper()
+    match = re.search(r"^(\d{9})(\d|X)$", isbn)
+    if not match:
+        return f"Invalid isbn format (len {len(isbn)})"
+
+    digits = match.group(1)
+    check_digit = 10 if match.group(2) == "X" else int(match.group(2))
+
+    result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
+    if (result % 11) == check_digit:
+        return None
+    else:
+        return f"Invalid check code {result % 11} != {check_digit}"
+
+
+def check_issn(issn: str) -> Optional[str]:
+    issn = issn.replace("-", "").replace(" ", "").upper()
+    match = re.search(r"^(\d{7})(\d|X)$", issn)
+    if not match:
+        return f"Invalid issn format (len {len(issn)})"
+
+    digits = match.group(1)
+    check_digit = 10 if match.group(2) == "X" else int(match.group(2))
+    result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
+    if (result % 11) == check_digit:
+        return None
+    else:
+        return f"Invalid check code {result % 11} != {check_digit}"
+
+
+def check_ean(ean: str) -> Optional[str]:
+    ean = ean.replace("-", "").replace(" ", "").upper()
+    match = re.search(r"^(\d+)(\d)$", ean)
+    if not match:
+        return f"Invalid ean format"
+    if len(ean) not in (14, 13, 12, 8):
+        return f"Invalid ean format (len {len(ean)})"
+
+    digits = match.group(1)
+    check_digit = match.group(2)
+    result = str((10 - sum((3, 1)[i % 2] * int(n) for i, n in enumerate(reversed(digits)))) % 10)
+    if result == check_digit:
+        return None
+    else:
+        return f"Invalid check code {result} != {check_digit}"
+
+
+def test_report_isbns(reports_directory: str):
+    entries_with_errors: dict[str, dict[str, str | list[Optional[str]] | dict[int, str]]] = dict()
+    for entry in all_entries():
+        result = isbn_from_a17_a18_a19_a22_a30(
+            entry[17],
+            entry[18],
+            entry[19],
+            entry[22],
+            entry[30],
+        )
+        if not result:
+            continue
+        checks = [check_isbn(result), check_issn(result), check_ean(result)]
+        if None in checks:
+            continue
+        else:
+            entries_with_errors[entry[0]] = {
+                "entry": minimal_entry(entry, list(range(0, 31))),
+                "isbn": result,
+                "errors": checks,
+            }
+    with open(
+        os.path.join(reports_directory, f"entries_with_invalid_isbn_issn_ean.yml"), "w", encoding="utf-8"
+    ) as outfile:
+        yaml.dump(entries_with_errors, outfile, default_flow_style=False, allow_unicode=True)
+
+
+def test_report_extracted_fields(reports_directory: str):
+    converted_entries: list[dict[str, Optional[str] | int | bool | list[str] | dict[int, str]]] = []
+    for entry in all_entries():
+        converted_entry: dict[str, Optional[str] | int | bool | list[str] | dict[int, str]] = dict()
+        converted_entry["dbase_number"] = entry[0]
+        converted_entry["author"] = []
+
+        author = author_part_from_a01(entry[1])
+        if author:
+            converted_entry["author"].append(author)
+
+        language = language_from_a01(entry[1])
+        if language:
+            converted_entry["language"] = language
+
+        title = title_from_a02(entry[2])
+        if title:
+            converted_entry["title"] = title
+
+        subtitle = subtitle_from_a03(entry[3])
+        if subtitle:
+            converted_entry["subtitle"] = subtitle
+
+        dewey = dewey_from_a04(entry[4])
+        if dewey:
+            converted_entry["dewey"] = dewey
+
+        converted_entry["entry_numbers"] = entry_numbers_from_a05_a06_a07_a08_a18_a19(
+            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        )
+
+        translator = translator_from_a06(entry[6])
+        if translator:
+            converted_entry["translators"] = translator.split("!!")
+            # for single_translator in translators:
+            #     translator_surname_name = single_translator.split(",", maxsplit=1)
+            #     if len(translator_surname_name) == 2:
+            #         field_values["translator_family_name"].append(translator_surname_name[0])
+            #         if translator_surname_name[1].endswith("."):
+            #             field_values["translator_name_abbreviations"].append(translator_surname_name[1])
+            #         else:
+            #             field_values["translator_names"].append(translator_surname_name[1])
+
+        edition = edition_from_a07(entry[7])
+        if edition:
+            converted_entry["edition"] = edition
+
+        editor = editor_from_a08_a09(entry[8], entry[9])
+        if editor:
+            converted_entry["editor"] = f"{editor[0]} // {editor[1]}"
+
+        edition_year = edition_year_from_a09_a10(entry[9], entry[10])
+        if edition_year:
+            converted_entry["edition_year"] = edition_year
+
+        pages = pages_from_a11(entry[11])
+        if pages:
+            converted_entry["pages"] = pages
+
+        topic_list = topics_from_a12_to_a15_a20_a22_to_a24(
+            [
+                entry[12],
+                entry[13],
+                entry[14],
+                entry[15],
+                entry[20],
+                entry[22],
+                entry[23],
+                entry[24],
+            ]
+        )
+        converted_entry["topics"] = topic_list
+
+        curator = curator_from_a16(entry[16])
+        if curator:
+            converted_entry["curator"] = curator
+
+        copies = copies_from_a17_a18_a30(entry[17], entry[18], entry[30])
+        if copies:
+            converted_entry["copies"] = copies
+
+        donation = donation_from_a17_a30(entry[17], entry[30])
+        if donation:
+            converted_entry["donors"] = donation.split("!!")
+
+        volume = volume_from_a17_a18_a20_a30(entry[17], entry[18], entry[20], entry[30])
+        if volume:
+            converted_entry["volume"] = volume
+
+        material = material_from_a18_a30(entry[18], entry[30])
+        if material:
+            converted_entry["material"] = material
+
+        notes = notes_from_a17_a18_a21_a30(entry[17], entry[18], entry[21], entry[30])
+        if notes:
+            converted_entry["notes"] = notes
+
+        converted_entry["has_cd"] = has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
+            [
+                entry[2],
+                entry[3],
+                entry[12],
+                entry[13],
+                entry[14],
+                entry[17],
+                entry[18],
+                entry[22],
+                entry[30],
+            ]
+        )
+
+        converted_entry["has_dvd"] = has_dvd_from_a30(
+            [
+                entry[30],
+            ]
+        )
+
+        converted_entry["offprint"] = offprint_from_a17_a21_a30(entry[17], entry[21], entry[30])
+
+        isbn = isbn_from_a17_a18_a19_a22_a30(entry[17], entry[18], entry[19], entry[22], entry[30])
+        if isbn:
+            if not check_isbn(isbn):
+                converted_entry["isbn"] = isbn
+            if not check_issn(isbn):
+                converted_entry["issn"] = isbn
+            if not check_ean(isbn):
+                converted_entry["ean"] = isbn
+
+        converted_entry["original_entry"] = entry
+        converted_entries.append(converted_entry)
+
+    with open(os.path.join(reports_directory, f"converted_entries.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(converted_entries, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)

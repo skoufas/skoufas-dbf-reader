@@ -1,31 +1,8 @@
 """ Functions that extract information given specific strings """
-import re
 from collections import OrderedDict
-from functools import cache
 from typing import Optional
 
-from skoufas_dbf_reader.correction_data import (
-    dewey_re1,
-    dewey_re2,
-    field04_corrections,
-    field06_corrections,
-    field07_corrections,
-    field08_corrections,
-    field09_corrections,
-    field10_corrections,
-    field11_corrections,
-    field16_corrections,
-    field17_corrections,
-    field30_corrections,
-    has_author,
-    has_cd_re,
-    has_dvd_re,
-    language_codes,
-    topic_in_paren_re,
-    topic_replacements,
-    translator_corrections,
-    valid_pages_re,
-)
+from skoufas_dbf_reader.correction_data import *
 from skoufas_dbf_reader.utilities import none_if_empty_or_stripped
 
 
@@ -110,13 +87,19 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     return None
 
 
-def entry_numbers_from_a05_a06_a07_a08(
-    a05: Optional[str], a06: Optional[str], a07: Optional[str], a08: Optional[str]
+def entry_numbers_from_a05_a06_a07_a08_a18_a19(
+    a05: Optional[str],
+    a06: Optional[str],
+    a07: Optional[str],
+    a08: Optional[str],
+    a18: Optional[str],
+    a19: Optional[str],
 ) -> list[str]:
     """Cleanup, read additional numbers from a06"""
     value5 = none_if_empty_or_stripped(a05)
     if not value5:
         value5 = ""
+
     value6 = none_if_empty_or_stripped(a06)
     if value6:
         if value6 in field06_corrections():
@@ -172,7 +155,43 @@ def entry_numbers_from_a05_a06_a07_a08(
     else:
         value8 = ""
 
-    value = value5 + value6 + value7 + value8
+    value18 = none_if_empty_or_stripped(a18)
+    if value18:
+        if value18 in field18_corrections():
+            correction = field18_corrections()[value18]
+            if correction is None:
+                value18 = ""
+            elif isinstance(correction, dict):
+                value18 = dict(correction).get("series", "")
+                if not isinstance(value18, str):
+                    raise Exception(f"Invalid correction for field A18 [{a18}]")
+                value18 = "-" + value18
+            else:
+                value18 = ""
+        else:
+            value18 = ""
+    else:
+        value18 = ""
+
+    value19 = none_if_empty_or_stripped(a19)
+    if value19:
+        if value19 in field19_corrections():
+            correction = field19_corrections()[value19]
+            if correction is None:
+                value19 = ""
+            elif isinstance(correction, dict):
+                value19 = dict(correction).get("series", "")
+                if not isinstance(value19, str):
+                    raise Exception(f"Invalid correction for field A19 [{a19}]")
+                value19 = "-" + value19
+            else:
+                value19 = ""
+        else:
+            value19 = ""
+    else:
+        value19 = ""
+
+    value = value5 + value6 + value7 + value8 + value18 + value19
     entries = [v.strip() for v in value.split("-") if v.strip()]
     return entries
 
@@ -335,7 +354,7 @@ def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
     return False
 
 
-def copies_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[int]:
+def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optional[str]) -> Optional[int]:
     """Use corrections to look for number of copies"""
     a17 = none_if_empty_or_stripped(a17)
     if a17:
@@ -347,6 +366,16 @@ def copies_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[int]
                     return copies
                 else:
                     raise Exception(f"Invalid correction for A17 [{a17}]")
+    a18 = none_if_empty_or_stripped(a18)
+    if a18:
+        correction = field18_corrections().get(a18)
+        if correction and isinstance(correction, dict):
+            copies = correction.get("copies")
+            if copies:
+                if isinstance(copies, int):
+                    return copies
+                else:
+                    raise Exception(f"Invalid correction for A17 [{a18}]")
     a30 = none_if_empty_or_stripped(a30)
     if a30:
         correction = field30_corrections().get(a30)
@@ -385,7 +414,7 @@ def donation_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[st
     return None
 
 
-def offprint_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> bool:
+def offprint_from_a17_a21_a30(a17: Optional[str], a21: Optional[str], a30: Optional[str]) -> bool:
     """Use corrections to look for offprint or the word ΑΝΑΤΥΠΟ"""
     a17 = none_if_empty_or_stripped(a17)
     if a17:
@@ -399,6 +428,8 @@ def offprint_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> bool:
                     raise Exception(f"Invalid correction for A17 [{a17}]")
         if "ΑΝΑΤΥΠΟ" in a17:
             return True
+    if a21 and "ΑΝΑΤΥΠΟ" in a21:
+        return True
     a30 = none_if_empty_or_stripped(a30)
     if a30:
         correction = field30_corrections().get(a30)
@@ -409,13 +440,205 @@ def offprint_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> bool:
                     return offprint
                 else:
                     raise Exception(f"Invalid correction for A30 [{a30}]")
-        if "ΑΝΑΤΥΠΟ" in a30:
+        elif "ΑΝΑΤΥΠΟ" in a30:
             return True
     return False
 
 
-# def notes_from_a17_a21_a30()
-# def offprint_from_a17_a30()
-# def volume_from_a17_a18_a20_a30()
-# def material_from_a18_xxx_a30()
-# def isbn_from_a17_a18_a19_a30()
+def volume_from_a17_a18_a20_a30(
+    a17: Optional[str], a18: Optional[str], a20: Optional[str], a30: Optional[str]
+) -> Optional[str]:
+    """Use corrections to look for volume"""
+
+    def read_from_single_field(
+        field_name: str,
+        value: Optional[str],
+        corrections: dict[str, str | dict[str, str | bool | int] | None],
+        current_result: str,
+    ) -> str:
+        value = none_if_empty_or_stripped(value)
+        if value:
+            correction = corrections.get(value)
+            if correction and isinstance(correction, dict):
+                result = correction.get("volume")
+                if result:
+                    if isinstance(result, str):
+                        if current_result:
+                            return current_result + "\n" + result
+                        else:
+                            return result
+                    else:
+                        raise Exception(f"Invalid correction for {field_name} [{value}]")
+        return current_result
+
+    result = read_from_single_field("A17", a17, field17_corrections(), "")
+    result = read_from_single_field("A18", a18, field18_corrections(), result)
+    result = read_from_single_field("A20", a20, field20_corrections(), result)
+    result = read_from_single_field("A30", a30, field30_corrections(), result)
+    return none_if_empty_or_stripped(result)
+
+
+def material_from_a18_a30(a18: Optional[str], a30: Optional[str]) -> Optional[str]:
+    """Use corrections to look for volume"""
+
+    def read_from_single_field(
+        field_name: str,
+        value: Optional[str],
+        corrections: dict[str, str | dict[str, str | bool | int] | None],
+        current_result: str,
+    ) -> str:
+        value = none_if_empty_or_stripped(value)
+        if value:
+            correction = corrections.get(value)
+            if correction and isinstance(correction, dict):
+                result = correction.get("material")
+                if result:
+                    if isinstance(result, str):
+                        if current_result:
+                            return current_result + "\n" + result
+                        else:
+                            return result
+                    else:
+                        raise Exception(f"Invalid correction for {field_name} [{value}]")
+        return current_result
+
+    result = read_from_single_field("A18", a18, field18_corrections(), "")
+    result = read_from_single_field("A30", a30, field30_corrections(), result)
+    return none_if_empty_or_stripped(result)
+
+
+def notes_from_a17_a18_a21_a30(
+    a17: Optional[str], a18: Optional[str], a21: Optional[str], a30: Optional[str]
+) -> Optional[str]:
+    """Read from all three fields, apply corrections"""
+
+    def read_from_single_field(
+        field_name: str,
+        value: Optional[str],
+        corrections: dict[str, str | dict[str, str | bool | int] | None],
+        current_result: str,
+    ) -> str:
+        result = None
+        value = none_if_empty_or_stripped(value)
+        if not value:
+            result = None
+        elif value in corrections:
+            correction = corrections.get(value)
+            if correction:
+                if isinstance(correction, dict):
+                    notes_in_dict = correction.get("notes")
+                    if not notes_in_dict:
+                        result = None
+                    elif isinstance(notes_in_dict, str):
+                        result = notes_in_dict
+                    else:
+                        raise Exception(f"Invalid correction for {field_name} [{value}]")
+                if isinstance(correction, str):
+                    result = correction
+            else:
+                result = None
+        else:
+            result = value
+
+        if result:
+            if current_result:
+                return current_result + "\n" + result
+            else:
+                return result
+        else:
+            return current_result
+
+    result = read_from_single_field("A17", a17, field17_corrections(), "")
+
+    a18 = none_if_empty_or_stripped(a18)
+    if a18 and a18 in field18_corrections():
+        correction = field18_corrections().get(a18)
+        if correction:
+            if isinstance(correction, dict):
+                notes_in_dict = correction.get("notes")
+                if notes_in_dict and isinstance(notes_in_dict, str):
+                    if result:
+                        result += "\n" + notes_in_dict
+                    else:
+                        result = notes_in_dict
+
+    result = read_from_single_field("A21", a21, {}, result)
+    result = read_from_single_field("A30", a30, field30_corrections(), result)
+
+    return none_if_empty_or_stripped(result)
+
+
+def isbn_from_a17_a18_a19_a22_a30(
+    a17in: Optional[str], a18in: Optional[str], a19in: Optional[str], a22in: Optional[str], a30in: Optional[str]
+) -> Optional[str]:
+    """Cleanup"""
+
+    # Only use corrections from a17
+    a17 = none_if_empty_or_stripped(a17in)
+    if not a17:
+        a17 = ""
+    if a17 in field17_corrections():
+        correction = field17_corrections()[a17]
+
+        if correction:
+            if isinstance(correction, dict):
+                if "isbn" in correction:
+                    if correction and isinstance(correction["isbn"], str):
+                        a17 = correction["isbn"]
+                    else:
+                        a17 = ""
+                else:
+                    a17 = ""
+            else:
+                a17 = ""
+        else:
+            a17 = ""
+    else:
+        a17 = ""
+
+    # Use a18 unless there's a correction
+    a18 = none_if_empty_or_stripped(a18in)
+    if a18:
+        if a18 in field18_corrections():
+            a18 = ""
+    else:
+        a18 = ""
+
+    a19 = none_if_empty_or_stripped(a19in)
+    if a19:
+        if a19 in field19_corrections():
+            a19 = ""
+    else:
+        a19 = ""
+
+    a22 = none_if_empty_or_stripped(a22in)
+    if not a22:
+        a22 = ""
+    if not a22_has_isbn_part_re.fullmatch(a22):
+        a22 = ""
+
+    # Only use corrections from a30
+    a30 = none_if_empty_or_stripped(a30in)
+    if not a30:
+        a30 = ""
+    if a30 in field30_corrections():
+        correction = field30_corrections()[a30]
+        if correction:
+            if isinstance(correction, dict):
+                if "isbn" in correction:
+                    if correction and isinstance(correction["isbn"], str):
+                        a30 = correction["isbn"]
+                    else:
+                        a30 = ""
+                else:
+                    a30 = ""
+            else:
+                a30 = ""
+        else:
+            a30 = ""
+    else:
+        a30 = ""
+
+    result = (a17 + a18 + a19 + a22 + a30).replace(" ", "").replace(".", "")
+    result = none_if_empty_or_stripped(result)
+    return result

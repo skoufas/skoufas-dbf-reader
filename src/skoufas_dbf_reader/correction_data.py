@@ -82,6 +82,24 @@ def field17_corrections() -> dict[str, Optional[str | dict[str, str | bool | int
 
 
 @cache
+def field18_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+    """Map of manual overrides"""
+    return read_yaml_data("field18_corrections")
+
+
+@cache
+def field19_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+    """Map of manual overrides"""
+    return read_yaml_data("field19_corrections")
+
+
+@cache
+def field20_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+    """Map of manual overrides"""
+    return read_yaml_data("field20_corrections")
+
+
+@cache
 def field30_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
     """Map of manual overrides"""
     return read_yaml_data("field30_corrections")
@@ -117,3 +135,5 @@ topic_in_paren_re = re.compile(r".*?\((.*)\).*")
 has_cd_re = re.compile(r"\bCD\b", re.IGNORECASE)
 
 has_dvd_re = re.compile(r"\bDVD\b", re.IGNORECASE)
+
+a22_has_isbn_part_re = re.compile(r"[0-9\-]+")

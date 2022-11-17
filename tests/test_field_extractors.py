@@ -104,34 +104,52 @@ def test_dewey_from_a04():
     assert dewey_from_a04("HOEMANN") is None
 
 
-def test_entry_numbers_from_a05_a06_a07_a08():
-    assert entry_numbers_from_a05_a06_a07_a08(None, None, None, None) == []
-    assert entry_numbers_from_a05_a06_a07_a08("", "", "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08(" ", None, "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08(None, "", "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", None, None, None) == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "foobar", "baz", "yum") == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "-", "baz", "yum") == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "-10450", "baz", "yum") == ["2710", "2709", "10450"]
-    assert entry_numbers_from_a05_a06_a07_a08("2710-2709", "1747-1746-1745-", "baz", "yum") == [
+def test_entry_numbers_from_a05_a06_a07_a08_a18_a19_a18_a19():
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(None, None, None, None, None, None) == []
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("", "", "", "", "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(" ", None, "", "", "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(None, "", "", "", "", "") == []
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", None, None, None, None, None) == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "foobar", "baz", "yum", "foo", "bar") == [
+        "2710",
+        "2709",
+    ]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "-", "baz", "yum", "lol", "lal") == ["2710", "2709"]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "-10450", "baz", "yum", "ooo", "0980980") == [
+        "2710",
+        "2709",
+        "10450",
+    ]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
+        "2710-2709", "1747-1746-1745-", "baz", "yum", "34", "1414241"
+    ) == [
         "2710",
         "2709",
         "1747",
         "1746",
         "1745",
     ]
-    assert entry_numbers_from_a05_a06_a07_a08("10-1", "4", "baz", "yum") == ["10", "14"]
-    assert entry_numbers_from_a05_a06_a07_a08("10-1", "5", "baz", "yum") == ["10", "15"]
-    assert entry_numbers_from_a05_a06_a07_a08("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ", "baz", "yum") == ["10", "1448"]
-    assert entry_numbers_from_a05_a06_a07_a08(
-        "4225-4226-4228-4229-", "4227-4290-4536-4535-", "4537", "ΕΥΡΩΠΑΙΚ.ΚΕΝΤΡ.ΤΕΧΝΗ"
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "4", "baz", "yum", "34", "1414241") == ["10", "14"]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "5", "baz", "yum", "34", "1414241") == ["10", "15"]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ", "baz", "yum", "34", "1414241") == [
+        "10",
+        "1448",
+    ]
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
+        "4225-4226-4228-4229-", "4227-4290-4536-4535-", "4537", "ΕΥΡΩΠΑΙΚ.ΚΕΝΤΡ.ΤΕΧΝΗ", "34", "1414241"
     ) == ["4225", "4226", "4228", "4229", "4227", "4290", "4536", "4535", "4537"]
-    assert entry_numbers_from_a05_a06_a07_a08(
-        "5280-5285-5286-5283-",
-        "5284-5278-5277-5279-",
-        "5281-",
-        "5282-6548-6547",
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
+        "5280-5285-5286-5283-", "5284-5278-5277-5279-", "5281-", "5282-6548-6547", "asasa", "1414241"
     ) == "5280-5285-5286-5283-5284-5278-5277-5279-5281-5282-6548-6547".split("-")
+
+    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
+        "1938-1937-1936-1935-",
+        "1933-1870-1869-1866-",
+        "1932",
+        "ΣΑΚΕΛΛΑΡΙΟΥ",
+        "1931-1867-",
+        "1868-1934",
+    ) == "1938-1937-1936-1935-1933-1870-1869-1866-1932-1931-1867-1868-1934".split("-")
 
 
 def test_translator_from_a06():
@@ -247,12 +265,13 @@ def test_has_dvd_from_a30():
     assert has_dvd_from_a30(["", "ΠΕΡΙΕΧΕΟ DVD"])
 
 
-def test_copies_from_a17_a30():
-    assert copies_from_a17_a30(None, None) is None
-    assert copies_from_a17_a30("weewv", "ecwecwc") is None
-    assert copies_from_a17_a30("ΑΝΤΙΤΥΠΑ 2", None) == 2
-    assert copies_from_a17_a30(None, "5 ΑΝΤΙΤΥΠΑ") == 5
-    assert copies_from_a17_a30(None, "ΑΝΑΤΥΠΟ") is None
+def test_copies_from_a17_a18_a30():
+    assert copies_from_a17_a18_a30(None, None, None) is None
+    assert copies_from_a17_a18_a30("weewv", "ecwecwc", "woo") is None
+    assert copies_from_a17_a18_a30("ΑΝΤΙΤΥΠΑ 2", None, None) == 2
+    assert copies_from_a17_a18_a30(None, None, "5 ΑΝΤΙΤΥΠΑ") == 5
+    assert copies_from_a17_a18_a30(None, "2ΑΝΤΙΤΥΠΑ", "qefqef") == 2
+    assert copies_from_a17_a18_a30(None, None, "ΑΝΑΤΥΠΟ") is None
 
 
 def test_donation_from_a17_a30():
@@ -264,8 +283,99 @@ def test_donation_from_a17_a30():
 
 
 def test_offprint_from_a17_a30():
-    assert not offprint_from_a17_a30(None, None)
-    assert not offprint_from_a17_a30("", "")
-    assert not offprint_from_a17_a30("weewv", "ecwecwc")
-    assert offprint_from_a17_a30("weewv", "ΑΝΑΤΥΠΟ")
-    assert offprint_from_a17_a30("ΑΝΑΤΥΠΟ", "foo")
+    assert not offprint_from_a17_a21_a30(None, None, None)
+    assert not offprint_from_a17_a21_a30("", "", "")
+    assert not offprint_from_a17_a21_a30("weewv", "foo", "ecwecwc")
+    assert offprint_from_a17_a21_a30("weewv", "", "ΑΝΑΤΥΠΟ")
+    assert offprint_from_a17_a21_a30("ΑΝΑΤΥΠΟ", "foo", "")
+    assert offprint_from_a17_a21_a30(" wfe", "ΑΝΑΤΥΠΟ", "foo")
+
+
+def test_volume_from_a17_a18_a20_a30():
+    assert volume_from_a17_a18_a20_a30(None, None, None, None) is None
+    assert volume_from_a17_a18_a20_a30("", "", "", "") is None
+    assert volume_from_a17_a18_a20_a30("wffw", "wef", "wef", "wef") is None
+    assert volume_from_a17_a18_a20_a30("", "ΤΕΥΧΗ 10", "", "") == "ΤΕΥΧΗ 10"
+
+
+def test_material_from_a18_a30():
+    assert material_from_a18_a30(None, None) is None
+    assert material_from_a18_a30("", "") is None
+    assert material_from_a18_a30("aaa", "aa") is None
+    assert material_from_a18_a30("ΧΑΡΤ", "") == "ΧΑΡΤΕΣ"
+    assert material_from_a18_a30("fwfwe", "ΠΕΡΙΕΧΕΙ 12 ΧΑΡΤΕΣ") == "12 ΧΑΡΤΕΣ"
+
+
+def test_notes_from_a17_a18_a21_a30():
+    assert notes_from_a17_a18_a21_a30(None, None, None, None) is None
+    assert notes_from_a17_a18_a21_a30("", "", "", "") is None
+    assert notes_from_a17_a18_a21_a30("  ", None, "", "") is None
+    assert (
+        notes_from_a17_a18_a21_a30(
+            "foo",
+            "ignored",
+            "bar",
+            "baz",
+        )
+        == "foo\nbar\nbaz"
+    )
+    assert (
+        notes_from_a17_a18_a21_a30(
+            "2607-2 ΑΝΤΙΤΥΠΑ",
+            "ignored",
+            "bar",
+            "baz",
+        )
+        == "2607\nbar\nbaz"
+    )
+    assert (
+        notes_from_a17_a18_a21_a30("foo", "ignored", "", "2 ΑΝΤΙΤΥΠΑ ΤΟ ΕΝΑ ΞΕΝΟΓΛΩΣΣΟ")
+        == "foo\n2 ΑΝΤΙΤΥΠΑ ΤΟ ΕΝΑ ΞΕΝΟΓΛΩΣΣΟ"
+    )
+    assert (
+        notes_from_a17_a18_a21_a30("foo", "0518-2867", "", "2 ΑΝΤΙΤΥΠΑ ΤΟ ΕΝΑ ΞΕΝΟΓΛΩΣΣΟ")
+        == "foo\n0518-2867\n2 ΑΝΤΙΤΥΠΑ ΤΟ ΕΝΑ ΞΕΝΟΓΛΩΣΣΟ"
+    )
+
+
+def test_isbn_from_a17_a18_a19__a22_a30():
+    assert isbn_from_a17_a18_a19_a22_a30(None, None, None, None, None) is None
+    assert isbn_from_a17_a18_a19_a22_a30("", "", "", "", "") is None
+    assert isbn_from_a17_a18_a19_a22_a30(" ", " ", " ", " ", " ") is None
+    assert isbn_from_a17_a18_a19_a22_a30("", None, " ", None, "") is None
+    assert isbn_from_a17_a18_a19_a22_a30(" 16 ΤΟΜΟΙ", "9789605039", "332", "foo", None) == "9789605039332"
+    assert isbn_from_a17_a18_a19_a22_a30("bla", None, None, "blu", "bla") is None
+    assert isbn_from_a17_a18_a19_a22_a30("12 TOMOI", "8440909306", None, None, "ΔΩΡΕΑ Ι.ΠΝΕΥΜΑΤΙΚΟΥ") == "8440909306"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "960-05-034", "3-5", None, None) == "960-05-0343-5"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "960-70-25-", "64-4", None, None) == "960-70-25-64-4"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "978-455-44", "3-0", None, None) == "978-455-443-0"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "978-8778-1", "670-40", None, None) == "978-8778-1670-40"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "978-960-20", "8-813-5", None, None) == "978-960-208-813-5"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΑΝΤΙΤΥΠΑ", "9789603031", "574", None, None) == "9789603031574"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΤΟΜΟΙ", "960-14-005", "6-7", None, None) == "960-14-0056-7"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΤΟΜΟΙ", "960-14-012", "7-Χ", None, None) == "960-14-0127-Χ"
+    assert isbn_from_a17_a18_a19_a22_a30("2 ΤΟΜΟΙ", "960239269Χ", None, None, None) == "960239269Χ"
+    assert isbn_from_a17_a18_a19_a22_a30("4 ΤΕΥΧΗ", "17927099", None, None, "ΔΩΡΕΑ ΟΛΓΑ ΜΑΝΟΥ") == "17927099"
+    assert isbn_from_a17_a18_a19_a22_a30("960-2565-440-7", None, None, None, None) == "960-2565-440-7"
+    assert isbn_from_a17_a18_a19_a22_a30("9786180123951", None, None, None, None) == "9786180123951"
+    assert isbn_from_a17_a18_a19_a22_a30("9789601419985", None, None, None, None) == "9789601419985"
+    assert isbn_from_a17_a18_a19_a22_a30("9789605273941", None, None, None, None) == "9789605273941"
+    assert isbn_from_a17_a18_a19_a22_a30("9789606051456", None, None, None, None) == "9789606051456"
+    assert (
+        isbn_from_a17_a18_a19_a22_a30(
+            "ΔΩΡΕΑ ΚΩΝ/ΝΟΥ ΤΣΙΛΙΓΙΑΝΝΗ",
+            "960-6601-6",
+            "8-4",
+            "",
+            "                                                      960-6601-68",
+        )
+        == "960-6601-68-4"
+    )
+    assert isbn_from_a17_a18_a19_a22_a30("ΔΩΡΕΑ ΓΙΑΝΝΗ ΜΠΑΝΙΑ", None, None, None, "960-88458-3-1") == "960-88458-3-1"
+    assert (
+        isbn_from_a17_a18_a19_a22_a30("ΔΩΡΕΑ ΔΗΜΗΤΡΙΟΥ ΠΟΡΤΟΑΒΑΡΑ", None, None, None, "978-960-503-483-2")
+        == "978-960-503-483-2"
+    )
+
+    # assert isbn_from_a17_a18_a19_a22_a30("foo", None, "7027-05-1", "5-6", None) is None
+    assert isbn_from_a17_a18_a19_a22_a30("foo", None, "7027-05-1", "5-6", None) == "7027-05-15-6"
