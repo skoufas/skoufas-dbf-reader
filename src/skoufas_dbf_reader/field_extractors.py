@@ -147,8 +147,7 @@ def entry_numbers_from_a05_a06_a07_a08_a18_a19(
                 value8 = ""
             else:
                 value8 = dict(correction).get("series", "")
-                if not isinstance(value8, str):
-                    raise Exception(f"Invalid correction for field A08 [{a08}]")
+                assert isinstance(value8, str), f"Invalid correction for field A08 [{a08}]"
                 value8 = "-" + value8
         else:
             value8 = ""
@@ -181,8 +180,7 @@ def entry_numbers_from_a05_a06_a07_a08_a18_a19(
                 value19 = ""
             elif isinstance(correction, dict):
                 value19 = dict(correction).get("series", "")
-                if not isinstance(value19, str):
-                    raise Exception(f"Invalid correction for field A19 [{a19}]")
+                assert isinstance(value19, str), f"Invalid correction for field A19 [{a19}]"
                 value19 = "-" + value19
             else:
                 value19 = ""
