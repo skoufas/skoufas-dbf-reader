@@ -220,6 +220,72 @@ def report_invalid_dewey(reports_directory: str):
         outfile.write(str(doc))
 
 
+def report_translators(reports_directory: str):
+    os.makedirs(os.path.join(reports_directory, "checks"), exist_ok=True)
+    weird_translators: list[str] = []
+    valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
+    for entry in all_entries():
+        translator = translator_from_a06(entry[6])
+        if translator:
+            translators = translator.split("!!")
+            for translator in translators:
+                if not valid_translator_re.fullmatch(translator):
+                    weird_translators.append(translator)
+    with open(os.path.join(reports_directory, "checks", "invalid_translators.md"), "w", encoding="utf-8") as outfile:
+        doc = Document("Μεταφραστές με παράξενα ονόματα")
+        doc.add_header("Μεταφραστές με παράξενα ονόματα")
+        doc.add_unordered_list(sorted(weird_translators))
+        outfile.write(str(doc))
+
+
+def report_donors(reports_directory: str):
+    os.makedirs(os.path.join(reports_directory, "checks"), exist_ok=True)
+    count_map: defaultdict[str, int] = defaultdict(int)
+    for entry in all_entries():
+        donors = donation_from_a17_a30(entry[17], entry[30])
+        if donors:
+            for donor in donors.split("!!"):
+                count_map[donor] = count_map[donor] + 1
+    donor_count_list: list[list[str]] = []
+    for donor, count in sorted(count_map.items(), reverse=True, key=lambda x: x[1]):
+        donor_count_list.append([donor, str(count)])
+
+    with open(os.path.join(reports_directory, "checks", "donors.md"), "w", encoding="utf-8") as outfile:
+        doc = Document("Δωρητές")
+        doc.add_header("Δωρητές")
+        doc.add_table(["Δωρητής", "Αριθμός βιβλίων"], donor_count_list)
+        outfile.write(str(doc))
+
+
+def report_isbns(reports_directory: str):
+    doc = Document("Προβληματικά ISBN")
+    doc.add_header("Προβληματικά ISBN")
+    doc.add_table_of_contents()
+
+    for entry in all_entries():
+        result = isbn_from_a17_a18_a19_a22_a30(
+            entry[17],
+            entry[18],
+            entry[19],
+            entry[22],
+            entry[30],
+        )
+        if not result:
+            continue
+        checks = [check_isbn(result), check_issn(result), check_ean(result)]
+        if None in checks:
+            continue
+
+        doc.add_header(result, level=2)
+        doc.add_unordered_list([check for check in checks if check])
+
+        doc.add_header("Αρχική Καρτέλα στο DBASE", level=3)
+        doc.add_code(code=entry_as_yaml(entry, minimal=True), lang="yaml")
+
+    with open(os.path.join(reports_directory, "checks", "invalid_isbn.md"), "w", encoding="utf-8") as outfile:
+        outfile.write(str(doc))
+
+
 def report_entry_numbers(reports_directory: str):
     all_entry_numbers: dict[str, dict[int, str]] = dict()
 
@@ -237,7 +303,7 @@ def report_entry_numbers(reports_directory: str):
         )
         if not entry_numbers:
             no_entry_numbers.add_horizontal_rule()
-            no_entry_numbers.add_code(entry_as_yaml(entry), lang="yaml")
+            no_entry_numbers.add_code(entry_as_yaml(entry, minimal=True), lang="yaml")
         else:
             for n in entry_numbers:
                 if n in all_entry_numbers:
@@ -249,7 +315,7 @@ def report_entry_numbers(reports_directory: str):
                 if not n.isnumeric():
                     non_numeric.add_horizontal_rule()
                     non_numeric.add_paragraph(n)
-                    non_numeric.add_code(entry_as_yaml(entry), lang="yaml")
+                    non_numeric.add_code(entry_as_yaml(entry, minimal=True), lang="yaml")
 
     os.makedirs(os.path.join(reports_directory, "checks"), exist_ok=True)
     with open(os.path.join(reports_directory, "checks", "no_entry_numbers.md"), "w", encoding="utf-8") as outfile:
@@ -268,13 +334,17 @@ def report_entry_numbers(reports_directory: str):
             dup.add_horizontal_rule()
             dup.add_paragraph(entry_number)
             for entry in entries:
-                dup.add_code(entry_as_yaml(entry), lang="yaml")
+                dup.add_code(entry_as_yaml(entry, minimal=True), lang="yaml")
         outfile.write(str(dup))
 
 
-def entry_as_yaml(entry: dict[int, str]) -> str:
+def entry_as_yaml(entry: dict[int, str], minimal: bool) -> str:
     """return an entry for a code section"""
-    return yaml.dump(entry, default_flow_style=False, allow_unicode=True)
+    if minimal:
+        minimal_entry = {k: v for k, v in entry.items() if v}
+        return yaml.dump(minimal_entry, default_flow_style=False, allow_unicode=True)
+    else:
+        return yaml.dump(entry, default_flow_style=False, allow_unicode=True)
 
 
 def report_entries(reports_directory: str):
@@ -411,7 +481,7 @@ def report_entries(reports_directory: str):
         doc.add_element(MDCheckList(["Ανάτυπο"], checked=offprint_from_a17_a21_a30(entry[17], entry[21], entry[30])))
 
         doc.add_header("Αρχική Καρτέλα στο DBASE", level=1)
-        doc.add_code(code=entry_as_yaml(entry), lang="yaml")
+        doc.add_code(code=entry_as_yaml(entry, minimal=False), lang="yaml")
 
         title = title_from_a02(entry[2])
         if not title:
@@ -512,6 +582,11 @@ def add_index(reports_directory: str):
         InlineText("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής", url="./checks/non_numeric_entry_numbers.html").render()
     )
     doc.add_paragraph(InlineText("Dewey με προβληματικές τιμές", url="./checks/invalid_dewey.html").render())
+    doc.add_paragraph(InlineText("Μεταφραστές με παράξενα ονόματα", url="./checks/invalid_translators.html").render())
+    doc.add_paragraph(InlineText("Προβληματικά ISBN", url="./checks/invalid_isbn.html").render())
+
+    doc.add_paragraph(InlineText("Δωρητές", url="./checks/donors.html").render())
+
     with open(os.path.join(reports_directory, "index.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(doc))
 
@@ -525,6 +600,9 @@ def main():
     print(f"Creating reports in {md_report_dir}")
     shutil.rmtree(md_report_dir, ignore_errors=True)
     add_index(md_report_dir)
+    report_translators(md_report_dir)
+    report_donors(md_report_dir)
+    report_isbns(md_report_dir)
     report_entry_numbers(md_report_dir)
     report_entries(md_report_dir)
     report_single_fields(md_report_dir)
@@ -535,96 +613,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# def report_translators(reports_directory: str):
-#     weird_translators: list[str] = []
-#     valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
-#     for entry in all_entries():
-#         translator = translator_from_a06(entry[6])
-#         if translator:
-#             translators = translator.split("!!")
-#             for translator in translators:
-#                 if not valid_translator_re.fullmatch(translator):
-#                     weird_translators.append(translator)
-#     with open(os.path.join(reports_directory, f"weird_translators.yml"), "w", encoding="utf-8") as outfile:
-#         yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
-
-
-# def test_report_bools(reports_directory: str):
-#     entries_with_cd: list[dict[int, str]] = list()
-#     entries_with_dvd: list[dict[int, str]] = list()
-#     entries_with_offprint: list[dict[int, str]] = list()
-#     for entry in all_entries():
-#         if has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
-#             [
-#                 entry[2],
-#                 entry[3],
-#                 entry[12],
-#                 entry[13],
-#                 entry[14],
-#                 entry[17],
-#                 entry[18],
-#                 entry[22],
-#                 entry[30],
-#             ]
-#         ):
-#             entries_with_cd.append(minimal_entry(entry, list(range(0, 31))))
-#         if has_dvd_from_a30(
-#             [
-#                 entry[30],
-#             ]
-#         ):
-#             entries_with_dvd.append(minimal_entry(entry, list(range(0, 31))))
-#         if offprint_from_a17_a21_a30(entry[17], entry[21], entry[30]):
-#             entries_with_offprint.append(minimal_entry(entry, list(range(0, 31))))
-#     with open(os.path.join(reports_directory, f"entries_with_cd.yml"), "w", encoding="utf-8") as outfile:
-#         yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
-#     with open(os.path.join(reports_directory, f"entries_with_dvd.yml"), "w", encoding="utf-8") as outfile:
-#         yaml.dump(entries_with_dvd, outfile, default_flow_style=False, allow_unicode=True)
-#     with open(os.path.join(reports_directory, f"entries_with_offprint.yml"), "w", encoding="utf-8") as outfile:
-#         yaml.dump(entries_with_offprint, outfile, default_flow_style=False, allow_unicode=True)
-
-
-# def test_report_donors(reports_directory: str):
-#     count_map: defaultdict[str, int] = defaultdict(int)
-#     for entry in all_entries():
-#         donors = donation_from_a17_a30(entry[17], entry[30])
-#         if donors:
-#             for donor in donors.split("!!"):
-#                 count_map[donor] = count_map[donor] + 1
-
-#     with open(os.path.join(reports_directory, f"donors_count.yml"), "w", encoding="utf-8") as outfile:
-#         yaml.dump(
-#             dict(sorted(count_map.items(), key=lambda x: x[1], reverse=True)),
-#             outfile,
-#             default_flow_style=False,
-#             allow_unicode=True,
-#         )
-
-
-# def test_report_isbns(reports_directory: str):
-#     entries_with_errors: dict[str, dict[str, str | list[Optional[str]] | dict[int, str]]] = dict()
-#     for entry in all_entries():
-#         result = isbn_from_a17_a18_a19_a22_a30(
-#             entry[17],
-#             entry[18],
-#             entry[19],
-#             entry[22],
-#             entry[30],
-#         )
-#         if not result:
-#             continue
-#         checks = [check_isbn(result), check_issn(result), check_ean(result)]
-#         if None in checks:
-#             continue
-#         else:
-#             entries_with_errors[entry[0]] = {
-#                 "entry": minimal_entry(entry, list(range(0, 31))),
-#                 "isbn": result,
-#                 "errors": checks,
-#             }
-#     with open(
-#         os.path.join(reports_directory, f"entries_with_invalid_isbn_issn_ean.yml"), "w", encoding="utf-8"
-#     ) as outfile:
-#         yaml.dump(entries_with_errors, outfile, default_flow_style=False, allow_unicode=True)
