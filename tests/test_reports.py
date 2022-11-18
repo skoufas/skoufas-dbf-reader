@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import os
+from collections import defaultdict
+
 import pytest
 import yaml
-from skoufas_dbf_reader.utilities import all_entries, romanize
+
 from skoufas_dbf_reader.field_extractors import *
-from collections import defaultdict
+from skoufas_dbf_reader.utilities import all_entries, check_ean, check_isbn, check_issn, is_valid_dewey_strict, romanize
 
 
 @pytest.fixture
@@ -140,19 +142,6 @@ def test_report_single_extracted_fields(reports_directory: str):
                 )
 
 
-def is_valid_dewey_strict(d: str):
-    strict_dewey_res = [
-        re.compile(r"[0-9]{3}\.[0-9]+ [^0-9]+"),
-        re.compile(r"[0-9]{3}\.[0-9]+"),
-        re.compile(r"[0-9]{3} [^0-9]+"),
-        re.compile(r"[0-9]{3}"),
-    ]
-    for dewey_re in strict_dewey_res:
-        if dewey_re.fullmatch(d):
-            return True
-    return False
-
-
 def test_report_dewey(reports_directory: str):
     weird_dewey: list[dict[int, str]] = list()
     for entry in all_entries():
@@ -262,54 +251,6 @@ def test_report_donors(reports_directory: str):
             default_flow_style=False,
             allow_unicode=True,
         )
-
-
-def check_isbn(isbn: str) -> Optional[str]:
-    isbn = isbn.replace("-", "").replace(" ", "").upper()
-    match = re.search(r"^(\d{9})(\d|X)$", isbn)
-    if not match:
-        return f"Invalid isbn format (len {len(isbn)})"
-
-    digits = match.group(1)
-    check_digit = 10 if match.group(2) == "X" else int(match.group(2))
-
-    result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
-    if (result % 11) == check_digit:
-        return None
-    else:
-        return f"Invalid check code {result % 11} != {check_digit}"
-
-
-def check_issn(issn: str) -> Optional[str]:
-    issn = issn.replace("-", "").replace(" ", "").upper()
-    match = re.search(r"^(\d{7})(\d|X)$", issn)
-    if not match:
-        return f"Invalid issn format (len {len(issn)})"
-
-    digits = match.group(1)
-    check_digit = 10 if match.group(2) == "X" else int(match.group(2))
-    result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
-    if (result % 11) == check_digit:
-        return None
-    else:
-        return f"Invalid check code {result % 11} != {check_digit}"
-
-
-def check_ean(ean: str) -> Optional[str]:
-    ean = ean.replace("-", "").replace(" ", "").upper()
-    match = re.search(r"^(\d+)(\d)$", ean)
-    if not match:
-        return f"Invalid ean format"
-    if len(ean) not in (14, 13, 12, 8):
-        return f"Invalid ean format (len {len(ean)})"
-
-    digits = match.group(1)
-    check_digit = match.group(2)
-    result = str((10 - sum((3, 1)[i % 2] * int(n) for i, n in enumerate(reversed(digits)))) % 10)
-    if result == check_digit:
-        return None
-    else:
-        return f"Invalid check code {result} != {check_digit}"
 
 
 def test_report_isbns(reports_directory: str):

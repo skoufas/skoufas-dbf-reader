@@ -21,7 +21,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 | A13 | topics, has_cd | θέματα, έχει CD |
 | A14 | topics, has_cd | θέματα, έχει CD |
 | A15 | topics | θέματα |
-| A16 | curator | επιμελητης |
+| A16 | curator | επιμελητής |
 | A17 | has_cd, copies, donations, offprint, volume, notes, isbn | έχει CD, αντίτυπα, δωρεές, ανάτυπα, τόμοι/τεύχη, σημειώσεις, isbn |
 | A18 | material, entry_number, has_cd, copies, volume, notes, isbn | συνοδευτικό υλικό, έχει CD, αντίτυπα, τόμοι/τεύχη, σημειώσεις, isbn |
 | A19 | isbn, entry_number | isbn, αριθμός εισαγωγής |
