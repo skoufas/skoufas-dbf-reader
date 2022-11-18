@@ -10,21 +10,21 @@ def has_author(a01: Optional[str]) -> bool:
     """Check values for marks of missing author"""
     if not a01:
         return False
-    if a01 in no_author_values():
+    if a01 in author_corrections() and not author_corrections().get(a01):
         return False
     return True
-
-
-@cache
-def no_author_values() -> list[str]:
-    """List of values implying there's no author"""
-    return read_yaml_data("no_author")
 
 
 @cache
 def language_codes() -> dict[str, str]:
     """Map of language codes in A01 to ISO language codes"""
     return read_yaml_data("language_codes")
+
+
+@cache
+def author_corrections() -> dict[str, Optional[str]]:
+    """Map of author names found and manual overrides"""
+    return read_yaml_data("author_corrections")
 
 
 @cache
@@ -137,3 +137,5 @@ has_cd_re = re.compile(r"\bCD\b", re.IGNORECASE)
 has_dvd_re = re.compile(r"\bDVD\b", re.IGNORECASE)
 
 a22_has_isbn_part_re = re.compile(r"[0-9\-]+")
+
+plain_author_re = re.compile(r"[A-ZΑ-Ω0-1]+,?[A-ZΑ-Ω0-1]*\.?")

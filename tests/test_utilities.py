@@ -4,9 +4,9 @@ from skoufas_dbf_reader.utilities import all_entries, none_if_empty_or_stripped,
 
 
 def test_yaml_data():
-    no_author = read_yaml_data("no_author")
+    no_author = read_yaml_data("language_codes")
     assert no_author
-    assert type(no_author) == list
+    assert type(no_author) == dict
     assert len(no_author) > 0
 
 

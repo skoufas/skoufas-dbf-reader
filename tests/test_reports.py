@@ -35,31 +35,39 @@ def test_report_single_fields(reports_directory: str):
 def test_report_single_extracted_fields(reports_directory: str):
     field_values: defaultdict[str, list[str | list[str]]] = defaultdict(list)
     for entry in all_entries():
-        author = author_part_from_a01(entry[1])
-        if author:
+
+        authors = authors_from_a01(entry[1])
+        for author in authors:
             field_values["author"].append(author)
-            if " " in author or "-" in author or author.count(",") != 1:
-                field_values["weird_author"].append(author)
-            else:
+            if plain_author_re.fullmatch(author) or author in author_corrections().values():
                 field_values["plain_author"].append(author)
+            else:
+                field_values["weird_author"].append(author)
+
         language = language_from_a01(entry[1])
         if language:
             field_values["language"].append(language)
+
         title = title_from_a02(entry[2])
         if title:
             field_values["title"].append(title)
+
         subtitle = subtitle_from_a03(entry[3])
         if subtitle:
             field_values["subtitle"].append(subtitle)
+
         dewey = dewey_from_a04(entry[4])
         if dewey:
             field_values["dewey"].append(dewey)
+
         entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
             entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
+
         field_values["entry_number_lists"].append(entry_numbers)
         for entry_number in entry_numbers:
             field_values["entry_numbers"].append(entry_number)
+
         translator = translator_from_a06(entry[6])
         if translator:
             translators = translator.split("!!")
@@ -72,21 +80,26 @@ def test_report_single_extracted_fields(reports_directory: str):
                         field_values["translator_name_abbreviations"].append(translator_surname_name[1])
                     else:
                         field_values["translator_names"].append(translator_surname_name[1])
+
         edition = edition_from_a07(entry[7])
         if edition:
             field_values["edition"].append(edition)
+
         editor = editor_from_a08_a09(entry[8], entry[9])
         if editor:
             if not editor[0] or not editor[1]:
                 field_values["editor"].append(f"{editor[0]} // {editor[1]} ({entry[0]})")
             else:
                 field_values["editor"].append(f"{editor[0]} // {editor[1]}")
+
         edition_year = edition_year_from_a09_a10(entry[9], entry[10])
         if edition_year:
             field_values["edition_year"].append(str(edition_year))
+
         pages = pages_from_a11(entry[11])
         if pages:
             field_values["pages"].append(str(pages))
+
         topic_list = topics_from_a12_to_a15_a20_a22_to_a24(
             [
                 entry[12],
@@ -102,24 +115,31 @@ def test_report_single_extracted_fields(reports_directory: str):
         field_values["topic_lists"].append(topic_list)
         for topic in topic_list:
             field_values["topics"].append(topic)
+
         curator = curator_from_a16(entry[16])
         if curator:
             field_values["curator"].append(curator)
+
         copies = copies_from_a17_a18_a30(entry[17], entry[18], entry[30])
         if copies:
             field_values["copies"].append(str(copies))
+
         donation = donation_from_a17_a30(entry[17], entry[30])
         if donation:
             field_values["donation"].append(donation)
+
         volume = volume_from_a17_a18_a20_a30(entry[17], entry[18], entry[20], entry[30])
         if volume:
             field_values["volume"].append(volume)
+
         material = material_from_a18_a30(entry[18], entry[30])
         if material:
             field_values["material"].append(material)
+
         notes = notes_from_a17_a18_a21_a30(entry[17], entry[18], entry[21], entry[30])
         if notes:
             field_values["notes"].append(notes)
+
         isbn = isbn_from_a17_a18_a19_a22_a30(entry[17], entry[18], entry[19], entry[22], entry[30])
         if isbn:
             if not check_isbn(isbn):
@@ -287,9 +307,7 @@ def test_report_extracted_fields(reports_directory: str):
         converted_entry["dbase_number"] = entry[0]
         converted_entry["author"] = []
 
-        author = author_part_from_a01(entry[1])
-        if author:
-            converted_entry["author"].append(author)
+        converted_entry["authors"] = authors_from_a01(entry[1])
 
         language = language_from_a01(entry[1])
         if language:

@@ -2,15 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from skoufas_dbf_reader.correction_data import no_author_values
 from skoufas_dbf_reader.field_extractors import *
-
-
-def test_no_author():
-    no_author = no_author_values()
-    assert no_author
-    assert type(no_author) == list
-    assert len(no_author) > 0
 
 
 def test_has_author():
@@ -50,17 +42,17 @@ def test_has_language():
     assert has_language("FINLAY GEORG                        GER")
 
 
-def test_author_part_from_a01():
-    assert not author_part_from_a01(None)
-    assert not author_part_from_a01("")
-    assert not author_part_from_a01("X,S")
-    assert author_part_from_a01("GAL") == "GAL"
-    assert author_part_from_a01("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ") == "ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ"
-    assert author_part_from_a01("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι") == "ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ"
-    assert author_part_from_a01("ΩUENEAU RAYMOND                    GAL") == "ΩUENEAU RAYMOND"
-    assert author_part_from_a01("BITSIOS,DIMITRIS                  AGL") == "BITSIOS,DIMITRIS"
-    assert author_part_from_a01("FINLAY GEORG                        GER") == "FINLAY GEORG"
-    assert author_part_from_a01("ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ    .") == "ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ"
+def test_authors_from_a01():
+    assert authors_from_a01(None) == []
+    assert authors_from_a01("") == []
+    assert authors_from_a01("X,S") == []
+    assert authors_from_a01("GAL") == ["GAL"]
+    assert authors_from_a01("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ") == ["ΨΑΡΟΜΗΛΙΓΚΟΣ,", "ΛΑΖΟΥ,", "ΚΑΡΤΑΛΗΣ,"]
+    assert authors_from_a01("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι") == ["ΚΕΛΕΣΙΔΗΣ,ΤΕΛΗΣ"]
+    assert authors_from_a01("ΩUENEAU RAYMOND                    GAL") == ["QUENEAU,RAYMOND"]
+    assert authors_from_a01("BITSIOS,DIMITRIS                  AGL") == ["ΒΙΤΣΙΟΣ,ΔΗΜΗΤΡΗΣ"]
+    assert authors_from_a01("FINLAY GEORG                        GER") == ["FINLAY,GEORGE"]
+    assert authors_from_a01("ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ    .") == ["ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ"]
 
 
 def test_language_from_a01():

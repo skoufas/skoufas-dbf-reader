@@ -16,12 +16,12 @@ def has_language(a01: Optional[str]) -> bool:
     return False
 
 
-def author_part_from_a01(a01: Optional[str]) -> Optional[str]:
+def authors_from_a01(a01: Optional[str]) -> list[str]:
     """Get author from A01 DBF record"""
     if not a01:
-        return None
+        return []
     if not has_author(a01):
-        return None
+        return []
     strip_finals = list(language_codes().keys()) + [
         " Ι",
         " .",
@@ -29,7 +29,11 @@ def author_part_from_a01(a01: Optional[str]) -> Optional[str]:
     for final in strip_finals:
         if a01.endswith(" " + final):
             a01 = a01.replace(final, "")
-    return a01.strip()
+    author = a01.strip()
+    author = author_corrections().get(author, author)
+    if not author:
+        author = ""
+    return author.split("!!")
 
 
 def language_from_a01(a01: Optional[str]) -> Optional[str]:

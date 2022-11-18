@@ -39,7 +39,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 
 ## Extractor functions
 
-- `def author_part_from_a01(a01: Optional[str]) -> Optional[str]`
+- `def authors_from_a01(a01: Optional[str]) -> list[str]`
 - `def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optional[str]) -> Optional[int]`
 - `def curator_from_a16(a16: Optional[str]) -> Optional[str]`
 - `def dewey_from_a04(a04: Optional[str]) -> Optional[str]`
@@ -69,8 +69,9 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 - Missing entry numbers (~200)
 - Weird deweys and replacements (~300)
 - Translator corrections
+- author corrections
 - εκδοσεις
-- εκδοτης
+- εκδοτης (field8)
 - field9
 - field10
 - isbn
