@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import pprint
 import shutil
+import sys
 from collections import defaultdict
 
 import yaml
@@ -397,7 +398,10 @@ def report_entries(reports_directory: str):
 
 def main():
     """Create markdown reports"""
-    md_report_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, os.pardir, "md_reports")
+    if len(sys.argv) > 0:
+        md_report_dir = os.path.abspath(sys.argv[1])
+    else:
+        md_report_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, os.pardir, "md_reports")
     print(f"Creating reports in {md_report_dir}")
     shutil.rmtree(md_report_dir, ignore_errors=True)
     report_entry_numbers(md_report_dir)
