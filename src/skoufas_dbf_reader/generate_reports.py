@@ -398,15 +398,108 @@ def report_entries(reports_directory: str):
 def main():
     """Create markdown reports"""
     md_report_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, os.pardir, "md_reports")
+    print(f"Creating reports in {md_report_dir}")
     shutil.rmtree(md_report_dir, ignore_errors=True)
     report_entry_numbers(md_report_dir)
     report_entries(md_report_dir)
     report_single_fields(md_report_dir)
     report_single_extracted_fields(md_report_dir)
     report_invalid_dewey(md_report_dir)
+    print(f"Finished creating reports in {md_report_dir}")
 
 
 if __name__ == "__main__":
     main()
 
 
+# def report_translators(reports_directory: str):
+#     weird_translators: list[str] = []
+#     valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
+#     for entry in all_entries():
+#         translator = translator_from_a06(entry[6])
+#         if translator:
+#             translators = translator.split("!!")
+#             for translator in translators:
+#                 if not valid_translator_re.fullmatch(translator):
+#                     weird_translators.append(translator)
+#     with open(os.path.join(reports_directory, f"weird_translators.yml"), "w", encoding="utf-8") as outfile:
+#         yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
+
+
+# def test_report_bools(reports_directory: str):
+#     entries_with_cd: list[dict[int, str]] = list()
+#     entries_with_dvd: list[dict[int, str]] = list()
+#     entries_with_offprint: list[dict[int, str]] = list()
+#     for entry in all_entries():
+#         if has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
+#             [
+#                 entry[2],
+#                 entry[3],
+#                 entry[12],
+#                 entry[13],
+#                 entry[14],
+#                 entry[17],
+#                 entry[18],
+#                 entry[22],
+#                 entry[30],
+#             ]
+#         ):
+#             entries_with_cd.append(minimal_entry(entry, list(range(0, 31))))
+#         if has_dvd_from_a30(
+#             [
+#                 entry[30],
+#             ]
+#         ):
+#             entries_with_dvd.append(minimal_entry(entry, list(range(0, 31))))
+#         if offprint_from_a17_a21_a30(entry[17], entry[21], entry[30]):
+#             entries_with_offprint.append(minimal_entry(entry, list(range(0, 31))))
+#     with open(os.path.join(reports_directory, f"entries_with_cd.yml"), "w", encoding="utf-8") as outfile:
+#         yaml.dump(entries_with_cd, outfile, default_flow_style=False, allow_unicode=True)
+#     with open(os.path.join(reports_directory, f"entries_with_dvd.yml"), "w", encoding="utf-8") as outfile:
+#         yaml.dump(entries_with_dvd, outfile, default_flow_style=False, allow_unicode=True)
+#     with open(os.path.join(reports_directory, f"entries_with_offprint.yml"), "w", encoding="utf-8") as outfile:
+#         yaml.dump(entries_with_offprint, outfile, default_flow_style=False, allow_unicode=True)
+
+
+# def test_report_donors(reports_directory: str):
+#     count_map: defaultdict[str, int] = defaultdict(int)
+#     for entry in all_entries():
+#         donors = donation_from_a17_a30(entry[17], entry[30])
+#         if donors:
+#             for donor in donors.split("!!"):
+#                 count_map[donor] = count_map[donor] + 1
+
+#     with open(os.path.join(reports_directory, f"donors_count.yml"), "w", encoding="utf-8") as outfile:
+#         yaml.dump(
+#             dict(sorted(count_map.items(), key=lambda x: x[1], reverse=True)),
+#             outfile,
+#             default_flow_style=False,
+#             allow_unicode=True,
+#         )
+
+
+# def test_report_isbns(reports_directory: str):
+#     entries_with_errors: dict[str, dict[str, str | list[Optional[str]] | dict[int, str]]] = dict()
+#     for entry in all_entries():
+#         result = isbn_from_a17_a18_a19_a22_a30(
+#             entry[17],
+#             entry[18],
+#             entry[19],
+#             entry[22],
+#             entry[30],
+#         )
+#         if not result:
+#             continue
+#         checks = [check_isbn(result), check_issn(result), check_ean(result)]
+#         if None in checks:
+#             continue
+#         else:
+#             entries_with_errors[entry[0]] = {
+#                 "entry": minimal_entry(entry, list(range(0, 31))),
+#                 "isbn": result,
+#                 "errors": checks,
+#             }
+#     with open(
+#         os.path.join(reports_directory, f"entries_with_invalid_isbn_issn_ean.yml"), "w", encoding="utf-8"
+#     ) as outfile:
+#         yaml.dump(entries_with_errors, outfile, default_flow_style=False, allow_unicode=True)

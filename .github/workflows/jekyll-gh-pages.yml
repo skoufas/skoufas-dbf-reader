@@ -36,6 +36,7 @@ jobs:
         run: |
           python -m pip install .
           generate-reports
+          ls -l md_reports
         shell: bash
 
       - name: Setup Pages
