@@ -21,6 +21,7 @@ dynamic = ["version"]
 dependencies = [
     "dbfread==2.0.7",
     "snakemd==0.11.0",
+    "PyYAML==6.0",
 ]
 
 [project.optional-dependencies]
