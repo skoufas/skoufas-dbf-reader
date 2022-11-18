@@ -188,15 +188,11 @@ def report_invalid_dewey(reports_directory: str):
         doc.add_header("Dewey με προβληματικές τιμές στην έξοδο")
         for k, v in sorted(invalid_output_dewey.items()):
             doc.add_header(k, level=2)
-            doc.add_unordered_list(
-                [InlineText(entry, code=True, url="../entries/entry_{entry:05}.md").render() for entry in v]
-            )
+            doc.add_unordered_list([InlineText(entry, url=f"../entries/entry_{entry:05}.md").render() for entry in v])
         doc.add_header("Dewey στην είσοδο που δεν βγαίνουν στην έξοδο")
         for k, v in sorted(no_output_dewey.items()):
             doc.add_header(k, level=2)
-            doc.add_unordered_list(
-                [InlineText(entry, code=True, url="../entries/entry_{entry:05}.md").render() for entry in v]
-            )
+            doc.add_unordered_list([InlineText(entry, url=f"../entries/entry_{entry:05}.md").render() for entry in v])
         outfile.write(str(doc))
 
 
