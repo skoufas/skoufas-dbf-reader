@@ -32,7 +32,7 @@ test = [
     "flake8-bugbear==22.10.27",
     "flake8-docstrings",
     "flake8-formatter_junit_xml",
-    "flake8==5.0.4",
+    "flake8==6.0.0",
     "pre-commit==2.20.0",
     "pylint==2.15.5",
     "pylint_junit",
