@@ -60,8 +60,8 @@ def test_report_single_extracted_fields(reports_directory: str):
         if dewey:
             field_values["dewey"].append(dewey)
 
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
-            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        entry_numbers = entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+            entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
 
         field_values["entry_number_lists"].append(entry_numbers)
@@ -182,8 +182,8 @@ def test_report_entry_numbers(reports_directory: str):
     non_numeric: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     duplicate_entry_numbers: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
     for entry in all_entries():
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
-            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        entry_numbers = entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+            entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
         if not entry_numbers:
             no_entry_numbers.append(minimal_entry(entry, [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19]))
@@ -325,8 +325,8 @@ def test_report_extracted_fields(reports_directory: str):
         if dewey:
             converted_entry["dewey"] = dewey
 
-        converted_entry["entry_numbers"] = entry_numbers_from_a05_a06_a07_a08_a18_a19(
-            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        converted_entry["entry_numbers"] = entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+            entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
 
         translator = translator_from_a06(entry[6])

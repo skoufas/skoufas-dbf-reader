@@ -62,7 +62,13 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     value = none_if_empty_or_stripped(a04)
     if not value:
         return None
-    value = none_if_empty_or_stripped(field04_corrections().get(value, value))
+
+    correction = field04_corrections().get(value, value)
+    if not correction:
+        return None
+    if isinstance(correction, str):
+        value = none_if_empty_or_stripped(correction)
+
     if not value:
         return None
 
@@ -91,7 +97,8 @@ def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
     return None
 
 
-def entry_numbers_from_a05_a06_a07_a08_a18_a19(
+def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+    a04: Optional[str],
     a05: Optional[str],
     a06: Optional[str],
     a07: Optional[str],
@@ -100,6 +107,24 @@ def entry_numbers_from_a05_a06_a07_a08_a18_a19(
     a19: Optional[str],
 ) -> list[str]:
     """Cleanup, read additional numbers from a06"""
+    value4 = none_if_empty_or_stripped(a04)
+    if value4:
+        if value4 in field04_corrections():
+            correction = field04_corrections()[value4]
+            if correction is None:
+                value4 = ""
+            elif isinstance(correction, str):
+                value4 = ""
+            else:
+                value4 = dict(correction).get("series", "")
+                if not isinstance(value4, str):
+                    raise Exception(f"Invalid correction for field A04 [{a04}]")
+                value4 = value4 + "-"
+        else:
+            value4 = ""
+    else:
+        value4 = ""
+
     value5 = none_if_empty_or_stripped(a05)
     if not value5:
         value5 = ""
@@ -193,9 +218,13 @@ def entry_numbers_from_a05_a06_a07_a08_a18_a19(
     else:
         value19 = ""
 
-    value = value5 + value6 + value7 + value8 + value18 + value19
-    entries = [v.strip() for v in value.split("-") if v.strip()]
-    return entries
+    value = value4 + value5 + value6 + value7 + value8 + value18 + value19
+    # Use a dict to remove duplicates
+    entries_dict: dict[str, None] = dict()
+    for v in value.split("-"):
+        if v.strip():
+            entries_dict[v.strip()] = None
+    return list(entries_dict)
 
 
 def translator_from_a06(a06: Optional[str]) -> Optional[str]:

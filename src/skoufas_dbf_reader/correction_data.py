@@ -28,7 +28,7 @@ def author_corrections() -> dict[str, Optional[str]]:
 
 
 @cache
-def field04_corrections() -> dict[str, str]:
+def field04_corrections() -> dict[str, Optional[str | dict[str, str]]]:
     """Map of invalid dewey codes found and manual overrides"""
     return read_yaml_data("field04_corrections")
 

@@ -65,8 +65,8 @@ def report_single_extracted_fields(reports_directory: str):
         if dewey:
             field_values["dewey"].append(dewey)
 
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
-            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        entry_numbers = entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+            entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
 
         field_values["entry_number_lists"].append(entry_numbers)
@@ -298,8 +298,8 @@ def report_entry_numbers(reports_directory: str):
     duplicate_entry_numbers: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
 
     for entry in all_entries():
-        entry_numbers = entry_numbers_from_a05_a06_a07_a08_a18_a19(
-            entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+        entry_numbers = entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+            entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
         )
         if not entry_numbers:
             no_entry_numbers.add_horizontal_rule()
@@ -414,7 +414,9 @@ def report_entries(reports_directory: str):
 
         doc.add_header("Αριθμοί Εισαγωγης", level=2)
         doc.add_unordered_list(
-            entry_numbers_from_a05_a06_a07_a08_a18_a19(entry[5], entry[6], entry[7], entry[8], entry[18], entry[19])
+            entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+                entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
+            )
         )
 
         doc.add_table(

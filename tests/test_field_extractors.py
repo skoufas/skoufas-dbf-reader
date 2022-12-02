@@ -96,24 +96,39 @@ def test_dewey_from_a04():
     assert dewey_from_a04("HOEMANN") is None
 
 
-def test_entry_numbers_from_a05_a06_a07_a08_a18_a19_a18_a19():
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(None, None, None, None, None, None) == []
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("", "", "", "", "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(" ", None, "", "", "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(None, "", "", "", "", "") == []
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", None, None, None, None, None) == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "foobar", "baz", "yum", "foo", "bar") == [
+def test_entry_numbers_from_a04_a05_a06_a07_a08_a18_a19():
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(None, None, None, None, None, None, None) == []
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("", "", "", "", "", "", "") == []
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("", " ", None, "", "", "", "") == []
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(None, None, "", "", "", "", "") == []
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("8123", "2710-2709", "", "", "", "", "") == [
+        "8123",
         "2710",
         "2709",
     ]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "-", "baz", "yum", "lol", "lal") == ["2710", "2709"]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("2710-2709", "-10450", "baz", "yum", "ooo", "0980980") == [
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("098.122 DEW", "2710-2709", None, None, None, None, None) == [
+        "2710",
+        "2709",
+    ]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(None, "2710-2709", "foobar", "baz", "yum", "foo", "bar") == [
+        "2710",
+        "2709",
+    ]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(None, "2710-2710", "foobar", "baz", "yum", "foo", "bar") == [
+        "2710",
+    ]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "Some Dewey", "2710-2709", "-", "baz", "yum", "lol", "lal"
+    ) == ["2710", "2709"]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "", "2710-2709", "-10450", "baz", "yum", "ooo", "0980980"
+    ) == [
         "2710",
         "2709",
         "10450",
     ]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
-        "2710-2709", "1747-1746-1745-", "baz", "yum", "34", "1414241"
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "", "2710-2709", "1747-1746-1745-", "baz", "yum", "34", "1414241"
     ) == [
         "2710",
         "2709",
@@ -121,20 +136,29 @@ def test_entry_numbers_from_a05_a06_a07_a08_a18_a19_a18_a19():
         "1746",
         "1745",
     ]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "4", "baz", "yum", "34", "1414241") == ["10", "14"]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "5", "baz", "yum", "34", "1414241") == ["10", "15"]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19("10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ", "baz", "yum", "34", "1414241") == [
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("", "10-1", "4", "baz", "yum", "34", "1414241") == [
+        "10",
+        "14",
+    ]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19("", "10-1", "5", "baz", "yum", "34", "1414241") == [
+        "10",
+        "15",
+    ]
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "", "10-1", "448 ΚΩΣΤΑΣ ΦΙΛΙΝΗΣ", "baz", "yum", "34", "1414241"
+    ) == [
         "10",
         "1448",
     ]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
-        "4225-4226-4228-4229-", "4227-4290-4536-4535-", "4537", "ΕΥΡΩΠΑΙΚ.ΚΕΝΤΡ.ΤΕΧΝΗ", "34", "1414241"
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "", "4225-4226-4228-4229-", "4227-4290-4536-4535-", "4537", "ΕΥΡΩΠΑΙΚ.ΚΕΝΤΡ.ΤΕΧΝΗ", "34", "1414241"
     ) == ["4225", "4226", "4228", "4229", "4227", "4290", "4536", "4535", "4537"]
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
-        "5280-5285-5286-5283-", "5284-5278-5277-5279-", "5281-", "5282-6548-6547", "asasa", "1414241"
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "", "5280-5285-5286-5283-", "5284-5278-5277-5279-", "5281-", "5282-6548-6547", "asasa", "1414241"
     ) == "5280-5285-5286-5283-5284-5278-5277-5279-5281-5282-6548-6547".split("-")
 
-    assert entry_numbers_from_a05_a06_a07_a08_a18_a19(
+    assert entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
+        "",
         "1938-1937-1936-1935-",
         "1933-1870-1869-1866-",
         "1932",
