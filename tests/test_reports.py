@@ -436,4 +436,10 @@ def test_report_extracted_fields(reports_directory: str):
         "w",
         encoding="utf-8",
     ) as outfile:
-        yaml.dump(converted_entries, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        yaml.dump(
+            {"converted_entries": converted_entries},
+            outfile,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+        )
