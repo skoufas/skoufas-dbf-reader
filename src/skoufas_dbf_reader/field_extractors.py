@@ -105,7 +105,7 @@ def dewey_from_a04_a05(a04: Optional[str], a05: Optional[str]) -> Optional[str]:
                 value5 = None
         else:
             value5 = None
-    if value5:
+    if value5 and isinstance(value5, str):
         for dewey_re in dewey_re1:
             dewey_match = dewey_re.fullmatch(value5)
             if dewey_match:
@@ -132,7 +132,7 @@ def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
     def cleanup_single_value(
         field_name: str,
         original_value: Optional[str],
-        corrections: dict[str, Optional[str | dict[str, str | bool]]],
+        corrections: dict[str, Optional[str | dict[str, str] | dict[str, str | bool]]],
         ignore_if_not_in_correction: bool,
     ) -> str:
         output = none_if_empty_or_stripped(original_value)
@@ -161,13 +161,13 @@ def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
                     return output
         return ""
 
-    value4 = cleanup_single_value("A04", a04, field04_corrections(), True) + "-"
-    value5 = cleanup_single_value("A05", a05, field05_corrections(), False)
-    value6 = cleanup_single_value("A06", a06, field06_corrections(), True)
-    value7 = cleanup_single_value("A07", a07, field07_corrections(), True)
-    value8 = cleanup_single_value("A08", a08, field08_corrections(), True)
-    value18 = cleanup_single_value("A18", a18, field18_corrections(), True)
-    value19 = cleanup_single_value("A19", a19, field19_corrections(), True)
+    value4 = cleanup_single_value("A04", a04, field04_corrections(), True) + "-"  # type: ignore
+    value5 = cleanup_single_value("A05", a05, field05_corrections(), False)  # type: ignore
+    value6 = cleanup_single_value("A06", a06, field06_corrections(), True)  # type: ignore
+    value7 = cleanup_single_value("A07", a07, field07_corrections(), True)  # type: ignore
+    value8 = cleanup_single_value("A08", a08, field08_corrections(), True)  # type: ignore
+    value18 = cleanup_single_value("A18", a18, field18_corrections(), True)  # type: ignore
+    value19 = cleanup_single_value("A19", a19, field19_corrections(), True)  # type: ignore
 
     value = value4 + value5 + value6 + value7 + value8 + value18 + value19
     # Use a dict to remove duplicates
