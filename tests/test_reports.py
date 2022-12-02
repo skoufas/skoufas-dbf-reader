@@ -56,7 +56,7 @@ def test_report_single_extracted_fields(reports_directory: str):
         if subtitle:
             field_values["subtitle"].append(subtitle)
 
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
         if dewey:
             field_values["dewey"].append(dewey)
 
@@ -165,7 +165,7 @@ def test_report_single_extracted_fields(reports_directory: str):
 def test_report_dewey(reports_directory: str):
     weird_dewey: list[dict[int, str]] = list()
     for entry in all_entries():
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
         if dewey:
             if not is_valid_dewey_strict(dewey):
                 weird_dewey.append(minimal_entry(entry, [0, 1, 2, 4, 5, 6]))
@@ -321,7 +321,7 @@ def test_report_extracted_fields(reports_directory: str):
         if subtitle:
             converted_entry["subtitle"] = subtitle
 
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
         if dewey:
             converted_entry["dewey"] = dewey
 

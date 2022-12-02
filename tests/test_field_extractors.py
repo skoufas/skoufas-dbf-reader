@@ -82,18 +82,18 @@ def test_subtitle_from_a03():
     assert subtitle_from_a03(" GAL") == "GAL"
 
 
-def test_dewey_from_a04():
-    assert dewey_from_a04(None) is None
-    assert dewey_from_a04("") is None
-    assert dewey_from_a04(" ") is None
-    assert dewey_from_a04("001A") == "001 A"
-    assert dewey_from_a04("001.009ΚΟΝ ") == "001.009 ΚΟΝ"
-    assert dewey_from_a04(" 001.009ΚΟΝ") == "001.009 ΚΟΝ"
-    assert dewey_from_a04("O.50ΠΕΡ") == "050 ΠΕΡ"
-    assert dewey_from_a04("624.183Χ.Σ") == "624.183 ΧΣ"
-    assert dewey_from_a04("320ΤΣΟ") == "320 ΤΣΟ"
+def test_dewey_from_a04_a05():
+    assert dewey_from_a04_a05(None, None) is None
+    assert dewey_from_a04_a05("", " ") is None
+    assert dewey_from_a04_a05(" ", "") is None
+    assert dewey_from_a04_a05("001A", "") == "001 A"
+    assert dewey_from_a04_a05("001.009ΚΟΝ ", "") == "001.009 ΚΟΝ"
+    assert dewey_from_a04_a05(" 001.009ΚΟΝ", "") == "001.009 ΚΟΝ"
+    assert dewey_from_a04_a05("O.50ΠΕΡ", "") == "050 ΠΕΡ"
+    assert dewey_from_a04_a05("624.183Χ.Σ", "") == "624.183 ΧΣ"
+    assert dewey_from_a04_a05("320ΤΣΟ", "") == "320 ΤΣΟ"
 
-    assert dewey_from_a04("HOEMANN") is None
+    assert dewey_from_a04_a05("HOEMANN", "") is None
 
 
 def test_entry_numbers_from_a04_a05_a06_a07_a08_a18_a19():

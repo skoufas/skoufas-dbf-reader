@@ -34,6 +34,12 @@ def field04_corrections() -> dict[str, Optional[str | dict[str, str]]]:
 
 
 @cache
+def field05_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+    """Map of invalid entry numbers found and manual overrides"""
+    return read_yaml_data("field05_corrections")
+
+
+@cache
 def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
     """Map of invalid entry numbers found and manual overrides"""
     return read_yaml_data("field06_corrections")

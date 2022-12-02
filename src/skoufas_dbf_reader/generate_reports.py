@@ -61,7 +61,7 @@ def report_single_extracted_fields(reports_directory: str):
         if subtitle:
             field_values["subtitle"].append(subtitle)
 
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
         if dewey:
             field_values["dewey"].append(dewey)
 
@@ -198,7 +198,7 @@ def report_invalid_dewey(reports_directory: str):
     invalid_output_dewey: defaultdict[str, list[str]] = defaultdict(list)
     no_output_dewey: defaultdict[str, list[str]] = defaultdict(list)
     for entry in all_entries():
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
         if dewey:
             if not is_valid_dewey_strict(dewey):
                 invalid_output_dewey[dewey].append(str(entry[0]))
@@ -424,7 +424,7 @@ def report_entries(reports_directory: str):
             [
                 ["dbase_number", str(entry[0])],
                 ["Γλώσσα", str(language_from_a01(entry[1]))],
-                ["Dewey", str(dewey_from_a04(entry[4]))],
+                ["Dewey", str(dewey_from_a04_a05(entry[4], entry[5]))],
                 ["Έκδοση", str(edition_from_a07(entry[7]))],
                 ["Εκδότης (Πόλη)", f"{editor}"],
                 ["Χρόνος έκδοσης", f"{edition_year_from_a09_a10(entry[9], entry[10])}"],
@@ -499,7 +499,7 @@ def report_entries(reports_directory: str):
             else:
                 by_author[author[0]][author].append((entry[0], title))
 
-        dewey = dewey_from_a04(entry[4])
+        dewey = dewey_from_a04_a05(entry[4], entry[5])
 
         if dewey:
             by_dewey[dewey].append((entry[0], title))

@@ -57,43 +57,64 @@ def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
     return none_if_empty_or_stripped(a03)
 
 
-def dewey_from_a04(a04: Optional[str]) -> Optional[str]:
+def dewey_from_a04_a05(a04: Optional[str], a05: Optional[str]) -> Optional[str]:
     """Cleanup and replace known issues"""
-    value = none_if_empty_or_stripped(a04)
-    if not value:
-        return None
+    value4 = none_if_empty_or_stripped(a04)
+    if value4:
+        correction = field04_corrections().get(value4, value4)
+        if correction:
+            if isinstance(correction, str):
+                value4 = none_if_empty_or_stripped(correction)
+            else:
+                value4 = None
+        else:
+            value4 = None
 
-    correction = field04_corrections().get(value, value)
-    if not correction:
-        return None
-    if isinstance(correction, str):
-        value = none_if_empty_or_stripped(correction)
+    if value4:
+        value4 = value4.replace("Χ. Σ.", "ΧΣ")
+        value4 = value4.replace("Χ. Σ", "ΧΣ")
 
-    if not value:
-        return None
+        value4 = value4.replace("X.S.", "ΧΣ")
+        value4 = value4.replace("Χ.Σ.", "ΧΣ")
 
-    value = value.replace("Χ. Σ.", "ΧΣ")
-    value = value.replace("Χ. Σ", "ΧΣ")
+        value4 = value4.replace("Χ.Σ", "ΧΣ")
+        value4 = value4.replace("X.S", "ΧΣ")
+        value4 = value4.replace("X.Σ", "ΧΣ")
+        value4 = value4.replace("Σ.Σ", "ΧΣ")
 
-    value = value.replace("X.S.", "ΧΣ")
-    value = value.replace("Χ.Σ.", "ΧΣ")
+        value4 = value4.replace("Χ.Χ.", "ΧΧ")
+        value4 = value4.replace("Χ.Χ", "ΧΧ")
 
-    value = value.replace("Χ.Σ", "ΧΣ")
-    value = value.replace("X.S", "ΧΣ")
-    value = value.replace("X.Σ", "ΧΣ")
-    value = value.replace("Σ.Σ", "ΧΣ")
+    if value4:
+        for dewey_re in dewey_re1:
+            dewey_match = dewey_re.fullmatch(value4)
+            if dewey_match:
+                return f"{dewey_match[1]}".strip()
+        for dewey_re in dewey_re2:
+            dewey_match = dewey_re.fullmatch(value4)
+            if dewey_match:
+                return f"{dewey_match[1]} {dewey_match[2]}".strip()
 
-    value = value.replace("Χ.Χ.", "ΧΧ")
-    value = value.replace("Χ.Χ", "ΧΧ")
+    value5 = none_if_empty_or_stripped(a05)
+    if value5:
+        correction = field05_corrections().get(value5, value5)
+        if correction:
+            if isinstance(correction, dict):
+                value5 = correction.get("dewey", None)
+            else:
+                value5 = None
+        else:
+            value5 = None
+    if value5:
+        for dewey_re in dewey_re1:
+            dewey_match = dewey_re.fullmatch(value5)
+            if dewey_match:
+                return f"{dewey_match[1]}".strip()
+        for dewey_re in dewey_re2:
+            dewey_match = dewey_re.fullmatch(value5)
+            if dewey_match:
+                return f"{dewey_match[1]} {dewey_match[2]}".strip()
 
-    for dewey_re in dewey_re1:
-        dewey_match = dewey_re.fullmatch(value)
-        if dewey_match:
-            return f"{dewey_match[1]}".strip()
-    for dewey_re in dewey_re2:
-        dewey_match = dewey_re.fullmatch(value)
-        if dewey_match:
-            return f"{dewey_match[1]} {dewey_match[2]}".strip()
     return None
 
 
@@ -107,116 +128,46 @@ def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
     a19: Optional[str],
 ) -> list[str]:
     """Cleanup, read additional numbers from a06"""
-    value4 = none_if_empty_or_stripped(a04)
-    if value4:
-        if value4 in field04_corrections():
-            correction = field04_corrections()[value4]
-            if correction is None:
-                value4 = ""
-            elif isinstance(correction, str):
-                value4 = ""
-            else:
-                value4 = dict(correction).get("series", "")
-                if not isinstance(value4, str):
-                    raise Exception(f"Invalid correction for field A04 [{a04}]")
-                value4 = value4 + "-"
-        else:
-            value4 = ""
-    else:
-        value4 = ""
 
-    value5 = none_if_empty_or_stripped(a05)
-    if not value5:
-        value5 = ""
-
-    value6 = none_if_empty_or_stripped(a06)
-    if value6:
-        if value6 in field06_corrections():
-            correction = field06_corrections()[value6]
-            if correction is None:
-                value6 = ""
-            elif isinstance(correction, str):
-                value6 = "-" + str(correction)
+    def cleanup_single_value(
+        field_name: str,
+        original_value: Optional[str],
+        corrections: dict[str, Optional[str | dict[str, str | bool]]],
+        ignore_if_not_in_correction: bool,
+    ) -> str:
+        output = none_if_empty_or_stripped(original_value)
+        if output:
+            if output in corrections:
+                correction = corrections[output]
+                if correction is None:
+                    return ""
+                elif isinstance(correction, str):
+                    if ignore_if_not_in_correction:
+                        return ""
+                    else:
+                        return "-" + str(correction)
+                else:
+                    output = dict(correction).get("series", "")
+                    if not isinstance(output, str):
+                        raise Exception(f"Invalid correction for field {field_name} [{original_value}]")
+                    if correction.get("use_dash", True):
+                        return "-" + output
+                    else:
+                        return output
             else:
-                value6 = dict(correction).get("series", "")
-                if not isinstance(value6, str):
-                    raise Exception(f"Invalid correction for field A06 [{a06}]")
-                if correction.get("use_dash", True):
-                    value6 = "-" + value6
-        else:
-            value6 = ""
-    else:
-        value6 = ""
+                if ignore_if_not_in_correction:
+                    return ""
+                else:
+                    return output
+        return ""
 
-    value7 = none_if_empty_or_stripped(a07)
-    if value7:
-        if value7 in field07_corrections():
-            correction = field07_corrections()[value7]
-            if correction is None:
-                value7 = ""
-            elif isinstance(correction, str):
-                value7 = ""
-            else:
-                value7 = dict(correction).get("series", "")
-                if not isinstance(value7, str):
-                    raise Exception(f"Invalid correction for field A07 [{a07}]")
-                value7 = "-" + value7
-        else:
-            value7 = ""
-    else:
-        value7 = ""
-
-    value8 = none_if_empty_or_stripped(a08)
-    if value8:
-        if value8 in field08_corrections():
-            correction = field08_corrections()[value8]
-            if correction is None:
-                value8 = ""
-            elif isinstance(correction, str):
-                value8 = ""
-            else:
-                value8 = dict(correction).get("series", "")
-                assert isinstance(value8, str), f"Invalid correction for field A08 [{a08}]"
-                value8 = "-" + value8
-        else:
-            value8 = ""
-    else:
-        value8 = ""
-
-    value18 = none_if_empty_or_stripped(a18)
-    if value18:
-        if value18 in field18_corrections():
-            correction = field18_corrections()[value18]
-            if correction is None:
-                value18 = ""
-            elif isinstance(correction, dict):
-                value18 = dict(correction).get("series", "")
-                if not isinstance(value18, str):
-                    raise Exception(f"Invalid correction for field A18 [{a18}]")
-                value18 = "-" + value18
-            else:
-                value18 = ""
-        else:
-            value18 = ""
-    else:
-        value18 = ""
-
-    value19 = none_if_empty_or_stripped(a19)
-    if value19:
-        if value19 in field19_corrections():
-            correction = field19_corrections()[value19]
-            if correction is None:
-                value19 = ""
-            elif isinstance(correction, dict):
-                value19 = dict(correction).get("series", "")
-                assert isinstance(value19, str), f"Invalid correction for field A19 [{a19}]"
-                value19 = "-" + value19
-            else:
-                value19 = ""
-        else:
-            value19 = ""
-    else:
-        value19 = ""
+    value4 = cleanup_single_value("A04", a04, field04_corrections(), True) + "-"
+    value5 = cleanup_single_value("A05", a05, field05_corrections(), False)
+    value6 = cleanup_single_value("A06", a06, field06_corrections(), True)
+    value7 = cleanup_single_value("A07", a07, field07_corrections(), True)
+    value8 = cleanup_single_value("A08", a08, field08_corrections(), True)
+    value18 = cleanup_single_value("A18", a18, field18_corrections(), True)
+    value19 = cleanup_single_value("A19", a19, field19_corrections(), True)
 
     value = value4 + value5 + value6 + value7 + value8 + value18 + value19
     # Use a dict to remove duplicates
