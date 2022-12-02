@@ -429,5 +429,11 @@ def test_report_extracted_fields(reports_directory: str):
         converted_entry["original_entry"] = entry
         converted_entries.append(converted_entry)
 
-    with open(os.path.join(reports_directory, f"converted_entries.yml"), "w", encoding="utf-8") as outfile:
+    with open(
+        os.path.join(
+            os.path.dirname(__file__), os.pardir, "src", "skoufas_dbf_reader", "data", "converted_entries.yml"
+        ),
+        "w",
+        encoding="utf-8",
+    ) as outfile:
         yaml.dump(converted_entries, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
