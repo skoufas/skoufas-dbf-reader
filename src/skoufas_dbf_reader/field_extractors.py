@@ -243,6 +243,11 @@ def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tupl
                 a09 = correction
     if not a08 and not a09:
         return None
+    correction = editor_corrections().get(f"{a08} // {a09}")
+    if correction:
+        correction = correction.split(" // ")
+        a08 = correction[0]
+        a09 = correction[1]
     return (a08, a09)
 
 

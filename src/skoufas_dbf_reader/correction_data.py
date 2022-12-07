@@ -28,6 +28,12 @@ def author_corrections() -> dict[str, Optional[str]]:
 
 
 @cache
+def editor_corrections() -> dict[str, str]:
+    """Map editor and place manual overrides"""
+    return read_yaml_data("editor_corrections")
+
+
+@cache
 def field04_corrections() -> dict[str, Optional[str | dict[str, str]]]:
     """Map of invalid dewey codes found and manual overrides"""
     return read_yaml_data("field04_corrections")

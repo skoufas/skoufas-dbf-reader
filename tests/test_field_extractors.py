@@ -207,6 +207,7 @@ def test_editor_from_a08_a09():
     assert editor_from_a08_a09("hello", "AMSTERDAN") == ("hello", "AMSTERDAM")
     assert editor_from_a08_a09("hello", "ΑΘΗΝΑ 1984") == ("hello", "ΑΘΗΝΑ")
     assert editor_from_a08_a09("hello", "X.T") == ("hello", None)
+    assert editor_from_a08_a09("Α.Α. ΛΙΒΑΝΗ", None) == ("ΛΙΒΑΝΗ", "ΑΘΗΝΑ")
 
 
 def test_edition_year_from_a09_a10():
