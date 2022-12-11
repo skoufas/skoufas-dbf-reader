@@ -1,7 +1,7 @@
 """ Functions that extract information given specific strings """
 import re
 from functools import cache
-from typing import Optional
+from typing import Optional, Any
 
 from skoufas_dbf_reader.utilities import read_yaml_data
 
@@ -13,6 +13,12 @@ def has_author(a01: Optional[str]) -> bool:
     if a01 in author_corrections() and not author_corrections().get(a01):
         return False
     return True
+
+
+@cache
+def converted_entries() -> Any:
+    """All converted entries"""
+    return read_yaml_data("converted_entries")
 
 
 @cache

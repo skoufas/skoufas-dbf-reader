@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from skoufas_dbf_reader.correction_data import converted_entries
 from skoufas_dbf_reader.utilities import all_entries, none_if_empty_or_stripped, read_yaml_data, romanize
 
 
@@ -29,6 +30,11 @@ def test_all_entries():
     assert entry[0] == 1
 
     assert entries[1000][0] == 1001
+
+
+def test_converted_entries():
+    all = converted_entries()
+    assert all
 
 
 def test_romanize():

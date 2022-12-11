@@ -42,12 +42,12 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 - `def authors_from_a01(a01: Optional[str]) -> list[str]`
 - `def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optional[str]) -> Optional[int]`
 - `def curator_from_a16(a16: Optional[str]) -> Optional[str]`
-- `def dewey_from_a04(a04: Optional[str]) -> Optional[str]`
+- `def dewey_from_a04_a05(a04: Optional[str], a05: Optional[str]) -> Optional[str]`
 - `def donation_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[str]`
 - `def edition_from_a07(a07: Optional[str]) -> Optional[str]`
 - `def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optional[int]`
 - `def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tuple[Optional[str], Optional[str]]]`
-- `def entry_numbers_from_a05_a06_a07_a08_a18_a19(a05: Optional[str], a06: Optional[str],a07: Optional[str],a08: Optional[str],a18: Optional[str],a19: Optional[str],) -> list[str]`
+- `def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(a04: Optional[str], a05: Optional[str], a06: Optional[str],a07: Optional[str],a08: Optional[str],a18: Optional[str],a19: Optional[str],) -> list[str]`
 - `def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: Optional[list[Optional[str]]]) -> bool`
 - `def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool`
 - `def isbn_from_a17_a18_a19_a22_a30(a17in: Optional[str], a18in: Optional[str], a19in: Optional[str], a22in: Optional[str], a30in: Optional[str]) -> Optional[str]`
