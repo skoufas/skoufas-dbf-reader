@@ -305,8 +305,6 @@ def test_report_extracted_fields(reports_directory: str):
     for entry in all_entries():
         converted_entry: dict[str, Optional[str] | int | bool | list[str] | dict[int, str]] = dict()
         converted_entry["dbase_number"] = entry[0]
-        converted_entry["author"] = []
-
         converted_entry["authors"] = authors_from_a01(entry[1])
 
         language = language_from_a01(entry[1])
