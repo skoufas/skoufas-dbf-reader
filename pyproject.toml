@@ -20,7 +20,7 @@ requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [
     "dbfread==2.0.7",
-    "snakemd==0.11.0",
+    "snakemd==0.12.1",
     "PyYAML==6.0",
 ]
 
@@ -28,20 +28,20 @@ dependencies = [
 test = [
     "bandit[toml]==1.7.4",
     "black==23.1.0",
-    "check-manifest==0.48",
-    "flake8-bugbear==22.10.27",
+    "check-manifest==0.49",
+    "flake8-bugbear==23.2.13",
     "flake8-docstrings",
     "flake8-formatter_junit_xml",
     "flake8==6.0.0",
-    "pre-commit==2.20.0",
-    "pylint==2.15.7",
+    "pre-commit==3.0.4",
+    "pylint==2.16.2",
     "pylint_junit",
     "pytest-cov==4.0.0",
     "pytest-mock<3.10.1",
     "pytest-runner",
-    "pytest==7.2.0",
+    "pytest==7.2.1",
     "pytest-github-actions-annotate-failures",
-    "shellcheck-py==0.8.0.4"
+    "shellcheck-py==0.9.0.2"
 ]
 
 [project.scripts]
