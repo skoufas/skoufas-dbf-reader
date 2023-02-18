@@ -35,7 +35,6 @@ def test_report_single_fields(reports_directory: str):
 def test_report_single_extracted_fields(reports_directory: str):
     field_values: defaultdict[str, list[str | list[str]]] = defaultdict(list)
     for entry in all_entries():
-
         authors = authors_from_a01(entry[1])
         for author in authors:
             field_values["author"].append(author)

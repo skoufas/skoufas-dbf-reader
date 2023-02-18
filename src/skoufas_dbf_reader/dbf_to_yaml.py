@@ -15,7 +15,7 @@ def convert_dbf_to_yaml(from_dbf_file: str, to_yaml_file: str):
         for count, record in enumerate(dbf):
             entry: dict[int, str | int] = dict()
             entry[0] = count + 1
-            for (name, value) in record.items():
+            for name, value in record.items():
                 if not value:
                     continue
                 idx = int(name.replace("A", ""))
