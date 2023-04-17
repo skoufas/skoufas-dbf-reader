@@ -20,7 +20,7 @@ requires-python = ">=3.10"
 dynamic = ["version"]
 dependencies = [
     "dbfread==2.0.7",
-    "snakemd==0.15.0",
+    "snakemd==2.0.0",
     "PyYAML==6.0",
 ]
 
