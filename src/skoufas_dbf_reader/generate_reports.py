@@ -169,7 +169,9 @@ def report_single_extracted_fields(reports_directory: str):
             doc.add_unordered_list([f"`{v}`" for v in sorted(set(values))])
             outfile.write(str(doc))
             links.append(
-                Inline(f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά", link=f"./calculated_field_{k}.html")
+                str(
+                    Inline(f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά", link=f"./calculated_field_{k}.html")
+                )
             )
         with open(
             os.path.join(reports_directory, "calculated-field", f"calculated_field_{k}_romanize_sort.md"),
@@ -181,9 +183,11 @@ def report_single_extracted_fields(reports_directory: str):
             doc.add_unordered_list([f"`{v}` # *{romanize(v)}*" for v in sorted(set(values), key=romanize)])
             outfile.write(str(doc))
             links.append(
-                Inline(
-                    f"Υπολογισμένες τιμές για την ιδιότητα {k}, φωνητικά",
-                    link=f"./calculated_field_{k}_romanize_sort.html",
+                str(
+                    Inline(
+                        f"Υπολογισμένες τιμές για την ιδιότητα {k}, φωνητικά",
+                        link=f"./calculated_field_{k}_romanize_sort.html",
+                    )
                 )
             )
     index.add_unordered_list(links)
@@ -209,11 +213,11 @@ def report_invalid_dewey(reports_directory: str):
         doc.add_heading("Dewey με προβληματικές τιμές στην έξοδο")
         for k, v in sorted(invalid_output_dewey.items()):
             doc.add_heading(k, level=2)
-            doc.add_unordered_list([Inline(entry, link=f"../entries/entry_{entry:05}.html") for entry in v])
+            doc.add_unordered_list([str(Inline(entry, link=f"../entries/entry_{entry:05}.html")) for entry in v])
         doc.add_heading("Dewey στην είσοδο που δεν βγαίνουν στην έξοδο")
         for k, v in sorted(no_output_dewey.items()):
             doc.add_heading(k, level=2)
-            doc.add_unordered_list([Inline(entry, link=f"../entries/entry_{entry:05}.html") for entry in v])
+            doc.add_unordered_list([str(Inline(entry, link=f"../entries/entry_{entry:05}.html")) for entry in v])
         outfile.write(str(doc))
 
 
@@ -428,7 +432,7 @@ def report_entries(reports_directory: str):
                 ["Σελίδες", f"{pages_from_a11(entry[11])}"],
                 ["Επιμελητής", f"{curator_from_a16(entry[16])}"],
                 ["Αντίτυπα", f"{copies_from_a17_a18_a30(entry[17], entry[18], entry[30])}"],
-                ["Δωρητές", MDList(donors)],
+                ["Δωρητές", str(MDList(donors))],
                 ["Τεύχος/Τόμος", f"{volume_from_a17_a18_a20_a30(entry[17], entry[18], entry[20], entry[30])}"],
                 ["Υλικό", f"{material_from_a18_a30(entry[18], entry[30])}"],
                 ["Σημειώσεις", f"{notes_from_a17_a18_a21_a30(entry[17], entry[18], entry[21], entry[30])}"],
@@ -519,7 +523,7 @@ def report_entries(reports_directory: str):
     all_divided = list(divide_chunks(all, 1000))
     for thousands, sublist in enumerate(all_divided):
         index.add_heading(f"Απο {thousands*1000} ως {thousands*1000+len(sublist)}")
-        sublist = [Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in sublist]
+        sublist = [str(Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html")) for id, title in sublist]
         index.add_unordered_list(sublist)
 
     with open(os.path.join(reports_directory, "entries", "index.md"), "w", encoding="utf-8") as outfile:
@@ -533,7 +537,7 @@ def report_entries(reports_directory: str):
         for author, entry_list in sorted(author_dict.items()):
             index_by_author.add_heading(author, level=3)
             entry_list = [
-                Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in entry_list
+                str(Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html")) for id, title in entry_list
             ]
             index_by_author.add_unordered_list(entry_list)
     with open(os.path.join(reports_directory, "entries", "index_by_author.md"), "w", encoding="utf-8") as outfile:
@@ -544,7 +548,9 @@ def report_entries(reports_directory: str):
     index_by_dewey.add_table_of_contents(range(1, 3))
     for dewey, entry_list in sorted(by_dewey.items()):
         index_by_dewey.add_heading(dewey, level=2)
-        entry_list = [Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in entry_list]
+        entry_list = [
+            str(Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html")) for id, title in entry_list
+        ]
         index_by_dewey.add_unordered_list(entry_list)
     with open(os.path.join(reports_directory, "entries", "index_by_dewey.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(index_by_dewey))
