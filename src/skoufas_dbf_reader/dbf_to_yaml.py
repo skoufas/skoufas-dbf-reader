@@ -1,4 +1,6 @@
 """Convert dbf files to human readable yaml"""
+from __future__ import annotations
+
 import sys
 from collections import OrderedDict
 

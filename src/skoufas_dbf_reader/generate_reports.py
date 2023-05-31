@@ -7,7 +7,7 @@ import sys
 from collections import defaultdict
 
 import yaml
-from snakemd import Document, InlineText, MDCheckList, MDList, Table
+from snakemd import Document, Inline, MDList, Table
 
 from skoufas_dbf_reader.correction_data import plain_author_re
 from skoufas_dbf_reader.field_extractors import *
@@ -22,17 +22,17 @@ def report_single_fields(reports_directory: str):
             if i in entry and entry[i] and entry[i].strip():
                 field_values[i].add(entry[i].strip())
     for i in range(1, 31):
-        doc = Document(f"Τιμές στη θέση {i:02}")
-        doc.add_header(f"Τιμές στη θέση {i:02}")
+        doc = Document()
+        doc.add_heading(f"Τιμές στη θέση {i:02}")
         doc.add_unordered_list([f"`{v}`" for v in sorted(field_values[i])])
         with open(
             os.path.join(reports_directory, "single-field", f"field_{i:02}.md"), "w", encoding="utf-8"
         ) as outfile:
             outfile.write(str(doc))
 
-    doc = Document("Τιμές στις στήλες των καρτελών")
-    doc.add_header("Τιμές στις στήλες των καρτελών")
-    doc.add_unordered_list([InlineText(f"Στήλη {i}", url=f"./field_{i:02}.html").render() for i in range(1, 31)])
+    doc = Document()
+    doc.add_heading("Τιμές στις στήλες των καρτελών")
+    doc.add_unordered_list([Inline(f"Στήλη {i}", link=f"./field_{i:02}.html") for i in range(1, 31)])
     with open(os.path.join(reports_directory, "single-field", "index.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(doc))
 
@@ -155,8 +155,8 @@ def report_single_extracted_fields(reports_directory: str):
 
     os.makedirs(os.path.join(reports_directory, "calculated-field"), exist_ok=True)
 
-    index = Document("Υπολογισμένες Τιμές")
-    index.add_header("Υπολογισμένες Τιμές")
+    index = Document()
+    index.add_heading("Υπολογισμένες Τιμές")
     links: list[str] = []
 
     for k, values in field_values.items():
@@ -164,29 +164,27 @@ def report_single_extracted_fields(reports_directory: str):
         with open(
             os.path.join(reports_directory, "calculated-field", f"calculated_field_{k}.md"), "w", encoding="utf-8"
         ) as outfile:
-            doc = Document(f"Υπολογισμένες τιμές για την ιδιότητα {k}")
-            doc.add_header(f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά")
+            doc = Document()
+            doc.add_heading(f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά")
             doc.add_unordered_list([f"`{v}`" for v in sorted(set(values))])
             outfile.write(str(doc))
             links.append(
-                InlineText(
-                    f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά", url=f"./calculated_field_{k}.html"
-                ).render()
+                Inline(f"Υπολογισμένες τιμές για την ιδιότητα {k}, αλφαβητικά", link=f"./calculated_field_{k}.html")
             )
         with open(
             os.path.join(reports_directory, "calculated-field", f"calculated_field_{k}_romanize_sort.md"),
             "w",
             encoding="utf-8",
         ) as outfile:
-            doc = Document(f"Υπολογισμένες τιμές για την ιδιότητα {k}")
-            doc.add_header(f"Υπολογισμένες τιμές για την ιδιότητα {k}, φωνητικά")
+            doc = Document()
+            doc.add_heading(f"Υπολογισμένες τιμές για την ιδιότητα {k}, φωνητικά")
             doc.add_unordered_list([f"`{v}` # *{romanize(v)}*" for v in sorted(set(values), key=romanize)])
             outfile.write(str(doc))
             links.append(
-                InlineText(
+                Inline(
                     f"Υπολογισμένες τιμές για την ιδιότητα {k}, φωνητικά",
-                    url=f"./calculated_field_{k}_romanize_sort.html",
-                ).render()
+                    link=f"./calculated_field_{k}_romanize_sort.html",
+                )
             )
     index.add_unordered_list(links)
     with open(os.path.join(reports_directory, "calculated-field", "index.md"), "w", encoding="utf-8") as outfile:
@@ -207,15 +205,15 @@ def report_invalid_dewey(reports_directory: str):
 
     os.makedirs(os.path.join(reports_directory, "checks"), exist_ok=True)
     with open(os.path.join(reports_directory, "checks", "invalid_dewey.md"), "w", encoding="utf-8") as outfile:
-        doc = Document("Dewey με προβληματικές τιμές")
-        doc.add_header("Dewey με προβληματικές τιμές στην έξοδο")
+        doc = Document()
+        doc.add_heading("Dewey με προβληματικές τιμές στην έξοδο")
         for k, v in sorted(invalid_output_dewey.items()):
-            doc.add_header(k, level=2)
-            doc.add_unordered_list([InlineText(entry, url=f"../entries/entry_{entry:05}.html").render() for entry in v])
-        doc.add_header("Dewey στην είσοδο που δεν βγαίνουν στην έξοδο")
+            doc.add_heading(k, level=2)
+            doc.add_unordered_list([Inline(entry, link=f"../entries/entry_{entry:05}.html") for entry in v])
+        doc.add_heading("Dewey στην είσοδο που δεν βγαίνουν στην έξοδο")
         for k, v in sorted(no_output_dewey.items()):
-            doc.add_header(k, level=2)
-            doc.add_unordered_list([InlineText(entry, url=f"../entries/entry_{entry:05}.html").render() for entry in v])
+            doc.add_heading(k, level=2)
+            doc.add_unordered_list([Inline(entry, link=f"../entries/entry_{entry:05}.html") for entry in v])
         outfile.write(str(doc))
 
 
@@ -231,8 +229,8 @@ def report_translators(reports_directory: str):
                 if not valid_translator_re.fullmatch(translator):
                     weird_translators.append(translator)
     with open(os.path.join(reports_directory, "checks", "invalid_translators.md"), "w", encoding="utf-8") as outfile:
-        doc = Document("Μεταφραστές με παράξενα ονόματα")
-        doc.add_header("Μεταφραστές με παράξενα ονόματα")
+        doc = Document()
+        doc.add_heading("Μεταφραστές με παράξενα ονόματα")
         doc.add_unordered_list(sorted(weird_translators))
         outfile.write(str(doc))
 
@@ -250,15 +248,15 @@ def report_donors(reports_directory: str):
         donor_count_list.append([donor, str(count)])
 
     with open(os.path.join(reports_directory, "checks", "donors.md"), "w", encoding="utf-8") as outfile:
-        doc = Document("Δωρητές")
-        doc.add_header("Δωρητές")
+        doc = Document()
+        doc.add_heading("Δωρητές")
         doc.add_table(["Δωρητής", "Αριθμός βιβλίων"], donor_count_list)
         outfile.write(str(doc))
 
 
 def report_isbns(reports_directory: str):
-    doc = Document("Προβληματικά ISBN")
-    doc.add_header("Προβληματικά ISBN")
+    doc = Document()
+    doc.add_heading("Προβληματικά ISBN")
     doc.add_table_of_contents()
 
     for entry in all_entries():
@@ -275,10 +273,10 @@ def report_isbns(reports_directory: str):
         if None in checks:
             continue
 
-        doc.add_header(result, level=2)
+        doc.add_heading(result, level=2)
         doc.add_unordered_list([check for check in checks if check])
 
-        doc.add_header("Αρχική Καρτέλα στο DBASE", level=3)
+        doc.add_heading("Αρχική Καρτέλα στο DBASE", level=3)
         doc.add_code(code=entry_as_yaml(entry, minimal=True), lang="yaml")
 
     with open(os.path.join(reports_directory, "checks", "invalid_isbn.md"), "w", encoding="utf-8") as outfile:
@@ -288,11 +286,11 @@ def report_isbns(reports_directory: str):
 def report_entry_numbers(reports_directory: str):
     all_entry_numbers: dict[str, dict[int, str]] = dict()
 
-    no_entry_numbers = Document("Καρτέλες χωρίς αριθμό εισαγωγής")
-    no_entry_numbers.add_header("Καρτέλες χωρίς αριθμό εισαγωγής")
+    no_entry_numbers = Document()
+    no_entry_numbers.add_heading("Καρτέλες χωρίς αριθμό εισαγωγής")
 
-    non_numeric = Document("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής")
-    non_numeric.add_header("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής")
+    non_numeric = Document()
+    non_numeric.add_heading("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής")
 
     duplicate_entry_numbers: defaultdict[str, list[dict[int, str]]] = defaultdict(list)
 
@@ -327,8 +325,8 @@ def report_entry_numbers(reports_directory: str):
     with open(
         os.path.join(reports_directory, "checks", "duplicate_entry_numbers.md"), "w", encoding="utf-8"
     ) as outfile:
-        dup = Document("Καρτέλες με διπλοπερασμένο αριθμητικό αριθμό εισαγωγής")
-        dup.add_header("Καρτέλες με διπλοπερασμένο αριθμητικό αριθμό εισαγωγής")
+        dup = Document()
+        dup.add_heading("Καρτέλες με διπλοπερασμένο αριθμητικό αριθμό εισαγωγής")
         for entry_number, entries in duplicate_entry_numbers.items():
             dup.add_horizontal_rule()
             dup.add_paragraph(entry_number)
@@ -402,16 +400,16 @@ def report_entries(reports_directory: str):
             if not check_ean(isbn_issn_ean):
                 ean = isbn_issn_ean
 
-        doc = Document(f"entry_{entry[0]:05}")
+        doc = Document()
 
-        doc.add_header("Τίτλος")
+        doc.add_heading("Τίτλος")
         doc.add_paragraph(str(title_from_a02(entry[2])))
         doc.add_paragraph(str(subtitle_from_a03(entry[3])))
 
-        doc.add_header("Συγγραφείς", level=2)
+        doc.add_heading("Συγγραφείς", level=2)
         doc.add_unordered_list(authors_from_a01(entry[1]))
 
-        doc.add_header("Αριθμοί Εισαγωγης", level=2)
+        doc.add_heading("Αριθμοί Εισαγωγης", level=2)
         doc.add_unordered_list(
             entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
                 entry[4], entry[5], entry[6], entry[7], entry[8], entry[18], entry[19]
@@ -430,7 +428,7 @@ def report_entries(reports_directory: str):
                 ["Σελίδες", f"{pages_from_a11(entry[11])}"],
                 ["Επιμελητής", f"{curator_from_a16(entry[16])}"],
                 ["Αντίτυπα", f"{copies_from_a17_a18_a30(entry[17], entry[18], entry[30])}"],
-                ["Δωρητές", MDList(donors).render()],
+                ["Δωρητές", MDList(donors)],
                 ["Τεύχος/Τόμος", f"{volume_from_a17_a18_a20_a30(entry[17], entry[18], entry[20], entry[30])}"],
                 ["Υλικό", f"{material_from_a18_a30(entry[18], entry[30])}"],
                 ["Σημειώσεις", f"{notes_from_a17_a18_a21_a30(entry[17], entry[18], entry[21], entry[30])}"],
@@ -449,8 +447,8 @@ def report_entries(reports_directory: str):
         doc.add_unordered_list(topic_list)
 
         doc.add_paragraph("Ιδιότητες")
-        doc.add_element(
-            MDCheckList(
+        doc.add_block(
+            MDList(
                 ["Εχει CD"],
                 checked=has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(
                     [
@@ -468,8 +466,8 @@ def report_entries(reports_directory: str):
             )
         )
 
-        doc.add_element(
-            MDCheckList(
+        doc.add_block(
+            MDList(
                 ["Εχει DVD"],
                 checked=has_dvd_from_a30(
                     [
@@ -479,9 +477,9 @@ def report_entries(reports_directory: str):
             )
         )
 
-        doc.add_element(MDCheckList(["Ανάτυπο"], checked=offprint_from_a17_a21_a30(entry[17], entry[21], entry[30])))
+        doc.add_block(MDList(["Ανάτυπο"], checked=offprint_from_a17_a21_a30(entry[17], entry[21], entry[30])))
 
-        doc.add_header("Αρχική Καρτέλα στο DBASE", level=1)
+        doc.add_heading("Αρχική Καρτέλα στο DBASE", level=1)
         doc.add_code(code=entry_as_yaml(entry, minimal=False), lang="yaml")
 
         title = title_from_a02(entry[2])
@@ -510,8 +508,8 @@ def report_entries(reports_directory: str):
         ) as outfile:
             outfile.write(str(doc))
 
-    index = Document("Όλες οι καρτέλες")
-    index.add_header("Όλες οι καρτέλες")
+    index = Document()
+    index.add_heading("Όλες οι καρτέλες")
     index.add_table_of_contents(range(1, 3))
 
     def divide_chunks(inlist: list[tuple[str, str]], size: int):
@@ -520,38 +518,33 @@ def report_entries(reports_directory: str):
 
     all_divided = list(divide_chunks(all, 1000))
     for thousands, sublist in enumerate(all_divided):
-        index.add_header(f"Απο {thousands*1000} ως {thousands*1000+len(sublist)}")
-        sublist = [
-            InlineText(f"{int(id):05}: {title}", url=f"./entry_{int(id):05}.html").render() for id, title in sublist
-        ]
+        index.add_heading(f"Απο {thousands*1000} ως {thousands*1000+len(sublist)}")
+        sublist = [Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in sublist]
         index.add_unordered_list(sublist)
 
     with open(os.path.join(reports_directory, "entries", "index.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(index))
 
-    index_by_author = Document("Όλες οι καρτέλες, κατα συγγραφέα")
-    index_by_author.add_header("Όλες οι καρτέλες, κατα συγγραφέα")
+    index_by_author = Document()
+    index_by_author.add_heading("Όλες οι καρτέλες, κατα συγγραφέα")
     index_by_author.add_table_of_contents(range(1, 3))
     for author_initial, author_dict in sorted(by_author.items()):
-        index_by_author.add_header(author_initial, level=2)
+        index_by_author.add_heading(author_initial, level=2)
         for author, entry_list in sorted(author_dict.items()):
-            index_by_author.add_header(author, level=3)
+            index_by_author.add_heading(author, level=3)
             entry_list = [
-                InlineText(f"{int(id):05}: {title}", url=f"./entry_{int(id):05}.html").render()
-                for id, title in entry_list
+                Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in entry_list
             ]
             index_by_author.add_unordered_list(entry_list)
     with open(os.path.join(reports_directory, "entries", "index_by_author.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(index_by_author))
 
-    index_by_dewey = Document("Όλες οι καρτέλες, κατα συγγραφέα")
-    index_by_dewey.add_header("Όλες οι καρτέλες, κατα συγγραφέα")
+    index_by_dewey = Document()
+    index_by_dewey.add_heading("Όλες οι καρτέλες, κατα συγγραφέα")
     index_by_dewey.add_table_of_contents(range(1, 3))
     for dewey, entry_list in sorted(by_dewey.items()):
-        index_by_dewey.add_header(dewey, level=2)
-        entry_list = [
-            InlineText(f"{int(id):05}: {title}", url=f"./entry_{int(id):05}.html").render() for id, title in entry_list
-        ]
+        index_by_dewey.add_heading(dewey, level=2)
+        entry_list = [Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html") for id, title in entry_list]
         index_by_dewey.add_unordered_list(entry_list)
     with open(os.path.join(reports_directory, "entries", "index_by_dewey.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(index_by_dewey))
@@ -559,34 +552,36 @@ def report_entries(reports_directory: str):
 
 def add_index(reports_directory: str):
     os.makedirs(reports_directory, exist_ok=True)
-    doc = Document("index")
+    doc = Document()
 
-    doc.add_header("Βιβλιοθήκη Σκουφά: προσωρινός κατάλογος βιβλίων")
+    doc.add_heading("Βιβλιοθήκη Σκουφά: προσωρινός κατάλογος βιβλίων")
     doc.add_table_of_contents()
 
-    doc.add_paragraph(InlineText("Όλες οι καρτέλες", url="./entries/index.html").render())
-    doc.add_paragraph(InlineText("Όλες οι καρτέλες, κατα συγγραφέα", url="./entries/index_by_author.html").render())
-    doc.add_paragraph(InlineText("Όλες οι καρτέλες, κατα dewey", url="./entries/index_by_dewey.html").render())
+    doc.add_paragraph(str(Inline("Όλες οι καρτέλες", link="./entries/index.html")))
+    doc.add_paragraph(str(Inline("Όλες οι καρτέλες, κατα συγγραφέα", link="./entries/index_by_author.html")))
+    doc.add_paragraph(str(Inline("Όλες οι καρτέλες, κατα dewey", link="./entries/index_by_dewey.html")))
 
-    doc.add_header("Τιμές κατα στήλη")
-    doc.add_paragraph(InlineText("Υπολογισμένες τιμές", url="./calculated-field/index.html").render())
-    doc.add_paragraph(InlineText("Τιμές στις στήλες των καρτελών", url="./single-field/index.html").render())
+    doc.add_heading("Τιμές κατα στήλη")
+    doc.add_paragraph(str(Inline("Υπολογισμένες τιμές", link="./calculated-field/index.html")))
+    doc.add_paragraph(str(Inline("Τιμές στις στήλες των καρτελών", link="./single-field/index.html")))
 
-    doc.add_header("Ελεγκτικές Αναφορές")
+    doc.add_heading("Ελεγκτικές Αναφορές")
     doc.add_paragraph(
-        InlineText(
-            "Καρτέλες με διπλοπερασμένο αριθμητικό αριθμό εισαγωγής", url="./checks/duplicate_entry_numbers.html"
-        ).render()
+        str(
+            Inline(
+                "Καρτέλες με διπλοπερασμένο αριθμητικό αριθμό εισαγωγής", link="./checks/duplicate_entry_numbers.html"
+            )
+        )
     )
-    doc.add_paragraph(InlineText("Καρτέλες χωρίς αριθμό εισαγωγής", url="./checks/no_entry_numbers.html").render())
+    doc.add_paragraph(str(Inline("Καρτέλες χωρίς αριθμό εισαγωγής", link="./checks/no_entry_numbers.html")))
     doc.add_paragraph(
-        InlineText("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής", url="./checks/non_numeric_entry_numbers.html").render()
+        str(Inline("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής", link="./checks/non_numeric_entry_numbers.html"))
     )
-    doc.add_paragraph(InlineText("Dewey με προβληματικές τιμές", url="./checks/invalid_dewey.html").render())
-    doc.add_paragraph(InlineText("Μεταφραστές με παράξενα ονόματα", url="./checks/invalid_translators.html").render())
-    doc.add_paragraph(InlineText("Προβληματικά ISBN", url="./checks/invalid_isbn.html").render())
+    doc.add_paragraph(str(Inline("Dewey με προβληματικές τιμές", link="./checks/invalid_dewey.html")))
+    doc.add_paragraph(str(Inline("Μεταφραστές με παράξενα ονόματα", link="./checks/invalid_translators.html")))
+    doc.add_paragraph(str(Inline("Προβληματικά ISBN", link="./checks/invalid_isbn.html")))
 
-    doc.add_paragraph(InlineText("Δωρητές", url="./checks/donors.html").render())
+    doc.add_paragraph(str(Inline("Δωρητές", link="./checks/donors.html")))
 
     with open(os.path.join(reports_directory, "index.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(doc))
