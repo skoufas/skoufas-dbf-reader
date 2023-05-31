@@ -32,7 +32,7 @@ def report_single_fields(reports_directory: str):
 
     doc = Document()
     doc.add_heading("Τιμές στις στήλες των καρτελών")
-    doc.add_unordered_list([Inline(f"Στήλη {i}", link=f"./field_{i:02}.html") for i in range(1, 31)])
+    doc.add_unordered_list([str(Inline(f"Στήλη {i}", link=f"./field_{i:02}.html")) for i in range(1, 31)])
     with open(os.path.join(reports_directory, "single-field", "index.md"), "w", encoding="utf-8") as outfile:
         outfile.write(str(doc))
 
