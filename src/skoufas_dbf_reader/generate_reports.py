@@ -409,6 +409,13 @@ def report_entries(reports_directory: str):
         doc.add_heading("Τίτλος")
         doc.add_paragraph(str(title_from_a02(entry[2])))
         doc.add_paragraph(str(subtitle_from_a03(entry[3])))
+        doc.add_paragraph(
+            str(
+                Inline(
+                    text="Στο library.skoufas.gr", link=f"https://library.skoufas.gr/books/by-entry-number/{entry[0]}"
+                )
+            )
+        )
 
         doc.add_heading("Συγγραφείς", level=2)
         doc.add_unordered_list(authors_from_a01(entry[1]))
