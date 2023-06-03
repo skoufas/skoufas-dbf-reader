@@ -206,18 +206,43 @@ def test_report_entry_numbers(reports_directory: str):
         yaml.dump(dict(duplicate_entry_numbers), outfile, default_flow_style=False, allow_unicode=True)
 
 
-def test_report_translators(reports_directory: str):
+def test_report_weird_names(reports_directory: str):
     weird_translators: list[str] = []
-    valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
+    weird_authors: list[str] = []
+    weird_curators: list[str] = []
+    weird_donors: list[str] = []
+    valid_name_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*\.?")
     for entry in all_entries():
         translator = translator_from_a06(entry[6])
         if translator:
             translators = translator.split("!!")
             for translator in translators:
-                if not valid_translator_re.fullmatch(translator):
+                if not valid_name_re.fullmatch(translator):
                     weird_translators.append(translator)
-    with open(os.path.join(reports_directory, f"weird_translators.yml"), "w", encoding="utf-8") as outfile:
-        yaml.dump(weird_translators, outfile, default_flow_style=False, allow_unicode=True)
+        authors = authors_from_a01(entry[1])
+        for author in authors:
+            if not valid_name_re.fullmatch(author):
+                weird_authors.append(author)
+        curator = curator_from_a16(entry[16])
+        if curator:
+            curators = curator.split("!!")
+            for curator in curators:
+                if not valid_name_re.fullmatch(curator):
+                    weird_curators.append(curator)
+        donor = donation_from_a17_a30(entry[17], entry[30])
+        if donor:
+            donors = donor.split("!!")
+            for donor in donors:
+                if not valid_name_re.fullmatch(donor):
+                    weird_donors.append(donor)
+    for field, thelist in [
+        ("translators", weird_translators),
+        ("authors", weird_authors),
+        ("curators", weird_curators),
+        ("donors", weird_donors),
+    ]:
+        with open(os.path.join(reports_directory, f"weird_{field}.yml"), "w", encoding="utf-8") as outfile:
+            yaml.dump(sorted(set(thelist)), outfile, default_flow_style=False, allow_unicode=True)
 
 
 def test_report_bools(reports_directory: str):

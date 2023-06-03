@@ -221,22 +221,48 @@ def report_invalid_dewey(reports_directory: str):
         outfile.write(str(doc))
 
 
-def report_translators(reports_directory: str):
+def report_weird_names(reports_directory: str):
     os.makedirs(os.path.join(reports_directory, "checks"), exist_ok=True)
     weird_translators: list[str] = []
-    valid_translator_re = re.compile(r"[Α-Ω\-]+,[Α-Ω\.]*\.?")
+    weird_authors: list[str] = []
+    weird_curators: list[str] = []
+    weird_donors: list[str] = []
+    valid_name_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*\.?")
     for entry in all_entries():
         translator = translator_from_a06(entry[6])
         if translator:
             translators = translator.split("!!")
             for translator in translators:
-                if not valid_translator_re.fullmatch(translator):
+                if not valid_name_re.fullmatch(translator):
                     weird_translators.append(translator)
-    with open(os.path.join(reports_directory, "checks", "invalid_translators.md"), "w", encoding="utf-8") as outfile:
-        doc = Document()
-        doc.add_heading("Μεταφραστές με παράξενα ονόματα")
-        doc.add_unordered_list(sorted(weird_translators))
-        outfile.write(str(doc))
+        authors = authors_from_a01(entry[1])
+        for author in authors:
+            if not valid_name_re.fullmatch(author):
+                weird_authors.append(author)
+        curator = curator_from_a16(entry[16])
+        if curator:
+            curators = curator.split("!!")
+            for curator in curators:
+                if not valid_name_re.fullmatch(curator):
+                    weird_curators.append(curator)
+        donor = donation_from_a17_a30(entry[17], entry[30])
+        if donor:
+            donors = donor.split("!!")
+            for donor in donors:
+                if not valid_name_re.fullmatch(donor):
+                    weird_donors.append(donor)
+
+    for field, greek_name, thelist in [
+        ("translators", "Μεταφραστές", weird_translators),
+        ("authors", "Συγγραφείς", weird_authors),
+        ("curators", "Επιμελητές", weird_curators),
+        ("donors", "Δωρητές", weird_donors),
+    ]:
+        with open(os.path.join(reports_directory, "checks", f"invalid_{field}.md"), "w", encoding="utf-8") as outfile:
+            doc = Document()
+            doc.add_heading(f"{greek_name} με παράξενα ονόματα")
+            doc.add_unordered_list(sorted(set(thelist)))
+            outfile.write(str(doc))
 
 
 def report_donors(reports_directory: str):
@@ -591,7 +617,12 @@ def add_index(reports_directory: str):
         str(Inline("Καρτέλες με μή αριθμητικό αριθμό εισαγωγής", link="./checks/non_numeric_entry_numbers.html"))
     )
     doc.add_paragraph(str(Inline("Dewey με προβληματικές τιμές", link="./checks/invalid_dewey.html")))
+
     doc.add_paragraph(str(Inline("Μεταφραστές με παράξενα ονόματα", link="./checks/invalid_translators.html")))
+    doc.add_paragraph(str(Inline("Συγγραφείς με παράξενα ονόματα", link="./checks/invalid_authors.html")))
+    doc.add_paragraph(str(Inline("Επιμελητές με παράξενα ονόματα", link="./checks/invalid_curators.html")))
+    doc.add_paragraph(str(Inline("Δωρητές με παράξενα ονόματα", link="./checks/invalid_donors.html")))
+
     doc.add_paragraph(str(Inline("Προβληματικά ISBN", link="./checks/invalid_isbn.html")))
 
     doc.add_paragraph(str(Inline("Δωρητές", link="./checks/donors.html")))
@@ -609,7 +640,7 @@ def main():
     print(f"Creating reports in {md_report_dir}")
     shutil.rmtree(md_report_dir, ignore_errors=True)
     add_index(md_report_dir)
-    report_translators(md_report_dir)
+    report_weird_names(md_report_dir)
     report_donors(md_report_dir)
     report_isbns(md_report_dir)
     report_entry_numbers(md_report_dir)
