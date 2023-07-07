@@ -51,7 +51,7 @@ Functions to read and convert from the DBF file used to track books in the Skouf
 - `def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: Optional[list[Optional[str]]]) -> bool`
 - `def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool`
 - `def isbn_from_a17_a18_a19_a22_a30(a17in: Optional[str], a18in: Optional[str], a19in: Optional[str], a22in: Optional[str], a30in: Optional[str]) -> Optional[str]`
-- `def language_from_a01(a01: Optional[str]) -> Optional[str]`
+- `language_from_a01_a02(a01: Optional[str], a02: Optional[str]) -> Optional[str]`
 - `def material_from_a18_a30(a18: Optional[str], a30: Optional[str]) -> Optional[str]`
 - `def notes_from_a17_a18_a21_a30(a17: Optional[str], a18: Optional[str], a21: Optional[str], a30: Optional[str]) -> Optional[str]`
 - `def offprint_from_a17_a21_a30(a17: Optional[str], a21: Optional[str], a30: Optional[str]) -> bool`

@@ -48,7 +48,7 @@ def report_single_extracted_fields(reports_directory: str):
             else:
                 field_values["weird_author"].append(author)
 
-        language = language_from_a01(entry[1])
+        language = language_from_a01_a02(entry[1], entry[2])
         if language:
             field_values["language"].append(language)
 
@@ -457,7 +457,7 @@ def report_entries(reports_directory: str):
             ["Πεδίο", "Τιμή"],
             [
                 ["dbase_number", str(entry[0])],
-                ["Γλώσσα", str(language_from_a01(entry[1]))],
+                ["Γλώσσα", str(language_from_a01_a02(entry[1], entry[2]))],
                 ["Dewey", str(dewey_from_a04_a05(entry[4], entry[5]))],
                 ["Έκδοση", str(edition_from_a07(entry[7]))],
                 ["Εκδότης (Πόλη)", f"{editor}"],

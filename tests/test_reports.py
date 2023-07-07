@@ -43,7 +43,7 @@ def test_report_single_extracted_fields(reports_directory: str):
             else:
                 field_values["weird_author"].append(author)
 
-        language = language_from_a01(entry[1])
+        language = language_from_a01_a02(entry[1], entry[2])
         if language:
             field_values["language"].append(language)
 
@@ -331,7 +331,7 @@ def test_report_extracted_fields(reports_directory: str):
         converted_entry["dbase_number"] = entry[0]
         converted_entry["authors"] = authors_from_a01(entry[1])
 
-        language = language_from_a01(entry[1])
+        language = language_from_a01_a02(entry[1], entry[2])
         if language:
             converted_entry["language"] = language
 
@@ -460,6 +460,24 @@ def test_report_extracted_fields(reports_directory: str):
     ) as outfile:
         yaml.dump(
             {"converted_entries": converted_entries},
+            outfile,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+        )
+
+
+def test_report_no_language(reports_directory: str):
+    titles = []
+    for entry in all_entries():
+        language = language_from_a01_a02(entry[1], entry[2])
+        if not language:
+            title = title_from_a02(entry[2])
+            if title:
+                titles.append(title)
+    with open(os.path.join(reports_directory, "titles_with_no_language.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(
+            {"titles": titles},
             outfile,
             default_flow_style=False,
             allow_unicode=True,

@@ -55,15 +55,18 @@ def test_authors_from_a01():
     assert authors_from_a01("ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ    .") == ["ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ"]
 
 
-def test_language_from_a01():
-    assert not language_from_a01(None)
-    assert not language_from_a01("")
-    assert not language_from_a01("GAL")
-    assert not language_from_a01("ΨΑΡΟΜΗΛΙΓΚΟΣ , ΛΑΖΟΥ , ΚΑΡΤΑΛΗΣ ")
-    assert not language_from_a01("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι")
-    assert language_from_a01("ΩUENEAU RAYMOND                    GAL") == "FR"
-    assert language_from_a01("BITSIOS,DIMITRIS                  AGL") == "EN"
-    assert language_from_a01("FINLAY GEORG                        GER") == "DE"
+def test_language_from_a01_a02():
+    assert not language_from_a01_a02(None, None)
+    assert not language_from_a01_a02("", "")
+    assert not language_from_a01_a02("GAL", "")
+    assert not language_from_a01_a02("ΨΑΡΟΜΗΛΙΓΚΟΣ", "Latin title")
+    assert not language_from_a01_a02("ΨΑΡΟΜΗΛΙΓΚΟΣ", "")
+    assert language_from_a01_a02("ΨΑΡΟ", "ΑΖΣΦ") == "el"
+    assert language_from_a01_a02("Latin Author", "ΑΖΣΦ") == "el"
+    assert language_from_a01_a02("ΚΕΛΕΣΙΔΗΣ, ΤΕΛΗΣ                       Ι", "ΑΖΣΦ") == "el"
+    assert language_from_a01_a02("ΩUENEAU RAYMOND                    GAL", "bon") == "fr"
+    assert language_from_a01_a02("BITSIOS,DIMITRIS                  AGL", "english title") == "en"
+    assert language_from_a01_a02("FINLAY GEORG                        GER", "german title") == "de"
 
 
 def test_title_from_a02():

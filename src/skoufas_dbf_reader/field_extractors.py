@@ -1,9 +1,13 @@
 """ Functions that extract information given specific strings """
+import re
+
 from collections import OrderedDict
 from typing import Optional
 
 from skoufas_dbf_reader.correction_data import *
 from skoufas_dbf_reader.utilities import none_if_empty_or_stripped
+
+only_greek = re.compile(r"[Α-ΩΉα-ω0-9 &:;,'!<>ⁿ=$\[\]\+\\\-\(\)\.\"\/]+")
 
 
 def has_language(a01: Optional[str]) -> bool:
@@ -36,7 +40,7 @@ def authors_from_a01(a01: Optional[str]) -> list[str]:
     return author.split("!!")
 
 
-def language_from_a01(a01: Optional[str]) -> Optional[str]:
+def language_from_a01_a02(a01: Optional[str], a02: Optional[str]) -> Optional[str]:
     """Check values for language at the end"""
     if not a01:
         return None
@@ -44,6 +48,9 @@ def language_from_a01(a01: Optional[str]) -> Optional[str]:
         for language, isolanguage in language_codes().items():
             if a01.endswith(language):
                 return isolanguage
+    title = title_from_a02(a02)
+    if title and only_greek.fullmatch(title):
+        return "el"
     return None
 
 
