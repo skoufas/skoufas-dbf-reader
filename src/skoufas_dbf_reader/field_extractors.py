@@ -36,7 +36,7 @@ def authors_from_a01(a01: Optional[str]) -> list[str]:
     author = a01.strip()
     author = author_corrections().get(author, author)
     if not author:
-        author = ""
+        return []
     return author.split("!!")
 
 
