@@ -483,3 +483,46 @@ def test_report_no_language(reports_directory: str):
             allow_unicode=True,
             sort_keys=False,
         )
+
+
+def test_report_authors_with_no_correction(reports_directory: str):
+    authors = []
+    for entry in all_entries():
+        a01 = entry[1]
+        if not a01:
+            continue
+        if not has_author(a01):
+            continue
+        strip_finals = list(language_codes().keys()) + [
+            " Ι",
+            " .",
+        ]
+        for final in strip_finals:
+            if a01.endswith(" " + final):
+                a01 = a01.replace(final, "")
+        author = a01.strip()
+        if author not in author_corrections():
+            authors.append(author)
+
+    def correct_name(name):
+        return name.replace("ΚΩΝ/ΝΟΣ", "ΚΩΝΣΤΑΝΤΙΝΟΣ")
+
+    with open(os.path.join(reports_directory, "authors_with_no_correction.yml"), "w", encoding="utf-8") as outfile:
+        yaml.dump(
+            {"authors_with_no_correction": {k: correct_name(k) for k in sorted(authors)}},
+            outfile,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+        )
+
+    with open(
+        os.path.join(reports_directory, "authors_with_no_correction_phonetic.yml"), "w", encoding="utf-8"
+    ) as outfile:
+        yaml.dump(
+            {"authors_with_no_correction": {k: correct_name(k) for k in sorted(authors, key=lambda x: romanize(x))}},
+            outfile,
+            default_flow_style=False,
+            allow_unicode=True,
+            sort_keys=False,
+        )
