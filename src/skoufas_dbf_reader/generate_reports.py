@@ -228,6 +228,9 @@ def report_weird_names(reports_directory: str):
     weird_curators: list[str] = []
     weird_donors: list[str] = []
     valid_name_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*\.?")
+    valid_name2_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*,[A-ZΑ-Ω\.]*\.?")
+    valid_name3_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*\.?@[A-ZΑ-Ω\-]+")
+    valid_name4_re = re.compile(r"[A-ZΑ-Ω\-]+,[A-ZΑ-Ω\.]*,[A-ZΑ-Ω\.]*\.?@[A-ZΑ-Ω\-]+")
     for entry in all_entries():
         translator = translator_from_a06(entry[6])
         if translator:
@@ -237,7 +240,12 @@ def report_weird_names(reports_directory: str):
                     weird_translators.append(translator)
         authors = authors_from_a01(entry[1])
         for author in authors:
-            if not valid_name_re.fullmatch(author):
+            if (
+                (not valid_name_re.fullmatch(author))
+                and (not valid_name2_re.fullmatch(author))
+                and (not valid_name3_re.fullmatch(author))
+                and (not valid_name4_re.fullmatch(author))
+            ):
                 weird_authors.append(author)
         curator = curator_from_a16(entry[16])
         if curator:
