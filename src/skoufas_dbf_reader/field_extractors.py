@@ -1,16 +1,45 @@
 """ Functions that extract information given specific strings """
+
+from __future__ import annotations
+
 import re
-
 from collections import OrderedDict
-from typing import Optional
 
-from skoufas_dbf_reader.correction_data import *
+from skoufas_dbf_reader.correction_data import (
+    a22_has_isbn_part_re,
+    author_corrections,
+    dewey_re1,
+    dewey_re2,
+    editor_corrections,
+    field04_corrections,
+    field05_corrections,
+    field06_corrections,
+    field07_corrections,
+    field08_corrections,
+    field09_corrections,
+    field10_corrections,
+    field11_corrections,
+    field16_corrections,
+    field17_corrections,
+    field18_corrections,
+    field19_corrections,
+    field20_corrections,
+    field30_corrections,
+    has_author,
+    has_cd_re,
+    has_dvd_re,
+    language_codes,
+    topic_in_paren_re,
+    topic_replacements,
+    translator_corrections,
+    valid_pages_re,
+)
 from skoufas_dbf_reader.utilities import none_if_empty_or_stripped
 
 only_greek = re.compile(r"[Α-ΩΉα-ω0-9 &:;,'!<>ⁿ=$\[\]\+\\\-\(\)\.\"\/]+")
 
 
-def has_language(a01: Optional[str]) -> bool:
+def has_language(a01: str | None) -> bool:
     """Check values for language at the end"""
     if not a01:
         return False
@@ -20,7 +49,7 @@ def has_language(a01: Optional[str]) -> bool:
     return False
 
 
-def authors_from_a01(a01: Optional[str]) -> list[str]:
+def authors_from_a01(a01: str | None) -> list[str]:
     """Get author from A01 DBF record"""
     if not a01:
         return []
@@ -40,7 +69,7 @@ def authors_from_a01(a01: Optional[str]) -> list[str]:
     return author.split("!!")
 
 
-def language_from_a01_a02(a01: Optional[str], a02: Optional[str]) -> Optional[str]:
+def language_from_a01_a02(a01: str | None, a02: str | None) -> str | None:
     """Check values for language at the end"""
     if not a01:
         return None
@@ -54,17 +83,17 @@ def language_from_a01_a02(a01: Optional[str], a02: Optional[str]) -> Optional[st
     return None
 
 
-def title_from_a02(a02: Optional[str]) -> Optional[str]:
+def title_from_a02(a02: str | None) -> str | None:
     """Cleanup"""
     return none_if_empty_or_stripped(a02)
 
 
-def subtitle_from_a03(a03: Optional[str]) -> Optional[str]:
+def subtitle_from_a03(a03: str | None) -> str | None:
     """Cleanup"""
     return none_if_empty_or_stripped(a03)
 
 
-def dewey_from_a04_a05(a04: Optional[str], a05: Optional[str]) -> Optional[str]:
+def dewey_from_a04_a05(a04: str | None, a05: str | None) -> str | None:
     """Cleanup and replace known issues"""
     value4 = none_if_empty_or_stripped(a04)
     if value4:
@@ -126,20 +155,25 @@ def dewey_from_a04_a05(a04: Optional[str], a05: Optional[str]) -> Optional[str]:
 
 
 def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
-    a04: Optional[str],
-    a05: Optional[str],
-    a06: Optional[str],
-    a07: Optional[str],
-    a08: Optional[str],
-    a18: Optional[str],
-    a19: Optional[str],
+    a04: str | None,
+    a05: str | None,
+    a06: str | None,
+    a07: str | None,
+    a08: str | None,
+    a18: str | None,
+    a19: str | None,
 ) -> list[str]:
     """Cleanup, read additional numbers from a06"""
 
     def cleanup_single_value(
         field_name: str,
-        original_value: Optional[str],
-        corrections: dict[str, Optional[str | dict[str, str] | dict[str, str | bool]]],
+        original_value: str | None,
+        corrections: (
+            dict[str, str | dict[str, str] | None]
+            | dict[str, str | dict[str, str | bool] | None]
+            | dict[str, str | dict[str, str | bool | int] | None]
+            | dict[str, str | dict[str, str] | dict[str, str | bool] | None]
+        ),
         ignore_if_not_in_correction: bool,
     ) -> str:
         output = none_if_empty_or_stripped(original_value)
@@ -148,44 +182,39 @@ def entry_numbers_from_a04_a05_a06_a07_a08_a18_a19(
                 correction = corrections[output]
                 if correction is None:
                     return ""
-                elif isinstance(correction, str):
+                if isinstance(correction, str):
                     if ignore_if_not_in_correction:
                         return ""
-                    else:
-                        return "-" + str(correction)
-                else:
-                    output = dict(correction).get("series", "")
-                    if not isinstance(output, str):
-                        raise Exception(f"Invalid correction for field {field_name} [{original_value}]")
-                    if correction.get("use_dash", True):
-                        return "-" + output
-                    else:
-                        return output
-            else:
-                if ignore_if_not_in_correction:
-                    return ""
-                else:
-                    return output
+                    return "-" + str(correction)
+                output = dict(correction).get("series", "")
+                if not isinstance(output, str):
+                    raise Exception(f"Invalid correction for field {field_name} [{original_value}]")
+                if correction.get("use_dash", True):
+                    return "-" + output
+                return output
+            if ignore_if_not_in_correction:
+                return ""
+            return output
         return ""
 
-    value4 = cleanup_single_value("A04", a04, field04_corrections(), True) + "-"  # type: ignore
-    value5 = cleanup_single_value("A05", a05, field05_corrections(), False)  # type: ignore
-    value6 = cleanup_single_value("A06", a06, field06_corrections(), True)  # type: ignore
-    value7 = cleanup_single_value("A07", a07, field07_corrections(), True)  # type: ignore
-    value8 = cleanup_single_value("A08", a08, field08_corrections(), True)  # type: ignore
-    value18 = cleanup_single_value("A18", a18, field18_corrections(), True)  # type: ignore
-    value19 = cleanup_single_value("A19", a19, field19_corrections(), True)  # type: ignore
+    value4 = cleanup_single_value("A04", a04, field04_corrections(), True) + "-"
+    value5 = cleanup_single_value("A05", a05, field05_corrections(), False)
+    value6 = cleanup_single_value("A06", a06, field06_corrections(), True)
+    value7 = cleanup_single_value("A07", a07, field07_corrections(), True)
+    value8 = cleanup_single_value("A08", a08, field08_corrections(), True)
+    value18 = cleanup_single_value("A18", a18, field18_corrections(), True)
+    value19 = cleanup_single_value("A19", a19, field19_corrections(), True)
 
     value = value4 + value5 + value6 + value7 + value8 + value18 + value19
     # Use a dict to remove duplicates
-    entries_dict: dict[str, None] = dict()
+    entries_dict: dict[str, None] = {}
     for v in value.split("-"):
         if v.strip():
             entries_dict[v.strip()] = None
     return list(entries_dict)
 
 
-def translator_from_a06(a06: Optional[str]) -> Optional[str]:
+def translator_from_a06(a06: str | None) -> str | None:
     """Cleanup, replace special cases"""
     value = none_if_empty_or_stripped(a06)
     if not value:
@@ -194,21 +223,20 @@ def translator_from_a06(a06: Optional[str]) -> Optional[str]:
         correction = field06_corrections()[value]
         if correction is None:
             return None
-        elif isinstance(correction, str):
+        if isinstance(correction, str):
             return None
-        else:
-            value = dict(correction).get("translator", None)
-            if not value:
-                return None
-            if not isinstance(value, str):
-                raise Exception(f"Invalid correction for field A06 [{a06}]")
+        value = dict(correction).get("translator", None)
+        if not value:
+            return None
+        if not isinstance(value, str):
+            raise Exception(f"Invalid correction for field A06 [{a06}]")
     value = translator_corrections().get(value, value)
     if not value:
         return None
     return value
 
 
-def edition_from_a07(a07: Optional[str]) -> Optional[str]:
+def edition_from_a07(a07: str | None) -> str | None:
     """Cleanup, replace special cases"""
     value = none_if_empty_or_stripped(a07)
     if not value:
@@ -222,7 +250,7 @@ def edition_from_a07(a07: Optional[str]) -> Optional[str]:
     return value
 
 
-def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tuple[Optional[str], Optional[str]]]:
+def editor_from_a08_a09(a08: str | None, a09: str | None) -> tuple[str | None, str | None] | None:
     """Cleanup, replace special cases"""
     a08 = none_if_empty_or_stripped(a08)
     if not a08:
@@ -258,7 +286,7 @@ def editor_from_a08_a09(a08: Optional[str], a09: Optional[str]) -> Optional[tupl
     return (a08, a09)
 
 
-def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optional[int]:
+def edition_year_from_a09_a10(a09: str | None, a10: str | None) -> int | None:
     """Cleanup,handle special cases"""
     a09 = none_if_empty_or_stripped(a09)
     if a09 and a09 in field09_corrections():
@@ -277,7 +305,7 @@ def edition_year_from_a09_a10(a09: Optional[str], a10: Optional[str]) -> Optiona
     return int(corrected)
 
 
-def pages_from_a11(a11: Optional[str]) -> Optional[int]:
+def pages_from_a11(a11: str | None) -> int | None:
     """Cleanup, return an int from various expressions"""
     a11 = none_if_empty_or_stripped(a11)
     if not a11:
@@ -292,7 +320,7 @@ def pages_from_a11(a11: Optional[str]) -> Optional[int]:
 
 
 def topics_from_a12_to_a15_a20_a22_to_a24(
-    many_lines: Optional[list[Optional[str]]],
+    many_lines: list[str | None] | None,
 ) -> list[str]:
     """Cleanup, make unique, handle special cases"""
     if not many_lines:
@@ -317,18 +345,17 @@ def topics_from_a12_to_a15_a20_a22_to_a24(
     return list(topics.keys())
 
 
-def curator_from_a16(a16: Optional[str]) -> Optional[str]:
+def curator_from_a16(a16: str | None) -> str | None:
     """Cleanup"""
     a16 = none_if_empty_or_stripped(a16)
     if not a16:
         return None
     if a16 in field16_corrections():
         return field16_corrections()[a16]
-    else:
-        return a16
+    return a16
 
 
-def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
+def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: list[str | None] | None) -> bool:
     """Look for CD in the lines passed"""
     if not many_lines:
         return False
@@ -338,7 +365,7 @@ def has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30(many_lines: Optional[list[Op
     return False
 
 
-def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
+def has_dvd_from_a30(many_lines: list[str | None] | None) -> bool:
     """Look for DVD in the lines passed"""
     if not many_lines:
         return False
@@ -348,7 +375,7 @@ def has_dvd_from_a30(many_lines: Optional[list[Optional[str]]]) -> bool:
     return False
 
 
-def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optional[str]) -> Optional[int]:
+def copies_from_a17_a18_a30(a17: str | None, a18: str | None, a30: str | None) -> int | None:
     """Use corrections to look for number of copies"""
     a17 = none_if_empty_or_stripped(a17)
     if a17:
@@ -358,8 +385,7 @@ def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optiona
             if copies:
                 if isinstance(copies, int):
                     return copies
-                else:
-                    raise Exception(f"Invalid correction for A17 [{a17}]")
+                raise Exception(f"Invalid correction for A17 [{a17}]")
     a18 = none_if_empty_or_stripped(a18)
     if a18:
         correction = field18_corrections().get(a18)
@@ -368,8 +394,7 @@ def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optiona
             if copies:
                 if isinstance(copies, int):
                     return copies
-                else:
-                    raise Exception(f"Invalid correction for A17 [{a18}]")
+                raise Exception(f"Invalid correction for A17 [{a18}]")
     a30 = none_if_empty_or_stripped(a30)
     if a30:
         correction = field30_corrections().get(a30)
@@ -378,12 +403,11 @@ def copies_from_a17_a18_a30(a17: Optional[str], a18: Optional[str], a30: Optiona
             if copies:
                 if isinstance(copies, int):
                     return copies
-                else:
-                    raise Exception(f"Invalid correction for A30 [{a30}]")
+                raise Exception(f"Invalid correction for A30 [{a30}]")
     return None
 
 
-def donation_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[str]:
+def donation_from_a17_a30(a17: str | None, a30: str | None) -> str | None:
     """Use corrections to look for donations"""
     a17 = none_if_empty_or_stripped(a17)
     if a17:
@@ -393,8 +417,7 @@ def donation_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[st
             if donation:
                 if isinstance(donation, str):
                     return donation
-                else:
-                    raise Exception(f"Invalid correction for A17 [{a17}]")
+                raise Exception(f"Invalid correction for A17 [{a17}]")
     a30 = none_if_empty_or_stripped(a30)
     if a30:
         correction = field30_corrections().get(a30)
@@ -403,12 +426,11 @@ def donation_from_a17_a30(a17: Optional[str], a30: Optional[str]) -> Optional[st
             if donation:
                 if isinstance(donation, str):
                     return donation
-                else:
-                    raise Exception(f"Invalid correction for A30 [{a30}]")
+                raise Exception(f"Invalid correction for A30 [{a30}]")
     return None
 
 
-def offprint_from_a17_a21_a30(a17: Optional[str], a21: Optional[str], a30: Optional[str]) -> bool:
+def offprint_from_a17_a21_a30(a17: str | None, a21: str | None, a30: str | None) -> bool:
     """Use corrections to look for offprint or the word ΑΝΑΤΥΠΟ"""
     a17 = none_if_empty_or_stripped(a17)
     if a17:
@@ -418,8 +440,7 @@ def offprint_from_a17_a21_a30(a17: Optional[str], a21: Optional[str], a30: Optio
             if offprint:
                 if isinstance(offprint, bool):
                     return offprint
-                else:
-                    raise Exception(f"Invalid correction for A17 [{a17}]")
+                raise Exception(f"Invalid correction for A17 [{a17}]")
         if "ΑΝΑΤΥΠΟ" in a17:
             return True
     if a21 and "ΑΝΑΤΥΠΟ" in a21:
@@ -432,21 +453,18 @@ def offprint_from_a17_a21_a30(a17: Optional[str], a21: Optional[str], a30: Optio
             if offprint:
                 if isinstance(offprint, bool):
                     return offprint
-                else:
-                    raise Exception(f"Invalid correction for A30 [{a30}]")
+                raise Exception(f"Invalid correction for A30 [{a30}]")
         elif "ΑΝΑΤΥΠΟ" in a30:
             return True
     return False
 
 
-def volume_from_a17_a18_a20_a30(
-    a17: Optional[str], a18: Optional[str], a20: Optional[str], a30: Optional[str]
-) -> Optional[str]:
+def volume_from_a17_a18_a20_a30(a17: str | None, a18: str | None, a20: str | None, a30: str | None) -> str | None:
     """Use corrections to look for volume"""
 
     def read_from_single_field(
         field_name: str,
-        value: Optional[str],
+        value: str | None,
         corrections: dict[str, str | dict[str, str | bool | int] | None],
         current_result: str,
     ) -> str:
@@ -459,10 +477,8 @@ def volume_from_a17_a18_a20_a30(
                     if isinstance(result, str):
                         if current_result:
                             return current_result + "\n" + result
-                        else:
-                            return result
-                    else:
-                        raise Exception(f"Invalid correction for {field_name} [{value}]")
+                        return result
+                    raise Exception(f"Invalid correction for {field_name} [{value}]")
         return current_result
 
     result = read_from_single_field("A17", a17, field17_corrections(), "")
@@ -472,12 +488,12 @@ def volume_from_a17_a18_a20_a30(
     return none_if_empty_or_stripped(result)
 
 
-def material_from_a18_a30(a18: Optional[str], a30: Optional[str]) -> Optional[str]:
+def material_from_a18_a30(a18: str | None, a30: str | None) -> str | None:
     """Use corrections to look for volume"""
 
     def read_from_single_field(
         field_name: str,
-        value: Optional[str],
+        value: str | None,
         corrections: dict[str, str | dict[str, str | bool | int] | None],
         current_result: str,
     ) -> str:
@@ -490,10 +506,8 @@ def material_from_a18_a30(a18: Optional[str], a30: Optional[str]) -> Optional[st
                     if isinstance(result, str):
                         if current_result:
                             return current_result + "\n" + result
-                        else:
-                            return result
-                    else:
-                        raise Exception(f"Invalid correction for {field_name} [{value}]")
+                        return result
+                    raise Exception(f"Invalid correction for {field_name} [{value}]")
         return current_result
 
     result = read_from_single_field("A18", a18, field18_corrections(), "")
@@ -501,14 +515,12 @@ def material_from_a18_a30(a18: Optional[str], a30: Optional[str]) -> Optional[st
     return none_if_empty_or_stripped(result)
 
 
-def notes_from_a17_a18_a21_a30(
-    a17: Optional[str], a18: Optional[str], a21: Optional[str], a30: Optional[str]
-) -> Optional[str]:
+def notes_from_a17_a18_a21_a30(a17: str | None, a18: str | None, a21: str | None, a30: str | None) -> str | None:
     """Read from all three fields, apply corrections"""
 
     def read_from_single_field(
         field_name: str,
-        value: Optional[str],
+        value: str | None,
         corrections: dict[str, str | dict[str, str | bool | int] | None],
         current_result: str,
     ) -> str:
@@ -537,10 +549,8 @@ def notes_from_a17_a18_a21_a30(
         if result:
             if current_result:
                 return current_result + "\n" + result
-            else:
-                return result
-        else:
-            return current_result
+            return result
+        return current_result
 
     result = read_from_single_field("A17", a17, field17_corrections(), "")
 
@@ -563,8 +573,8 @@ def notes_from_a17_a18_a21_a30(
 
 
 def isbn_from_a17_a18_a19_a22_a30(
-    a17in: Optional[str], a18in: Optional[str], a19in: Optional[str], a22in: Optional[str], a30in: Optional[str]
-) -> Optional[str]:
+    a17in: str | None, a18in: str | None, a19in: str | None, a22in: str | None, a30in: str | None
+) -> str | None:
     """Cleanup"""
 
     # Only use corrections from a17

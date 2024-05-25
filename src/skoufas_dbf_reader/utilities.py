@@ -1,20 +1,23 @@
 """ Utilities for conversions """
+
+from __future__ import annotations
+
 import os
 import re
 from functools import cache
-from typing import Any, Optional
+from typing import Any
 
 import yaml
 
 
 def read_yaml_data(code: str) -> Any:
     """Return the only object from a yaml file in the data directory"""
-    with open(os.path.join(os.path.dirname(__file__), "data", f"{code}.yml"), "r", encoding="utf-8") as stream:
+    with open(os.path.join(os.path.dirname(__file__), "data", f"{code}.yml"), encoding="utf-8") as stream:
         parsed_yaml = yaml.safe_load(stream)
         return parsed_yaml[code]
 
 
-def none_if_empty_or_stripped(i: Optional[str]) -> Optional[str]:
+def none_if_empty_or_stripped(i: str | None) -> str | None:
     """Cleanup"""
     if not i:
         return None
@@ -34,7 +37,7 @@ def all_entries() -> list[dict[int, str]]:
     return data
 
 
-def romanize(greek_text: Optional[str]) -> str:
+def romanize(greek_text: str | None) -> str:
     """Return the ISO 843:1997 transcription of the input Greek text.
     Any non-Greek characters will be ignored and printed as they were.
 
@@ -120,7 +123,7 @@ def romanize(greek_text: Optional[str]) -> str:
     return result
 
 
-def check_isbn(isbn: str) -> Optional[str]:
+def check_isbn(isbn: str) -> str | None:
     isbn = isbn.replace("-", "").replace(" ", "").upper()
     match = re.search(r"^(\d{9})(\d|X)$", isbn)
     if not match:
@@ -132,11 +135,10 @@ def check_isbn(isbn: str) -> Optional[str]:
     result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
     if (result % 11) == check_digit:
         return None
-    else:
-        return f"Invalid check code {result % 11} != {check_digit}"
+    return f"Invalid check code {result % 11} != {check_digit}"
 
 
-def check_issn(issn: str) -> Optional[str]:
+def check_issn(issn: str) -> str | None:
     issn = issn.replace("-", "").replace(" ", "").upper()
     match = re.search(r"^(\d{7})(\d|X)$", issn)
     if not match:
@@ -147,15 +149,14 @@ def check_issn(issn: str) -> Optional[str]:
     result = sum((i + 1) * int(digit) for i, digit in enumerate(digits))
     if (result % 11) == check_digit:
         return None
-    else:
-        return f"Invalid check code {result % 11} != {check_digit}"
+    return f"Invalid check code {result % 11} != {check_digit}"
 
 
-def check_ean(ean: str) -> Optional[str]:
+def check_ean(ean: str) -> str | None:
     ean = ean.replace("-", "").replace(" ", "").upper()
     match = re.search(r"^(\d+)(\d)$", ean)
     if not match:
-        return f"Invalid ean format"
+        return "Invalid ean format"
     if len(ean) not in (14, 13, 12, 8):
         return f"Invalid ean format (len {len(ean)})"
 
@@ -164,8 +165,7 @@ def check_ean(ean: str) -> Optional[str]:
     result = str((10 - sum((3, 1)[i % 2] * int(n) for i, n in enumerate(reversed(digits)))) % 10)
     if result == check_digit:
         return None
-    else:
-        return f"Invalid check code {result} != {check_digit}"
+    return f"Invalid check code {result} != {check_digit}"
 
 
 def is_valid_dewey_strict(d: str):

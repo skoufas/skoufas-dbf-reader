@@ -1,13 +1,51 @@
 from __future__ import annotations
 
 import os
+import re
 from collections import defaultdict
 
 import pytest
 import yaml
 
-from skoufas_dbf_reader.field_extractors import *
-from skoufas_dbf_reader.utilities import all_entries, check_ean, check_isbn, check_issn, is_valid_dewey_strict, romanize
+from skoufas_dbf_reader.correction_data import (
+    author_corrections,
+    has_author,
+    language_codes,
+    plain_author_re,
+)
+from skoufas_dbf_reader.field_extractors import (
+    authors_from_a01,
+    copies_from_a17_a18_a30,
+    curator_from_a16,
+    dewey_from_a04_a05,
+    donation_from_a17_a30,
+    edition_from_a07,
+    edition_year_from_a09_a10,
+    editor_from_a08_a09,
+    entry_numbers_from_a04_a05_a06_a07_a08_a18_a19,
+    has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30,
+    has_dvd_from_a30,
+    isbn_from_a17_a18_a19_a22_a30,
+    language_from_a01_a02,
+    material_from_a18_a30,
+    notes_from_a17_a18_a21_a30,
+    offprint_from_a17_a21_a30,
+    pages_from_a11,
+    subtitle_from_a03,
+    title_from_a02,
+    topics_from_a12_to_a15_a20_a22_to_a24,
+    translator_from_a06,
+    volume_from_a17_a18_a20_a30,
+)
+from skoufas_dbf_reader.utilities import (
+    all_entries,
+    check_ean,
+    check_isbn,
+    check_issn,
+    is_valid_dewey_strict,
+    none_if_empty_or_stripped,
+    romanize,
+)
 
 
 @pytest.fixture
@@ -306,7 +344,7 @@ def test_report_donors(reports_directory: str):
 
 
 def test_report_isbns(reports_directory: str):
-    entries_with_errors: dict[str, dict[str, str | list[Optional[str]] | dict[int, str]]] = dict()
+    entries_with_errors: dict[str, dict[str, str | list[str | None] | dict[int, str]]] = dict()
     for entry in all_entries():
         result = isbn_from_a17_a18_a19_a22_a30(
             entry[17],
@@ -333,9 +371,9 @@ def test_report_isbns(reports_directory: str):
 
 
 def test_report_extracted_fields(reports_directory: str):
-    converted_entries: list[dict[str, Optional[str] | int | bool | list[str] | dict[int, str]]] = []
+    converted_entries: list[dict[str, str | int | bool | list[str] | dict[int, str] | None]] = []
     for entry in all_entries():
-        converted_entry: dict[str, Optional[str] | int | bool | list[str] | dict[int, str]] = dict()
+        converted_entry: dict[str, str | int | bool | list[str] | dict[int, str] | None] = dict()
         converted_entry["dbase_number"] = entry[0]
         converted_entry["authors"] = authors_from_a01(entry[1])
 
@@ -476,7 +514,7 @@ def test_report_extracted_fields(reports_directory: str):
 
 
 def test_report_no_language(reports_directory: str):
-    titles = []
+    titles: list[str] = []
     for entry in all_entries():
         language = language_from_a01_a02(entry[1], entry[2])
         if not language:
@@ -494,7 +532,7 @@ def test_report_no_language(reports_directory: str):
 
 
 def test_report_authors_with_no_correction(reports_directory: str):
-    authors = []
+    authors: list[str] = []
     for entry in all_entries():
         a01 = entry[1]
         if not a01:
@@ -512,7 +550,7 @@ def test_report_authors_with_no_correction(reports_directory: str):
         if author not in author_corrections():
             authors.append(author)
 
-    def correct_name(name):
+    def correct_name(name: str) -> str:
         return name.replace("ΚΩΝ/ΝΟΣ", "ΚΩΝΣΤΑΝΤΙΝΟΣ")
 
     with open(os.path.join(reports_directory, "authors_with_no_correction.yml"), "w", encoding="utf-8") as outfile:
