@@ -27,39 +27,36 @@
 				],
 				"python.formatting.provider": "black",
 				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-				"python.linting.enabled": true,
-				"python.linting.lintOnSave": true,
-				"python.linting.banditArgs": [
-					"--configfile",
-					"pyproject.toml"
-				],
-				"python.linting.banditEnabled": true,
-				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-				"python.linting.flake8Args": [
+				"flake8.args": [
 					"--config",
 					".flake8"
 				],
-				"python.linting.flake8Enabled": true,
-				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-				"python.linting.mypyEnabled": true,
-				"python.linting.mypyArgs": [
+				"flake8.path": [
+					"/usr/local/py-utils/bin/flake8"
+				],
+				"mypy-type-checker.args": [
 					"--config-file",
 					".pyproject.toml"
 				],
-				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
-				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
-				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-				"python.linting.pylintEnabled": true,
-				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+				"mypy-type-checker.path": [
+					"/usr/local/py-utils/bin/mypy"
+				],
+				"pylint.path": [
+					"/usr/local/py-utils/bin/pylint"
+				]
 			},
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"ms-python.pylint",
+				"ms-python.flake8",
+				"ms-python.mypy-type-checker",
 				"ms-python.black-formatter",
 				"ms-vsliveshare.vsliveshare",
+				"charliermarsh.ruff",
 				"ryanluker.vscode-coverage-gutters",
-				"bungcip.better-toml"
+				"bungcip.better-toml",
+				"redhat.vscode-yaml"
 			]
 		}
 	},

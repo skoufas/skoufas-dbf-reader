@@ -1,12 +1,15 @@
 """ Functions that extract information given specific strings """
+
+from __future__ import annotations
+
 import re
 from functools import cache
-from typing import Optional, Any
+from typing import Any
 
 from skoufas_dbf_reader.utilities import read_yaml_data
 
 
-def has_author(a01: Optional[str]) -> bool:
+def has_author(a01: str | None) -> bool:
     """Check values for marks of missing author"""
     if not a01:
         return False
@@ -28,7 +31,7 @@ def language_codes() -> dict[str, str]:
 
 
 @cache
-def author_corrections() -> dict[str, Optional[str]]:
+def author_corrections() -> dict[str, str | None]:
     """Map of author names found and manual overrides"""
     return read_yaml_data("author_corrections")
 
@@ -40,91 +43,91 @@ def editor_corrections() -> dict[str, str]:
 
 
 @cache
-def field04_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+def field04_corrections() -> dict[str, str | dict[str, str] | None]:
     """Map of invalid dewey codes found and manual overrides"""
     return read_yaml_data("field04_corrections")
 
 
 @cache
-def field05_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+def field05_corrections() -> dict[str, str | dict[str, str | bool] | None]:
     """Map of invalid entry numbers found and manual overrides"""
     return read_yaml_data("field05_corrections")
 
 
 @cache
-def field06_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+def field06_corrections() -> dict[str, str | dict[str, str | bool] | None]:
     """Map of invalid entry numbers found and manual overrides"""
     return read_yaml_data("field06_corrections")
 
 
 @cache
-def field07_corrections() -> dict[str, Optional[str | dict[str, str | bool]]]:
+def field07_corrections() -> dict[str, str | dict[str, str | bool] | None]:
     """Map of entry numbers and manual overrides"""
     return read_yaml_data("field07_corrections")
 
 
 @cache
-def field08_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+def field08_corrections() -> dict[str, str | dict[str, str] | None]:
     """Map of editors and manual overrides"""
     return read_yaml_data("field08_corrections")
 
 
 @cache
-def field09_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+def field09_corrections() -> dict[str, str | dict[str, str] | None]:
     """Map of editor places and manual overrides"""
     return read_yaml_data("field09_corrections")
 
 
 @cache
-def field10_corrections() -> dict[str, Optional[str]]:
+def field10_corrections() -> dict[str, str | None]:
     """Map of year and manual overrides"""
     return read_yaml_data("field10_corrections")
 
 
 @cache
-def field11_corrections() -> dict[str, Optional[str]]:
+def field11_corrections() -> dict[str, str | None]:
     """Map of pages and manual overrides"""
     return read_yaml_data("field11_corrections")
 
 
 @cache
-def field16_corrections() -> dict[str, Optional[str]]:
+def field16_corrections() -> dict[str, str | None]:
     """Map of curators and manual overrides"""
     return read_yaml_data("field16_corrections")
 
 
 @cache
-def field17_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+def field17_corrections() -> dict[str, str | dict[str, str | bool | int] | None]:
     """Map of manual overrides"""
     return read_yaml_data("field17_corrections")
 
 
 @cache
-def field18_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+def field18_corrections() -> dict[str, str | dict[str, str | bool | int] | None]:
     """Map of manual overrides"""
     return read_yaml_data("field18_corrections")
 
 
 @cache
-def field19_corrections() -> dict[str, Optional[str | dict[str, str]]]:
+def field19_corrections() -> dict[str, str | dict[str, str] | None]:
     """Map of manual overrides"""
     return read_yaml_data("field19_corrections")
 
 
 @cache
-def field20_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+def field20_corrections() -> dict[str, str | dict[str, str | bool | int] | None]:
     """Map of manual overrides"""
     return read_yaml_data("field20_corrections")
 
 
 @cache
-def field30_corrections() -> dict[str, Optional[str | dict[str, str | bool | int]]]:
+def field30_corrections() -> dict[str, str | dict[str, str | bool | int] | None]:
     """Map of manual overrides"""
     return read_yaml_data("field30_corrections")
 
 
 @cache
-def topic_replacements() -> dict[str, Optional[str]]:
+def topic_replacements() -> dict[str, str | None]:
     """Map of topic name manual overrides"""
     return read_yaml_data("topic_replacements")
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import pprint
+import re
 import shutil
 import sys
 from collections import defaultdict
@@ -10,8 +11,40 @@ import yaml
 from snakemd import Document, Inline, MDList, Table
 
 from skoufas_dbf_reader.correction_data import plain_author_re
-from skoufas_dbf_reader.field_extractors import *
-from skoufas_dbf_reader.utilities import all_entries, check_ean, check_isbn, check_issn, is_valid_dewey_strict, romanize
+from skoufas_dbf_reader.field_extractors import (
+    author_corrections,
+    authors_from_a01,
+    copies_from_a17_a18_a30,
+    curator_from_a16,
+    dewey_from_a04_a05,
+    donation_from_a17_a30,
+    edition_from_a07,
+    edition_year_from_a09_a10,
+    editor_from_a08_a09,
+    entry_numbers_from_a04_a05_a06_a07_a08_a18_a19,
+    has_cd_from_a02_a03_a12_a13_a14_a17_a18_a22_a30,
+    has_dvd_from_a30,
+    isbn_from_a17_a18_a19_a22_a30,
+    language_from_a01_a02,
+    material_from_a18_a30,
+    none_if_empty_or_stripped,
+    notes_from_a17_a18_a21_a30,
+    offprint_from_a17_a21_a30,
+    pages_from_a11,
+    subtitle_from_a03,
+    title_from_a02,
+    topics_from_a12_to_a15_a20_a22_to_a24,
+    translator_from_a06,
+    volume_from_a17_a18_a20_a30,
+)
+from skoufas_dbf_reader.utilities import (
+    all_entries,
+    check_ean,
+    check_isbn,
+    check_issn,
+    is_valid_dewey_strict,
+    romanize,
+)
 
 
 def report_single_fields(reports_directory: str):
@@ -144,7 +177,7 @@ def report_single_extracted_fields(reports_directory: str):
         if notes:
             field_values["notes"].append(notes)
 
-        isbn: Optional[str] = isbn_from_a17_a18_a19_a22_a30(entry[17], entry[18], entry[19], entry[22], entry[30])
+        isbn: str | None = isbn_from_a17_a18_a19_a22_a30(entry[17], entry[18], entry[19], entry[22], entry[30])
         if isbn:
             if not check_isbn(isbn):
                 field_values["isbn"].append(isbn)
@@ -322,7 +355,7 @@ def report_isbns(reports_directory: str):
 
 
 def report_entry_numbers(reports_directory: str):
-    all_entry_numbers: dict[str, dict[int, str]] = dict()
+    all_entry_numbers: dict[str, dict[int, str]] = {}
 
     no_entry_numbers = Document()
     no_entry_numbers.add_heading("Καρτέλες χωρίς αριθμό εισαγωγής")
@@ -378,13 +411,12 @@ def entry_as_yaml(entry: dict[int, str], minimal: bool) -> str:
     if minimal:
         minimal_entry = {k: v for k, v in entry.items() if v}
         return yaml.dump(minimal_entry, default_flow_style=False, allow_unicode=True)
-    else:
-        return yaml.dump(entry, default_flow_style=False, allow_unicode=True)
+    return yaml.dump(entry, default_flow_style=False, allow_unicode=True)
 
 
 def report_entries(reports_directory: str):
     os.makedirs(os.path.join(reports_directory, "entries"), exist_ok=True)
-    all: list[tuple[str, str]] = []
+    all_id_titles: list[tuple[str, str]] = []
     by_author: defaultdict[str, defaultdict[str, list[tuple[str, str]]]] = defaultdict(lambda: defaultdict(list))
     by_dewey: defaultdict[str, list[tuple[str, str]]] = defaultdict(list)
 
@@ -534,7 +566,7 @@ def report_entries(reports_directory: str):
         if subtitle:
             title += " - " + subtitle
 
-        all.append((entry[0], title))
+        all_id_titles.append((entry[0], title))
         for author in authors_from_a01(entry[1]):
             if len(author) == 0:
                 by_author["#"]["Χωρίς συγγραφέα"].append((entry[0], title))
@@ -561,9 +593,9 @@ def report_entries(reports_directory: str):
         for i in range(0, len(inlist), size):
             yield inlist[i : i + size]
 
-    all_divided = list(divide_chunks(all, 1000))
+    all_divided = list(divide_chunks(all_id_titles, 1000))
     for thousands, sublist in enumerate(all_divided):
-        index.add_heading(f"Απο {thousands*1000} ως {thousands*1000+len(sublist)}")
+        index.add_heading(f"Απο {thousands * 1000} ως {thousands * 1000 + len(sublist)}")
         sublist = [str(Inline(f"{int(id):05}: {title}", link=f"./entry_{int(id):05}.html")) for id, title in sublist]
         index.add_unordered_list(sublist)
 
