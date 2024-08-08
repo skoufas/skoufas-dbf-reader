@@ -55,7 +55,7 @@
 				"ms-vsliveshare.vsliveshare",
 				"charliermarsh.ruff",
 				"ryanluker.vscode-coverage-gutters",
-				"bungcip.better-toml",
+				"tamasfe.even-better-toml",
 				"redhat.vscode-yaml"
 			]
 		}
