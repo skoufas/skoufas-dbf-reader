@@ -22,7 +22,7 @@ dependencies = ["dbfread==2.0.7", "snakemd==2.2.0", "PyYAML>=6.0"]
 [project.optional-dependencies]
 test = [
     "bandit[toml]==1.7.9",
-    "black==24.8.0",
+    "black==24.10.0",
     "check-manifest==0.49",
     "flake8-bugbear==24.4.26",
     "flake8-docstrings",
