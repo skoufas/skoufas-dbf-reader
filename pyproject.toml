@@ -17,7 +17,7 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dynamic = ["version"]
-dependencies = ["dbfread==2.0.7", "snakemd==2.2.0", "PyYAML>=6.0"]
+dependencies = ["dbfread==2.0.7", "snakemd==2.2.1", "PyYAML>=6.0"]
 
 [project.optional-dependencies]
 test = [
