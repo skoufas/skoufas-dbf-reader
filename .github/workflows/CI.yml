@@ -29,6 +29,8 @@ jobs:
         run: uv sync --locked --all-extras --dev
 
       - uses: astral-sh/ruff-action@v3
+        with:
+          src: ./src
 
       - run: run ruff format --check --diff
 
