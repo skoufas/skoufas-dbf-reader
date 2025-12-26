@@ -42,6 +42,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    needs: validation
     steps:
       - uses: actions/checkout@v5
 
@@ -55,17 +56,25 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Set snapshot version
+        if: ${{ github.event_name == 'pull_request' }}
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-post${{ github.run_number }}-dev${{ github.run_attempt }}
+
+      - name: Set RC version
+        if: ${{ github.event_name == 'push' }}
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-rc${{ github.run_number }}-post${{ github.run_attempt }}
+
+      - name: Set Release version
+        if: ${{ github.event_name == 'release' }}
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')
+
       - name: Build
         run: uv build
 
       - name: Publish Snapshot to TestPyPi
         if: ${{ github.event_name == 'pull_request' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-post${{ github.run_number }}-dev${{ github.run_attempt }}; uv publish --index testpypi
+        run: uv publish --index testpypi
 
-      - name: Publish RC to PyPi
-        if: ${{ github.event_name == 'push' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-rc${{ github.run_number }}-post${{ github.run_attempt }}; uv publish
-
-      - name: Publish Release to PyPi
-        if: ${{ github.event_name == 'release' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d'); uv publish
+      - name: Publish to PyPi
+        if: ${{ github.event_name == 'push' || github.event_name == 'release' }}
+        run: uv publish
