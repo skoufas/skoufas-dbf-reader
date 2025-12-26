@@ -32,7 +32,7 @@ jobs:
         with:
           src: ./src
 
-      - run: run ruff format --check --diff
+      - run: uv run ruff format --check --diff
 
       - run: uv run bandit .
 
