@@ -60,12 +60,12 @@ jobs:
 
       - name: Publish Snapshot to TestPyPi
         if: ${{ github.event_name == 'pull_request' }}
-        run: uv version --bump post=${{ github.run_number }}; uv publish --index testpypi
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-post${{ github.run_number }}-dev${{ github.run_attempt }}; uv publish --index testpypi
 
       - name: Publish RC to PyPi
         if: ${{ github.event_name == 'push' }}
-        run: uv version --bump rc=${{ github.run_number }}; uv publish
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-rc${{ github.run_number }}-post${{ github.run_attempt }}; uv publish
 
       - name: Publish Release to PyPi
         if: ${{ github.event_name == 'release' }}
-        run: uv publish
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d'); uv publish
