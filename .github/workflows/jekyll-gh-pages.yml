@@ -26,19 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
 
       - name: Build reports
         run: |
-          python -m pip install .
-          generate-reports ./md_reports
+          uv run generate-reports ./md_reports
           ls -l md_reports
-        shell: bash
 
       - name: Setup Pages
         uses: actions/configure-pages@v3

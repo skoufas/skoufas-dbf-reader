@@ -1,4 +1,4 @@
-""" Functions that extract information given specific strings """
+"""Functions that extract information given specific strings"""
 
 from __future__ import annotations
 

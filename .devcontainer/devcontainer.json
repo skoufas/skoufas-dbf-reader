@@ -18,50 +18,41 @@
 				"files.trimTrailingWhitespace": true,
 				"files.autoSave": "onFocusChange",
 				"python.analysis.typeCheckingMode": "strict",
-				"python.defaultInterpreterPath": "/usr/local/bin/python",
-				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-				"python.formatting.blackArgs": [
-					"--config",
-					"pyproject.toml"
-				],
-				"python.formatting.provider": "black",
-				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-				"flake8.args": [
-					"--config",
-					".flake8"
-				],
-				"flake8.path": [
-					"/usr/local/py-utils/bin/flake8"
-				],
-				"mypy-type-checker.args": [
-					"--config-file",
-					".pyproject.toml"
-				],
-				"mypy-type-checker.path": [
-					"/usr/local/py-utils/bin/mypy"
-				],
-				"pylint.path": [
-					"/usr/local/py-utils/bin/pylint"
-				]
+				"python.testing.pytestArgs": [],
+				"python.testing.unittestEnabled": false,
+				"python.testing.pytestEnabled": true,
+				"python.terminal.activateEnvironment": true
+				// "mypy-type-checker.args": [
+				// 	"--config-file",
+				// 	".pyproject.toml"
+				// ],
+				// "mypy-type-checker.path": [
+				// 	"/usr/local/py-utils/bin/mypy"
+				// ],
+				// "pylint.path": [
+				// 	"/usr/local/py-utils/bin/pylint"
+				// ]
 			},
 			"extensions": [
+				"charliermarsh.ruff",
+				"fill-labs.dependi",
+				"mhutchie.git-graph",
+				"ms-python.debugpy",
+				"ms-python.mypy-type-checker",
+				"ms-python.pylint",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"ms-python.pylint",
-				"ms-python.flake8",
-				"ms-python.mypy-type-checker",
-				"ms-python.black-formatter",
-				"ms-vsliveshare.vsliveshare",
-				"charliermarsh.ruff",
+				"ms-python.vscode-python-envs",
+				"redhat.vscode-yaml",
 				"ryanluker.vscode-coverage-gutters",
 				"tamasfe.even-better-toml",
-				"redhat.vscode-yaml"
+				"elagil.pre-commit-helper",
+				"GitHub.vscode-pull-request-github",
+				"GitHub.vscode-github-actions"
 			]
 		}
 	},
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "python --version",
-	"remoteUser": "vscode",
-	"features": {}
+	"postStartCommand": "rm -rf .venv;uv venv;uv pip install -e '.[test]'",
+	"remoteUser": "vscode"
 }

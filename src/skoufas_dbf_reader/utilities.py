@@ -1,4 +1,4 @@
-""" Utilities for conversions """
+"""Utilities for conversions"""
 
 from __future__ import annotations
 

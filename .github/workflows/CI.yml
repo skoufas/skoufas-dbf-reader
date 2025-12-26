@@ -1,9 +1,9 @@
 name: Python CI
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   release:
     types: [created]
   workflow_dispatch:
@@ -11,45 +11,59 @@ on:
 jobs:
   validation:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        tools: ['black', 'bandit', 'pylint', 'pyright', 'flake8']
-        include:
-          - tools: pytest
-            # args: -m not integration and not gpu
+
     steps:
-      - uses: actions/checkout@v3
-      - name: ${{ matrix.tools }}
-        uses: rockdreamer/pyaction@main
+      - uses: actions/checkout@v5
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v6
         with:
-          ${{ matrix.tools }}: true
-          args: ${{ matrix.args }}
+          python-version-file: ".python-version"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install the project
+        run: uv sync --locked --all-extras --dev
+
+      - uses: astral-sh/ruff-action@v3
+
+      - run: run ruff format --check --diff
+
+      - run: uv run bandit .
+
+      - run: uv run pylint ./src
+
+      - run: uv run pytest
 
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v6
+        with:
+          python-version-file: ".python-version"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Build
+        run: uv build
 
       - name: Publish Snapshot to TestPyPi
-        uses: rockdreamer/pyaction@main
         if: ${{ github.event_name == 'pull_request' }}
-        with:
-          pypi_publish: true
-          pypi_password: ${{ secrets.TEST_PYPI_PASSWORD  }}
-          pypi_repo: testpypi
-          version_suffix: -post${{ github.run_number }}-dev${{ github.run_attempt }}
+        run: uv version --bump post=${{ github.run_number }}; uv publish --index testpypi
 
       - name: Publish RC to PyPi
-        uses: rockdreamer/pyaction@main
         if: ${{ github.event_name == 'push' }}
-        with:
-          pypi_publish: true
-          pypi_password: ${{ secrets.PYPI_PASSWORD }}
-          version_suffix: -rc${{ github.run_number }}-post${{ github.run_attempt }}
+        run: uv version --bump rc=${{ github.run_number }}; uv publish
 
       - name: Publish Release to PyPi
-        uses: rockdreamer/pyaction@main
         if: ${{ github.event_name == 'release' }}
-        with:
-          pypi_publish: true
-          pypi_password: ${{ secrets.PYPI_PASSWORD }}
+        run: uv publish

@@ -1,16 +1,19 @@
-ARG VARIANT=3-bullseye
-FROM mcr.microsoft.com/devcontainers/python:${VARIANT}
-ARG XDG_RUNTIME_DIR=/run/user/1000
+FROM docker.io/library/debian:trixie-slim
 
-RUN python -m pip install --upgrade pip \
-    && \
-    python3 -m pip install \
-    pytest \
-    pytest-cov \
-    flit \
-    pre-commit
+RUN apt-get update \
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
+    ca-certificates \
+    git \
+    openssh-client \
+    zsh \
+    2>&1
 
-COPY .pre-commit-config.yaml .
-RUN git init . && pre-commit install-hooks
+RUN groupadd --gid 1000 vscode \
+    && useradd --uid 1000 --gid 1000 -s /bin/zsh -m vscode \
+    && mkdir -p /run/user/1000 \
+    && touch /home/vscode/.zshrc
 
-RUN mkdir -p ${XDG_RUNTIME_DIR}
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# RUN git init . && pre-commit install-hooks
