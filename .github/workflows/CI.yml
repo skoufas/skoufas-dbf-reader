@@ -45,6 +45,9 @@ jobs:
     needs: validation
     environment:
       name: pypi
+    permissions:
+      id-token: write   # to verify the deployment originates from a github server running a github workflow from a specific branch for a specific github environment
+
     steps:
       - uses: actions/checkout@v5
 
@@ -68,15 +71,15 @@ jobs:
 
       - name: Set Release version
         if: ${{ github.event_name == 'release' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')
+        run: uv version $(echo -n ${{ github.ref_name }} | grep -oP '\d+.\d+.\d+')
 
       - name: Build
         run: uv build
 
       - name: Publish Snapshot to TestPyPi
         if: ${{ github.event_name == 'pull_request' }}
-        run: uv publish --index testpypi
+        run: uv publish --trusted-publishing always --index testpypi
 
       - name: Publish to PyPi
         if: ${{ github.event_name == 'push' || github.event_name == 'release' }}
-        run: uv publish
+        run: uv publish --trusted-publishing always
