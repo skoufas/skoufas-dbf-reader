@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: "Set up Python"
         uses: actions/setup-python@v6
@@ -40,13 +42,13 @@ jobs:
 
       - run: uv run pytest
 
-  publish:
+  build:
     runs-on: ubuntu-latest
     needs: validation
-    environment:
-      name: pypi
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: "Set up Python"
         uses: actions/setup-python@v6
@@ -60,23 +62,65 @@ jobs:
 
       - name: Set snapshot version
         if: ${{ github.event_name == 'pull_request' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-post${{ github.run_number }}-dev${{ github.run_attempt }}
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d').post${{ github.run_number }}.dev${{ github.run_attempt }}
 
       - name: Set RC version
         if: ${{ github.event_name == 'push' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')-rc${{ github.run_number }}-post${{ github.run_attempt }}
+        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d').rc${{ github.run_number }}.post${{ github.run_attempt }}
 
       - name: Set Release version
         if: ${{ github.event_name == 'release' }}
-        run: uv version $(date +'%Y').$(date +'%m').$(date +'%d')
+        run: uv version $(echo -n ${{ github.ref_name }} | grep -oP '\d+.\d+.\d+')
 
       - name: Build
         run: uv build
 
-      - name: Publish Snapshot to TestPyPi
-        if: ${{ github.event_name == 'pull_request' }}
-        run: uv publish --index testpypi
+      - name: Store the distribution packages
+        uses: actions/upload-artifact@v5
+        with:
+          name: python-package-distributions
+          path: dist/
 
-      - name: Publish to PyPi
-        if: ${{ github.event_name == 'push' || github.event_name == 'release' }}
-        run: uv publish
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' || github.event_name == 'release' }}
+    needs: build
+    environment:
+      name: pypi
+      url: https://pypi.org/p/skoufas-dbf-reader
+
+    permissions:
+      id-token: write   # to verify the deployment originates from a github server running a github workflow from a specific branch for a specific github environment
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v6
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: Publish distribution 📦 to TestPyPi
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+  testpublish:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ github.event_name == 'pull_request' }}
+    environment:
+      name: pypi
+      url: https://test.pypi.org/p/skoufas-dbf-reader
+
+    permissions:
+      id-token: write   # to verify the deployment originates from a github server running a github workflow from a specific branch for a specific github environment
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v6
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: Publish distribution 📦 to TestPyPi
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
