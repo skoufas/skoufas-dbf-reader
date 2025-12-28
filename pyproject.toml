@@ -1,6 +1,6 @@
 [build-system]
 requires = ["flit"]
-build-backend = "flit.buildapi"
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "skoufas-dbf-reader"
@@ -222,3 +222,9 @@ deprecated-modules = "optparse,tkinter.tix"
 
 [tool.pylint.'EXCEPTIONS']
 overgeneral-exceptions = ["builtins.BaseException", "builtins.Exception"]
+
+[[tool.uv.index]]
+explicit = true
+name = "testpypi"
+publish-url = "https://test.pypi.org/legacy"
+url = "https://test.pypi.org/simple"
