@@ -22,7 +22,7 @@ dependencies = ["dbfread==2.0.7", "snakemd==2.4.0", "PyYAML>=6.0"]
 
 [project.optional-dependencies]
 test = [
-    "bandit[toml]==1.9.2",
+    "bandit[toml]==1.9.4",
     "ruff",
     "check-manifest==0.51",
     "mypy",
