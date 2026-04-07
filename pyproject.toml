@@ -18,22 +18,26 @@ classifiers = [
 requires-python = ">=3.10"
 version = "2025.12.26"
 
-dependencies = ["dbfread==2.0.7", "snakemd==2.4.0", "PyYAML>=6.0"]
+dependencies = [
+    "dbfread==2.0.7",
+    "snakemd==2.4.0",
+    "PyYAML>=6.0"
+]
 
 [project.optional-dependencies]
 test = [
-    "bandit[toml]==1.9.2",
-    "ruff",
+    "bandit[toml]==1.9.4",
     "check-manifest==0.51",
     "mypy",
     "pre-commit==4.5.1",
-    "pylint==4.0.4",
     "pylint_junit",
-    "pytest-cov==7.0.0",
+    "pylint==4.0.5",
+    "pytest-cov==7.1.0",
+    "pytest-github-actions-annotate-failures",
     "pytest-mock",
     "pytest-runner",
-    "pytest==9.0.2",
-    "pytest-github-actions-annotate-failures",
+    "pytest==9.0.3",
+    "ruff",
     "shellcheck-py==0.11.0.1",
 ]
 
