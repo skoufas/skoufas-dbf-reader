@@ -99,7 +99,7 @@ jobs:
           name: python-package-distributions
           path: dist/
 
-      - name: Publish distribution 📦 to TestPyPi
+      - name: Publish distribution 📦 to PyPi
         uses: pypa/gh-action-pypi-publish@release/v1
 
   testpublish:
