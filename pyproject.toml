@@ -35,7 +35,7 @@ test = [
     "pytest-github-actions-annotate-failures",
     "pytest-mock",
     "pytest-runner",
-    "pytest==9.0.3",
+    "pytest==9.1.0",
     "ruff",
     "shellcheck-py==0.11.0.1",
 ]
