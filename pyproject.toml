@@ -19,7 +19,7 @@ version = "2025.12.26"
 
 dependencies = [
     "dbfread==2.0.7",
-    "snakemd==2.4.0",
+    "snakemd==2.4.1",
     "PyYAML>=6.0"
 ]
 
@@ -28,14 +28,14 @@ test = [
     "bandit[toml]==1.9.4",
     "check-manifest==0.51",
     "mypy",
-    "pre-commit==4.5.1",
+    "pre-commit==4.6.0",
     "pylint_junit",
-    "pylint==4.0.5",
+    "pylint==4.0.6",
     "pytest-cov==7.1.0",
     "pytest-github-actions-annotate-failures",
     "pytest-mock",
     "pytest-runner",
-    "pytest==9.0.3",
+    "pytest==9.1.0",
     "ruff",
     "shellcheck-py==0.11.0.1",
 ]
