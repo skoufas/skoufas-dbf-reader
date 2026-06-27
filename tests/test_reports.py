@@ -242,6 +242,7 @@ def test_report_entry_numbers(reports_directory: str):
         yaml.dump(dict(non_numeric), outfile, default_flow_style=False, allow_unicode=True)
     with open(os.path.join(reports_directory, f"entry_numbers_duplicate.yml"), "w", encoding="utf-8") as outfile:
         yaml.dump(dict(duplicate_entry_numbers), outfile, default_flow_style=False, allow_unicode=True)
+    assert not non_numeric
 
 
 def test_report_weird_names(reports_directory: str):
