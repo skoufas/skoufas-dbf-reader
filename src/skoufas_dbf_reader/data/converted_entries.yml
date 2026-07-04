@@ -13721,7 +13721,8 @@ converted_entries:
   pages: 386
   topics:
   - ΙΣΤΟΡΙΑ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΕΚΠΑΙΔΕΥΣΗΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -62772,7 +62773,8 @@ converted_entries:
   pages: 364
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -67796,7 +67798,9 @@ converted_entries:
   pages: 555
   topics:
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ - ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -78364,7 +78368,8 @@ converted_entries:
     30: null
 - dbase_number: 1513
   authors:
-  - ΣΚΟΠΑΣ,ΝΙΚ.Α-ΧΑΡΑΜΟΠΟΥΛΟΣ,Λ.Χ
+  - ΣΚΟΠΑΣ,ΝΙΚ.Α
+  - ΧΑΡΑΜΟΠΟΥΛΟΣ,Λ.Χ
   language: el
   title: Ο ΑΓΩΝΑΣ ΤΩΝ 16 ΧΩΡΙΩΝ ΤΗΣ ΕΠΑΡΧΙΑΣ ΦΙΛΙΑΤΩΝ
   subtitle: ΕΝΑ ΑΓΡΟΤΙΚΟ ΞΕΣΗΚΩΜΑ (1858-1930)
@@ -79199,7 +79204,8 @@ converted_entries:
   pages: 610
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -79858,7 +79864,8 @@ converted_entries:
   pages: 304
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -89583,7 +89590,8 @@ converted_entries:
   pages: 318
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗΣ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -92316,7 +92324,8 @@ converted_entries:
     29: null
 - dbase_number: 1783
   authors:
-  - SNELL BRUNO-FLEISCHER ULR
+  - SNELL,BRUNO
+  - FLEISCHER,ULR
   title: ANTIKE UND ABENDLAND
   dewey: 909 SNE
   entry_numbers:
@@ -93541,7 +93550,7 @@ converted_entries:
     30: null
 - dbase_number: 1807
   authors:
-  - IMHOOF-BLYMER
+  - Imhoof-Blumer,F.
   language: de
   title: GRIECHISCHE MYHNZEN
   dewey: 938.01 IMH
@@ -94114,7 +94123,8 @@ converted_entries:
     29: null
 - dbase_number: 1818
   authors:
-  - KOELLREUTTER-GMELIN
+  - Gmelin,Hans
+  - Koellreutter,Otto
   language: de
   title: AUSLAHNDISCHS STAATS RECHT
   dewey: 344 KOE
@@ -98691,7 +98701,8 @@ converted_entries:
   pages: 558
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -99941,7 +99952,8 @@ converted_entries:
     30: null
 - dbase_number: 1933
   authors:
-  - KIRSTEN E-KRAIKER W
+  - KIRSTEN E
+  - KRAIKER W
   language: de
   title: GRIECHENLANDKUNDE EIN FUHHRER ZU KLASSISCHEN STAHTTEN
   dewey: 300 KIR
@@ -101505,7 +101517,8 @@ converted_entries:
     30: null
 - dbase_number: 1964
   authors:
-  - RUHSTON-ROHCHLN
+  - RUSHTON
+  - ROHCHLN
   language: de
   title: GESCHICTE DER GRIECHISCHEN KRIEGS WESEN VON DER AHLTESTEN
   subtitle: ZEIT BIS AUF PYRROS
@@ -103027,7 +103040,9 @@ converted_entries:
     30: null
 - dbase_number: 1994
   authors:
-  - HOLMAN-DEECKEW-SOLTAU W
+  - Holm,Adolf
+  - Deecke,Wilhelm
+  - Soltau,Wilhelm
   language: de
   title: KULTURGESCHICHTE DES KLAS SISCHEN ALTERTUMS
   dewey: 938.06 HOL
@@ -106664,7 +106679,8 @@ converted_entries:
     29: null
 - dbase_number: 2066
   authors:
-  - STENGEL P-OEHMICHEN G
+  - STENGEL P
+  - OEHMICHEN G
   language: de
   title: DIE GRIECHISCHEN SAKRALALTER TUHMER UND DAS BUHHNENWESEN
   subtitle: DER GRIECHEN UND ROHMER
@@ -106719,7 +106735,7 @@ converted_entries:
     29: null
 - dbase_number: 2067
   authors:
-  - PROKESCH-OSTEN ANTON
+  - PROKESCH-OSTEN,ANTON
   language: de
   title: GESCHICHTE DES ABFALLS DER GRIECHEN VON TYHRKISCHEN REICHE
   dewey: 938.41 PRO
@@ -108229,7 +108245,8 @@ converted_entries:
     30: null
 - dbase_number: 2097
   authors:
-  - KIRSTEN -KRAIKER
+  - KIRSTEN
+  - KRAIKER
   language: de
   title: GRIECHENLANDKUNDE
   dewey: 938.1 KIR
@@ -116359,7 +116376,8 @@ converted_entries:
     30: null
 - dbase_number: 2258
   authors:
-  - HOLSTEIN CUHNTER-LARENZ KARL
+  - HOLSTEIN CUHNTER
+  - LARENZ KARL
   language: de
   title: STAATS-PHILOSOPHIE
   dewey: 100 HOL
@@ -117737,7 +117755,8 @@ converted_entries:
     30: null
 - dbase_number: 2285
   authors:
-  - KROMAYER-VEITH
+  - Kromayer,Johannes
+  - Veith,Georg
   language: de
   title: HEERWESEN YND KRIEGFYHHRYNG DER GRIECHEN YND ROHMER
   dewey: 938.034 KRO
@@ -122346,7 +122365,7 @@ converted_entries:
     30: null
 - dbase_number: 2375
   authors:
-  - LEVV BERNARD-HENRI
+  - Lévy,BERNARD-HENRI
   language: fr
   title: LA BARBARIE A VISAGE HUMAIN
   dewey: 840 LEV
@@ -122492,7 +122511,8 @@ converted_entries:
     30: null
 - dbase_number: 2378
   authors:
-  - ERNOUT A-CHANTRAINE R
+  - ERNOUT,A
+  - CHANTRAINE,R
   language: de
   title: REVUE DE PHILOLOGIE DE LITTERATURE ET D'HISTOIRE AN CIENNES
   dewey: 805 ERN
@@ -126699,7 +126719,8 @@ converted_entries:
     30: null
 - dbase_number: 2461
   authors:
-  - LONGNON J-TOPPINGP
+  - LONGNON,J
+  - TOPPING,P
   language: fr
   title: DOCUMENTS SUR LE REGIME DES TERRES DANS LAPRINCIPAUTE DE
   subtitle: MOREE AU XIV SIECLE
@@ -130502,7 +130523,8 @@ converted_entries:
     30: null
 - dbase_number: 2537
   authors:
-  - LAURAND L-LAURAS
+  - LAURAND,L
+  - LAURAS,A
   language: fr
   title: MANUEL DES ETUDES GREOUES ET LATINES-GRECE
   dewey: 938 LAU
@@ -133607,7 +133629,8 @@ converted_entries:
     30: null
 - dbase_number: 2599
   authors:
-  - ERMAN A-RANKE H
+  - ERMAN A
+  - RANKE H
   language: fr
   title: LA CIVILISATION EGYPTIENNE
   dewey: 962 ERM
@@ -134263,7 +134286,8 @@ converted_entries:
     30: null
 - dbase_number: 2612
   authors:
-  - LEVEGUE P-VIDAL
+  - Lévêque,Pierre
+  - Vidal-Naquet,Pierre
   language: fr
   title: CLISTHENE L'ATHENIEN
   dewey: 938.1 LEV
@@ -135920,7 +135944,7 @@ converted_entries:
     30: null
 - dbase_number: 2645
   authors:
-  - EYDOUX-HENRI-PAUL
+  - EYDOUX,HENRI-PAUL
   language: fr
   title: LES GRANDES DAMES DE L'ARCHEOLOGIE
   dewey: 720 EYD
@@ -140035,7 +140059,8 @@ converted_entries:
     30: null
 - dbase_number: 2727
   authors:
-  - POLLO-PUTO
+  - POLLO,Stefanaq
+  - PUTO,Arben
   language: fr
   title: HISTOIRE DE L'ALBANIE
   dewey: 940.555 POL
@@ -140839,7 +140864,7 @@ converted_entries:
     30: null
 - dbase_number: 2743
   authors:
-  - AOYISTAPACE
+  - AQUISTAPACE,JEAN-NOËL
   language: fr
   title: DICTIONNAIRE DE LA POLITIOUE
   dewey: 329 AΩU
@@ -146428,7 +146453,8 @@ converted_entries:
     30: null
 - dbase_number: 2853
   authors:
-  - ΡΟΣ,ΦΛΟΥΝΤ-ΧΙΛ,ΤΥΝΕΤ
+  - ΡΟΣ,ΦΛΟΥΝΤ
+  - ΧΙΛ,ΤΥΝΕΤ
   language: el
   title: ΟΙ ΜΕΓΑΛΕΣ ΘΡΗΣΚΕΙΕΣ ΤΟΥ ΚΟΣΜΟΥ
   dewey: 280 ΡΟΣ
@@ -168559,7 +168585,7 @@ converted_entries:
     30: null
 - dbase_number: 3297
   authors:
-  - ΡΩ-ΣΙΓΜΑ,ΖΗΤΑ
+  - ΝΙΚΟΛΆΟΥ,ΠΟΛΎΒΙΑ@ΡΩ-ΣΙΓΜΑ,ΖΗΤΑ
   language: el
   title: ΣΤΑ ΣΥΡΜΑΤΟΠΛΕΓΜΑΤΑ ΤΗΣ ΣΚΛΑΒΙΑΣ
   dewey: 889.21 ΣΡΩ
@@ -197718,7 +197744,7 @@ converted_entries:
     30: null
 - dbase_number: 3883
   authors:
-  - ΚΑΡΑΧΑΛΙΟΥ-ΤΟΚΑ ΜΕΛΙΤΑ
+  - ΚΑΡΑΧΑΛΙΟΥ-ΤΟΚΑ,ΜΕΛΙΤΑ
   language: el
   title: ΑΝΑΦΛΕΞΗ ΣΤΙΓΜΩΝ
   dewey: 889.1 ΚΑΡ
@@ -228010,7 +228036,8 @@ converted_entries:
   pages: 363
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗΣ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -234594,7 +234621,8 @@ converted_entries:
   pages: 333
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗΣ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -235217,7 +235245,8 @@ converted_entries:
     30: null
 - dbase_number: 4634
   authors:
-  - ΠΑΠΑΖΑΧΟΣ.Β.Κ-ΔΡΑΚΟΠΟΥΛΟΣ.Ι.Κ
+  - ΠΑΠΑΖΑΧΟΣ.Β.Κ
+  - ΔΡΑΚΟΠΟΥΛΟΣ.Ι.Κ
   language: el
   title: ΣΕΙΣΜΟΙ ΚΑΙ ΜΕΤΡΑ ΠΡΟΣΤΑΣΙΑΣ
   entry_numbers:
@@ -235315,7 +235344,8 @@ converted_entries:
     30: null
 - dbase_number: 4636
   authors:
-  - ΠΑΠΑΖΑΧΟΥ,ΒΑΣΙΛΗ-ΠΑΠΑΖΑΧΟΥ,ΚΑΤΕΡΙΝΑ
+  - ΠΑΠΑΖΑΧΟΥ,ΒΑΣΙΛΗ
+  - ΠΑΠΑΖΑΧΟΥ,ΚΑΤΕΡΙΝΑ
   language: el
   title: ΟΙ ΣΕΙΣΜΟΙ ΤΗΣ ΕΛΛΑΔΑΣ
   dewey: 550 ΠΑΠ
@@ -237086,7 +237116,8 @@ converted_entries:
   pages: 347
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -245816,7 +245847,8 @@ converted_entries:
     30: null
 - dbase_number: 4848
   authors:
-  - ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΥ,ΙΩΑΝΝΟΥ-ΧΡΗΣΤΑΚΗ,ΚΩΝΣΤ
+  - ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΥ,ΙΩΑΝΝΟΥ
+  - ΧΡΗΣΤΑΚΗ,ΚΩΝΣΤ
   language: el
   title: ΠΡΟΛΗΨΙΣ ΝΟΗΤΙΚΗΣ ΚΑΘΥΣΤΕΡΗΣΕΩΣ
   entry_numbers:
@@ -246546,7 +246578,8 @@ converted_entries:
     30: null
 - dbase_number: 4863
   authors:
-  - ΣΙΜΑΣΚΟΣ,Ν.-ΠΑΛΑΙΟΛΟΓΟΣ,Ι.
+  - ΣΙΜΑΣΚΟΣ,Ν.
+  - ΠΑΛΑΙΟΛΟΓΟΣ,Ι.
   language: el
   title: ΠΡΑΚΤΙΚΑ 4ου ΠΑΝΕΛΛΗΝΙΟΥ ΣΥΝΕΔΡΙΟΥ ΩΤΟΡΙΝΟΛΑΡΡΥΓΓΟΛΟΓΙΑΣ
   subtitle: ΧΕΙΡΟΥΡΓΙΚΗΣ ΚΕΦΑΛΗΣ ΚΑΙ ΤΡΑΧΗΛΟΥ
@@ -247139,7 +247172,8 @@ converted_entries:
   pages: 278
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗΣ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -254107,7 +254141,8 @@ converted_entries:
   pages: 508
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -254354,7 +254389,8 @@ converted_entries:
   pages: 392
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -254788,7 +254824,7 @@ converted_entries:
     30: null
 - dbase_number: 5030
   authors:
-  - ΣΙΔΕΡΗΣ-ΕΥΘΥΜΙΟΣ
+  - ΣΙΔΕΡΗΣ,ΕΥΘΥΜΙΟΣ
   language: el
   title: ΘΕΜΑΤΑ ΤΟΠΙΚΗΣ ΑΥΤΟΔΙΟΙΚΗΣΗΣ
   entry_numbers:
@@ -255506,7 +255542,8 @@ converted_entries:
     30: null
 - dbase_number: 5045
   authors:
-  - ΚΥΡΙΑΖΟΠΟΥΛΟΥ - ΛΙΒΑΔΑ
+  - Κυριαζόπουλου,Βασίλη
+  - Λιβάδα,Γεώργιου
   language: el
   title: ΠΡΑΚΤΙΚΗ ΜΕΤΕΩΡΟΛΟΓΙΑ
   entry_numbers:
@@ -255698,7 +255735,8 @@ converted_entries:
     30: null
 - dbase_number: 5049
   authors:
-  - ΣΩΤΗΡΑΚΗ,ΝΙΚΟΥ-ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ ΝΤΙΝΟΥ
+  - ΣΩΤΗΡΑΚΗ,ΝΙΚΟΥ
+  - ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ,ΝΤΙΝΟΥ
   language: el
   title: ΑΣΚΗΣΕΙΣ ΜΑΘΗΜΑΤΙΚΩΝ
   entry_numbers:
@@ -255745,7 +255783,8 @@ converted_entries:
     30: null
 - dbase_number: 5050
   authors:
-  - ΓΕΡΜΑΝΟΥ,Μ.-ΚΑΤΣΑΡΛΙΝΟΥ,Σ.
+  - ΓΕΡΜΑΝΟΥ,Μ.
+  - ΚΑΤΣΑΡΛΙΝΟΥ,Σ.
   language: el
   title: ΑΣΚΗΣΕΙΣ ΜΑΘΗΜΑΤΙΚΩΝ
   entry_numbers:
@@ -255792,7 +255831,8 @@ converted_entries:
     30: null
 - dbase_number: 5051
   authors:
-  - ΣΩΤΗΡΑΚΗ,ΝΙΚΟΥ-ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ,ΝΤΙΝΟΥ
+  - ΣΩΤΗΡΑΚΗ,ΝΙΚΟΥ
+  - ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ,ΝΤΙΝΟΥ
   language: el
   title: ΜΑΘΗΜΑΤΙΚΑ
   entry_numbers:
@@ -256316,7 +256356,8 @@ converted_entries:
     30: null
 - dbase_number: 5062
   authors:
-  - ΚΟΥΒΕΛΑ,ΗΛΙΑ-ΛΟΥΚΟΠΟΥΛΟΥ,ΔΗΜΗΤΡΗ
+  - ΚΟΥΒΕΛΑ,ΗΛΙΑ
+  - ΛΟΥΚΟΠΟΥΛΟΥ,ΔΗΜΗΤΡΗ
   language: el
   title: ΑΙΜΑΤΟΛΟΓΙΑ
   entry_numbers:
@@ -256646,7 +256687,8 @@ converted_entries:
     30: null
 - dbase_number: 5069
   authors:
-  - ΓΕΡΜΑΝΟΥ,Μ.-ΚΑΤΣΑΡΛΙΝΟΥ,Σ.
+  - ΓΕΡΜΑΝΟΥ,Μ.
+  - ΚΑΤΣΑΡΛΙΝΟΥ,Σ.
   language: el
   title: ΛΥΣΕΙΣ ΠΡΟΒΛΗΜΑΤΩΝ ΚΑΙ ΑΣΚΗΣΕΩΝ
   entry_numbers:
@@ -256947,7 +256989,8 @@ converted_entries:
   pages: 538
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -257284,7 +257327,8 @@ converted_entries:
     30: null
 - dbase_number: 5082
   authors:
-  - ΝΙΚΟΥ,ΣΩΤΗΡΑΚΗ-ΝΤΙΝΟΥ,ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ
+  - ΝΙΚΟΥ,ΣΩΤΗΡΑΚΗ
+  - ΝΤΙΝΟΥ,ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ
   language: el
   title: ΑΣΚΗΣΕΙΣ ΜΑΘΗΜΑΤΙΚΩΝ
   entry_numbers: []
@@ -257427,7 +257471,8 @@ converted_entries:
     30: null
 - dbase_number: 5085
   authors:
-  - Μ,ΓΕΡΜΑΝΟΥ-Σ,ΚΑΤΣΑΛΙΝΟΥ
+  - ΓΕΡΜΑΝΟΥ,Μ
+  - ΚΑΤΣΑΛΙΝΟΥ,Σ
   language: el
   title: ΑΣΚΗΣΕΙΣ ΜΑΘΗΜΑΤΙΚΩΝ
   entry_numbers: []
@@ -257474,7 +257519,8 @@ converted_entries:
     30: null
 - dbase_number: 5086
   authors:
-  - ΝΙΚΟΥ,ΣΩΤΗΡΑΚΗ-ΝΤΙΝΟΥ,ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ
+  - ΝΙΚΟΥ,ΣΩΤΗΡΑΚΗ
+  - ΝΤΙΝΟΥ,ΜΠΙΝΑΡΔΟΠΟΥΛΟΥ
   language: el
   title: ΜΑΘΗΜΑΤΙΚΑ
   entry_numbers: []
@@ -258121,7 +258167,8 @@ converted_entries:
     30: null
 - dbase_number: 5100
   authors:
-  - ΚΡΗΤΙΚΟΥ,ΒΙΚΤΩΡΟΣ-ΤΣΕΛΙΟΥ,ΜΙΛΤΙΑΔΟΥ
+  - ΚΡΗΤΙΚΟΥ,ΒΙΚΤΩΡΟΣ
+  - ΤΣΕΛΙΟΥ,ΜΙΛΤΙΑΔΟΥ
   language: el
   title: ΑΡΧΑΙΟΙ ΕΛΛΗΝΕΣ ΛΥΡΙΚΟΙ (ΕΚΛΟΓΕΣ)
   entry_numbers: []
@@ -258213,7 +258260,8 @@ converted_entries:
     30: null
 - dbase_number: 5102
   authors:
-  - ΚΑΡΚΑΒΙΤΣΑ,Α.-ΠΑΠΑΜΙΧΑΗΛ,ΕΠ.
+  - ΚΑΡΚΑΒΙΤΣΑ,Α.
+  - ΠΑΠΑΜΙΧΑΗΛ,ΕΠ.
   language: el
   title: Η ΠΑΤΡΙΔΑ ΜΑΣ
   entry_numbers:
@@ -258355,7 +258403,8 @@ converted_entries:
     30: null
 - dbase_number: 5105
   authors:
-  - ΣΑΚΕΛΛΑΡΟΠΟΥΛΟΣ,Μ-ΚΥΡΙΑΚΑΤΟΥ,Χ-ΡΟΥΣΟΠΟΥΛ
+  - ΣΑΚΕΛΛΑΡΟΠΟΥΛΟΣ,Μ
+  - ΚΥΡΙΑΚΑΤΟΥ,Χ-ΡΟΥΣΟΠΟΥΛ
   language: el
   title: ΕΛΛΗΝΙΚΟΝ ΑΝΑΓΝΩΣΜΑΤΑΡΙΟΝ
   entry_numbers: []
@@ -259216,7 +259265,8 @@ converted_entries:
     30: null
 - dbase_number: 5123
   authors:
-  - SELVIDGE-FRYKLUND
+  - SELVIDGE
+  - FRYKLUND
   language: el
   title: ΜΑΘΗΜΑΤΩΝ ΤΕΧΝΙΚΗΣ ΚΑΙ ΒΙΟΜΗΧΑΝΙΚΗΣ ΕΚΠΑΙΔΕΥΣΕΩΣ
   entry_numbers:
@@ -260817,7 +260867,8 @@ converted_entries:
   pages: 317
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -262839,7 +262890,8 @@ converted_entries:
     30: null
 - dbase_number: 5198
   authors:
-  - RONA M.MACKIE-NATALE CASCINELI
+  - RONA M.MACKIE
+  - NATALE CASCINELI
   language: el
   title: ΠΡΟΓΡΑΜΜΑΤΑ ΓΙΑ ΠΡΩΤΟΓΕΝΗ ΚΑΙ ΔΕΥΤΕΡΟΓΕΝΗ ΠΡΟΛΗΨΗ ΤΟΥ ΜΕΛΑΝΩ
   subtitle: ΜΑΤΟΣ
@@ -263423,7 +263475,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΜΥΘΙΣΤΟΡΗΜΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -263721,7 +263774,8 @@ converted_entries:
   pages: 405
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -268563,7 +268617,8 @@ converted_entries:
     30: null
 - dbase_number: 5315
   authors:
-  - ΠΡΕΤΕΝΤΕΡΗΣ,Κ-ΓΙΑΛΑΜΑΣ,Α
+  - ΠΡΕΤΕΝΤΕΡΗΣ,Κ
+  - ΓΙΑΛΑΜΑΣ,Α
   language: el
   title: ΜΙΑΣ ΠΕΝΤΑΡΑΣ ΝΙΑΤΑ
   dewey: 880.2 ΠΡΕ
@@ -271329,7 +271384,8 @@ converted_entries:
   pages: 350
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -272389,7 +272445,8 @@ converted_entries:
   pages: 540
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -284669,7 +284726,8 @@ converted_entries:
     30: null
 - dbase_number: 5645
   authors:
-  - ΚΑΡΚΑΒΙΤΣΑ,Α-ΒΕΝΕΖΗ,ΗΛ.
+  - ΚΑΡΚΑΒΙΤΣΑ,Α
+  - ΒΕΝΕΖΗ,ΗΛ.
   language: el
   title: Ο ΖΗΤΙΑΝΟΣ-ΓΑΛΗΝΗ
   dewey: 889.31 ΚΑΡ
@@ -286017,7 +286075,8 @@ converted_entries:
   pages: 289
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -286167,7 +286226,8 @@ converted_entries:
   pages: 422
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -289906,7 +289966,9 @@ converted_entries:
     30: null
 - dbase_number: 5747
   authors:
-  - ΠΡΕΒΩ,ΑΒΒΑ-ΦΩΚΝΕΡ,ΟΥΙΛΙΑΜ-ΜΠΡΟΝΤΕ,ΣΑΡΛΟΤ
+  - ΠΡΕΒΩ,ΑΒΒΑ
+  - ΦΩΚΝΕΡ,ΟΥΙΛΙΑΜ
+  - ΜΠΡΟΝΤΕ,ΣΑΡΛΟΤ
   language: el
   title: ΜΑΝΟΝ ΛΕΣΚΩ-ΑΥΓΟΥΣΤΙΑΤΙΚΟ ΦΕΓΓΑΡΙ-ΤΖΕΗΝ ΕΥΡ
   dewey: 889 ΠΡΕ
@@ -291193,7 +291255,8 @@ converted_entries:
   pages: 188
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -291689,7 +291752,10 @@ converted_entries:
     30: null
 - dbase_number: 5782
   authors:
-  - ΣΤΑΝΤΑΛ-ΟΝ.ΜΠΑΛΖΑΚ-Μ.ΓΚΟΡΚΙ-Γ.ΑΜΑΝΤΟ
+  - ΣΤΑΝΤΑΛ
+  - ΟΝ.ΜΠΑΛΖΑΚ
+  - Μ.ΓΚΟΡΚΙ
+  - Γ.ΑΜΑΝΤΟ
   language: el
   title: ΤΟ ΚΟΚΚΙΝΟ ΚΑΙ ΤΟ ΜΑΥΡΟ-ΜΠΑΡΜΠΑ ΓΚΟΡΙΟ-ΟΙ ΑΡΤΑΜΑΝΩΦ-
   subtitle: ΟΡΓΙΣΜΕΝΗ ΓΗ
@@ -291742,7 +291808,11 @@ converted_entries:
     30: null
 - dbase_number: 5783
   authors:
-  - Γ.ΦΛΩΜΠΕΡ-Α.ΦΡΑΝΣ-Φ.ΜΩΡΙΑΚ-Α.ΜΑΛΡΩ-Ν.ΓΚΟ
+  - ΦΛΩΜΠΕΡ,Γ.
+  - ΦΡΑΝΣ,Α.
+  - ΜΩΡΙΑΚ,Φ.
+  - ΜΑΛΡΩ,Α.
+  - ΓΚΟ.Ν.
   language: el
   title: ΜΑΝΤΑΜ ΜΠΟΒΑΡΥ-ΤΟ ΝΗΣΙ ΤΩΝ ΠΙΓΚΟΥΙΝΩΝ-ΚΟΜΠΟΣ ΑΠΟ ΟΧΙΕΣ-
   subtitle: Η ΕΛΠΙΔΑ-ΤΑΡΑΣ ΜΠΟΥΛΜΠΑ
@@ -291795,7 +291865,9 @@ converted_entries:
     30: null
 - dbase_number: 5784
   authors:
-  - ΜΙΓΚΕΛ,ΘΕΡΒΑΝΤΕΣ-ΑΛΜΠΕΡ,ΚΑΜΥ-ΑΝΤΡΕ,ΖΙΝΤ
+  - ΜΙΓΚΕΛ,ΘΕΡΒΑΝΤΕΣ
+  - ΑΛΜΠΕΡ,ΚΑΜΥ
+  - ΑΝΤΡΕ,ΖΙΝΤ
   language: el
   title: Ο ΔΟΝ ΚΙΧΩΤΗΣ-Ο ΞΕΝΟΣ-ΠΟΙΜΕΝΙΚΗ ΣΥΜΦΩΝΙΑ
   dewey: 889 ΘΕΡ
@@ -309815,7 +309887,8 @@ converted_entries:
   pages: 473
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -311821,7 +311894,8 @@ converted_entries:
   pages: 378
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -319195,7 +319269,8 @@ converted_entries:
   pages: 251
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -319488,7 +319563,8 @@ converted_entries:
     30: null
 - dbase_number: 6339
   authors:
-  - MAHER,JOHN-GROVES,JUDY
+  - MAHER,JOHN
+  - GROVES,JUDY
   language: el
   title: Ο ΤΣΟΜΣΚΥ ΜΕ ΕΙΚΟΝΕΣ
   entry_numbers:
@@ -319736,7 +319812,8 @@ converted_entries:
     30: null
 - dbase_number: 6344
   authors:
-  - ΛΑΟΣ,ΝΙΚΟΛΑΟΣ-ΛΑΟΥ-ΦΛΩΡΟΥ,ΧΡΙΣΤΙΝΑ
+  - ΛΑΟΣ,ΝΙΚΟΛΑΟΣ
+  - ΛΑΟΥ-ΦΛΩΡΟΥ,ΧΡΙΣΤΙΝΑ
   language: el
   title: ΟΡΘΟΛΟΓΙΚΗ ΑΝΑΡΧΙΑ ΚΑΙ ΑΝΘΡΩΠΙΣΤΙΚΗ ΠΟΛΙΤΙΚΗ
   entry_numbers:
@@ -320250,7 +320327,8 @@ converted_entries:
     30: null
 - dbase_number: 6354
   authors:
-  - ΛΕΟΠΟΛΔΟΣ ΦΟΝ ΖΑΧΕΡ-ΜΑΖΟΧ-ΓΙΩΡΓΟΣ ΒΕΛΤΣΟ
+  - ΛΕΟΠΟΛΔΟΣ ΦΟΝ ΖΑΧΕΡ-ΜΑΖΟΧ
+  - ΒΕΛΤΣΟ,ΓΙΩΡΓΟΣ
   language: el
   title: Η ΑΦΡΟΔΙΤΗ ΜΕ ΤΗ ΓΟΥΝΑ-Η ΤΕΡΑΤΩΔΗΣ ΠΛΕΥΡΑ
   dewey: 830.11 ΜΑΖ
@@ -321929,7 +322007,8 @@ converted_entries:
     30: null
 - dbase_number: 6388
   authors:
-  - ΚΑΡΑΚΩΣΤΑΣ,Θ-ΚΥΡΙΑΚΟΣ,Δ.
+  - ΚΑΡΑΚΩΣΤΑΣ,Θ
+  - ΚΥΡΙΑΚΟΣ,Δ.
   language: el
   title: ΦΥΣΙΚΗ
   subtitle: ΕΙΣΑΓΩΓΗ ΣΤΗ ΜΗΧΑΝΙΚΗ
@@ -322481,7 +322560,8 @@ converted_entries:
     30: null
 - dbase_number: 6399
   authors:
-  - ΡΟΥΣΣΟΥ,ΥΠΑΠΑΝΤΗ-ΜΕΝΕΓΟΥ,ΛΕΥΤΕΡΗ
+  - ΡΟΥΣΣΟΥ,ΥΠΑΠΑΝΤΗ
+  - ΜΕΝΕΓΟΥ,ΛΕΥΤΕΡΗ
   language: el
   title: ΤΗΣ ΠΑΡΟΣ ΟΙ ΝΟΣΤΙΜΙΕΣ
   subtitle: 104 ΠΑΡΑΔΟΣΙΑΚΕΣ ΣΥΝΤΑΓΕΣ ΤΗΣ ΠΑΡΟΥ
@@ -324121,7 +324201,8 @@ converted_entries:
   pages: 331
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -325291,7 +325372,8 @@ converted_entries:
     30: null
 - dbase_number: 6456
   authors:
-  - ΣΚΟΥΝΤΖΟΣ,ΘΕΟΔΩΡΟΣ-ΛΙΒΑΣ,ΠΕΤΡΟΣ
+  - ΣΚΟΥΝΤΖΟΣ,ΘΕΟΔΩΡΟΣ
+  - ΛΙΒΑΣ,ΠΕΤΡΟΣ
   language: el
   title: ΣΥΣΤΗΜΑ ΕΘΝΙΚΩΝ ΟΙΚΟΝΟΜΙΚΩΝ ΛΟΓΑΡΙΑΣΜΩΝ
   entry_numbers:
@@ -326713,7 +326795,8 @@ converted_entries:
   - ΒΙΟΓΡΑΦΙΑ
   - ΠΟΛΙΤΙΚΗ ΠΡΟΣΩΠΙΚΟΤΗΤΑ
   copies: 2
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -330636,7 +330719,8 @@ converted_entries:
     30: null
 - dbase_number: 6565
   authors:
-  - ΗΜΕΛΟΛΟΥ ΣΤΕΦ-ΚΑΜΗΛΑΚΗ ΑΙΚ.
+  - ΗΜΕΛΟΛΟΥ ΣΤΕΦ
+  - ΚΑΜΗΛΑΚΗ ΑΙΚ.
   language: el
   title: ΠΑΡΑΔΟΣΙΑΚΟΣ ΥΛΙΟΣ ΒΙΟΣ ΤΟΥ ΕΛΛΗΝΙΟΥ ΛΑΟΥ
   dewey: 398 ΗΜΕ
@@ -331079,7 +331163,8 @@ converted_entries:
     30: null
 - dbase_number: 6574
   authors:
-  - ΠΑΠΑΔΟΠΟΥΛΟΥ,ΒΑΡΒΑΡΑ-ΤΣΙΑΡΑ,ΑΓΛΑΙΑ
+  - ΠΑΠΑΔΟΠΟΥΛΟΥ,ΒΑΡΒΑΡΑ
+  - ΤΣΙΑΡΑ,ΑΓΛΑΙΑ
   language: el
   title: ΜΟΝΗ ΚΑΤΩ ΠΑΝΑΓΙΑΣ ΑΡΤΑΣ ΣΥΛΛΟΓΗ ΕΙΚΟΝΩΝ
   subtitle: ΗΠΕΙΡΩΤΙΚΑ ΧΡΟΝΙΚΑ ΑΝΑΤΥΠΟ
@@ -331902,7 +331987,7 @@ converted_entries:
     30: null
 - dbase_number: 6591
   authors:
-  - ΚΑΤΣΑΔΩΡΑΚΗΣ-ΒΡΑΤΣΙΣΤΑΣ,ΔΟΜΝΑ
+  - ΚΑΤΣΑΔΩΡΑΚΗ-ΒΡΑΤΣΙΣΤΑ,ΔΟΜΝΑ
   language: el
   title: ΜΟΝΟΠΤΕΡΟΣ ΑΓΓΕΛΟΣ
   dewey: 889.1 ΚΑΤ
@@ -332494,7 +332579,8 @@ converted_entries:
   pages: 477
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -335760,7 +335846,8 @@ converted_entries:
   pages: 538
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -336048,7 +336135,8 @@ converted_entries:
     30: null
 - dbase_number: 6675
   authors:
-  - ΟΙΚΟΝΟΜΟΥ,ΜΙΧΑΛΗ-ΠΑΠΑΣΤΑΘΗ,ΠΑΝΤΕΛΗ
+  - ΟΙΚΟΝΟΜΟΥ,ΜΙΧΑΛΗ
+  - ΠΑΠΑΣΤΑΘΗ,ΠΑΝΤΕΛΗ
   language: el
   title: ΑΓΡΟΤΟΠΟΙΗΜΕΝΙΚΗ ΔΙΑΤΡΟΦΗ ΦΛΩΡΙΑΔΑΣ ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ
   dewey: 398 ΟΙΚ
@@ -336342,7 +336430,11 @@ converted_entries:
     30: null
 - dbase_number: 6681
   authors:
-  - ΚΑΡΑΒΕΛΛΑΣ,ΚΑΤΣΑΔΩΡΑΚΗΣ,ΜΑΡΑΓΚΟΥ,ΝΑΝΤΣΟΥ
+  - ΚΑΡΑΒΕΛΛΑΣ,Δ.
+  - ΚΑΤΣΑΔΩΡΑΚΗΣ,Γ.
+  - ΜΑΡΑΓΚΟΥ,Π.
+  - ΝΑΝΤΣΟΥ,Θ.
+  - ΣΒΟΡΩΝΟΥ,Ε.
   language: el
   title: ΔΙΑΧΕΙΡΗΣΗ ΠΕΡΙΟΧΩΝ:ΟΔΗΓΟΣ ΟΡΘΗΣ ΠΡΑΚΤΙΚΗΣ
   entry_numbers:
@@ -336447,7 +336539,8 @@ converted_entries:
   pages: 492
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -336593,7 +336686,8 @@ converted_entries:
   pages: 160
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -337022,7 +337116,8 @@ converted_entries:
     30: null
 - dbase_number: 6695
   authors:
-  - ΜΕΡΚΑΤΗΣ,ΔΙΟΝ.-ΜΑΡΓΑΡΙΤΗΣ,ΘΑΝ.
+  - ΜΕΡΚΑΤΗΣ,ΔΙΟΝ.
+  - ΜΑΡΓΑΡΙΤΗΣ,ΘΑΝ.
   language: el
   title: ΠΕΤΟΣΦΑΙΡΙΣΗ
   dewey: 796 ΜΕΡ
@@ -337567,7 +337662,8 @@ converted_entries:
     30: null
 - dbase_number: 6706
   authors:
-  - ΤΖΙΟΒΑΡΑΣ,ΓΡΗΓΟΡΗΣ-ΧΙΩΤΗΣ,ΒΑΣΙΛΗΣ
+  - ΤΖΙΟΒΑΡΑΣ,ΓΡΗΓΟΡΗΣ
+  - ΧΙΩΤΗΣ,ΒΑΣΙΛΗΣ
   language: el
   title: Ο ΠΟΛΙΤΙΚΟΣ ΧΑΡΤΗΣ ΤΗΣ ΜΕΤΑΠΟΛΙΤΕΥΣΗΣ 1974-2004
   dewey: 949.507 ΤΖΙ
@@ -344905,7 +345001,8 @@ converted_entries:
     30: null
 - dbase_number: 6855
   authors:
-  - ΡΑΦΤΗΣ,ΑΛΚΗΣ-ΤΣΙΟΥ ΑΓΟΡΩ
+  - ΡΑΦΤΗΣ,ΑΛΚΗΣ
+  - ΤΣΙΟΥ,ΑΓΟΡΩ
   language: el
   title: ΛΟΥΨΙΚΟ ΚΟΝΙΤΣΑΣ
   subtitle: ΤΡΑΓΟΥΔΙΑ ΚΑΙ ΧΟΡΟΙ ΤΟΥ ΓΑΜΟΥ
@@ -345116,7 +345213,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΧΟΡΟΣ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -345165,7 +345263,8 @@ converted_entries:
   pages: 383
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -352819,7 +352918,8 @@ converted_entries:
     30: null
 - dbase_number: 7015
   authors:
-  - ΤΡΟΥΠΗΣ,ΘΕΟΔΩΡΟΣ-ΔΗΜΟΥΛΑΣ,ΒΑΣΙΛΗΣ
+  - ΤΡΟΥΠΗΣ,ΘΕΟΔΩΡΟΣ
+  - ΔΗΜΟΥΛΑΣ,ΒΑΣΙΛΗΣ
   language: el
   title: ΠΑΡΟΙΜΙΑΚΟΣ ΚΑΙ ΓΝΩΜΙΚΟΣ ΛΟΓΟΣ
   dewey: 398 ΤΡΟ
@@ -359476,7 +359576,8 @@ converted_entries:
   pages: 213
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359529,9 +359630,9 @@ converted_entries:
   pages: 225
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: 'ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
-
-    ΤΟΜΟΣ 8'
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
+  notes: ΤΟΜΟΣ 8
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359584,8 +359685,9 @@ converted_entries:
   pages: 226
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   volume: ΤΟΜΟΣ 10
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359638,8 +359740,9 @@ converted_entries:
   pages: 226
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   volume: ΤΟΜΟΣ 6
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359692,9 +359795,9 @@ converted_entries:
   pages: 225
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: 'ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
-
-    ΤΟΜΟΣ 11'
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
+  notes: ΤΟΜΟΣ 11
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359747,7 +359850,8 @@ converted_entries:
   pages: 294
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359799,7 +359903,8 @@ converted_entries:
   pages: 149
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359851,7 +359956,8 @@ converted_entries:
   pages: 151
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359904,7 +360010,8 @@ converted_entries:
   pages: 83
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -359957,7 +360064,8 @@ converted_entries:
   pages: 87
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360010,7 +360118,8 @@ converted_entries:
   pages: 85
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360063,7 +360172,8 @@ converted_entries:
   pages: 90
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360116,7 +360226,8 @@ converted_entries:
   pages: 121
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360166,7 +360277,8 @@ converted_entries:
   pages: 610
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360216,7 +360328,8 @@ converted_entries:
   pages: 297
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -360880,7 +360993,8 @@ converted_entries:
   pages: 380
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -362866,7 +362980,8 @@ converted_entries:
   pages: 366
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -364966,7 +365081,8 @@ converted_entries:
   pages: 370
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -365694,7 +365810,8 @@ converted_entries:
     30: null
 - dbase_number: 7270
   authors:
-  - ΠΑΠΑΔΟΠΟΥΛΟΥ,ΒΑΡΒΑΡΑ-ΤΣΙΑΡΑ,ΑΓΛΑΙΑ
+  - ΠΑΠΑΔΟΠΟΥΛΟΥ,ΒΑΡΒΑΡΑ
+  - ΤΣΙΑΡΑ,ΑΓΛΑΙΑ
   language: el
   title: ΕΙΚΟΝΕΣ ΤΗΣ ΑΡΤΑΣ
   dewey: 709.495 ΠΑΠ
@@ -366252,7 +366369,8 @@ converted_entries:
   pages: 490
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -366943,7 +367061,8 @@ converted_entries:
   pages: 415
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -370720,7 +370839,8 @@ converted_entries:
   pages: 284
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -372154,7 +372274,8 @@ converted_entries:
   pages: 311
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -372204,7 +372325,8 @@ converted_entries:
   pages: 447
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -372754,7 +372876,8 @@ converted_entries:
   pages: 380
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -374857,7 +374980,8 @@ converted_entries:
   pages: 511
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -374961,7 +375085,8 @@ converted_entries:
   pages: 464
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -376643,7 +376768,8 @@ converted_entries:
   pages: 587
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -376897,7 +377023,8 @@ converted_entries:
   pages: 303
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -377440,7 +377567,8 @@ converted_entries:
   pages: 169
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -379112,7 +379240,8 @@ converted_entries:
     30: null
 - dbase_number: 7538
   authors:
-  - ΜΑΥΡΟΚΟΡΔΑΤΟΣ Μ.Ι-ΧΑΜΟΥΔΟΠΟΥΛΟΣ Α.Χ
+  - ΜΑΥΡΟΚΟΡΔΑΤΟΣ Μ.Ι
+  - ΧΑΜΟΥΔΟΠΟΥΛΟΣ Α.Χ
   language: el
   title: Η ΜΑΚΕΔΟΝΙΑ
   subtitle: ΜΕΛΕΤΗ ΔΗΜΟΓΡΑΦΙΚΗ ΚΑΙ ΟΙΚΟΝΟΜΙΚΗ
@@ -380472,7 +380601,8 @@ converted_entries:
   pages: 394
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380521,7 +380651,8 @@ converted_entries:
   pages: 372
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380572,7 +380703,8 @@ converted_entries:
   pages: 325
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380621,7 +380753,8 @@ converted_entries:
   pages: 444
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380670,7 +380803,8 @@ converted_entries:
   pages: 112
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380721,7 +380855,8 @@ converted_entries:
   pages: 559
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380817,7 +380952,8 @@ converted_entries:
   pages: 299
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380867,7 +381003,8 @@ converted_entries:
   pages: 191
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380916,7 +381053,8 @@ converted_entries:
   pages: 198
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -380965,7 +381103,8 @@ converted_entries:
   pages: 275
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -381014,7 +381153,8 @@ converted_entries:
   pages: 306
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -381052,7 +381192,9 @@ converted_entries:
     30: null
 - dbase_number: 7578
   authors:
-  - ΓΚΕΡΤΖΙΚΗΣ- ΣΩΤΗΡΟΠΟΥΛΟΣ- ΨΑΛΛΑΣ
+  - ΓΚΕΡΤΖΙΚΗΣ
+  - ΣΩΤΗΡΟΠΟΥΛΟΣ
+  - ΨΑΛΛΑΣ
   language: el
   title: ΠΡΟΠΟΝΗΤΙΚΑ ΠΡΟΓΡΑΜΜΑΤΑ ΕΡΑΣΙΤΕΧΝΙΚΟΥ ΠΟΔΟΣΦΑΙΡΟΥ
   entry_numbers:
@@ -381243,7 +381385,8 @@ converted_entries:
     30: null
 - dbase_number: 7582
   authors:
-  - GROSSER M./STARISCHKA ST.
+  - GROSSER,M.
+  - STARISCHKA,ST.
   language: el
   title: ΑΥΤΑ ΕΙΝΑΙ ΤΑ ΤΕΣΤ ΓΙΑ ΑΘΛΗΤΕΣ
   entry_numbers: []
@@ -384787,7 +384930,8 @@ converted_entries:
   pages: 452
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -384886,7 +385030,8 @@ converted_entries:
   pages: 477
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -385024,7 +385169,8 @@ converted_entries:
     29: null
 - dbase_number: 7660
   authors:
-  - ΜΑΚΡΥΓΙΑΝΝΗ.Π-ΚΟΥΚΟΥΡΑΒΑΣ ΑΝΤΩΝΗΣ
+  - ΜΑΚΡΥΓΙΑΝΝΗ.Π
+  - ΚΟΥΚΟΥΡΑΒΑΣ ΑΝΤΩΝΗΣ
   language: el
   title: Ο ΜΟΥΖΑΚΙΩΤΙΚΟΣ ΓΑΜΟΣ
   dewey: 398 ΜΑΚ
@@ -385135,7 +385281,8 @@ converted_entries:
   pages: 315
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -385432,7 +385579,8 @@ converted_entries:
   pages: 700
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -385767,7 +385915,8 @@ converted_entries:
     29: null
 - dbase_number: 7675
   authors:
-  - ΛΟΥΚΑΣ Δ. ΚΛΑΔΙΑ ΜΑΡΓΑΡΙΤΑ
+  - ΛΟΥΚΑΣ,Δ.
+  - ΚΛΑΔΙΑ,ΜΑΡΓΑΡΙΤΑ
   language: el
   title: ΓΑΙΑ ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ
   entry_numbers:
@@ -386802,7 +386951,8 @@ converted_entries:
   pages: 555
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -388419,7 +388569,7 @@ converted_entries:
     30: null
 - dbase_number: 7727
   authors:
-  - ΛΟΓΟΘΕΤΗΣ-ΣΠΥΡΙΔΩΝΑΣ
+  - ΛΟΓΟΘΕΤΗΣ,ΣΠΥΡΙΔΩΝΑΣ
   language: el
   title: ΕΛΑ ΝΑ ΣΟΥ ΔΕΙΞΩ ΤΟΝ ΠΑΡΑΔΕΙΣΟ
   dewey: 230 ΛΟΓ
@@ -391122,7 +391272,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΜΥΘΙΣΤΟΡΗΜΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -398595,7 +398746,8 @@ converted_entries:
   pages: 467
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -398847,7 +398999,8 @@ converted_entries:
   pages: 476
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -399593,7 +399746,8 @@ converted_entries:
   pages: 412
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -399929,7 +400083,7 @@ converted_entries:
     30: null
 - dbase_number: 7956
   authors:
-  - ΚΑΡΑΧΑΛΙΟΥ -ΤΟΚΑ ΜΕΛΙΤΑ
+  - ΚΑΡΑΧΑΛΙΟΥ-ΤΟΚΑ,ΜΕΛΙΤΑ
   language: el
   title: ΑΠΟ ΤΟ ΘΕΟΚΡΙΤΟ ΣΤΟ ΛΟΓΟΓΡΑΦΗΜΑ
   dewey: '889.1'
@@ -399979,7 +400133,7 @@ converted_entries:
     30: null
 - dbase_number: 7957
   authors:
-  - ΚΑΡΑΧΑΛΙΟΥ-ΤΟΚΑ ΜΕΛΙΤΑ
+  - ΚΑΡΑΧΑΛΙΟΥ-ΤΟΚΑ,ΜΕΛΙΤΑ
   language: el
   title: ΦΑΙΝΩ
   subtitle: Η ΑΓΡΥΠΝΙΑ ΤΟΥ ΠΕΛΑΓΟΥ
@@ -400041,7 +400195,8 @@ converted_entries:
   pages: 570
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -401081,7 +401236,8 @@ converted_entries:
   pages: 358
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -404201,7 +404357,8 @@ converted_entries:
   pages: 203
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -404250,7 +404407,8 @@ converted_entries:
   pages: 234
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -404300,7 +404458,8 @@ converted_entries:
   pages: 242
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -404595,7 +404754,8 @@ converted_entries:
   pages: 131
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -404644,7 +404804,8 @@ converted_entries:
   pages: 218
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -406929,7 +407090,8 @@ converted_entries:
   pages: 455
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -408688,7 +408850,8 @@ converted_entries:
   pages: 285
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -412143,7 +412306,8 @@ converted_entries:
     30: null
 - dbase_number: 8204
   authors:
-  - ΚΟΚΟΡΕΛΗ ΑΡΓΥΡΩ-ΖΩΡΖ ΣΑΡΗ
+  - ΚΟΚΟΡΕΛΗ ΑΡΓΥΡΩ
+  - ΖΩΡΖ ΣΑΡΗ
   language: el
   title: ΜΙΑ ΑΓΑΠΗ ΓΙΑ ΔΥΟ
   dewey: 808.899 ΚΟΚ
@@ -412541,7 +412705,8 @@ converted_entries:
   topics:
   - ΝΕΟΕΛΛΗΝΙΚΗΣ ΙΣΤΟΡΙΑΣ
   - ΕΠΙΣΚΟΠΗΣΗ ΙΣΤΟΡΙΑΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -413225,7 +413390,8 @@ converted_entries:
   pages: 139
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -413275,7 +413441,8 @@ converted_entries:
   pages: 306
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -413325,7 +413492,8 @@ converted_entries:
   pages: 123
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -414287,7 +414455,8 @@ converted_entries:
   pages: 120
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -414337,7 +414506,8 @@ converted_entries:
   pages: 169
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -414389,8 +414559,7 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   donors:
-  - ΓΩΓΟΣ,
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -421064,7 +421233,8 @@ converted_entries:
   pages: 269
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -422140,7 +422310,8 @@ converted_entries:
     30: null
 - dbase_number: 8408
   authors:
-  - ΚΟΡΝΑΡΟΣ,ΘΕΜΟΣ-ΚΑΖΑΤΖΑΚΗ ΓΑΛΑΤΕΙΑ
+  - ΚΟΡΝΑΡΟΣ,ΘΕΜΟΣ
+  - ΚΑΖΑΤΖΑΚΗ ΓΑΛΑΤΕΙΑ
   language: el
   title: ΤΟ ΝΗΣΙ ΤΩΝ ΣΗΜΑΔΕΜΕΝΩΝ
   subtitle: ΣΠΙΝΑΛΟΓΚΑ-Η ΑΡΡΩΣΤΗ ΠΟΛΙΤΕΙΑ
@@ -423565,7 +423736,7 @@ converted_entries:
     30: null
 - dbase_number: 8437
   authors:
-  - ΜΑΖΑΡΑΚΗΣ-ΑΙΝΙΑΝ
+  - ΜΑΖΑΡΑΚΗΣ-ΑΙΝΙΑΝ,Ι.,Κ.
   language: el
   title: Η ΦΙΛΙΚΗ ΕΤΑΙΡΙΑ
   dewey: '938.487'
@@ -424844,7 +425015,8 @@ converted_entries:
   edition_year: 1978
   pages: 207
   topics: []
-  notes: ΔΩΡΕΑ ΤΟΜΠΟΥΛΙΔΗΣ
+  donors:
+  - ΤΟΜΠΟΥΛΙΔΗΣ,ΔΗΜΗΤΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -427315,7 +427487,8 @@ converted_entries:
   pages: 173
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -429414,7 +429587,8 @@ converted_entries:
   pages: 453
   topics:
   - ΨΥΧΑΝΑΛΥΣΗ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -429612,7 +429786,8 @@ converted_entries:
   pages: 345
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -429901,7 +430076,8 @@ converted_entries:
   pages: 170
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -437582,7 +437758,8 @@ converted_entries:
   authors:
   - JUQUIN,PIERRE
   - STENGERS,ISABELLE
-  - ANTUNES,CARLOS!KEMP,PENNY
+  - ANTUNES,CARLOS
+  - KEMP,PENNY
   - TELKAMPER,WILFRID
   - WOLF,FRIEDER,OTTO
   language: el
@@ -437694,7 +437871,8 @@ converted_entries:
   - ΑΞΤ,Χ.Γ.
   - ΑΡΣΕΝΗΣ,Γ.
   - ΛΑΖΑΡΗΣ,Α.
-  - ΒΕΡΓΟΠΟΥΛΟΣ,Κ.!ΣΑΦΙΕΧ,Α.
+  - ΒΕΡΓΟΠΟΥΛΟΣ,Κ.
+  - ΣΑΦΙΕΧ,Α.
   - ΠΑΠΑΝΔΡΕΟΥ,ΑΝΔΡΕΑΣ
   language: el
   title: ΜΕΤΑΒΑΣΗ ΣΤΟ ΣΟΣΙΑΛΙΣΜΟ
@@ -439203,7 +439381,8 @@ converted_entries:
   pages: 447
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -454935,7 +455114,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΠΑΙΔΙΚΗ ΛΟΦΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -456349,7 +456529,8 @@ converted_entries:
   pages: 362
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -456401,7 +456582,8 @@ converted_entries:
   pages: 334
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -457059,7 +457241,8 @@ converted_entries:
   pages: 384
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -457212,7 +457395,6 @@ converted_entries:
   - ΓΑΛΛΙΚΟ ΚΟΜΜΟΥΝΙΣΤΙΚΟ ΚΟΜΜΑ
   donors:
   - ΜΠΑΝΙΑΣ,ΓΙΑΝΝΗΣ
-  notes: ΔΩΡΕΑ ΔΗΜΗΤΡΙΟΥ  ΤΟΜΠΟΥΛΙΔΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -457832,7 +458014,8 @@ converted_entries:
     30: null
 - dbase_number: 9104
   authors:
-  - ΜΑΚΡΗ Κ.Ι-ΜΑΡΚΟΥΛΙΔΗ Γ.Π.
+  - ΜΑΚΡΗ Κ.Ι
+  - ΜΑΡΚΟΥΛΙΔΗ,Γ.Π.
   language: el
   title: ΠΑΡΑΘΥΡΑ ΠΡΟΣ ΤΗΝ ΑΥΤΟΓΝΩΣΙΑ
   dewey: 113 ΜΑΚ
@@ -457934,7 +458117,8 @@ converted_entries:
     30: null
 - dbase_number: 9106
   authors:
-  - ΚΑΤΣΙΚΑΣ ΧΡΗΣΤΟΣ-ΘΕΡΙΑΝΟΣ ΚΩΣΤΑΣ Ν.
+  - ΚΑΤΣΙΚΑΣ ΧΡΗΣΤΟΣ
+  - ΘΕΡΙΑΝΟΣ ΚΩΣΤΑΣ Ν.
   language: el
   title: Η ΕΚΠΑΙΔΕΥΣΗ ΤΗΣ ΑΜΑΘΕΙΑΣ
   dewey: 378 ΚΑΤ
@@ -458039,7 +458223,8 @@ converted_entries:
     30: null
 - dbase_number: 9108
   authors:
-  - ΣΟΥΗΖΥ ΠΩΛ Μ.-ΜΠΕΤΤΕΛΕΜ ΣΑΡΛ
+  - ΣΟΥΗΖΥ ΠΩΛ Μ.
+  - ΜΠΕΤΤΕΛΕΜ ΣΑΡΛ
   language: el
   title: ΜΕΡΙΚΑ ΣΥΓΧΡΟΝΑ ΠΡΟΒΛΗΜΑΤΑ ΤΟΥ ΣΟΣΙΑΛΙΜΟΥ
   dewey: 320 ΜΠΕ
@@ -460306,7 +460491,8 @@ converted_entries:
   pages: 492
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -461212,7 +461398,8 @@ converted_entries:
     30: null
 - dbase_number: 9169
   authors:
-  - ΛΑΔΗ Φ.- ΧΑΤΖΗΑΡΓΥΡΗ Κ.
+  - ΛΑΔΗ Φ.
+  - ΧΑΤΖΗΑΡΓΥΡΗ Κ.
   language: el
   title: Η ΠΟΡΤΟΓΑΛΙΑ ΚΙ ΕΜΕΙΣ
   subtitle: ΠΡΟΒΛΗΜΑΤΑ ΤΟΥ ΣΟΣΙΑΛΙΣΜΟΥ
@@ -461679,7 +461866,8 @@ converted_entries:
     30: null
 - dbase_number: 9178
   authors:
-  - ΤΕΓΟΠΟΥΛΟΣ-ΦΥΤΡΑΚΗΣ
+  - ΤΕΓΟΠΟΥΛΟΣ
+  - ΦΥΤΡΑΚΗΣ
   language: el
   title: ΕΛΛΗΝΙΚΟ ΛΕΞΙΚΟ
   dewey: 489.33 ΤΕΓ
@@ -461843,7 +462031,8 @@ converted_entries:
   pages: 245
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -463118,7 +463307,8 @@ converted_entries:
     30: null
 - dbase_number: 9206
   authors:
-  - SARTORI,RALF,STEIDL,PETRA
+  - SARTORI,RALF
+  - STEIDL,PETRA
   title: TANGO
   subtitle: Η ΕΝΩΤΙΚΗ ΔΥΝΑΜΗ ΤΟΥ ΧΟΡΕΥΤΙΚΟΥ ΕΡΩΤΑ
   dewey: 784.18 SAR
@@ -469916,7 +470106,8 @@ converted_entries:
   topics:
   - ΘΕΑΤΡΟ
   - ΒΙΟΓΡΑΦΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -470799,9 +470990,9 @@ converted_entries:
   pages: 559
   topics:
   - ΚΑΤΟΧΗ
-  notes: 'ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
-
-    Α & Β ΤΟΜΟΣ'
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
+  notes: Α & Β ΤΟΜΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -470906,7 +471097,8 @@ converted_entries:
   topics:
   - ΨΥΧΟΛΟΓΙΑ
   - ΔΙΑΠΡΟΣΩΠΙΚΕΣ ΣΧΕΣΕΙΣ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -473854,7 +474046,8 @@ converted_entries:
   topics:
   - ΕΜΦΥΛΙΟΣ
   - ΠΟΛΙΤΙΚΗ ΙΣΤΟΡΙΑ
-  notes: ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -473955,7 +474148,8 @@ converted_entries:
   pages: 413
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -474007,7 +474201,8 @@ converted_entries:
   pages: 329
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -474059,7 +474254,8 @@ converted_entries:
   pages: 286
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -474111,7 +474307,8 @@ converted_entries:
   pages: 333
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -476263,7 +476460,8 @@ converted_entries:
   - ΕΜΦΥΛΙΟΣ
   - ΕΞΕΓΕΡΣΗ
   - ΑΘΗΝΑ
-  notes: ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -476632,7 +476830,8 @@ converted_entries:
   - ΥΝΘΕΤΕΣ
   - ΕΛΛΑΔΑ
   - ΒΙΟΓΡΑΦΙΑ
-  notes: ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -477098,9 +477297,9 @@ converted_entries:
   pages: 719
   topics:
   - ΙΣΤΟΡΙΑ ΕΛΛΗΝΙΚΗ ΕΠΑΝΑΣΤΑΣΗΣ
-  notes: 'ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
-
-    Α & Β ΤΟΜΟΣ'
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
+  notes: Α & Β ΤΟΜΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -477299,7 +477498,8 @@ converted_entries:
   pages: 348
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΟΛΥΞΕΝΗ ΚΥΡΟΥ
+  donors:
+  - ΚΥΡΟΥ,ΠΟΛΥΞΕΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -480043,7 +480243,8 @@ converted_entries:
   pages: 258
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -483604,7 +483805,7 @@ converted_entries:
     30: null
 - dbase_number: 9606
   authors:
-  - ΕΞΑΔΑΚΤΥΛΟΥ-ΜΠΕΚΙΑΡΟΓΛΟΥ,ΑΙΚ.
+  - ΕΞΑΔΑΚΤΥΛΟΥ-ΜΠΕΚΙΑΡΟΓΛΟΥ,ΑΙΚΑΤΕΡΙΝΗ
   language: el
   title: ΟΘΩΜΑΝΙΚΑ ΝΑΥΠΗΓΕΙΑ ΣΤΟΝ ΠΑΡΑΔΟΣΙΑΚΟ ΕΛΛΗΝΙΚΟ ΧΩΡΟ
   dewey: 623.8 ΕΞΑ
@@ -486338,8 +486539,9 @@ converted_entries:
   pages: 378
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑ,ΛΕΝΑ
   volume: ΤΟΜΟΣ Α-Β
-  notes: ΔΩΡΕΑ ΛΕΝΑ ΜΠΑΝΤΑΛΟΥΚΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -487162,7 +487364,8 @@ converted_entries:
   - ΖΩΓΡΑΦΙΚΗ
   - ΕΛΛΑΔΑ
   - ΓΕΡΜΑΝΟΙ ΖΩΓΡΑΦΟΙ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -495873,7 +496076,9 @@ converted_entries:
   - ΕΛΛΗΝΙΚΗ ΟΙΚΟΝΟΜΙΚΗ ΙΣΤΟΡΙΑ
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΟΙΚΟΝΟΜΙΚΑ ΘΕΜΑΤΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ - ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -497465,7 +497670,9 @@ converted_entries:
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΚΛΕΦΤΕΣ
   - ΑΡΜΑΤΟΛΟΙ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ - ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -498028,7 +498235,8 @@ converted_entries:
   pages: 318
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -498538,7 +498746,8 @@ converted_entries:
   pages: 332
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -498864,7 +499073,9 @@ converted_entries:
   topics:
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΕΛΛΗΝΙΚΗ ΕΠΑΝΑΣΤΑΣΗ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ - ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -501093,7 +501304,8 @@ converted_entries:
     30: null
 - dbase_number: 9960
   authors:
-  - MARX-ENGELS
+  - MARX
+  - ENGELS
   title: UBER RELIGION
   dewey: 430 ΓΕΡ
   entry_numbers:
@@ -502708,7 +502920,8 @@ converted_entries:
     30: null
 - dbase_number: 9995
   authors:
-  - MARX-ENGELS
+  - MARX
+  - ENGELS
   title: THE HOLY FAMILY OR CRITIQUE OF CRITICAL CRITIQUE
   dewey: 420 ΑΓΓ
   entry_numbers:
@@ -503861,7 +504074,7 @@ converted_entries:
     30: null
 - dbase_number: 10020
   authors:
-  - ΕΜΜΑΝΟΥΗΛΙΔΟΥ-ΑΡΣΕΝΗΣ
+  - ΕΜΜΑΝΟΥΗΛΙΔΟΥ-ΑΡΣΕΝΗ,ΑΝΤΙΓΟΝΗ
   language: el
   title: ΙΑΤΡΙΚΗ ΜΙΚΡΟΒΙΟΛΟΓΙΑ
   dewey: 615.5 ΕΜΜ
@@ -504011,7 +504224,7 @@ converted_entries:
     30: null
 - dbase_number: 10023
   authors:
-  - ΠΑΝΑΓΙΩΤΟΥ-ΠΑΝΤΑΖΟΠΟΥΛΟΣ
+  - ΠΑΝΤΑΖΟΠΟΥΛΟΣ,Παναγιώτης
   language: el
   title: ΩΤΟΡΙΝΟΛΑΡΥΓΓΟΛΟΓΙΑ
   dewey: 615.5 ΠΑΝ
@@ -504062,7 +504275,8 @@ converted_entries:
     30: null
 - dbase_number: 10024
   authors:
-  - ΧΑΡΤΟΦΥΛΑΚΙΔΗΣ,ΓΕΏΡΓΙΟΣ-ΓΑΡΟΦΑΛΙΔΗΣ,ΘΕΟΔΩΡΟΣ
+  - ΧΑΡΤΟΦΥΛΑΚΙΔΗΣ,ΓΕΏΡΓΙΟΣ
+  - ΓΑΡΟΦΑΛΙΔΗΣ,ΘΕΟΔΩΡΟΣ
   language: el
   title: ΘΕΜΑΤΑ ΟΡΘΟΠΕΔΙΚΗΣ ΚΑΙ ΤΡΑΥΜΑΤΟΛΟΓΙΑΣ
   dewey: 615.5 ΧΑΡ
@@ -504162,7 +504376,7 @@ converted_entries:
     30: null
 - dbase_number: 10026
   authors:
-  - ΙΩΑΝΝΟΥ-ΚΑΠΕΤΑΝΑΚΗ
+  - ΙΩΑΝΝΟΥ ΚΑΠΕΤΑΝΑΚΗ
   language: el
   title: ΔΕΡΜΑΤΟΛΟΓΙΑ-ΑΦΡΟΔΙΣΙΟΛΟΓΙΑ
   dewey: 615.5 ΚΑΠ
@@ -504361,7 +504575,7 @@ converted_entries:
     30: null
 - dbase_number: 10030
   authors:
-  - ΠΑΝΑΓΙΩΤΟΥ,Κ.-ΒΕΛΙΣΣΑΡΟΠΟΥΛΟΥ
+  - Βελισσαρόπουλος,Παναγιώτης,Κ.
   language: el
   title: ΕΠΙΤΟΜΟΣ ΟΦΘΑΛΜΟΛΟΓΙΑ
   dewey: 615.5 ΠΑΝ
@@ -504671,7 +504885,8 @@ converted_entries:
   pages: 293
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504720,7 +504935,8 @@ converted_entries:
   pages: 640
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504769,7 +504985,8 @@ converted_entries:
   pages: 724
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504818,7 +505035,8 @@ converted_entries:
   pages: 615
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504867,7 +505085,8 @@ converted_entries:
   pages: 183
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504915,7 +505134,8 @@ converted_entries:
   pages: 358
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -504963,7 +505183,8 @@ converted_entries:
   pages: 536
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505013,7 +505234,8 @@ converted_entries:
   pages: 277
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505062,7 +505284,8 @@ converted_entries:
   pages: 195
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505110,7 +505333,8 @@ converted_entries:
   pages: 43
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505159,7 +505383,8 @@ converted_entries:
   pages: 577
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505207,7 +505432,8 @@ converted_entries:
   pages: 260
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505256,7 +505482,8 @@ converted_entries:
   pages: 587
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505305,7 +505532,8 @@ converted_entries:
   pages: 489
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505354,7 +505582,8 @@ converted_entries:
   pages: 570
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505453,7 +505682,8 @@ converted_entries:
   pages: 388
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505503,7 +505733,8 @@ converted_entries:
   pages: 416
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505599,7 +505830,8 @@ converted_entries:
   pages: 69
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505647,7 +505879,8 @@ converted_entries:
   pages: 108
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505696,7 +505929,8 @@ converted_entries:
   pages: 463
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505743,7 +505977,8 @@ converted_entries:
   editor: None // ΛΙΤΣΑΣ
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505791,7 +506026,8 @@ converted_entries:
   pages: 245
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505838,7 +506074,8 @@ converted_entries:
   pages: 79
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505886,7 +506123,8 @@ converted_entries:
   pages: 93
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505934,7 +506172,8 @@ converted_entries:
   pages: 30
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -505983,7 +506222,8 @@ converted_entries:
   pages: 51
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506032,8 +506272,9 @@ converted_entries:
   pages: 183
   topics:
   - ΙΑΤΡΙΚΑ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   volume: Α&Β ΤΟΜΟΣ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506082,7 +506323,8 @@ converted_entries:
   pages: 644
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506132,8 +506374,9 @@ converted_entries:
   pages: 275
   topics:
   - ΙΑΤΡΙΚΑ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   volume: 1&2 ΤΟΜΟΣ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506182,7 +506425,8 @@ converted_entries:
   pages: 150
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506229,7 +506473,8 @@ converted_entries:
   pages: 180
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506380,7 +506625,8 @@ converted_entries:
   pages: 172
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506426,7 +506672,8 @@ converted_entries:
   editor: None // ΑΘΗΝΑ
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506474,7 +506721,8 @@ converted_entries:
   pages: 102
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506523,7 +506771,8 @@ converted_entries:
   pages: 636
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506573,8 +506822,9 @@ converted_entries:
   pages: 252
   topics:
   - ΙΑΤΡΙΚΑ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   volume: 1&2 ΤΟΜΟΣ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506621,7 +506871,8 @@ converted_entries:
   edition_year: 1990
   topics:
   - ΙΑΤΡΙΚΑ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -506721,8 +506972,9 @@ converted_entries:
   edition_year: 1977
   topics:
   - ΙΑΤΡΙΚΑ
+  donors:
+  - ΜΙΧΑΛΗ,ΓΙΑΝΝΟΥΛΑ
   volume: 1&2 ΤΟΜΟΣ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΟΥΛΑΣ ΜΙΧΑΛΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -507171,7 +507423,8 @@ converted_entries:
   pages: 406
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -512373,7 +512626,8 @@ converted_entries:
   pages: 405
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -516267,7 +516521,8 @@ converted_entries:
     30: null
 - dbase_number: 10271
   authors:
-  - ΤΣΑΚΜΑΚΗΣ,Α.-ΧΡΙΣΤΟΠΟΥΛΟΣ,Μ.
+  - ΤΣΑΚΜΑΚΗΣ,Α.
+  - ΧΡΙΣΤΟΠΟΥΛΟΣ,Μ.
   language: el
   title: ΟΡΝΙΘΕΣ
   subtitle: ΟΨΕΙΣ ΚΑΙ ΑΝΑΓΝΩΣΕΙΣ ΜΙΑΣ ΑΡΙΣΤΟΦΑΝΙΚΗΣ ΚΩΜΩΔΙΑΣ
@@ -517227,7 +517482,8 @@ converted_entries:
     30: null
 - dbase_number: 10290
   authors:
-  - ΠΡΕΒΕΛΑΚΗΣ,Ε-ΜΕΡΤΙΚΟΠΟΥΛΟΥ-ΚΑΛΛΙΑΤΑΚΗ,Κ.
+  - ΠΡΕΒΕΛΑΚΗΣ,Ε
+  - ΜΕΡΤΙΚΟΠΟΥΛΟΥ-ΚΑΛΛΙΑΤΑΚΗ,Κ.
   language: el
   title: Η ΗΠΕΙΡΟΣ,Ο ΑΛΗ ΠΑΣΑΣ ΚΑΙ Η ΕΛΛΗΝΙΚΗ ΕΠΑΝΑΣΤΑΣΗ
   subtitle: ΠΡΟΞΕΝΙΚΕΣ ΕΚΘΕΣΕΙΣ ΤΟΥ WILLIAM MEYER ΑΠΟ ΤΗΝ ΠΡΕΒΕΖΑ
@@ -517485,7 +517741,8 @@ converted_entries:
     30: null
 - dbase_number: 10295
   authors:
-  - MAULA,E-SZABO,A.
+  - MAULA,E
+  - SZABO,A.
   title: ENKLIMA-ΕΓΚΛΙΜΑ
   dewey: 180 SZA
   entry_numbers:
@@ -517741,7 +517998,8 @@ converted_entries:
     30: null
 - dbase_number: 10300
   authors:
-  - ΣΠΥΡΙΔΑΚΗ,ΓΕΩΡΓ.-ΠΕΡΙΣΤΕΡΗ,ΣΠΥΡΙΔ.
+  - ΣΠΥΡΙΔΑΚΗ,ΓΕΩΡΓ.
+  - ΠΕΡΙΣΤΕΡΗ,ΣΠΥΡΙΔ.
   language: el
   title: ΕΛΛΗΝΙΚΑ ΔΗΜΟΤΙΚΑ ΤΡΑΓΟΥΔΙΑ (ΕΚΛΟΓΗ)
   dewey: 782.42 ΣΠΥ
@@ -522070,7 +522328,7 @@ converted_entries:
     30: null
 - dbase_number: 10385
   authors:
-  - ΕΡΛΙ-ΜΠΟΓΚΕ,ΝΟΡΤΡΟΥΝΤ
+  - BOGE-ERLI,NORTRUD
   language: el
   title: ΕΝΑΝΤΙΑ ΣΤΟΝ ΑΝΕΜΟ
   dewey: 832 ΕΡΛ
@@ -528081,7 +528339,8 @@ converted_entries:
     29: null
 - dbase_number: 10499
   authors:
-  - ΣΠΥΡΟΠΟΥΛΟΣ,ΒΑΣΙΛΕΙΟΣ-ΡΕΒΥΘΙΑΔΟΥ ΑΝΘΗ
+  - ΣΠΥΡΟΠΟΥΛΟΣ,ΒΑΣΙΛΕΙΟΣ
+  - ΡΕΒΥΘΙΑΔΟΥ ΑΝΘΗ
   language: el
   title: ΟΦΙΤΙΚΗ ΠΤΥΧΕΣ ΤΗΣ ΓΡΑΜΜΑΤΙΚΗΣ ΔΟΜΗΣ ΜΙΑΣ ΠΟΝΤΙΚΑΗΣ ΔΙΑΛΕΚΤΟ
   dewey: 956.5 ΣΠΥ
@@ -536807,7 +537066,8 @@ converted_entries:
     29: null
 - dbase_number: 10665
   authors:
-  - ΣΥΜΕΩΝΙΔΗΣ,,Χ.Π.-ΤΟΜΠΑΙΔΗΣ,Δ.Ε.
+  - ΣΥΜΕΩΝΙΔΗΣ,,Χ.Π.
+  - ΤΟΜΠΑΙΔΗΣ,Δ.Ε.
   language: el
   title: ΣΥΜΠΛΗΡΩΜΑ ΣΤΟ ΙΣΤΟΡΙΚΟΝ ΛΕΞΙΚΟΝ ΤΗΣ ΠΟΝΤΙΑΚΗΣ ΔΙΑΛΕΚΤΟΥ
   dewey: 956.5 ΣΥΜ
@@ -536862,7 +537122,8 @@ converted_entries:
     29: null
 - dbase_number: 10666
   authors:
-  - ΣΥΜΕΩΝΙΔΗΣ,Χ.,ΤΟΜΠΑΙΔΗΣ,Δ.
+  - ΣΥΜΕΩΝΙΔΗΣ,Χ.
+  - ΤΟΜΠΑΙΔΗΣ,Δ.
   language: el
   title: Η ΣΗΜΕΡΙΝΗ ΕΛΛΗΝΙΚΗ ΔΙΑΛΕΚΤΟΣ ΤΗΣ ΟΥΚΡΑΝΙΑΣ
   subtitle: ΠΕΡΙΟΧΗ ΜΑΡΙΟΥΠΟΛΗΣ
@@ -537676,7 +537937,8 @@ converted_entries:
     29: null
 - dbase_number: 10681
   authors:
-  - ΛΑΜΨΙΔΟΥ,ΟΔ-ΡΑΖΗ,ΑΡΙΑΔΝΗ
+  - ΛΑΜΨΙΔΟΥ,ΟΔ
+  - ΡΑΖΗ,ΑΡΙΑΔΝΗ
   language: el
   title: ΕΥΡΕΤΗΡΙΟΝ ΑΠΕΙΚΟΝΙΣΕΩΝ ΚΑΙ ΦΩΤΟΓΡΑΦΙΩΝ ΤΟΥ ΠΟΝΤΟΥ ΚΑΙ ΤΩΝ Ε
   subtitle: ΛΛΗΝΩΝ ΠΟΝΤΙΩΝ
@@ -545536,7 +545798,7 @@ converted_entries:
     29: null
 - dbase_number: 10834
   authors:
-  - ΕΛΕΥΘΕΡΙΑΔΗ-ΕΥΣΤΑΘΙΟΥ,ΕΛΕΥΘΕΡΙΟΥ
+  - ΕΛΕΥΘΕΡΙΑΔΗΣ,ΕΛΕΥΘΕΡΙΟΣ,ΕΥΣΤΑΘΙΟΣ
   language: el
   title: ΛΑΟΓΡΑΦΙΚΑ ΛΑΡΑΧΑΝΗΣ
   subtitle: ΤΗΣ ΜΑΤΣΟΥΚΑΣ ΤΟΥ ΠΟΝΤΟΥ
@@ -546565,7 +546827,8 @@ converted_entries:
     30: null
 - dbase_number: 10854
   authors:
-  - ΜΙΧΑΗΛΙΔΗΣ,ΧΡΗΣΤΟΣ-ΑΘΑΝΑΣΙΑΔΗΣ,ΑΝΔΡΕΑΣ
+  - ΜΙΧΑΗΛΙΔΗΣ,ΧΡΗΣΤΟΣ
+  - ΑΘΑΝΑΣΙΑΔΗΣ,ΑΝΔΡΕΑΣ
   language: el
   title: ΓΕΝΝΗΘΕΙΣ ΕΙΣ ΚΑΥΚΑΣΟΝ ΡΩΣΙΑΣ
   dewey: 938.498 ΑΘΑ
@@ -547148,7 +547411,8 @@ converted_entries:
     29: null
 - dbase_number: 10865
   authors:
-  - ΠΛΟΥΜΙΔΗΣ,ΔΗΜΗΤΡΙΟΣ,ΚΑΛΕΝΤΕΡΙΔΗΣ,ΣΑΒΒΑΣ
+  - ΠΛΟΥΜΙΔΗΣ,ΔΗΜΗΤΡΙΟΣ
+  - ΚΑΛΕΝΤΕΡΙΔΗΣ,ΣΑΒΒΑΣ
   language: el
   title: ΙΩΝΙΑ
   subtitle: ΣΑΜΟΣ-ΕΦΕΣΟΣ-ΜΙΛΗΤΟΣ-ΠΡΙΗΝΗ
@@ -549691,7 +549955,8 @@ converted_entries:
   topics:
   - ΕΜΦΥΛΙΟΣ ΠΟΛΕΜΟΣ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -555257,7 +555522,9 @@ converted_entries:
   - ΔΙΟΙΚΗΣΗ
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΟΙΚΟΝΟΜΙΚΑ ΣΤΟΙΧΕΙΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ , ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -562104,7 +562371,8 @@ converted_entries:
 - dbase_number: 11156
   authors:
   - ΑΝΔΡΙΤΣΟΠΟΥΛΟΥ,Σ.
-  - ΚΕΝΤΕΠΟΖΙΔΗ,Ν.,ΠΡΑΠΑ,
+  - ΚΕΝΤΕΠΟΖΙΔΗ,Ν.
+  - ΠΡΑΠΑ
   language: el
   title: Ο ΡΟΛΟΣ ΤΩΝ ΚΟΙΝΩΝΙΚΩΝ ΥΠΗΡΕΣΙΩΝ ΣΤΗΝ ΚΑΤΑΠΟΛΕΜΗΣΗ ΤΟΥ ΡΑΤΣΙ
   subtitle: ΣΜΟΥ ΚΑΙ ΤΟΥ ΚΟΙΝΩΝΙΚΟΥ ΑΠΟΚΛΕΙΣΜΟΥ
@@ -562152,7 +562420,15 @@ converted_entries:
     30: null
 - dbase_number: 11157
   authors:
-  - ΚΟΤΣΑΡΙΑΝ-ΛΟΥΚΙΑΔΗΣ ΜΠΡΑΧΙΜ-ΣΙΝΤΟ
+  - Χαραλαμπίδης,Μιχάλης
+  - Κοτσαριάν,Ζεράρ
+  - Λουκαΐδης,Λουκής
+  - Μπραχίμ,Αμπού
+  - Σίντο,Μαρία
+  - Τουκού,Ομέρ
+  - Φόγιερστάιν,Βόλφανγκ
+  - Φωτιάδης,Κώστας
+  - Χόφμαν,Τέσα
   language: el
   title: Η ΠΟΛΥΕΘΝΙΚΗ ΤΟΥΡΚΙΑ
   dewey: 938.498 ΚΟΤ
@@ -562957,7 +563233,7 @@ converted_entries:
     30: null
 - dbase_number: 11173
   authors:
-  - ΜΑΖΑΡΑΚΗΣ -ΑΙΝΙΑΝ Ι.,Κ.
+  - ΜΑΖΑΡΑΚΗΣ-ΑΙΝΙΑΝ,Ι.,Κ.
   language: el
   title: ΣΗΜΑΙΕΣ ΕΛΕΥΘΕΡΙΑΣ
   subtitle: ΣΥΛΛΟΓΗ ΤΟΥ ΕΘΝΙΚΟΥ ΙΣΤΟΡΙΚΟΥ ΜΟΥΣΕΙΟΥ
@@ -567836,7 +568112,8 @@ converted_entries:
     30: null
 - dbase_number: 11271
   authors:
-  - ΘΕΟΔΩΡΟΥ, ΝΙΚΟΣ -ΛΑΖΟΣ ΧΡΗΣΤΟΣ
+  - ΘΕΟΔΩΡΟΥ, ΝΙΚΟΣ
+  - ΛΑΖΟΣ,ΧΡΗΣΤΟΣ
   language: el
   title: ΒΙΒΛΙΟΓΡΑΦΙΑ ΕΛΛΗΝΙΚΗΣ ΕΠΙΣΤΗΜΟΝΗΚΗΣ ΦΑΝΤΑΣΙΑΣ
   subtitle: ΑΠΟ ΤΟ ΛΟΥΚΙΑΝΟ ΜΕΧΡΙ ΣΗΜΕΡΑ
@@ -568548,7 +568825,8 @@ converted_entries:
     29: null
 - dbase_number: 11285
   authors:
-  - ΝΙΚΟΣ ΑΝΔΡΙΩΤΗΣ, ΚΑΤΕΡΙΝΑ ΚΑΡΑΠΛΗ
+  - ΝΙΚΟΣ ΑΝΔΡΙΩΤΗΣ
+  - ΚΑΤΕΡΙΝΑ ΚΑΡΑΠΛΗ
   language: el
   title: ΒΥΖΑΝΤΙΝΑ ΚΑΙ ΑΡΑΒΙΚΑ ΙΣΤΙΟΦΟΡΑ ΠΛΟΙΑ
   dewey: 387.21 ΑΝΔ
@@ -568890,7 +569168,8 @@ converted_entries:
     30: null
 - dbase_number: 11292
   authors:
-  - PANAGIOTIS ROUMELIOTIS, VERA M. BUDWAY
+  - ROUMELIOTIS,PANAGIOTIS
+  - BUDWAY,VERA,M.
   title: THE SOUTHEAST EUROPEAN YEARBOOK 1998-9
   dewey: 372.65 ROY
   entry_numbers:
@@ -569246,7 +569525,8 @@ converted_entries:
   pages: 260
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -569348,7 +569628,8 @@ converted_entries:
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΕΥΡΩΠΑΙΚΕΣ ΔΥΝΑΜΕΙΣ
   - ΟΘΩΜ. ΑΥΤΟΚΡ
-  notes: ΔΩΡΕΑ Ε. ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -570713,7 +570994,8 @@ converted_entries:
     29: null
 - dbase_number: 11329
   authors:
-  - MAFFIOLI D., COLAJANNI A.
+  - MAFFIOLI,D.
+  - COLAJANNI,A.
   language: el
   title: Ο ΚΟΣΜΟΣ ΤΗΣ ΜΕΣΟΓΕΙΟΥ
   subtitle: ΔΗΜΟΓΡΑΦΙΚΑ ΠΡΟΒΛΗΜΑΤΑ ΚΑΙ ΚΟΙΝΩΝΙΚΟ-ΠΟΛΙΤΙΣΜΙΚΕΣ ΔΥΝΑΜΙΚΕΣ
@@ -571778,7 +572060,8 @@ converted_entries:
     30: null
 - dbase_number: 11350
   authors:
-  - ΤΣΑΤΣΟΣ Κ., ΚΑΚΛΑΜΑΝΟΣ Δ.
+  - ΤΣΑΤΣΟΣ,Κ.
+  - ΚΑΚΛΑΜΑΝΟΣ,Δ.
   language: el
   title: ΕΛΕΥΘΕΡΙΟΣ ΒΕΝΙΖΕΛΟΣ
   dewey: 938.672 ΤΣΑ
@@ -572824,7 +573107,9 @@ converted_entries:
     29: null
 - dbase_number: 11371
   authors:
-  - KONDIS B., KENTROTIS K., SFETAS S.
+  - KONDIS,B.
+  - KENTROTIS,K.
+  - SFETAS,S.
   title: RESURGENT IRREDENTISM
   subtitle: DOCUMENTS ON SKOPJE 'MACEDONIAN' NATIONALIST ASPIRATIONS
   dewey: 372.65 KON
@@ -573724,7 +574009,8 @@ converted_entries:
     30: null
 - dbase_number: 11389
   authors:
-  - PSOMIADES H., THOMADAKIS S.
+  - PSOMIADES,H.
+  - THOMADAKIS,S.
   title: GREECE THE NEW EUROPE, AND THE CHANGING INTERNATIONAL ORDER
   dewey: 372.65 PSO
   entry_numbers:
@@ -573977,7 +574263,8 @@ converted_entries:
     30: null
 - dbase_number: 11394
   authors:
-  - KOSTAKOS G., TOMADAKIS E.
+  - KOSTAKOS,G.
+  - TOMADAKIS,E.
   title: MEMORANDUM OF GREECE
   subtitle: CONCERNING THE APPLICATION OF THE FORMER YROM FOR ADMISSION
   dewey: 372.65 KOS
@@ -574616,7 +574903,10 @@ converted_entries:
     30: null
 - dbase_number: 11407
   authors:
-  - ΘΕΟΤΟΚΑΣ, ΑΥΓΕΡΗΣ, ΤΕΡΖΑΚΗΣ, ΑΛΕΞΙΟΥ
+  - ΑΛΕΞΙΟΥ,ΕΛΛΗ
+  - ΑΥΓΕΡΗΣ,ΜΑΡΚΟΣ
+  - ΘΕΟΤΟΚΑΣ,ΓΙΩΡΓΟΣ
+  - ΤΕΡΖΑΚΗΣ,ΑΓΓΕΛΟΣ
   language: el
   title: ΛΩΤΟΣ
   subtitle: ΟΛΟΚΛΗΡΩΤΙΣΜΟΣ
@@ -574765,7 +575055,7 @@ converted_entries:
     30: null
 - dbase_number: 11410
   authors:
-  - MARTHA GRIGORIOU-IOANNIDOU
+  - GRIGORIOU-IOANNIDOU,MARTHA
   title: UNE REMARQUE SUR LE RECIT DES MIRACLES DE SAINT DEMETRIUS
   dewey: 372.65 IOA
   entry_numbers:
@@ -575515,7 +575805,8 @@ converted_entries:
     29: null
 - dbase_number: 11425
   authors:
-  - ΣΟΥΛΟΓΙΑΝΝΗΣ Ε., ΜΠΟΤΟΥΡΟΠΟΥΛΟΥ Ι.
+  - ΣΟΥΛΟΓΙΑΝΝΗΣ,Ε.
+  - ΜΠΟΤΟΥΡΟΠΟΥΛΟΥ,Ι.
   language: el
   title: ΑΛΕΞΑΝΔΡΟΥ ΡΙΖΟΥ ΡΑΓΚΑΒΗ
   subtitle: ΧΕΙΡΟΓΡΑΦΟΣ ΚΩΔΙΞ ΑΡ 35
@@ -576860,7 +577151,8 @@ converted_entries:
     30: null
 - dbase_number: 11452
   authors:
-  - ΓΕΡΑΛΗΣ,ΠΑΝΟΣ & ΓΕΩΡΓΙΟΣ
+  - ΓΕΡΑΛΗΣ,ΠΑΝΟΣ
+  - ΓΕΡΑΛΗΣ,ΓΕΩΡΓΙΟΣ
   language: el
   title: ΥΣΤΕΡΟΓΡΑΦΟ
   subtitle: ΦΩΤΟΓΡΑΦΙΕΣ ΚΑΙ ΠΟΙΗΜΑΤΑ
@@ -578256,7 +578548,8 @@ converted_entries:
   pages: 335
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -578695,7 +578988,7 @@ converted_entries:
     30: null
 - dbase_number: 11489
   authors:
-  - ΜΑΓΔΑΛΗΝΗΣ- ΜΟΝΑΧΗΣ
+  - ΜΑΓΔΑΛΗΝΗΣ-ΜΟΝΑΧΗΣ
   language: el
   title: Ο ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ Ο ΒΟΥΝΕΚΗΣ
   dewey: 230 ΜΑΓ
@@ -581441,7 +581734,10 @@ converted_entries:
     29: null
 - dbase_number: 11544
   authors:
-  - ΠΛΑΤΩΝ,ΗΣΙΟΔΟΣ,ΟΜΗΡΟΣ,ΣΤΡΑΒΩΝ,
+  - ΠΛΑΤΩΝ
+  - ΗΣΙΟΔΟΣ
+  - ΟΜΗΡΟΣ
+  - ΣΤΡΑΒΩΝ
   language: el
   title: ΒΙΒΛΙΟΘΗΚΗ ΑΡΧΑΙΑΣ ΕΛΛΑΔΑΣ
   dewey: 880.08 ΠΛΑ
@@ -581789,7 +582085,9 @@ converted_entries:
     30: null
 - dbase_number: 11551
   authors:
-  - ΟΜΗΡΟΣ-ΠΛΑΤΩΝΑΣ-ΑΡΙΣΤΟΦΑΝΗΣ
+  - ΟΜΗΡΟΣ
+  - ΠΛΑΤΩΝΑΣ
+  - ΑΡΙΣΤΟΦΑΝΗΣ
   language: el
   title: ΟΔΥΣΣΕΙΑ Α-Β,ΑΠΟΛΟΓΙΑ ΣΩΚΡΑΤΗ-ΣΥΜΠΟΣΙΟ,ΝΕΦΕΛΕΣ-ΠΛΟΥΤΟΣ
   dewey: 880.08 ΟΜΗ
@@ -582510,7 +582808,10 @@ converted_entries:
   - ΑΡΧΙΛΟΧΟΣ
   - ΣΙΜΩΝΙΔΗΣ
   - ΑΝΑΚΡΕΩΝ
-  - ΑΛΚΑΙΟΣ!ΣΑΠ
+  - ΑΛΚΑΙΟΣ
+  - ΣΑΠΦΩ
+  - ΠΙΝΔΑΡΟΣ
+  - ΙΒΥΚΟΣ
   language: el
   title: ΛΥΡΙΚΗ ΠΟΙΗΣΗ
   dewey: 880.08 ΑΝΑ
@@ -584679,7 +584980,8 @@ converted_entries:
     30: null
 - dbase_number: 11609
   authors:
-  - ΚΑΚΛΑΜΑΝΗΣ,ΣΤΕΦΑΝΟΣ-ΛΑΜΠΑΚΗΣ,ΣΤΥΛΙΑΝΟΣ
+  - ΚΑΚΛΑΜΑΝΗΣ,ΣΤΕΦΑΝΟΣ
+  - ΛΑΜΠΑΚΗΣ,ΣΤΥΛΙΑΝΟΣ
   language: el
   title: 1453 ΜΑΡΤΥΡΙΕΣ ΓΙΑ ΤΗΝ ΑΛΩΣΗ ΤΗΣ ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΗΣ
   dewey: 938.498 ΚΑΚ
@@ -587245,7 +587547,8 @@ converted_entries:
     30: null
 - dbase_number: 11659
   authors:
-  - ΣΚΟΝΤΖΟΣ,ΛΑΜΠΡΟΣ-ΡΙΖΟΥΛΗΣ,ΔΗΜΗΤΡΗΣ
+  - ΣΚΟΝΤΖΟΣ,ΛΑΜΠΡΟΣ
+  - ΡΙΖΟΥΛΗΣ,ΔΗΜΗΤΡΗΣ
   language: el
   title: ΤΟ ΤΕΛΟΣ ΤΟΥ ΚΟΣΜΟΥ
   subtitle: Ο ΑΝΤΙΧΡΙΣΤΟΣ Ο ΑΡΜΑΓΕΔΩΝ ΚΑΙ Η ΣΥΝΤΕΛΕΙΑ ΣΥΜΦΩΝΑ ΜΕ ΤΗΝ ΟΡΘ
@@ -588105,7 +588408,9 @@ converted_entries:
     30: null
 - dbase_number: 11676
   authors:
-  - ΚΑΣΕΡ,ΡΟΝΤΟΛΦ,ΜΑΙΕΡ,ΜΑΡΒΙΝ,ΒΟΥΡΣΤ,ΓΚΡΕΓΚ
+  - ΒΟΥΡΣΤ,ΓΚΡΕΓΚΟΡ
+  - ΚΑΣΕΡ,ΡΟΝΤΟΛΦ
+  - ΜΑΙΕΡ,ΜΑΡΒΙΝ
   language: el
   title: ΤΟ ΕΥΑΓΓΕΛΙΟ ΤΟΥ ΙΟΥΔΑ
   dewey: 230 ΚΑΣ
@@ -590005,7 +590310,8 @@ converted_entries:
     30: null
 - dbase_number: 11714
   authors:
-  - ΚΟΣΤΛΕΡ,Α.-ΟΥΙΛΛΥ,Α.
+  - ΚΟΣΤΛΕΡ,Α.
+  - ΟΥΙΛΛΥ,Α.
   language: el
   title: Η ΜΕΓΑΛΗ ΣΕΞΟΥΑΛΙΚΗ ΕΓΚΥΚΛΟΠΑΙΔΕΙΑ
   dewey: 613.907 ΚΟΣ
@@ -592265,7 +592571,8 @@ converted_entries:
   pages: 515
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΑΜΠΡΙΝΗ ΠΑΠΑΒΑΣΙΛΕΙΟΥ
+  donors:
+  - ΠΑΠΑΒΑΣΙΛΕΙΟΥ,ΛΑΜΠΡΙΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -592315,7 +592622,8 @@ converted_entries:
   pages: 467
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΑΜΠΡΙΝΗ ΠΑΠΑΒΑΣΙΛΕΙΟΥ
+  donors:
+  - ΠΑΠΑΒΑΣΙΛΕΙΟΥ,ΛΑΜΠΡΙΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -592700,7 +593008,7 @@ converted_entries:
     30: null
 - dbase_number: 11768
   authors:
-  - ΚΡΟΥΣ,ΤΖΕΙΜΣ,ΚΛΑΟΥΣ-ΒΑΙΣ,ΧΑΝΣ
+  - KRUSS,JAMES
   language: el
   title: ΜΕΛΙΣΣΟΥΛΑ ΣΟΥΛΑ ΦΡΟΣΟΥΛΑ
   dewey: 808.899 ΚΡΟ
@@ -594076,7 +594384,8 @@ converted_entries:
   - ΑΡΤΑ
   - ΓΡΑΜΜΕΝΙΤΣΑ
   - ΙΣΤΡΟΡΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΕΙΟΣ ΤΑΤΣΗΣ
+  donors:
+  - ΤΑΤΣΗΣ,ΒΑΣΙΛΕΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594128,7 +594437,8 @@ converted_entries:
   pages: 479
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594178,7 +594488,8 @@ converted_entries:
   pages: 484
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594281,7 +594592,8 @@ converted_entries:
   pages: 582
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594480,7 +594792,8 @@ converted_entries:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΠΟΛΙΤΙΚΕΣ ΑΠΟΨΕΙΣ
   - ΕΚΠΑΙΔΕΥΤΙΚΗ ΠΟΛΙΤΙΚΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594533,7 +594846,8 @@ converted_entries:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΦΙΛΟΣΟΦΙΑ
   - ΕΚΠΑΙΔΕΥΣΗ ΚΑΙ ΚΡΑΤΟΣ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594585,7 +594899,8 @@ converted_entries:
   - ΕΠΙΘΕΤΙΚΟΤΗΤΑ
   - ΠΑΙΔΙΑ
   - ΨΥΧΟΛΟΓΙΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594637,7 +594952,8 @@ converted_entries:
   pages: 925
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594690,7 +595006,8 @@ converted_entries:
   - ΔΥΣΛΕΞΙΑ
   - ΜΑΘΗΣΙΑΚΕΣ ΔΥΣΚΟΛΙΕΣ
   - ΕΙΔΙΚΗ ΔΙΑΤΑΡΑΧΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594742,7 +595059,8 @@ converted_entries:
   - ΔΥΣΛΕΞΙΑ
   - ΜΑΘΗΣΙΑΚΕΣ ΔΥΣΚΟΛΙΕΣ
   - ΕΙΔΙΚΗ ΔΙΑΤΑΡΑΧΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594792,9 +595110,9 @@ converted_entries:
   pages: 188
   topics:
   - ΨΥΧΟΛΟΓΙΑ
-  notes: 'ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
-
-    ΤΟΜΟΣ 1,2,4'
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
+  notes: ΤΟΜΟΣ 1,2,4
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594847,7 +595165,8 @@ converted_entries:
   - ΣΧΟΛΙΚΕΣ ΓΙΟΡΤΕΣ
   - ΜΟΥΣΙΚΕΣ
   - ΟΜΙΛΙΕΣ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594949,7 +595268,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
   - ΠΟΙΗΜΑΤΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -594999,7 +595319,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
   - ΠΟΙΗΜΑΤΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595053,7 +595374,8 @@ converted_entries:
   - ΑΞΙΟΛΟΓΗΣΗ
   - ΕΚΠΑΙΔΕΥΤΙΚΟΙ
   - ΑΞΙΟΛΟΓΗΣΗ ΕΚΠΑΙΔΕΥΤΙΚΩΝ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595104,7 +595426,8 @@ converted_entries:
   topics:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΠΑΙΔΑΓΩΓΙΚΕΣ ΘΕΩΡΙΕΣ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595158,7 +595481,8 @@ converted_entries:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΕΡΕΥΝΑ
   - ΚΟΙΝΩΝΙΚΕΣ ΕΠΙΣΤΗΜΕΣ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595208,7 +595532,8 @@ converted_entries:
   topics:
   - ΣΧΟΛΙΚΕΣ ΓΙΟΡΤΕΣ
   - ΣΚΕΤΣ ΚΑΙ ΠΟΙΗΜΑΤΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595262,7 +595587,8 @@ converted_entries:
   - ΠΑΙΔΑΓΩΓΙΚΗ ΨΥΧΟΛΟΓΙΑ
   - ΨΥΧΟΛΟΓΙΑ
   - ΜΑΘΗΣΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595314,7 +595640,8 @@ converted_entries:
   - ΔΗΜΟΚΡΑΤΙΑ
   - ΕΚΠΑΙΔΕΥΤΙΚΟΙ
   - ΦΙΛΟΣΟΦΙΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595367,7 +595694,8 @@ converted_entries:
   - ΜΕΛΕΤΗ
   - ΠΕΡΙΒΑΛΛΟΝ
   - ΡΥΠΑΝΣΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595419,7 +595747,8 @@ converted_entries:
   - ΜΕΛΕΤΗ
   - ΔΙΔΑΣΚΑΛΙΑ
   - ΠΡΟΦΟΡΙΚΗ ΕΠΙΚΟΙΝΩΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595470,7 +595799,8 @@ converted_entries:
   - ΔΗΜΙΟΥΡΓΙΚΗ ΕΡΓΑΣΙΑ
   - ΣΧΟΛΕΙΟ
   - ΔΗΜΙΟΥΡΓΙΚΗ ΣΚΕΨΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595519,7 +595849,8 @@ converted_entries:
   pages: 370
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595569,7 +595900,8 @@ converted_entries:
   topics:
   - ΙΣΤΟΡΙΑ ΕΚΠΑΙΔΕΥΣΗΣ
   - ΕΚΠΑΙΔΕΥΣΗ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595674,7 +596006,8 @@ converted_entries:
   - ΦΙΛΟΣΟΦΙΑ
   - ΑΝΘΡΩΠΙΝΑ ΔΙΚΑΙΩΜΑΤΑ
   - ΦΙΛΟΣΟΦΙΚΗ ΑΝΘΡΩΠΟΛΟΓΙΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595777,7 +596110,8 @@ converted_entries:
   topics:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595828,7 +596162,8 @@ converted_entries:
   - ΕΚΠΑΙΔΕΥΣΗ
   - ΔΑΣΚΑΛΟΙ
   - ΑΓΩΝΕΣ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -595879,7 +596214,8 @@ converted_entries:
   - ΑΙΣΘΗΤΙΚΗ ΑΓΩΓΗ
   - ΠΑΙΔΙΚΟ ΘΕΑΤΡΟ
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΛΕΩΝΙΔΑΣ ΓΚΟΡΟΣ
+  donors:
+  - ΓΚΟΡΟΣ,ΛΕΩΝΙΔΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -596451,7 +596787,8 @@ converted_entries:
     30: null
 - dbase_number: 11841
   authors:
-  - ΣΟΦΙΑΝΟΣ,ΔΗΜΗΤΡΙΟΣ-ΔΗΜΗΤΡΑΚΟΠΟΥΛΟΣ,ΦΩΤΙΟ
+  - ΣΟΦΙΑΝΟΣ,ΔΗΜΗΤΡΙΟΣ
+  - ΔΗΜΗΤΡΑΚΟΠΟΥΛΟΣ,ΦΩΤΙΟ
   language: el
   title: ΤΑ ΧΕΙΡΟΓΡΑΦΑ ΤΗΣ ΜΟΝΗΣ ΔΟΥΣΙΚΟΥ ΑΓΙΟΥ ΒΗΣΣΑΡΙΩΝΟΣ
   dewey: 260 ΣΟΦ
@@ -597273,7 +597610,8 @@ converted_entries:
   pages: 507
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -598759,7 +599097,8 @@ converted_entries:
     30: null
 - dbase_number: 11887
   authors:
-  - LASSWELL MARCIA, LOBSENZ NORMAN
+  - LASSWELL,MARCIA
+  - LOBSENZ,NORMAN
   title: STYLES OF LOVING
   subtitle: WHY YOU LOVE THE WAY YOU DO
   dewey: 372.65 LAS
@@ -601602,7 +601941,8 @@ converted_entries:
   pages: 522
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -604169,7 +604509,8 @@ converted_entries:
     30: null
 - dbase_number: 11994
   authors:
-  - ΤΣΥΜΠΕΝΚΟ,ΜΑΞΙΜΟΣ,ΓΚΙΜΟΝ,ΤΙΜΟΘΕΟΣ
+  - ΤΣΥΜΠΕΝΚΟ,ΜΑΞΙΜΟΣ
+  - ΓΚΙΜΟΝ,ΤΙΜΟΘΕΟΣ
   language: el
   title: ΑΓΙΟΙ ΜΑΞΙΜΟΥ ΓΡΑΙΚΟΥ ΛΟΓΟΙ
   subtitle: ΤΟΜΟΣ Α
@@ -605767,7 +606108,8 @@ converted_entries:
   pages: 318
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -606169,7 +606511,8 @@ converted_entries:
   pages: 372
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -610973,7 +611316,8 @@ converted_entries:
   pages: 326
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -612068,7 +612412,8 @@ converted_entries:
   pages: 391
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -612120,7 +612465,8 @@ converted_entries:
   pages: 367
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -618814,7 +619160,8 @@ converted_entries:
     29: null
 - dbase_number: 12287
   authors:
-  - ΓΚΑΦΟΥΡΟΦ,Β-ΤΣΙΜΠΟΥΚΙΔΗΣ,ΔΗΜ
+  - ΓΚΑΦΟΥΡΟΦ,Β
+  - ΤΣΙΜΠΟΥΚΙΔΗΣ,ΔΗΜ
   language: el
   title: ΑΛΕΞΑΝΔΡΟΣ Ο ΜΑΚΕΔΩΝ ΚΑΙ Η ΑΝΑΤΟΛΗ
   dewey: 938.498 ΓΚΑ
@@ -620978,7 +621325,8 @@ converted_entries:
   pages: 409
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -622538,7 +622886,8 @@ converted_entries:
   pages: 281
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΑ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -625949,7 +626298,8 @@ converted_entries:
   pages: 404
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -629874,7 +630224,8 @@ converted_entries:
   pages: 350
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -632124,7 +632475,8 @@ converted_entries:
   pages: 301
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -634469,7 +634821,8 @@ converted_entries:
     30: null
 - dbase_number: 12599
   authors:
-  - ΝΙΟΥΜΑΝ ΜΙΛΝΤΡΕΝΤ, ΜΠΕΡΚΟΒΙΤΣ ΜΠΕΡΝΑΡΝΤ
+  - ΝΙΟΥΜΑΝ,ΜΙΛΝΤΡΕΝΤ
+  - ΜΠΕΡΚΟΒΙΤΣ,ΜΠΕΡΝΑΡΝΤ
   language: el
   title: ΠΩΣ ΝΑ ΓΙΝΗΣ Ο ΚΑΛΥΤΕΡΟΣ ΦΙΛΟΣ ΤΟΥ ΕΑΥΤΟΥ ΣΟΥ
   dewey: 150.195 ΝΙΟ
@@ -635418,7 +635771,8 @@ converted_entries:
     30: null
 - dbase_number: 12618
   authors:
-  - ΚΟΝΙΔΑΡΗΣ Ι. Μ., ΑΛΕΞΑΝΔΡΗΣ Σ. Γ.
+  - ΚΟΝΙΔΑΡΗΣ,Ι. Μ.
+  - ΑΛΕΞΑΝΔΡΗΣ,Σ. Γ.
   language: el
   title: ΤΟ ΙΔΙΟΚΤΗΣΙΑΚΟ ΚΑΘΕΣΤΩΣ ΤΗΣ ΛΙΜΝΗΣ ΒΙΣΤΩΝΙΔΑΣ
   dewey: 938.97 ΚΟΝ
@@ -640049,7 +640403,8 @@ converted_entries:
   - ΙΣΤΟΡΙΑ ΣΤΗΝ ΑΘΗΝΑ
   - ΙΣΤΟΡΙΑ
   - ΑΘΗΝΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΥ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -644278,7 +644633,8 @@ converted_entries:
   pages: 286
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -645330,7 +645686,8 @@ converted_entries:
   pages: 378
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -651612,7 +651969,8 @@ converted_entries:
     29: null
 - dbase_number: 12942
   authors:
-  - ΝΕΣΤΛΕ-ΤΣΕΛΛΕΡ
+  - ΝΕΣΤΛΕ
+  - ΤΣΕΛΛΕΡ
   language: el
   title: ΙΣΤΟΡΙΑ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΦΙΛΟΣΟΦΙΑΣ
   dewey: 109 ΝΕΣ
@@ -652862,7 +653220,8 @@ converted_entries:
     30: null
 - dbase_number: 12967
   authors:
-  - ΓΟΥΔΗΣ,ΧΡΙΣΤΟΣ-ΚΑΛΛΙΝΑΚΗ ΜΑΡΙΑ
+  - ΓΟΥΔΗΣ,ΧΡΙΣΤΟΣ
+  - ΚΑΛΛΙΝΑΚΗ,ΜΑΡΙΑ
   language: el
   title: 1821 Η ΕΙΚΟΝΟΓΡΑΦΙΑ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΕΠΑΝΑΣΤΑΣΗΣ
   subtitle: Α.Η ΕΠΟΧΗ ΤΗΑ ΑΥΤΟΓΝΩΣΙΑΣ Β.Η ΜΕΓΑΛΗ ΕΚΡΗΞΗ Γ. Η ΔΙΚΑΙΩΣΗ
@@ -654023,7 +654382,8 @@ converted_entries:
     30: null
 - dbase_number: 12990
   authors:
-  - ΠΑΤΣΑΛΙΑ,ΚΑΤΕΡΙΝΑ,ΤΕΡΖΟΠΟΥΛΟΥ,ΛΟΛΑ
+  - ΠΑΤΣΑΛΙΑ,ΚΑΤΕΡΙΝΑ
+  - ΤΕΡΖΟΠΟΥΛΟΥ,ΛΟΛΑ
   language: el
   title: ΝΟΜΟΛΟΓΙΑ ΤΟΥ ΠΡΩΤΟΔΙΚΕΙΟΥ ΑΡΤΗΣ ΕΠΙ ΤΟΥ ΑΓΡΟΤΙΚΟΥ ΖΗΤΗΜΑΤΟΣ
   dewey: 938.65 ΠΑΤ
@@ -657307,7 +657667,8 @@ converted_entries:
     29: null
 - dbase_number: 13056
   authors:
-  - ΚΥΡΤΑΤΑΣ,Δ.Ι-ΡΑΓΚΟΣ,Σ.Ι
+  - ΚΥΡΤΑΤΑΣ,Δ.Ι
+  - ΡΑΓΚΟΣ,Σ.Ι
   language: el
   title: Η ΕΛΛΗΝΙΚΗ ΑΡΧΑΙΟΤΗΤΑ
   subtitle: ΠΟΛΕΜΟΣ-ΠΟΛΙΤΙΚΗ-ΠΟΛΙΤΙΣΜΟΣ
@@ -662131,7 +662492,9 @@ converted_entries:
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
   - ΕΥΡΩΠΗ
   - ΟΘΩΜΑΝΙΚΗ ΚΥΡΙΑΡΧΙΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΑ - ΤΟΜΟΙ Α,Β
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β
   has_cd: false
   has_dvd: false
   offprint: false
@@ -663915,7 +664278,8 @@ converted_entries:
   pages: 274
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -664322,7 +664686,8 @@ converted_entries:
     30: null
 - dbase_number: 13193
   authors:
-  - ΜΑΡΩΝΙΤΗΣ,Δ.Ν,ΠΟΛΚΑΣ,Λ.
+  - ΜΑΡΩΝΙΤΗΣ,Δ.Ν
+  - ΠΟΛΚΑΣ,Λ.
   language: el
   title: ΑΡΧΑΙΚΗ ΕΠΙΚΗ ΠΟΙΗΣΗ
   dewey: 881.1 ΜΑΡ
@@ -666228,7 +666593,8 @@ converted_entries:
     29: null
 - dbase_number: 13230
   authors:
-  - ΜΕΤΑΛΛΗΝΟΥ,ΓΕΩΡΓΙΟΥ,ΚΑΛΟΓΕΡΟΠΟΥΛΟΥ,ΒΑΡΒΑ
+  - ΜΕΤΑΛΛΗΝΟΥ,ΓΕΩΡΓΙΟΥ
+  - ΚΑΛΟΓΕΡΟΠΟΥΛΟΥ,ΒΑΡΒΑ
   language: el
   title: ΑΡΧΕΙΟΝ ΤΗΣ ΙΕΡΑΣ ΘΕΟΛΟΓΙΚΗΣ ΣΧΟΛΗΣ ΤΗΣ ΧΑΛΚΗΣ
   subtitle: ΣΧΟΛΑΡΧΙΑ ΜΗΤΡΟΠΟΛΙΤΟΥ ΣΤΑΥΡΟΥΠΟΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 1844-1864
@@ -667846,7 +668212,8 @@ converted_entries:
     30: null
 - dbase_number: 13262
   authors:
-  - ΚΑΛΦΑΣ,Β-ΖΩΓΡΑΦΙΔΗΣ,Γ.
+  - ΚΑΛΦΑΣ,Β
+  - ΖΩΓΡΑΦΙΔΗΣ,Γ.
   language: el
   title: ΑΡΧΑΙΟΙ ΕΛΛΗΝΕΣ ΦΙΛΟΣΟΦΟΙ
   dewey: 880.07 ΚΑΛ
@@ -668010,7 +668377,8 @@ converted_entries:
   pages: 311
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -669697,7 +670065,8 @@ converted_entries:
   pages: 571
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -670491,7 +670860,8 @@ converted_entries:
     29: null
 - dbase_number: 13314
   authors:
-  - ΠΑΠΑΓΙΑΝΝΙΔΗΣ,Α.Δ.-ΜΑΛΟΥΧΟΣ.Γ.Π
+  - ΠΑΠΑΓΙΑΝΝΙΔΗΣ,Α.Δ.
+  - ΜΑΛΟΥΧΟΣ.Γ.Π
   language: el
   title: ΞΑΝΑΔΙΑΒΑΖΟΝΤΑΣ ΤΟΝ ΚΩΝΣΤΑΝΤΙΝΟ ΚΑΡΑΜΑΝΛΗ
   dewey: 320.920 ΠΑΠ
@@ -670811,7 +671181,8 @@ converted_entries:
   pages: 227
   topics:
   - ΝΟΤΙΟΑΦΡΙΚΑΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -676774,7 +677145,8 @@ converted_entries:
     29: null
 - dbase_number: 13438
   authors:
-  - ΤΟΥΜΑΝΙΔΗΣ,ΧΡΗΣΤΟΣ-ΓΡΗΓΟΡΙΑΔΗΣ,ΝΙΚΟΣ
+  - ΤΟΥΜΑΝΙΔΗΣ,ΧΡΗΣΤΟΣ
+  - ΓΡΗΓΟΡΙΑΔΗΣ,ΝΙΚΟΣ
   language: el
   title: ΛΥΡΑ ΤΟΥ ΠΟΝΤΟΥ
   subtitle: ΠΟΙΗΤΕΣ ΠΟΝΤΙΑΚΗΣ ΚΑΤΑΓΩΓΗΣ
@@ -680071,7 +680443,8 @@ converted_entries:
     30: null
 - dbase_number: 13503
   authors:
-  - ΚΑΣΤ,Φ.Κ & ΚΑΣΤΑ ΚΡΙΣΤΙΝ
+  - Cast,Phyllis Christine
+  - Cast,Kristin
   language: el
   title: ΕΚΛΕΚΤΗ
   dewey: 810.11 ΚΑΣ
@@ -681303,7 +681676,9 @@ converted_entries:
     30: null
 - dbase_number: 13527
   authors:
-  - ΠΑΠΑΔΙΑΜΑΝΤΗΣ-ΠΑΠΑΝΤΩΝΙΟΥ-ΚΑΡΚΑΒΙΤΣΑΣ
+  - Παπαδιαμάντης,Αλέξανδρος
+  - Παπαντωνίου,Ζαχαρίας
+  - Καρκαβίτσας,Ανδρέας
   language: el
   title: ΠΑΣΧΑΛΙΝΑ ΔΙΗΓΗΜΑΤΑ
   dewey: 808.899 ΠΑΠ
@@ -681610,7 +681985,9 @@ converted_entries:
   - ΕΜΠΟΡΙΟ
   - ΕΛΛΑΔΑ
   - ΙΣΤΟΡΙΚΑ ΣΤΟΙΧΕΙΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΣ - ΤΟΜΟΙ Α,Β,Γ,Δ (5 ΒΙΒΛΙΑ)
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
+  notes: ΤΟΜΟΙ Α,Β,Γ,Δ (5 ΒΙΒΛΙΑ)
   has_cd: false
   has_dvd: false
   offprint: false
@@ -685144,7 +685521,6 @@ converted_entries:
   - ΠΟΛΙΤΙΚΗ
   donors:
   - ΜΠΑΝΙΑΣ,ΚΩΣΤΑΣ
-  notes: ΔΩΡΕΑ ΜΑΙΡΗΣ ΓΚΟΥΒΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -693863,7 +694239,8 @@ converted_entries:
     30: null
 - dbase_number: 13778
   authors:
-  - GENETTE,G-MARIN,L
+  - GENETTE,G
+  - MARIN,L
   language: el
   title: ΤΑ ΟΡΙΑ ΤΗΣ ΔΙΗΓΗΣΗΣ
   dewey: 801 GEN
@@ -694528,7 +694905,8 @@ converted_entries:
   pages: 283
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -697978,7 +698356,8 @@ converted_entries:
   pages: 486
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -703189,7 +703568,8 @@ converted_entries:
   pages: 314
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -708356,7 +708736,8 @@ converted_entries:
   pages: 377
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -709887,7 +710268,8 @@ converted_entries:
     29: null
 - dbase_number: 14098
   authors:
-  - ΝΤΑΣΗ,ΚΑΤΕΡΙΝΑ-ΒΑΓΓΗ,ΑΛΕΞΑΝΔΡΑ
+  - ΝΤΑΣΗ,ΚΑΤΕΡΙΝΑ
+  - ΒΑΓΓΗ,ΑΛΕΞΑΝΔΡΑ
   language: el
   title: ΑΥΤΑ ΠΟΥ ΘΕΛΩ ΝΑ ΣΟΥ ΠΩ ...
   dewey: 886.2 ΒΑΓ
@@ -710344,7 +710726,8 @@ converted_entries:
     29: null
 - dbase_number: 14107
   authors:
-  - ΤΡΙΠΕΡΙΝΑ,ΜΑΡΙΑ-ΒΑΡΒΟΥΝΗΣ,Μ.Γ
+  - ΤΡΙΠΕΡΙΝΑ,ΜΑΡΙΑ
+  - ΒΑΡΒΟΥΝΗΣ,Μ.Γ
   language: el
   title: Ο ΚΥΚΛΟΣ ΤΟΥ ΧΡΟΝΟΥ ΣΤΟ ΛΑΙΚΟ ΠΟΛΙΤΙΣΜΟΣ ΤΩΝ ΠΟΝΤΙΩΝ 19-1922
   dewey: 398 ΤΡΙ
@@ -712774,7 +713157,8 @@ converted_entries:
     29: null
 - dbase_number: 14155
   authors:
-  - GLASSER,WILLIAM & GLASSER,CARLENN
+  - GLASSER,WILLIAM
+  - GLASSER,CARLEEN
   language: el
   title: Η ΘΕΩΡΙΑ ΤΗΣ ΕΠΙΛΟΓΗΣ ΣΤΗΝ ΠΡΑΞΗ
   dewey: 158.2 GLA
@@ -722361,7 +722745,8 @@ converted_entries:
     29: null
 - dbase_number: 14344
   authors:
-  - SHERRARD,PHILIP-KEELEY,EDMUND
+  - SHERRARD,PHILIP
+  - KEELEY,EDMUND
   title: THE POET VOICE
   subtitle: C.P.CAVAFY,GEORGE SEFERIS
   dewey: 880.900 SHE
@@ -724561,7 +724946,8 @@ converted_entries:
   pages: 309
   topics:
   - ΝΟΤΙΟΑΦΡΙΚΑΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -727778,7 +728164,8 @@ converted_entries:
     30: null
 - dbase_number: 14454
   authors:
-  - ΣΛΕΝΤΣ,ΚΕΣΤΕΡ-ΧΕΜΠΡΟΚ,ΑΝΤΡΕΑ
+  - ΣΛΕΝΤΣ,ΚΕΣΤΕΡ
+  - ΧΕΜΠΡΟΚ,ΑΝΤΡΕΑ
   language: el
   title: Η ΜΙΜΗ ΜΕ ΤΑ ΜΕΓΑΛΑ ΑΥΤΙΑ
   dewey: 808.899 ΣΛΕ
@@ -728659,7 +729046,7 @@ converted_entries:
     30: null
 - dbase_number: 14471
   authors:
-  - ΜΑΖΑΡΑΚΗΣ-ΑΙΝΙΑΝ,Ι.Κ
+  - ΜΑΖΑΡΑΚΗΣ-ΑΙΝΙΑΝ,Ι.,Κ.
   language: el
   title: ΕΛΛΗΝΙΚΕΣ ΦΟΡΕΣΙΕΣ
   subtitle: ΣΥΛΛΟΓΗ ΕΘΝΙΚΟΥ ΙΣΤΟΡΙΚΟΥ ΜΟΥΣΕΙΟΥ
@@ -735147,7 +735534,8 @@ converted_entries:
   pages: 299
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -744690,7 +745078,8 @@ converted_entries:
     30: null
 - dbase_number: 14793
   authors:
-  - ΠΑΣΣΙΑ,ΑΓΓΕΛΙΚΗ-ΜΑΝΔΗΛΑΡΑΣ,ΦΙΛΙΠΠΟΣ
+  - ΠΑΣΣΙΑ,ΑΓΓΕΛΙΚΗ
+  - ΜΑΝΔΗΛΑΡΑΣ,ΦΙΛΙΠΠΟΣ
   language: el
   title: ΡΙΓΚΙ ΤΟ ΜΥΡΜΗΓΚΙ
   subtitle: ΒΡΕΧΕΙ ΣΤΟ ΔΑΣΟΣ
@@ -745834,7 +746223,8 @@ converted_entries:
   pages: 291
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -745924,7 +746314,8 @@ converted_entries:
     30: null
 - dbase_number: 14818
   authors:
-  - ΚΑΡΑΓΕΩΡΓΙΟΥ,ΘΟΔΩΡΗΣ-ΖΩΤΟΥ,ΛΙΑ
+  - ΚΑΡΑΓΕΩΡΓΙΟΥ,ΘΟΔΩΡΗΣ
+  - ΖΩΤΟΥ,ΛΙΑ
   language: el
   title: ΑΓΩΝΕΣ ΚΥΡΙΩΝ
   dewey: 889.21 ΚΑΡ
@@ -748564,7 +748955,8 @@ converted_entries:
     30: null
 - dbase_number: 14871
   authors:
-  - KORKY,PAUL-THOMAS,VALERIE
+  - KORKY,PAUL
+  - THOMAS,VALERIE
   title: WINNIE ΤΟ ΣΤΟΙΧΕΙΩΜΕΝΟ ΣΠΙΤΙ
   dewey: 808.899 KOR
   entry_numbers:
@@ -748614,7 +749006,8 @@ converted_entries:
     30: null
 - dbase_number: 14872
   authors:
-  - KORKY,PAUL-THOMAS,VALERIE
+  - KORKY,PAUL
+  - THOMAS,VALERIE
   title: WINNIE ΚΑΙ ΟΙ ΔΕΙΝΟΣΑΥΡΟΙ
   dewey: 808.899 KOR
   entry_numbers:
@@ -748664,7 +749057,8 @@ converted_entries:
     30: null
 - dbase_number: 14873
   authors:
-  - KORKY,PAUL-THOMAS,VALERIE
+  - KORKY,PAUL
+  - THOMAS,VALERIE
   title: WINNIE ΚΑΙ ΟΙ ΠΕΙΡΑΤΕΣ
   dewey: 808.899 KOR
   entry_numbers:
@@ -750901,7 +751295,8 @@ converted_entries:
     30: null
 - dbase_number: 14918
   authors:
-  - ΓΚΟΥΤΜΑΝ,ΚΛΩΝΤ-ΜΠΛΟΚ,ΣΕΡΖ
+  - ΓΚΟΥΤΜΑΝ,ΚΛΩΝΤ
+  - ΜΠΛΟΚ,ΣΕΡΖ
   language: el
   title: ΟΙ ΤΟΥΑΛΕΤΕΣ
   dewey: 808.899 ΓΚΟ
@@ -750952,7 +751347,8 @@ converted_entries:
     30: null
 - dbase_number: 14919
   authors:
-  - ΓΚΟΥΤΜΑΝ,ΚΛΩΝΤ-ΜΠΛΟΚ,ΣΕΡΖ
+  - ΓΚΟΥΤΜΑΝ,ΚΛΩΝΤ
+  - ΜΠΛΟΚ,ΣΕΡΖ
   language: el
   title: Η ΚΥΡΙΑ ΓΙΑ ΤΙΣ ΨΕΙΡΕΣ
   dewey: 808.899 ΓΚΟ
@@ -753738,7 +754134,8 @@ converted_entries:
     30: null
 - dbase_number: 14975
   authors:
-  - ΚΟΥΓΙΑΛΗ-ΣΟΤΣΟΛΑ,ΓΙΩΤΑ
+  - ΚΟΥΓΙΑΛΗ
+  - ΣΟΤΣΟΛΑ,ΓΙΩΤΑ
   language: el
   title: ΜΑΘΑΙΝΩ ΓΙΑ ΤΟ ΜΕΛΙ
   dewey: 808.899 ΚΟΥ
@@ -755378,7 +755775,8 @@ converted_entries:
     30: null
 - dbase_number: 15007
   authors:
-  - ΤΣΟΜΠΑΝΓΕΩΡΓΙΟΥ-ΤΣΟΜΠΑΝΗΣ,ΑΝΤΩΝΗΣ
+  - ΤΣΟΜΠΑΝΓΕΩΡΓΙΟΥ
+  - ΤΣΟΜΠΑΝΗΣ,ΑΝΤΩΝΗΣ
   language: el
   title: ΟΙ ΕΛΛΗΝΕΣ ΣΤΗΝ ΚΕΝΤΡΙΚΗ ΑΣΙΑ ΤΣΑΡΙΚΗ ΡΩΣΙΑ-ΣΟΒΙΕΤΙΚΗ ΕΝΩΣΗ
   subtitle: 1868-1939
@@ -755493,7 +755891,8 @@ converted_entries:
   pages: 218
   topics:
   - ΨΥΧΟΘΕΡΑΠΕΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -755879,7 +756278,8 @@ converted_entries:
     30: null
 - dbase_number: 15017
   authors:
-  - TORΟ GUILLERMO DEL,CHUCK HOGAN
+  - DEL TORΟ,GUILLERMO
+  - HOGAN,CHUCK
   language: el
   title: Η ΑΙΩΝΙΑ ΝΥΧΤΑ
   dewey: 810.11 TOR
@@ -756331,7 +756731,8 @@ converted_entries:
     30: null
 - dbase_number: 15026
   authors:
-  - ΝΙΚΟΠΟΥΛΟΥ,ΗΡΩ,ΓΙΑΝΝΗΣ ΠΑΤΙΛΗΣ
+  - ΝΙΚΟΠΟΥΛΟΥ,ΗΡΩ
+  - ΓΙΑΝΝΗΣ ΠΑΤΙΛΗΣ
   language: el
   title: ΙΣΤΟΡΙΕΣ ΜΠΟΝΖΑΙ 15
   dewey: 889.21 ΝΙΚ
@@ -769105,7 +769506,8 @@ converted_entries:
     30: null
 - dbase_number: 15280
   authors:
-  - ΜΟΧΣΑΝ,ΖΑΝΑ,ΚΡΟΦΤΣ,ΑΝΤΡΙΟΥ
+  - ΜΟΧΣΑΝ,ΖΑΝΑ
+  - ΚΡΟΦΤΣ,ΑΝΤΡΙΟΥ
   language: el
   title: ΠΟΥΛΗΜΕΝΕΣ
   dewey: 823 ΜΟΧ
@@ -769423,7 +769825,8 @@ converted_entries:
   pages: 408
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -772034,7 +772437,8 @@ converted_entries:
   pages: 438
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -773309,7 +773713,8 @@ converted_entries:
     30: null
 - dbase_number: 15363
   authors:
-  - ΜΥΡΙΒΗΛΗ,ΣΤΡΑΤΗ-ΑΝΔΡΕΑΔΟΥ,ΔΗΜΟΣΘ.
+  - ΜΥΡΙΒΗΛΗ,ΣΤΡΑΤΗ
+  - ΑΝΔΡΕΑΔΟΥ,ΔΗΜΟΣΘ.
   language: el
   title: ΣΤΑΘΗΣ ΣΤΑΘΑΣ
   dewey: 889.07 ΜΥΡ
@@ -773411,7 +773816,9 @@ converted_entries:
     30: null
 - dbase_number: 15365
   authors:
-  - ΙΜΒΡΙΩΤΗ,Ρ-ΔΕΛΗΠΕΤΡΟΥ,Δ-ΔΟΥΚΑ.Δ
+  - ΙΜΒΡΙΩΤΗ,Ρ
+  - ΔΕΛΗΠΕΤΡΟΥ,Δ
+  - ΔΟΥΚΑ.Δ
   language: el
   title: Ο ΚΟΣΜΟΣ ΤΟΥ ΠΑΙΔΙΟΥ
   dewey: 889.07 ΙΜΒ
@@ -773665,7 +774072,8 @@ converted_entries:
     30: null
 - dbase_number: 15370
   authors:
-  - ΚΟΝΤΟΠΟΥΛΟΥ,Ν-ΚΟΝΤΟΓΙΑΝΝΗ,Δ
+  - ΚΟΝΤΟΠΟΥΛΟΥ,Ν
+  - ΚΟΝΤΟΓΙΑΝΝΗ,Δ
   language: el
   title: ΑΝΑΓΝΩΣΙΚΟΝ
   dewey: 889.07 ΚΟΝ
@@ -773867,7 +774275,8 @@ converted_entries:
     30: null
 - dbase_number: 15374
   authors:
-  - ΤΑΜΠΑΚΟΠΟΥΛΟΥ,ΑΡΣΙΝΟΗ-ΔΡΑΚΟΠΟΥΛΟΥ,ΘΕΩΝΗΣ
+  - ΤΑΜΠΑΚΟΠΟΥΛΟΥ,ΑΡΣΙΝΟΗ
+  - ΔΡΑΚΟΠΟΥΛΟΥ,ΘΕΩΝΗΣ
   language: el
   title: ΚΡΙΝΟΛΟΥΛΟΥΔΑ
   dewey: 889.07 ΤΑΜ
@@ -774022,7 +774431,8 @@ converted_entries:
     30: null
 - dbase_number: 15377
   authors:
-  - ΝΙΡΒΑΝΑ,ΠΑΥΛΟΥ-ΖΗΣΗ,ΔΗΜ
+  - ΝΙΡΒΑΝΑ,ΠΑΥΛΟΥ
+  - ΖΗΣΗ,ΔΗΜ
   language: el
   title: ΕΛΛΗΝΟΠΟΥΛΑ
   dewey: 889.07 ΝΙΡ
@@ -774073,7 +774483,9 @@ converted_entries:
     30: null
 - dbase_number: 15378
   authors:
-  - ΜΕΓΑ,Γ-ΡΩΜΑΙΟΥ,Κ-ΔΟΥΦΕΞΗ,Σ
+  - ΜΕΓΑ,Γ
+  - ΡΩΜΑΙΟΥ,Κ
+  - ΔΟΥΦΕΞΗ,Σ
   language: el
   title: ΑΝΑΓΝΩΣΤΙΚΟΝ
   dewey: 889.07 ΜΕΓ
@@ -774288,7 +774700,8 @@ converted_entries:
   pages: 492
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -775055,7 +775468,8 @@ converted_entries:
     30: null
 - dbase_number: 15397
   authors:
-  - ΚΛΕΖΙΟ,Ζ-Μ.ΓΚ
+  - ΚΛΕΖΙΟ,Ζ
+  - Μ.ΓΚ
   language: el
   title: ΤΟ ΧΡΥΣΟΨΑΡΟ
   dewey: 843 ΚΛΕ
@@ -784618,7 +785032,8 @@ converted_entries:
     30: null
 - dbase_number: 15590
   authors:
-  - ΣΕΝΚ,ΡΟΜΠΕΡΤ-ΚΟΚΤΖΟΓΛΟΥ,ΣΑΒΒΑΣ
+  - ΣΕΝΚ,ΡΟΜΠΕΡΤ
+  - ΚΟΚΤΖΟΓΛΟΥ,ΣΑΒΒΑΣ
   language: el
   title: Η ΓΕΝΟΚΤΟΝΙΑ ΤΩΝ ΕΛΛΗΝΩΝ ΜΕΣΑ ΑΠΟ ΤΑ ΗΜΕΡΟΛΟΓΙΑ ΠΟΛΕΜΟΥ
   subtitle: ΤΟΥ ΑΜΕΡΙΚΑΝΙΚΟΥ ΝΑΥΤΙΚΟΥ
@@ -790556,7 +790971,8 @@ converted_entries:
     30: null
 - dbase_number: 15710
   authors:
-  - ΤΣΑΤΣΑΝΙΔΗΣ,Π. ΦΩΤΙΑΔΗΣ Κ.
+  - ΤΣΑΤΣΑΝΙΔΗΣ,Π.
+  - ΦΩΤΙΑΔΗΣ Κ.
   language: el
   title: Η ΡΩΣΟΚΡΑΤΙΑ ΣΤΟΝ ΠΟΝΤΟ (1916-1918)
   dewey: 938.498 ΤΣΑ
@@ -791236,7 +791652,8 @@ converted_entries:
   pages: 270
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -792607,7 +793024,8 @@ converted_entries:
   topics:
   - ΕΜΠΟΡΙΚΗ ΝΑΥΤΙΛΙΑ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -794519,7 +794937,7 @@ converted_entries:
     30: null
 - dbase_number: 15794
   authors:
-  - ΓΙΑΝΝΟΚΟΠΟΥΛΟΥ-ΒΑΚΑΡΕΛΛΗ ΚΑΙΤΗ
+  - ΓΙΑΝΝΟΚΟΠΟΥΛΟΥ-ΒΑΚΑΡΕΛΛΗ,ΚΑΙΤΗ
   language: el
   title: Η ΙΣΤΟΡΙΑ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΦΙΛΟΣΟΦΙΑΣ
   entry_numbers:
@@ -795034,7 +795452,7 @@ converted_entries:
     30: null
 - dbase_number: 15805
   authors:
-  - ΓΙΑΝΝΑΚΟΠΟΥΛΟΥ-ΒΑΚΑΡΕΛΗ ΚΑΙΤΗ
+  - ΓΙΑΝΝΑΚΟΠΟΥΛΟΥ-ΒΑΚΑΡΕΛΛΗ,ΚΑΙΤΗ
   language: el
   title: ΓΕΝΙΚΑ ΠΕΡΙ ΤΗΣ ΨΥΧΟΛΟΓΙΑΣ
   entry_numbers:
@@ -796872,7 +797290,8 @@ converted_entries:
   pages: 503
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -797643,7 +798062,8 @@ converted_entries:
   pages: 506
   topics:
   - ΕΘΝΙΚΗ ΑΝΤΙΣΤΑΣΗ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -798590,7 +799010,9 @@ converted_entries:
     30: null
 - dbase_number: 15879
   authors:
-  - ΚΑΚΡΙΔΗΣ,Ι.Θ-ΤΣΑΤΣΟΣ,Κ.-ΚΥΡΙΑΚΙΔΟΥ,ΑΛ.
+  - ΚΑΚΡΙΔΗΣ,Ι.Θ
+  - ΤΣΑΤΣΟΣ,Κ.
+  - ΚΥΡΙΑΚΙΔΟΥ,ΑΛ.
   language: el
   title: ΕΛΛΗΝΙΚΗ ΜΥΘΟΛΟΓΙΑ
   dewey: 292.13 ΚΑΚ
@@ -799896,9 +800318,9 @@ converted_entries:
   pages: 48
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: 'ΔΩΡΕΑ ΤΑ ΝΕΑ
-
-    ΤΟΜΟΣ 1,2'
+  donors:
+  - ΤΑ ΝΕΑ
+  notes: ΤΟΜΟΣ 1,2
   has_cd: false
   has_dvd: false
   offprint: false
@@ -800103,7 +800525,8 @@ converted_entries:
   topics:
   - ΒΟΡΕΙΟΑΝΑΤΟΛΙΚΕΣ
   - ΗΠΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -802351,7 +802774,8 @@ converted_entries:
     30: null
 - dbase_number: 15952
   authors:
-  - ΜΙΧΑΗΛΑΡΗΣ,ΠΑΝ.-ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΣ,ΒΑΣ.
+  - ΜΙΧΑΗΛΑΡΗΣ,ΠΑΝ.
+  - ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΣ,ΒΑΣ.
   language: el
   title: ΚΛΗΡΙΚΟΙ ΣΤΟΝ ΑΓΩΝΑ
   dewey: 938.509 ΜΙΧ
@@ -802815,7 +803239,8 @@ converted_entries:
     30: null
 - dbase_number: 15961
   authors:
-  - ΣΤΑΥΡΟΥ,Θ.-ΒΟΥΣΒΟΥΝΗ,Φ.
+  - ΣΤΑΥΡΟΥ,Θ.
+  - ΒΟΥΣΒΟΥΝΗ,Φ.
   language: el
   title: ΕΥΡΙΠΙΔΗ ΤΡΑΓΩΔΙΕΣ
   subtitle: ΙΦΙΓΕΝΕΙΑ ΕΝ ΑΥΛΙΔΙ,ΙΦΙΓΕΝΕΙΑ Η ΕΝ ΤΑΥΡΟΙΣ Β ΛΥΚΕΙΟΥ
@@ -804443,7 +804868,8 @@ converted_entries:
   topics:
   - ΚΡΗΤΗ
   - ΒΕΝΕΤΟΚΡΑΤΙΑ
-  notes: ΔΩΡΕΑ ΕΛ. ΒΕΤΣΙΟΥ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -804743,7 +805169,8 @@ converted_entries:
   pages: 316
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -805284,7 +805711,8 @@ converted_entries:
   pages: 303
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -809792,7 +810220,8 @@ converted_entries:
   pages: 586
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -810036,7 +810465,8 @@ converted_entries:
     29: null
 - dbase_number: 16104
   authors:
-  - ΤΣΙΤΣΙΚΑ,ΑΡΤΕΜΙΣ-ΓΙΩΤΑΚΟΣ,ΟΡΕΣΤΗΣ
+  - ΤΣΙΤΣΙΚΑ,ΑΡΤΕΜΙΣ
+  - ΓΙΩΤΑΚΟΣ,ΟΡΕΣΤΗΣ
   language: el
   title: ΕΦΗΒΕΙΑ:ΟΔΗΓΟΣ ΕΠΙΒΙΩΣΗΣ
   subtitle: Η ΠΡΟΚΛΗΣΗ ΤΗΣ ΜΕΤΑΒΑΣΗΣΗΣ
@@ -810088,7 +810518,8 @@ converted_entries:
     29: null
 - dbase_number: 16105
   authors:
-  - ΤΣΙΣΤΙΚΑ,ΑΡΤΕΜΙΣ-ΤΖΑΒΕΛΑ,ΕΛΕΝΗ
+  - ΤΣΙΣΤΙΚΑ,ΑΡΤΕΜΙΣ
+  - ΤΖΑΒΕΛΑ,ΕΛΕΝΗ
   language: el
   title: ΤΟ ΠΕΙΡΑΓΜΑ ΠΟΥ ΠΕΙΡΑΖΕΙ
   subtitle: ΠΩΣ ΑΝΤΙΜΕΤΩΠΙΖΕΤΑΙ Ο ΣΧΟΛΙΚΟΣ ΕΚΦΟΒΙΣΜΟΣ
@@ -810390,7 +810821,8 @@ converted_entries:
     29: null
 - dbase_number: 16111
   authors:
-  - MASTRANDREA,TOMMASO-RAMELLO,GIUSEPPE
+  - MASTRANDREA,TOMMASO
+  - RAMELLO,GIUSEPPE
   language: el
   title: Η ΖΩΗ ΤΟΥ ΧΡΙΣΤΟΥ 1
   subtitle: ΕΙΚΟΝΟΓΡΑΦΗΜΕΝΗ ΒΙΒΛΟΣ ΚΑΙΝΗ ΔΙΑΘΗΚΗ
@@ -810440,7 +810872,8 @@ converted_entries:
     29: null
 - dbase_number: 16112
   authors:
-  - MASTRANDREA,TOMMASO-RAMELLO,GIUSEPPE
+  - MASTRANDREA,TOMMASO
+  - RAMELLO,GIUSEPPE
   language: el
   title: ΤΑ ΑΓΙΑ ΠΑΘΗ ΤΟ ΕΡΓΟ ΤΩΝ ΑΠΟΣΤΟΛΩΝ 2
   subtitle: ΕΙΚΟΝΟΓΡΑΦΗΜΕΝΗ ΒΙΒΛΟΣ ΚΑΙΝΗ ΔΙΑΘΗΚΗ
@@ -816163,7 +816596,8 @@ converted_entries:
     29: null
 - dbase_number: 16226
   authors:
-  - PEDEVILLA,PIA-RITTERHOFF,ANJA
+  - PEDEVILLA,PIA
+  - RITTERHOFF,ANJA
   language: el
   title: ΚΑΛΟ ΚΑΛΟΚΑΙΡΙ ΜΕ ΧΑΡΤΙ ΚΑΙ ΠΑΠΙΕ-ΜΑΣΕ
   dewey: 808.899 PED
@@ -818448,7 +818882,8 @@ converted_entries:
   pages: 68
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -818498,7 +818933,8 @@ converted_entries:
   pages: 44
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -818596,7 +819032,8 @@ converted_entries:
   pages: 28
   topics:
   - ΒΟΡΕΙΑ ΑΦΡΙΚΗ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -835529,7 +835966,8 @@ converted_entries:
     30: null
 - dbase_number: 16621
   authors:
-  - ΜΟΥΣΤΑΚΗΣ,Β.-ΤΙΜΑΓΕΝΟΥΣ Ι.
+  - ΜΟΥΣΤΑΚΗΣ,Β.
+  - ΤΙΜΑΓΕΝΟΥΣ Ι.
   language: el
   title: Η ΒΙΒΛΟΣ
   dewey: 230 ΜΟΥ
@@ -838807,7 +839245,8 @@ converted_entries:
   pages: 542
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -842713,7 +843152,8 @@ converted_entries:
   pages: 412
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -849660,7 +850100,8 @@ converted_entries:
     30: null
 - dbase_number: 16911
   authors:
-  - ΚΑΜΠΟΥΡΙΔΗΣ,Κ.-ΣΑΛΑΚΙΔΗΣ,Γ.
+  - ΚΑΜΠΟΥΡΙΔΗΣ,Κ.
+  - ΣΑΛΑΚΙΔΗΣ,Γ.
   language: el
   title: Η ΕΠΑΡΧΙΑ ΣΕΡΒΙΩΝ ΤΟΝ 16 ΑΙΩΝΑ ΜΕΣΑ ΑΠΟ ΟΘΩΜΑΝΙΚΕΣ ΠΗΓΕΣ
   dewey: 951 ΚΑΜ
@@ -850199,7 +850640,8 @@ converted_entries:
     30: null
 - dbase_number: 16922
   authors:
-  - ΣΑΛΑΚΙΔΗΣ,Γ.-ΘΕΟΧΑΡΙΔΗΣ,Ι.
+  - ΣΑΛΑΚΙΔΗΣ,Γ.
+  - ΘΕΟΧΑΡΙΔΗΣ,Ι.
   language: el
   title: Η ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ ΤΟΝ 15 ΑΙΩΝΑ
   subtitle: ΤΟ ΑΝΕΚΔΟΤΟ ΟΘΩΜΑΝΙΚΟ ΚΑΤΑΣΤΙΧΟ ΤΟΥ 1485
@@ -851382,7 +851824,8 @@ converted_entries:
     30: null
 - dbase_number: 16946
   authors:
-  - HICKS,JOHN-HART,ALBERT
+  - HICKS,JOHN
+  - HART,ALBERT
   language: el
   title: ΕΙΣΑΓΩΓΗ ΕΙΣ ΤΗΝ ΟΙΚΟΝΟΜΙΚΗΣ
   dewey: 330.1 HIC
@@ -852785,7 +853228,8 @@ converted_entries:
     30: null
 - dbase_number: 16975
   authors:
-  - HERKNER,H-ΚΑΛΙΤΣΟΥΝΑΚΙ Δ.
+  - HERKNER,H
+  - ΚΑΛΙΤΣΟΥΝΑΚΙ,Δ.
   language: el
   title: ΤΟ ΕΡΓΑΤΙΚΟΝ ΖΗΤΗΜΑ
   dewey: 305.562 HER
@@ -854198,7 +854642,8 @@ converted_entries:
     30: null
 - dbase_number: 17004
   authors:
-  - ΜΑΝΑΚΙΔΟΥ,ΦΛΩΡΑ-ΣΠΑΝΟΥΔΑΚΗΣ,ΚΩΝ.
+  - ΜΑΝΑΚΙΔΟΥ,ΦΛΩΡΑ
+  - ΣΠΑΝΟΥΔΑΚΗΣ,ΚΩΝ.
   language: el
   title: ΑΛΕΞΑΝΔΡΙΝΗ ΜΟΥΣΑ
   subtitle: ΣΥΝΕΧΕΙΑ ΚΑΙ ΝΕΩΤΕΡΙΣΜΟΣ ΣΤΗΝ ΕΛΛΗΝΙΣΤΙΚΗ ΠΟΙΗΣΗ
@@ -855096,7 +855541,8 @@ converted_entries:
     30: null
 - dbase_number: 17022
   authors:
-  - ΜΑΛΤΕΖΟΥ-ΧΑΤΖΗΜΗΝΑ
+  - ΜΑΛΤΕΖΟΥ
+  - ΧΑΤΖΗΜΗΝΑ
   language: el
   title: ΦΥΣΙΟΛΟΓΙΑ
   dewey: 615.5 ΜΑΛ
@@ -855196,7 +855642,8 @@ converted_entries:
     30: null
 - dbase_number: 17024
   authors:
-  - LISSAUER,TOM-CLAYDEN,CRAHAM
+  - LISSAUER,TOM
+  - CLAYDEN,CRAHAM
   language: el
   title: ΣΥΓΧΡΟΝΗ ΠΑΙΔΙΑΤΡΙΚΗ ΤΟΜΟΣ Α
   dewey: 617.9 LIS
@@ -855638,7 +856085,8 @@ converted_entries:
     30: null
 - dbase_number: 17033
   authors:
-  - ΜΑΛΙΑΡΑ,Σ-ΣΚΑΡΠΑΖΕΛΟΥ,Σ.
+  - ΜΑΛΙΑΡΑ,Σ
+  - ΣΚΑΡΠΑΖΕΛΟΥ,Σ.
   language: el
   title: ΜΑΘΗΜΑΤΑ ΝΕΥΡΟΛΟΓΙΑΣ
   dewey: 616.8 ΜΑΛ
@@ -856586,7 +857034,8 @@ converted_entries:
     30: null
 - dbase_number: 17052
   authors:
-  - ΚΑΤΡΙΤΣΗΣ,ΕΠ-ΤΣΟΥΡΑΣ,ΣΩΤ.
+  - ΚΑΤΡΙΤΣΗΣ,ΕΠ
+  - ΤΣΟΥΡΑΣ,ΣΩΤ.
   language: el
   title: ΜΑΘΗΜΑΤΑ ΑΝΑΤΟΜΙΑΣ ΤΟΥ ΑΝΘΡΩΠΟΥ
   subtitle: ΟΣΤΕΟΛΟΓΙΑ-ΣΥΝΔΕΣΜΟΛΟΓΙΑ
@@ -857893,7 +858342,8 @@ converted_entries:
     30: null
 - dbase_number: 17078
   authors:
-  - ΜΑΛΛΙΑΡΑ-ΣΚΑΡΠΑΛΕΖΟΥ
+  - ΜΑΛΙΑΡΑ,Σ
+  - ΣΚΑΡΠΑΖΕΛΟΥ,Σ.
   language: el
   title: ΝΕΥΡΟΛΟΓΙΑ
   dewey: 616.8 ΜΑΛ
@@ -858200,7 +858650,8 @@ converted_entries:
   - ΣΕΜΙΝΑΡΙΟ ΑΘΛΗΤΙΑΤΡΙΚΗΣ
   - ΙΑΤΡΙΚΗ
   - ΑΘΛΗΤΙΑΤΡΙΚΗ
-  notes: ΔΩΡΕΑ ΙΩΑΝΝΗΣ ΚΟΥΤΣΟΥΜΠΑΣ
+  donors:
+  - ΚΟΥΤΣΟΥΜΠΑΣ,ΓΙΑΝΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -858834,7 +859285,8 @@ converted_entries:
   pages: 401
   topics:
   - ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝΣΤΑΝΤΙΝΟΣ ΓΚΑΡΤΖΩΝΗΣ
+  donors:
+  - ΓΚΑΡΤΖΩΝΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -860862,7 +861314,8 @@ converted_entries:
     29: null
 - dbase_number: 17136
   authors:
-  - ΚΛΟΟΥΒΕΡ,ΑΝΤΡΙΟΥ-ΛΑΖΑΡ,ΡΑΛΦ
+  - ΚΛΟΟΥΒΕΡ,ΑΝΤΡΙΟΥ
+  - ΛΑΖΑΡ,ΡΑΛΦ
   language: el
   title: Ο ΝΤΕΤΕΚΤΙΒ ΡΟΝΙ
   subtitle: ΒΑΖΕΙ ΤΑ ΓΕΛΙΑ ΜΠΡΟΣΤΑ ΣΤΟΝ ΚΙΝΔΥΝΟ
@@ -860917,7 +861370,8 @@ converted_entries:
     29: null
 - dbase_number: 17137
   authors:
-  - ΚΛΟΟΥΒΕΡ,ΑΝΤΡΙΟΥ-ΛΑΖΑΡ,ΡΑΛΦ
+  - ΚΛΟΟΥΒΕΡ,ΑΝΤΡΙΟΥ
+  - ΛΑΖΑΡ,ΡΑΛΦ
   language: el
   title: Ο ΝΤΕΤΕΚΤΙΒ ΡΟΝΙ
   subtitle: ΠΑΤΑΕΙ ΣΤΟ ΚΕΦΑΛΙ ΤΟΥΣ ΚΑΚΟΥΣ
@@ -861548,7 +862002,8 @@ converted_entries:
     30: null
 - dbase_number: 17149
   authors:
-  - ΤΖΟΝ-ΤΖΟΡΙ,ΜΠΑΡΝΕΤ-ΜΑΚ
+  - ΤΖΟΡΙ,ΤΖΟΝ
+  - ΜΠΑΡΝΕΤ,ΜΑΚ
   language: el
   title: ΓΕΛΑΕΙ ΚΑΛΥΤΕΡΑ ΟΠΟΙΟΣ ΓΕΛΑΕΙ ΤΕΛΕΥΤΑΙΟΣ
   subtitle: ΤΟ ΤΡΟΜΕΡΟ ΔΙΔΥΜΟ
@@ -861602,7 +862057,9 @@ converted_entries:
     30: null
 - dbase_number: 17150
   authors:
-  - ΛΑΡΣΟΝ,ΟΣΑ-ΚΟΡΣΕΛ,ΙΝΓΚΕΛΑ-ΓΙΟΥΝΣΟ,ΧΕΝΡΙΚ
+  - ΛΑΡΣΟΝ,ΟΣΑ
+  - ΚΟΡΣΕΛ,ΙΝΓΚΕΛΑ
+  - ΓΙΟΥΝΣΟΝ,ΧΕΝΡΙΚ
   language: el
   title: ΡΑΧ ΤΟ ΑΒΑΠΤΙΣΤΟ
   dewey: 808.899 ΛΑΡ
@@ -861656,7 +862113,9 @@ converted_entries:
     29: null
 - dbase_number: 17151
   authors:
-  - ΛΑΡΣΟΝ,ΟΣΑ-ΚΟΡΣΕΛ,ΙΝΓΚΕΛΑ-ΓΙΟΥΝΣΟΝ,ΧΕΝΡΙ
+  - ΛΑΡΣΟΝ,ΟΣΑ
+  - ΚΟΡΣΕΛ,ΙΝΓΚΕΛΑ
+  - ΓΙΟΥΝΣΟΝ,ΧΕΝΡΙΚ
   language: el
   title: ΡΑΧ ΤΟ ΦΑΝΤΑΣΜΑ
   dewey: 808.899 ΛΑΡ
@@ -862394,7 +862853,8 @@ converted_entries:
     30: null
 - dbase_number: 17165
   authors:
-  - ΝΤΟΝΑΛΝΤΣΟΝ,ΤΖΟΥΛΙΑ-ΖΟΜΕΡ,ΓΙΟΥΒΑΛ
+  - ΝΤΟΝΑΛΝΤΣΟΝ,ΤΖΟΥΛΙΑ
+  - ΖΟΜΕΡ,ΓΙΟΥΒΑΛ
   language: el
   title: Η ΚΑΜΠΙΑ ΜΑΛΛΙΑΡΗ ΑΡΚΟΥΔΙΤΣΑ
   dewey: 808.899 ΝΤΟ
@@ -862898,7 +863358,8 @@ converted_entries:
     30: null
 - dbase_number: 17175
   authors:
-  - ΕΓΚΟΣΚ,ΠΙΤ-ΓΚΙΤΙΝΕΣ,ΡΟΤΖΕΡ
+  - EGOSCUE,PETE
+  - GITTINES,ROGER
   language: el
   title: ΧΩΡΙΣ ΠΟΝΟ
   subtitle: Η ΜΕΘΟΔΟΣ ΕΓΚΟΣΚ ΚΑΤΑ ΤΩΝ ΧΡΟΝΙΩΝ ΜΥΟΣΚΕΛΕΤΙΚΩΝ ΠΟΝΩΝ
@@ -863285,7 +863746,8 @@ converted_entries:
     30: null
 - dbase_number: 17183
   authors:
-  - ΚΙΤΡΑΚΗ,ΕΥΘΥΜΙΑ-ΤΡΟΥΓΚΟΣ,ΚΩΝ/ΝΟΣ
+  - ΚΙΤΡΑΚΗ,ΕΥΘΥΜΙΑ
+  - ΤΡΟΥΓΚΟΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   language: el
   title: ΟΓΚΟΓΟΝΙΔΙΑΚΑΙ ΑΥΞΗΤΙΚΟΙ ΠΑΡΑΓΟΝΤΕΣ
   dewey: 616.994 ΚΙΤ
@@ -863382,7 +863844,8 @@ converted_entries:
     30: null
 - dbase_number: 17185
   authors:
-  - ΛΙΤΣΑ,Κ-ΠΑΠΟΙΚΟΝΟΜΟΥ,Ν
+  - ΛΙΤΣΑ,Κ
+  - ΠΑΠΟΙΚΟΝΟΜΟΥ,Ν
   language: el
   title: ΕΓΧΕΙΡΙΔΙΟΝ ΥΓΙΕΙΝΗΣ
   dewey: 610 ΛΙΤ
@@ -863432,7 +863895,8 @@ converted_entries:
     30: null
 - dbase_number: 17186
   authors:
-  - ΚΑΡΑΓΕΩΡΓΙΟΥ,ΧΑΡΙΣ-ΛΙΑΠΗ,ΧΑΡΙΣ
+  - ΚΑΡΑΓΕΩΡΓΙΟΥ,ΧΑΡΙΣ
+  - ΛΙΑΠΗ,ΧΑΡΙΣ
   language: el
   title: ΠΕΡΙΒΑΛΛΟΝΤΙΚΗ ΦΑΡΜΑΚΟΛΟΓΙΑ
   dewey: 615.1 ΚΑΡ
@@ -863483,7 +863947,8 @@ converted_entries:
     30: null
 - dbase_number: 17187
   authors:
-  - ΛΙΤΣΑ,Κ-ΠΑΠΟΙΚΟΝΟΜΟΥ,Ν.
+  - ΛΙΤΣΑ,Κ
+  - ΠΑΠΟΙΚΟΝΟΜΟΥ,Ν.
   language: el
   title: ΕΓΧΕΙΡΙΔΙΟΝ ΜΙΚΡΟΒΙΟΛΟΓΙΑΣ
   dewey: 616.01 ΠΑΠ
@@ -865068,7 +865533,8 @@ converted_entries:
   pages: 64
   topics:
   - ΑΘΛΗΤΙΣΜΟΣ
-  notes: ΔΩΡΕΑ ΓΙΑΝΝΗΣ ΚΟΥΤΣΟΥΜΠΑΣ
+  donors:
+  - ΚΟΥΤΣΟΥΜΠΑΣ,ΓΙΑΝΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -865508,7 +865974,8 @@ converted_entries:
     30: null
 - dbase_number: 17228
   authors:
-  - ΓΙΑΜΑΡΕΛΛΟΥ,ΕΛΕΝΗ-ΚΑΝΕΛΛΑΚΟΠΟΥΛΟΥ,ΚΥΡΙΑΚ
+  - ΓΙΑΜΑΡΕΛΛΟΥ,ΕΛΕΝΗ
+  - ΚΑΝΕΛΛΑΚΟΠΟΥΛΟΥ,ΚΥΡΙΑΚ
   language: el
   title: ΟΔΗΓΟΣ ΕΠΕΙΓΟΥΣΑΣ ΑΝΤΙΜΙΚΡΟΒΙΑΚΗΣ ΧΗΜΕΙΟΘΕΡΑΠΕΙΑΣ ΚΑΙ ΧΗΜΕΙΟ
   subtitle: ΠΡΟΦΥΛΑΞΗΣ
@@ -865859,7 +866326,8 @@ converted_entries:
     30: null
 - dbase_number: 17235
   authors:
-  - ΧΑΡΤΟΦΥΛΑΚΙΔΗΣ,ΓΕΏΡΓΙΟΣ-ΓΑΡΟΦΑΛΙΔΗΣ,ΘΕΟΔΩΡΟΣ
+  - ΧΑΡΤΟΦΥΛΑΚΙΔΗΣ,ΓΕΏΡΓΙΟΣ
+  - ΓΑΡΟΦΑΛΙΔΗΣ,ΘΕΟΔΩΡΟΣ
   language: el
   title: ΘΕΜΑΤΑ ΟΡΘΟΠΕΔΙΚΗΣ ΚΑΙ ΤΡΑΥΜΑΤΟΛΟΓΙΑΣ
   dewey: 617.3 ΧΑΡ
@@ -866930,7 +867398,8 @@ converted_entries:
     30: null
 - dbase_number: 17257
   authors:
-  - RANG-DALE
+  - RANG
+  - DALE
   language: el
   title: ΦΑΡΜΑΚΟΛΟΓΙΑ
   dewey: 615.1 RAN
@@ -867685,7 +868154,10 @@ converted_entries:
     29: null
 - dbase_number: 17272
   authors:
-  - SEIDEL-BALL-DAINS-BENEDICT
+  - SEIDEL
+  - BALL
+  - DAINS
+  - BENEDICT
   language: el
   title: ΚΛΙΝΙΚΗ ΕΞΕΤΑΣΗ
   dewey: 615.5 SEI
@@ -867842,7 +868314,8 @@ converted_entries:
     30: null
 - dbase_number: 17275
   authors:
-  - KAUFMAN,CRIS-MCKEE,PATRICK
+  - KAUFMAN,CRIS
+  - MCKEE,PATRICK
   language: el
   title: ΠΑΘΟΦΥΣΙΟΛΟΓΙΑ
   dewey: 615.5 KAU
@@ -870189,7 +870662,6 @@ converted_entries:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   donors:
   - ΚΑΛΟΜΠΑΤΣΟΥ,ΑΘΗΝΑ
-  notes: ΔΩΡΕΑ ΖΩΗ ΜΠΑΝΤΑΛΟΥΚΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -870553,7 +871025,8 @@ converted_entries:
   - ΤΑΞΙΔΙΑ
   - ΠΕΡΙΗΓΗΣΕΙΣ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -872391,7 +872864,8 @@ converted_entries:
   pages: 537
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΘΑΝΑΣΙΟΣ ΕΞΑΡΧΟΣ
+  donors:
+  - ΕΞΑΡΧΟΣ,ΑΘΑΝΑΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -872977,7 +873451,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
   - ΕΛΛΗΝΙΚΗ ΛΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΡΙΖΟΣ
+  donors:
+  - ΡΙΖΟΣ,ΒΑΣΙΛΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -873074,7 +873549,8 @@ converted_entries:
   pages: 50
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΡΙΖΟΣ
+  donors:
+  - ΡΙΖΟΣ,ΒΑΣΙΛΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -873320,7 +873796,8 @@ converted_entries:
   - ΔΙΑΜΑΧΕΣ
   - ΠΡΟΣΤΡΙΒΕΣ
   - ΟΙΚΟΓΕΝΕΙΑΚΟ ΠΕΡΙΒΑΛΛΟΝ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -873693,7 +874170,8 @@ converted_entries:
     30: null
 - dbase_number: 17390
   authors:
-  - ΚΑΜΑΛΑΚΗΣ,ΣΠΥΡΙΔΩΝ-ΦΙΛΗ,ΧΡΙΣΤΙΝΑ
+  - ΚΑΜΑΛΑΚΗΣ,ΣΠΥΡΙΔΩΝ
+  - ΦΙΛΗ,ΧΡΙΣΤΙΝΑ
   language: el
   title: ΠΡΩΤΟΠΟΡΟΙ ΑΛΕΞΑΝΔΡΙΝΟΙ ΠΑΝΕΠΙΣΤΗΜΟΝΕΣ
   dewey: 509.2 ΚΑΜ
@@ -874289,7 +874767,8 @@ converted_entries:
   pages: 430
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -874340,7 +874819,8 @@ converted_entries:
   topics:
   - ΕΥΧΕΤΗΡΙΕΣ ΚΑΡΤΕΣ
   - ΕΥΧΕΣ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΜΑΛΙΣΙΟΒΑΣ
+  donors:
+  - ΜΑΛΙΣΙΟΒΑΣ,ΒΑΣΙΛΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -874392,7 +874872,8 @@ converted_entries:
   pages: 412
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -874478,7 +874959,7 @@ converted_entries:
     30: null
 - dbase_number: 17406
   authors:
-  - ΣΤΟΟΥ-ΜΠΙΤΣΕΡ,ΧΑΡΙΕΤ
+  - Beecher Stowe,Harriet
   language: el
   title: Η ΚΑΛΥΒΑ ΤΟΥ ΜΠΑΡΜΠΑ ΘΩΜΑ
   dewey: 808.899 ΣΤΟ
@@ -876040,7 +876521,8 @@ converted_entries:
   - ΕΦΗΒΕΙΑ
   - ΑΓΟΡΙΑ
   - ΠΑΙΔΙΚΗ ΗΛΙΚΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -876193,7 +876675,8 @@ converted_entries:
   - ΣΤΟΙΧΕΙΑ ΤΗΣ ΦΥΣΗΣ
   - ΑΝΑΠΤΥΞΗ ΚΑΙ ΚΙΝΗΣΗ
   - ΤΡΟΦΗ ΚΑΙ ΖΩΗ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -876337,7 +876820,8 @@ converted_entries:
     30: null
 - dbase_number: 17444
   authors:
-  - SHALE,ERIN, CARR-GREGG,MICHAEL
+  - SHALE,ERIN
+  - CARR-GREGG,MICHAEL
   language: el
   title: ΠΡΑΚΤΙΚΟΣ ΟΔΗΓΟΣ ΓΙΑ ΓΟΝΕΙΣ ΚΑΙ ΕΚΠΑΙΔΕΥΤΙΚΟΥΣ
   entry_numbers:
@@ -876352,7 +876836,8 @@ converted_entries:
   - ΠΡΑΚΤΙΚΟΣ ΟΔΗΓΟΣ
   - ΓΟΝΕΙΣ
   - ΕΚΠΑΙΔΕΥΤΙΚΟΙ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -876443,7 +876928,7 @@ converted_entries:
     30: null
 - dbase_number: 17446
   authors:
-  - ΣΤΟΟΥ,ΧΑΡΙΕΤ-ΜΠΙΤΣΕΡ
+  - Beecher Stowe,Harriet
   language: el
   title: Η ΚΑΛΥΒΑ ΤΟΥ ΜΠΑΡΜΠΑ ΘΩΜΑ
   dewey: 808.899 ΣΤΟ
@@ -880896,7 +881381,8 @@ converted_entries:
   edition_year: 2002
   pages: 285
   topics: []
-  notes: ΔΩΡΕΑ ΕΛ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882118,7 +882604,8 @@ converted_entries:
   pages: 538
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882167,7 +882654,8 @@ converted_entries:
   pages: 455
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882216,7 +882704,8 @@ converted_entries:
   pages: 565
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882265,7 +882754,8 @@ converted_entries:
   pages: 408
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882314,7 +882804,8 @@ converted_entries:
   pages: 430
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882363,7 +882854,8 @@ converted_entries:
   pages: 565
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882412,7 +882904,8 @@ converted_entries:
   pages: 188
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882460,7 +882953,8 @@ converted_entries:
   pages: 135
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882508,7 +883002,8 @@ converted_entries:
   pages: 140
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882557,7 +883052,8 @@ converted_entries:
   pages: 357
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882606,7 +883102,8 @@ converted_entries:
   pages: 640
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882653,7 +883150,8 @@ converted_entries:
   pages: 285
   topics:
   - ΑΛΒΑΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882702,7 +883200,8 @@ converted_entries:
   pages: 350
   topics:
   - ΙΤΑΛΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -882751,7 +883250,8 @@ converted_entries:
   pages: 135
   topics:
   - ΑΡΧΑΙΟΙ ΣΥΓΓΡΑΦΕΙΣ
-  notes: ΔΩΡΕΑ ΠΗΝΕΛΟΠΗ ΒΑΣΙΟΥ
+  donors:
+  - ΒΑΣΙΟΥ,ΠΗΝΕΛΟΠΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883460,8 +883960,9 @@ converted_entries:
   - ΗΠΕΙΡΟΣ
   - ΠΕΡΙΓΡΑΦΗ
   - ΤΑΞΙΔΙΑ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   volume: ΤΟΜΟΙ 3
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883511,8 +884012,9 @@ converted_entries:
   pages: 531
   topics:
   - ΠΑΤΡΑ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   volume: ΤΟΜΟΙ 2
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883563,8 +884065,9 @@ converted_entries:
   topics:
   - ΤΑΞΙΔΙΩΤΕΣ
   - ΕΛΛΑΔΑ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   volume: ΤΟΜΟΙ 4
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883615,7 +884118,8 @@ converted_entries:
   - ΒΕΝΕΤΟΚΡΑΤΙΑ
   - ΚΟΙΝΩΝΙΚΕΣ ΣΥΝΘΗΚΕΣ
   - ΒΕΝΕΤΙΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883667,7 +884171,8 @@ converted_entries:
   - ΚΕΡΚΥΡΑ
   - ΒΕΝΕΤΟΙ
   - ΑΡΧΕΙΑΚΕΣ ΠΗΓΕΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883717,7 +884222,8 @@ converted_entries:
   topics:
   - ΕΛΛΑΔΑ
   - ΔΙΚΑΙΟ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883767,7 +884273,8 @@ converted_entries:
   - ΕΛΛΑΔΑ
   - ΝΑΥΠΗΓΙΚΗ
   - ΟΘΩΜΑΝΙΚΗ ΑΥΤΟΚΡΑΤΟΡΙΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883816,7 +884323,8 @@ converted_entries:
   pages: 282
   topics:
   - ΠΡΕΒΕΖΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883867,7 +884375,8 @@ converted_entries:
   - ΔΥΤΙΚΗ ΕΛΛΑΔΑ
   - ΔΑΣΟΣ
   - ΕΚΜΕΤΑΛΛΕΥΣΗ ΔΑΣΩΝ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883917,7 +884426,8 @@ converted_entries:
   topics:
   - ΔΙΟΙΚΗΣΗ
   - ΟΘΩΜΑΝΙΚΗ ΑΥΤΟΚΡΑΤΟΡΙΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -883966,7 +884476,8 @@ converted_entries:
   topics:
   - ΠΡΑΚΤΙΚΑ
   - ΛΕΥΚΑΔΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884018,7 +884529,8 @@ converted_entries:
   - ΤΑΞΙΔΙΩΤΕΣ
   - ΟΘΩΜΑΝΙΚΗ ΑΥΤΟΚΡΑΤΟΡΙΑ
   - ΟΙΚΟΝΟΜΙΚΗ ΖΩΗ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884069,7 +884581,8 @@ converted_entries:
   - ΙΣΤΟΡΙΑ ΕΛΛΗΝΙΚΟΥ ΔΙΚΑΙΟΥ
   - ΤΟΥΡΚΟΚΡΑΤΙΑ
   - ΕΛΛΗΝΙΣΜΟΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884120,7 +884633,8 @@ converted_entries:
   - ΕΜΠΟΡΙΟ
   - ΟΙΚΟΝΟΜΙΑ
   - ΚΡΗΤΗ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884169,7 +884683,8 @@ converted_entries:
   pages: 386
   topics:
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884218,7 +884733,8 @@ converted_entries:
   pages: 70
   topics:
   - ΒΕΝΕΤΟΚΡΑΤΙΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884267,7 +884783,8 @@ converted_entries:
   pages: 196
   topics:
   - ΑΛΗ ΠΑΣΑΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884318,7 +884835,8 @@ converted_entries:
   topics:
   - ΝΟΜΙΣΜΑΤΑ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884369,7 +884887,8 @@ converted_entries:
   - ΛΕΥΚΑΔΑ
   - ΠΟΛΙΤΙΚΗ
   - ΔΙΠΛΩΜΑΤΙΚΗ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884421,7 +884940,8 @@ converted_entries:
   - ΠΑΣΑΛΙΚΙ ΙΩΑΝΝΙΝΩΝ
   - ΠΟΛΙΤΙΚΗ ΘΕΩΡΗΣΗ
   - ΧΩΡΟΤΑΞΙΚΗ ΘΕΩΡΗΣΗ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884472,7 +884992,8 @@ converted_entries:
   topics:
   - ΓΙΑΝΝΕΝΑ
   - ΠΑΖΑΡΙ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884523,7 +885044,8 @@ converted_entries:
   topics:
   - ΣΑΜΟΣ
   - ΟΘΩΜΑΝΙΚΗ ΠΕΡΙΟΔΟ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884575,7 +885097,8 @@ converted_entries:
   topics:
   - ΝΟΜΙΣΜΑΤΑ
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884626,7 +885149,8 @@ converted_entries:
   topics:
   - ΒΑΛΚΑΝΙΑ
   - ΟΙΚΟΝΟΜΙΚΗ ΔΟΜΗ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884676,7 +885200,8 @@ converted_entries:
   topics:
   - ΧΑΡΤΟΓΡΑΦΙΑ
   - ΙΟΝΙΟ ΠΕΛΑΓΟΣ
-  notes: ΔΩΡΕΑ ΕΛΕΥΘΕΡΙΟΣ ΒΕΤΣΙΟΣ
+  donors:
+  - ΒΕΤΣΙΟΣ,ΕΛΕΥΘΕΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884773,7 +885298,8 @@ converted_entries:
   pages: 587
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884823,7 +885349,8 @@ converted_entries:
   pages: 221
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884873,7 +885400,8 @@ converted_entries:
   pages: 357
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884923,7 +885451,8 @@ converted_entries:
   pages: 248
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -884973,7 +885502,8 @@ converted_entries:
   pages: 312
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885023,7 +885553,8 @@ converted_entries:
   pages: 396
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΡΤΕΜΙΣ ΓΙΑΝΝΑΚΗ
+  donors:
+  - ΓΙΑΝΝΑΚΗ,ΑΡΤΕΜΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885074,7 +885605,8 @@ converted_entries:
   pages: 374
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885124,7 +885656,8 @@ converted_entries:
   pages: 318
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885173,7 +885706,8 @@ converted_entries:
   pages: 426
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885223,7 +885757,8 @@ converted_entries:
   pages: 326
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885273,7 +885808,8 @@ converted_entries:
   pages: 459
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885323,7 +885859,8 @@ converted_entries:
   pages: 331
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885375,7 +885912,8 @@ converted_entries:
   pages: 427
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885427,7 +885965,8 @@ converted_entries:
   pages: 442
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885479,7 +886018,8 @@ converted_entries:
   pages: 372
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885532,7 +886072,8 @@ converted_entries:
   pages: 349
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885583,7 +886124,8 @@ converted_entries:
   pages: 459
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885633,7 +886175,8 @@ converted_entries:
   pages: 369
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885683,7 +886226,8 @@ converted_entries:
   pages: 515
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885735,7 +886279,8 @@ converted_entries:
   topics:
   - ΘΕΩΡΙΕΣ ΣΥΝΩΜΟΣΙΑΣ
   - ΠΑΓΚΟΣΜΙΟΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885786,7 +886331,8 @@ converted_entries:
   pages: 536
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -885839,7 +886385,8 @@ converted_entries:
   - ΓΥΝΑΙΚΕΣ
   - ΦΕΜΙΝΙΣΜΟΣ
   - ΚΟΙΝΩΝΙΚΕΣ ΣΥΝΘΗΚΕΣ
-  notes: ΔΩΡΕΑ ΚΩΝ/ΝΟΣ ΠΑΡΑΣΚΕΥΑΚΗΣ
+  donors:
+  - ΠΑΡΑΣΚΕΥΑΚΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -886262,7 +886809,8 @@ converted_entries:
     30: null
 - dbase_number: 17641
   authors:
-  - ΤΑΧΟΥ-ΗΛΙΑΔΟΥ,ΣΟΦΙΑ,ΦΩΤΙΑΔΗΣ,ΚΩΝ/ΝΟΣ
+  - ΤΑΧΟΥ-ΗΛΙΑΔΟΥ,ΣΟΦΙΑ
+  - ΦΩΤΙΑΔΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   language: el
   title: Η ΕΛΛΗΝΙΚΗ ΠΑΡΟΥΣΙΑ ΣΤΟΝ ΕΥΞΕΙΝΟ ΠΟΝΤΟ ΣΤΗΝ ΤΣΑΡΙΚΗ ΡΩΣΙΑ ΚΑ
   subtitle: ΣΤΗ ΣΟΒΙΕΤΙΚΗ ΕΝΩΣΗ
@@ -888604,7 +889152,8 @@ converted_entries:
   topics:
   - ΓΡΙΦΟΙ
   - ΣΠΑΖΟΚΕΦΑΛΙΕΣ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -888945,7 +889494,8 @@ converted_entries:
     30: null
 - dbase_number: 17694
   authors:
-  - ΦΡΙΘ,ΑΛΕΞ-ΤΖΕΙΜΣ,ΑΛΙΣ
+  - ΦΡΙΘ,ΑΛΕΞ
+  - ΤΖΕΙΜΣ,ΑΛΙΣ
   language: el
   title: ΜΕΓΑΛΕΣ ΕΡΩΤΗΣΕΙΣ ΓΙΑ ΤΟ ΣΥΜΠΑΝ
   dewey: 808.899 ΦΡΙ
@@ -889161,7 +889711,8 @@ converted_entries:
   pages: 725
   topics:
   - ΙΣΠΑΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889212,7 +889763,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΑΣΤΥΝΟΜΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889262,7 +889814,8 @@ converted_entries:
   pages: 100
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889312,7 +889865,8 @@ converted_entries:
   pages: 95
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889362,7 +889916,8 @@ converted_entries:
   pages: 90
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889412,7 +889967,8 @@ converted_entries:
   pages: 26
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ.ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889462,7 +890018,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889512,7 +890069,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889562,7 +890120,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889612,7 +890171,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889662,7 +890222,8 @@ converted_entries:
   pages: 30
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889711,7 +890272,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889760,7 +890322,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889809,7 +890372,8 @@ converted_entries:
   pages: 25
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889858,7 +890422,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889906,7 +890471,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -889955,7 +890521,8 @@ converted_entries:
   pages: 28
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890003,7 +890570,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890051,7 +890619,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890103,7 +890672,8 @@ converted_entries:
   pages: 29
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890153,7 +890723,8 @@ converted_entries:
   pages: 62
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: true
   has_dvd: false
   offprint: false
@@ -890203,7 +890774,8 @@ converted_entries:
   pages: 36
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890253,7 +890825,8 @@ converted_entries:
   pages: 16
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890303,7 +890876,8 @@ converted_entries:
   pages: 124
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890354,7 +890928,8 @@ converted_entries:
   pages: 38
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890403,7 +890978,8 @@ converted_entries:
   pages: 317
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890454,7 +891030,8 @@ converted_entries:
   pages: 48
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -890504,7 +891081,8 @@ converted_entries:
   pages: 142
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΠΑΤΕΡ. ΑΝΤΩΝΙΟΣ ΨΑΡΑΔΕΛΛΗΣ
+  donors:
+  - ΨΑΡΑΔΕΛΛΗΣ,ΑΝΤΩΝΙΟΣ,ΠΑΤΕΡ.
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891504,7 +892082,8 @@ converted_entries:
   pages: 491
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891554,7 +892133,8 @@ converted_entries:
   pages: 457
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891604,7 +892184,8 @@ converted_entries:
   pages: 362
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891653,7 +892234,8 @@ converted_entries:
   pages: 289
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891703,7 +892285,8 @@ converted_entries:
   pages: 457
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891752,7 +892335,8 @@ converted_entries:
   pages: 180
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΧΡΙΣΤΙΝΑ ΝΤΟΥΝΙΑ
+  donors:
+  - ΝΤΟΥΝΙΑ,ΧΡΙΣΤΙΝΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891802,7 +892386,8 @@ converted_entries:
   pages: 288
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891853,7 +892438,8 @@ converted_entries:
   pages: 667
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891905,7 +892491,8 @@ converted_entries:
   pages: 515
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -891954,7 +892541,8 @@ converted_entries:
   pages: 56
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892473,7 +893061,8 @@ converted_entries:
   - ΨΥΧΟΛΟΓΙΑ
   - ΘΑΝΑΤΟΣ
   - ΑΞΙΕΣ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892522,7 +893111,8 @@ converted_entries:
   topics:
   - ΜΕΤΕΜΨΥΧΩΣΗ
   - ΘΑΝΑΤΟΣ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892576,7 +893166,8 @@ converted_entries:
   - ΜΕΤΕΜΨΥΧΩΣΗ
   - ΜΕΤΕΝΣΑΡΚΩΣΗ
   - ΜΕΤΟΙΚΗΣΗ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892668,7 +893259,8 @@ converted_entries:
     30: null
 - dbase_number: 17767
   authors:
-  - ΚΑΛΔΕΛΛΗΣ,ΑΝΤΩΝΗΣ-ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ
+  - ΚΑΛΔΕΛΛΗΣ,ΑΝΤΩΝΗΣ
+  - ΑΝΑΓΝΩΣΤΑΚΗΣ,ΗΛΙΑΣ
   language: el
   title: Ο ΙΟΥΣΤΙΝΙΑΝΟΣ ΠΙΣΩ ΑΠΟ ΤΟΝ ΑΥΤΟΚΡΑΤΟΡΑ
   dewey: 938.308 ΚΑΛ
@@ -892682,7 +893274,8 @@ converted_entries:
   - ΙΟΥΣΤΙΝΙΑΝΟΣ
   - ΑΥΤΟΚΡΑΤΟΡΑΣ
   - ΗΓΕΤΗΣ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892835,7 +893428,8 @@ converted_entries:
   - ΑΥΤΟΠΕΠΟΙΘΗΣΗ ΠΑΙΔΙΩΝ
   - ΑΝΑΤΡΟΦΗ
   - ΑΥΤΟΠΕΠΟΙΘΗΣΗ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892886,7 +893480,8 @@ converted_entries:
   pages: 300
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΓΕΩΡΓΙΑ ΤΣΑΝΤΟΥΚΛΑ
+  donors:
+  - ΤΣΑΝΤΟΥΚΛΑ,ΓΕΩΡΓΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892939,7 +893534,9 @@ converted_entries:
   topics:
   - ΑΣΤΥΝΟΜΙΚΟ
   - ΒΙΠΕΡ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -892993,7 +893590,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893047,7 +893646,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΣΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893101,7 +893702,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893155,7 +893758,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893209,7 +893814,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893263,7 +893870,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893317,7 +893926,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893371,7 +893982,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893423,7 +894036,9 @@ converted_entries:
   pages: 602
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893475,7 +894090,9 @@ converted_entries:
   pages: 660
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893527,7 +894144,9 @@ converted_entries:
   pages: 369
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893579,7 +894198,9 @@ converted_entries:
   pages: 365
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893631,7 +894252,9 @@ converted_entries:
   pages: 373
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893681,7 +894304,9 @@ converted_entries:
   pages: 364
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893733,7 +894358,9 @@ converted_entries:
   pages: 364
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893787,7 +894414,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893841,7 +894470,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893895,7 +894526,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893947,7 +894580,9 @@ converted_entries:
   pages: 474
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗ ΓΚΟΓΚΑΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -893999,7 +894634,9 @@ converted_entries:
   pages: 635
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΑΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894051,7 +894688,9 @@ converted_entries:
   pages: 271
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894101,7 +894740,9 @@ converted_entries:
   pages: 401
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894151,7 +894792,9 @@ converted_entries:
   pages: 267
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894201,7 +894844,9 @@ converted_entries:
   pages: 365
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894251,7 +894896,9 @@ converted_entries:
   pages: 253
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894303,7 +894950,9 @@ converted_entries:
   pages: 270
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΑΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894357,7 +895006,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894410,7 +895061,9 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894462,7 +895115,9 @@ converted_entries:
   pages: 270
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΟΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894514,7 +895169,9 @@ converted_entries:
   - ΠΟΛΙΤΙΚΗ
   - ΠΟΛΙΤΙΚΗ ΔΙΑΚΥΒΕΡΝΗΣΗ
   - ΚΟΙΝΩΝΙΚΕΣ ΣΥΝΘΗΚΕΣ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΗΣ ΓΚΟΓΚΑΣ & ΒΙΡΓΙΝΙΑ ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ
+  donors:
+  - ΓΚΟΓΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ,ΒΙΡΓΙΝΙΑ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894568,7 +895225,8 @@ converted_entries:
   - ΑΣΤΥΝΟΜΙΚΟ ΒΙΠΕΡ
   - ΒΙΠΕΡ ΑΣΤΥΝΟΜΙΚΟ
   - ΑΣΤΥΝΟΜΙΚΟ
-  notes: ΔΩΡΕΑ ΒΑΣΙΛΙΚΗ ΚΩΣΤΑΚΗ
+  donors:
+  - ΚΩΣΤΑΚΗ,ΒΑΣΙΛΙΚΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894620,7 +895278,8 @@ converted_entries:
   pages: 175
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894672,7 +895331,8 @@ converted_entries:
   pages: 158
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894724,7 +895384,8 @@ converted_entries:
   pages: 176
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894776,7 +895437,8 @@ converted_entries:
   pages: 197
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894828,7 +895490,8 @@ converted_entries:
   pages: 176
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894877,7 +895540,8 @@ converted_entries:
   pages: 55
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894927,7 +895591,8 @@ converted_entries:
   pages: 198
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -894977,7 +895642,8 @@ converted_entries:
   pages: 122
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895027,7 +895693,8 @@ converted_entries:
   pages: 55
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895076,7 +895743,8 @@ converted_entries:
   pages: 135
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895125,7 +895793,8 @@ converted_entries:
   pages: 139
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895174,7 +895843,8 @@ converted_entries:
   pages: 155
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895223,7 +895893,8 @@ converted_entries:
   pages: 67
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895274,7 +895945,8 @@ converted_entries:
   pages: 181
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895323,7 +895995,8 @@ converted_entries:
   pages: 63
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895372,7 +896045,8 @@ converted_entries:
   pages: 156
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895423,7 +896097,8 @@ converted_entries:
   pages: 90
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895473,7 +896148,8 @@ converted_entries:
   pages: 141
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895525,7 +896201,8 @@ converted_entries:
   pages: 118
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895574,7 +896251,8 @@ converted_entries:
   pages: 81
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895624,7 +896302,8 @@ converted_entries:
   pages: 159
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895676,7 +896355,8 @@ converted_entries:
   pages: 193
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895727,7 +896407,8 @@ converted_entries:
   pages: 165
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΑΠΦΩ ΣΠΥΡΟΥ
+  donors:
+  - ΣΠΥΡΟΥ,ΣΑΠΦΩ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -895777,7 +896458,8 @@ converted_entries:
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΔΙΗΓΗΜΑ
-  notes: ΔΩΡΕΑ ΒΥΡΩΝΑΣ ΜΗΤΟΣ
+  donors:
+  - ΜΗΤΟΣ,ΒΥΡΩΝΑΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -896030,7 +896712,8 @@ converted_entries:
   pages: 295
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΤΕΦΑΝΟΣ ΠΑΠΑΧΑΤΖΑΚΗΣ
+  donors:
+  - ΠΑΠΑΧΑΤΖΑΚΗΣ,ΣΤΕΦΑΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -896082,7 +896765,8 @@ converted_entries:
   pages: 974
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΣΤΕΦΑΝΟΣ ΠΑΠΑΧΑΤΖΑΚΗΣ
+  donors:
+  - ΠΑΠΑΧΑΤΖΑΚΗΣ,ΣΤΕΦΑΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -897122,7 +897806,8 @@ converted_entries:
     30: null
 - dbase_number: 17854
   authors:
-  - ΒΑΜΒΑΚΑΣ,ΒΑΣΙΛΗΣ-ΠΑΣΧΑΛΙΔΗΣ,ΓΡΗΓΟΡΗΣ
+  - ΒΑΜΒΑΚΑΣ,ΒΑΣΙΛΗΣ
+  - ΠΑΣΧΑΛΙΔΗΣ,ΓΡΗΓΟΡΗΣ
   language: el
   title: ΤΟ ΚΟΥΤΙ
   subtitle: ΕΙΚΟΝΕΣ ΤΗΣ ΣΥΓΧΡΟΝΗΣ ΕΛΛΑΔΑΣ ΣΤΗΝ ΙΔΙΩΤΙΚΗ ΤΗΛΕΟΡΑΣΗ
@@ -897175,7 +897860,8 @@ converted_entries:
     30: null
 - dbase_number: 17855
   authors:
-  - ΛΙΑΡΓΚΟΒΑΣ,ΠΑΝΑΓΙΩΤΗΣ-ΜΑΡΗΣ,ΓΕΩΡΓΙΟΣ
+  - ΛΙΑΡΓΚΟΒΑΣ,ΠΑΝΑΓΙΩΤΗΣ
+  - ΜΑΡΗΣ,ΓΕΩΡΓΙΟΣ
   language: el
   title: ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΙ ΠΟΛΙΤΙΚΕΣ ΕΠΙΔΟΣΕΙΣ ΤΗΣ ΕΛΛΑΔΑΣ
   subtitle: Η ΕΠΟΧΗ ΜΕΤΑ ΤΗΝ ΠΑΝΔΗΜΙΑ COVID-19
@@ -897840,7 +898526,8 @@ converted_entries:
     30: null
 - dbase_number: 17868
   authors:
-  - ΠΟΛΙΤΙΣ,ΝΙΚΟΛΟΑΣ-ΠΑΛΑΜΑΣ,ΚΩΣΤΑΣ
+  - ΠΟΛΙΤΙΣ,ΝΙΚΟΛΟΑΣ
+  - ΠΑΛΑΜΑΣ,ΚΩΣΤΑΣ
   language: el
   title: ΕΛΛΗΝΕΣ Η ΡΩΜΙΟΙ
   subtitle: Ο ΔΙΑΛΟΓΟΣ ΜΕΤΑΞΥ ΔΥΟ ΚΟΡΥΦΑΙΩΝ ΣΤΟΧΑΣΤΩΝ ΓΙΑ ΕΝΑ ΔΙΑΧΡΟΝΙΚΟ
@@ -898570,7 +899257,8 @@ converted_entries:
     30: null
 - dbase_number: 17882
   authors:
-  - LACEY,MINNA, FRITH,ALEX
+  - LACEY,MINNA
+  - FRITH,ALEX
   language: el
   title: 100 ΠΡΑΓΜΑΤΑ ΓΙΑ ΝΑ ΜΑΘΕΤΕ ΕΠΙΣΤΗΜΕΣ
   dewey: 808.899 LAC
@@ -898584,7 +899272,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ
   - ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898623,7 +899312,8 @@ converted_entries:
     30: null
 - dbase_number: 17883
   authors:
-  - FRICH,ALEX-JAMES,ALICE
+  - FRICH,ALEX
+  - JAMES,ALICE
   language: el
   title: 100 ΠΡΑΓΜΑΤΑ ΓΙΑ ΝΑ ΜΑΘΕΤΕ ΔΙΑΣΤΗΜΑ
   dewey: 808.899 FRI
@@ -898636,7 +899326,8 @@ converted_entries:
   pages: 131
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898689,7 +899380,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
   - ΑΠΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898728,7 +899420,8 @@ converted_entries:
     30: null
 - dbase_number: 17885
   authors:
-  - DELAROCHE,JACK-BEAUMONT,EMILE
+  - DELAROCHE,JACK
+  - BEAUMONT,EMILE
   language: el
   title: ΕΙΚΟΝΕΣ ΜΥΘΟΛΟΓΙΑ
   dewey: 808.899 DEL
@@ -898741,7 +899434,8 @@ converted_entries:
   pages: 124
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898793,7 +899487,8 @@ converted_entries:
   pages: 124
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898845,7 +899540,8 @@ converted_entries:
   pages: 124
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898897,7 +899593,8 @@ converted_entries:
   pages: 76
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -898949,7 +899646,8 @@ converted_entries:
   pages: 78
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899001,7 +899699,8 @@ converted_entries:
   pages: 78
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899053,7 +899752,8 @@ converted_entries:
   pages: 78
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899105,7 +899805,8 @@ converted_entries:
   pages: 78
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899157,7 +899858,8 @@ converted_entries:
   pages: 75
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899210,7 +899912,8 @@ converted_entries:
   pages: 79
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899264,7 +899967,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
   - ΑΠΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899318,7 +900022,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΑΚ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899371,7 +900076,8 @@ converted_entries:
   pages: 77
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899518,7 +900224,8 @@ converted_entries:
   pages: 93
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΝΙΚΟΛΑΟΣ ΜΠΑΝΤΑΛΟΥΚΑΣ
+  donors:
+  - ΜΠΑΝΤΑΛΟΥΚΑΣ,ΝΙΚΟΛΑΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899720,7 +900427,8 @@ converted_entries:
   pages: 132
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899759,7 +900467,8 @@ converted_entries:
     30: null
 - dbase_number: 17905
   authors:
-  - ΚΑΛΛΙΡΗΣ,ΘΑΝΟΣ-ΦΡΑΓΚΟΥΛΟΠΟΥΛΟΣ,ΚΥΡΙΑΚΗ
+  - ΚΑΛΛΙΡΗΣ,ΘΑΝΟΣ
+  - ΦΡΑΓΚΟΥΛΟΠΟΥΛΟΥ,ΚΥΡΙΑΚΗ
   language: el
   title: ΔΥΟ ΜΥΘΟΙ ΜΙΑ ΦΟΡΑ
   dewey: 808.899 ΚΑΛ
@@ -899771,7 +900480,8 @@ converted_entries:
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΠΑΘΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899823,7 +900533,8 @@ converted_entries:
   pages: 34
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899875,7 +900586,8 @@ converted_entries:
   pages: 40
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899927,7 +900639,8 @@ converted_entries:
   pages: 26
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -899966,7 +900679,8 @@ converted_entries:
     30: null
 - dbase_number: 17909
   authors:
-  - SABBATINI,LORENZO-BANFI,CRISTINA
+  - SABBATINI,LORENZO
+  - BANFI,CRISTINA
   language: el
   title: 200 ΕΡΩΤΗΣΕΙΣ ΚΑΙ ΑΠΑΝΤΗΣΕΙΣ
   subtitle: ΔΕΙΝΟΣΑΥΡΟΙ
@@ -899980,7 +900694,8 @@ converted_entries:
   pages: 96
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900019,7 +900734,8 @@ converted_entries:
     30: null
 - dbase_number: 17910
   authors:
-  - OLIVIERI,JACOPO-CORRADIN,CLARISSA
+  - OLIVIERI,JACOPO
+  - CORRADIN,CLARISSA
   language: el
   title: ΤΑΞΙΔΙ ΣΤΗΝ ΑΡΧΑΙΑ ΑΙΓΥΠΤΟ
   dewey: 808.899 OLI
@@ -900032,7 +900748,8 @@ converted_entries:
   pages: 57
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900071,7 +900788,8 @@ converted_entries:
     30: null
 - dbase_number: 17911
   authors:
-  - OLIVIERI,JACOPO-CORRADIN,CLARISSA
+  - OLIVIERI,JACOPO
+  - CORRADIN,CLARISSA
   language: el
   title: ΤΑΞΙΔΙ ΣΤΗΝ ΑΡΧΑΙΑ ΕΛΛΑΔΑ
   dewey: 808.899 OLI
@@ -900084,7 +900802,8 @@ converted_entries:
   pages: 57
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900136,7 +900855,8 @@ converted_entries:
   pages: 160
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900188,7 +900908,8 @@ converted_entries:
   pages: 32
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900227,7 +900948,8 @@ converted_entries:
     30: null
 - dbase_number: 17914
   authors:
-  - SABBATINI,LORENZO-BANFI,CRISTINA
+  - SABBATINI,LORENZO
+  - BANFI,CRISTINA
   language: el
   title: 200 ΕΡΩΤΗΣΕΙΣ ΚΑΙ ΑΠΑΝΤΗΣΕΙΣ
   subtitle: ΖΩΑ ΤΟΥ ΚΟΣΜΟΥ
@@ -900241,7 +900963,8 @@ converted_entries:
   pages: 96
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900293,7 +901016,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900345,7 +901069,8 @@ converted_entries:
   pages: 80
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900397,7 +901122,8 @@ converted_entries:
   pages: 40
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900436,7 +901162,8 @@ converted_entries:
     30: null
 - dbase_number: 17918
   authors:
-  - BUTTERFIELD,MOIRA-BOLDT,CLAUDIA
+  - BUTTERFIELD,MOIRA
+  - BOLDT,CLAUDIA
   language: el
   title: ΧΟΡΕΥΩ ΣΑΝ ΦΛΑΜΙΝΓΚΟ
   dewey: 808.899 BUT
@@ -900449,7 +901176,8 @@ converted_entries:
   pages: 35
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900488,7 +901216,8 @@ converted_entries:
     30: null
 - dbase_number: 17919
   authors:
-  - BUTTERFIELD,MOIRA-MILWARD,GWEN
+  - BUTTERFIELD,MOIRA
+  - MILWARD,GWEN
   language: el
   title: ΤΡΑΓΟΥΔΩ ΣΑΝ ΦΑΛΑΙΝΑ
   dewey: 808.899 BUT
@@ -900501,7 +901230,8 @@ converted_entries:
   pages: 36
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900553,7 +901283,8 @@ converted_entries:
   pages: 68
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900605,7 +901336,8 @@ converted_entries:
   pages: 25
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900657,7 +901389,8 @@ converted_entries:
   pages: 41
   topics:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900711,7 +901444,8 @@ converted_entries:
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
   - ΑΠΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΕΩΝ
   - ΠΑΙΔΙΚΑ ΒΙΒΛΙΑ ΓΝΩΣΩΕΝ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900763,7 +901497,8 @@ converted_entries:
   pages: 36
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900815,7 +901550,8 @@ converted_entries:
   pages: 26
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900865,7 +901601,8 @@ converted_entries:
   pages: 55
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900917,7 +901654,8 @@ converted_entries:
   pages: 30
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -900969,7 +901707,8 @@ converted_entries:
   pages: 24
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901021,7 +901760,8 @@ converted_entries:
   pages: 36
   topics:
   - ΠΑΙΔΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΟΜΙΛΟΥ GROUP NAKAS
+  donors:
+  - ΟΜΙΛΟΣ ΕΤΑΙΡΕΙΩΝ NAKAS GROUP
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901224,7 +901964,8 @@ converted_entries:
   pages: 352
   topics:
   - ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΚΩΝΣΤΑΝΤΙΝΟΣ ΓΚΑΡΤΖΩΝΗΣ
+  donors:
+  - ΓΚΑΡΤΖΩΝΗΣ,ΚΩΝΣΤΑΝΤΙΝΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901372,7 +902113,8 @@ converted_entries:
   pages: 355
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901519,7 +902261,8 @@ converted_entries:
   pages: 267
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901571,7 +902314,8 @@ converted_entries:
   - 20 ΑΙΩΝΑΣ
   - '1909'
   - ΕΛΛΑΔΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901621,7 +902365,8 @@ converted_entries:
   pages: 395
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901818,7 +902563,8 @@ converted_entries:
   pages: 522
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901869,7 +902615,8 @@ converted_entries:
   pages: 100
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -901919,7 +902666,8 @@ converted_entries:
   pages: 253
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902018,7 +902766,8 @@ converted_entries:
   pages: 252
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902068,7 +902817,8 @@ converted_entries:
   pages: 163
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902119,7 +902869,8 @@ converted_entries:
   pages: 151
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902169,7 +902920,8 @@ converted_entries:
   pages: 520
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902219,7 +902971,8 @@ converted_entries:
   pages: 356
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902664,7 +903417,8 @@ converted_entries:
   pages: 552
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902765,7 +903519,8 @@ converted_entries:
   pages: 374
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΩΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -902817,7 +903572,8 @@ converted_entries:
   pages: 445
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903172,7 +903928,8 @@ converted_entries:
   pages: 110
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903224,7 +903981,8 @@ converted_entries:
   pages: 501
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903277,7 +904035,8 @@ converted_entries:
   pages: 727
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903380,7 +904139,8 @@ converted_entries:
   pages: 462
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903531,7 +904291,8 @@ converted_entries:
   pages: 636
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903583,7 +904344,8 @@ converted_entries:
   pages: 600
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903635,7 +904397,8 @@ converted_entries:
   pages: 404
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903689,7 +904452,8 @@ converted_entries:
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΡΧΝΙΑ
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903790,7 +904554,8 @@ converted_entries:
   pages: 136
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903840,7 +904605,8 @@ converted_entries:
   pages: 45
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903890,7 +904656,8 @@ converted_entries:
   pages: 42
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903940,7 +904707,8 @@ converted_entries:
   pages: 119
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -903989,7 +904757,8 @@ converted_entries:
   pages: 41
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΕΚΔΟΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -904039,7 +904808,8 @@ converted_entries:
   pages: 124
   topics:
   - ΕΛΛΗΝΙΚΗ ΠΟΙΗΣΗ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΙΑΚΝΙΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -904347,7 +905117,8 @@ converted_entries:
   pages: 202
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -904399,7 +905170,8 @@ converted_entries:
   pages: 285
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -904805,7 +905577,8 @@ converted_entries:
   pages: 412
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -904857,7 +905630,8 @@ converted_entries:
   pages: 338
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905061,7 +905835,8 @@ converted_entries:
   pages: 427
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905113,7 +905888,8 @@ converted_entries:
   pages: 1176
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905165,7 +905941,8 @@ converted_entries:
   pages: 360
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905268,7 +906045,8 @@ converted_entries:
   pages: 437
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905320,7 +906098,8 @@ converted_entries:
   pages: 428
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905834,7 +906613,8 @@ converted_entries:
   pages: 459
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905886,7 +906666,8 @@ converted_entries:
   pages: 273
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -905990,7 +906771,8 @@ converted_entries:
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
   - ΞΣΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -906042,7 +906824,8 @@ converted_entries:
   pages: 384
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -906094,7 +906877,8 @@ converted_entries:
   pages: 304
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -906302,7 +907086,8 @@ converted_entries:
   pages: 383
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
+  donors:
+  - ΕΚΔΟΣΕΙΣ ΜΕΤΑΙΧΜΙΟ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -909723,7 +910508,8 @@ converted_entries:
     30: null
 - dbase_number: 18102
   authors:
-  - FRIIS,A-KAABERBOL,L
+  - FRIIS,A
+  - KAABERBOL,L
   language: el
   title: ΤΟ ΑΓΟΡΙ ΣΤΗ ΒΑΛΙΤΣΑ
   dewey: 839.81 FRI
@@ -910439,7 +911225,8 @@ converted_entries:
   topics:
   - ΙΣΤΟΡΙΚΟ ΜΥΘΙΣΤΟΡΗΜΑ
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΔΗΜΗΤΡΗΣ ΒΛΑΧΟΠΑΝΟΣ
+  donors:
+  - ΒΛΑΧΟΠΑΝΟΣ,ΔΗΜΗΤΡΙΟΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910589,7 +911376,8 @@ converted_entries:
   pages: 554
   topics:
   - ΙΤΑΛΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910638,7 +911426,8 @@ converted_entries:
   pages: 399
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910690,7 +911479,8 @@ converted_entries:
   pages: 280
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910742,7 +911532,8 @@ converted_entries:
   pages: 280
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910792,7 +911583,8 @@ converted_entries:
   pages: 173
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910844,7 +911636,8 @@ converted_entries:
   pages: 286
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910896,7 +911689,8 @@ converted_entries:
   pages: 648
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -910948,7 +911742,8 @@ converted_entries:
   pages: 397
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911000,7 +911795,8 @@ converted_entries:
   pages: 246
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911051,7 +911847,8 @@ converted_entries:
   pages: 395
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΥΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911103,7 +911900,8 @@ converted_entries:
   pages: 593
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911155,7 +911953,8 @@ converted_entries:
   pages: 721
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911205,7 +912004,8 @@ converted_entries:
   pages: 619
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911255,7 +912055,8 @@ converted_entries:
   pages: 502
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911307,7 +912108,8 @@ converted_entries:
   pages: 190
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911358,7 +912160,8 @@ converted_entries:
   pages: 564
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911410,7 +912213,8 @@ converted_entries:
   pages: 293
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911462,7 +912266,8 @@ converted_entries:
   pages: 237
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911512,7 +912317,8 @@ converted_entries:
   pages: 693
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΣΗ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911563,7 +912369,8 @@ converted_entries:
   pages: 683
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911615,7 +912422,8 @@ converted_entries:
   pages: 406
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911667,7 +912475,8 @@ converted_entries:
   pages: 563
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911717,7 +912526,8 @@ converted_entries:
   pages: 420
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911768,7 +912578,8 @@ converted_entries:
   pages: 382
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911820,7 +912631,8 @@ converted_entries:
   pages: 397
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911872,7 +912684,8 @@ converted_entries:
   pages: 585
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911924,7 +912737,8 @@ converted_entries:
   pages: 526
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -911974,7 +912788,8 @@ converted_entries:
   pages: 628
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912024,7 +912839,8 @@ converted_entries:
   pages: 577
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912074,7 +912890,8 @@ converted_entries:
   pages: 651
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912124,7 +912941,8 @@ converted_entries:
   pages: 319
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912175,7 +912993,8 @@ converted_entries:
   pages: 637
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912226,7 +913045,8 @@ converted_entries:
   pages: 591
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912278,7 +913098,8 @@ converted_entries:
   pages: 381
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912327,7 +913148,8 @@ converted_entries:
   pages: 427
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912379,7 +913201,8 @@ converted_entries:
   pages: 428
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912431,7 +913254,8 @@ converted_entries:
   pages: 287
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912482,7 +913306,8 @@ converted_entries:
   pages: 448
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912534,7 +913359,8 @@ converted_entries:
   pages: 484
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912585,7 +913411,8 @@ converted_entries:
   pages: 701
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΥΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912636,7 +913463,8 @@ converted_entries:
   pages: 540
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912688,7 +913516,8 @@ converted_entries:
   pages: 378
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912740,7 +913569,8 @@ converted_entries:
   pages: 487
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912792,7 +913622,8 @@ converted_entries:
   pages: 318
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912841,7 +913672,8 @@ converted_entries:
   pages: 636
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912891,7 +913723,8 @@ converted_entries:
   pages: 750
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912943,7 +913776,8 @@ converted_entries:
   pages: 427
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -912995,7 +913829,8 @@ converted_entries:
   pages: 392
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913047,7 +913882,8 @@ converted_entries:
   pages: 562
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913096,7 +913932,8 @@ converted_entries:
   pages: 568
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913147,7 +913984,8 @@ converted_entries:
   pages: 605
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913199,7 +914037,8 @@ converted_entries:
   pages: 262
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913251,7 +914090,8 @@ converted_entries:
   pages: 319
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913302,7 +914142,8 @@ converted_entries:
   pages: 691
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913341,7 +914182,7 @@ converted_entries:
     30: null
 - dbase_number: 18173
   authors:
-  - ΕΣΚΑΝΤΟΝ,ΜΑΡΙΑ-ΑΜΠΑΡΟ
+  - ESCANDÓN,MARÍA-AMPARO
   language: el
   title: ΤΟ ΕΙΚΟΝΟΣΤΑΣΙ ΤΗΣ ΕΣΠΕΡΑΝΤΣΑ
   dewey: 863.64 ΕΣΚ
@@ -913354,7 +914195,8 @@ converted_entries:
   pages: 245
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913405,7 +914247,8 @@ converted_entries:
   pages: 379
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913457,7 +914300,8 @@ converted_entries:
   pages: 648
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913509,7 +914353,8 @@ converted_entries:
   pages: 282
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913561,7 +914406,8 @@ converted_entries:
   pages: 118
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913600,7 +914446,8 @@ converted_entries:
     30: null
 - dbase_number: 18178
   authors:
-  - ROMERO,BERNARDO-AGUDELO,MONICA
+  - ROMERO,BERNARDO
+  - AGUDELO,MONICA
   language: el
   title: ΜΙΡΑΝΤΑ Η ΠΡΟΔΟΜΕΝΗ ΓΥΝΑΙΚΑ
   dewey: 860.11 ROM
@@ -913613,7 +914460,8 @@ converted_entries:
   pages: 605
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913664,7 +914512,8 @@ converted_entries:
   pages: 593
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913713,7 +914562,8 @@ converted_entries:
   pages: 220
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913764,7 +914614,8 @@ converted_entries:
   pages: 578
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913813,7 +914664,8 @@ converted_entries:
   pages: 631
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913863,7 +914715,8 @@ converted_entries:
   pages: 403
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913913,7 +914766,8 @@ converted_entries:
   pages: 540
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -913965,7 +914819,8 @@ converted_entries:
   pages: 262
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914017,7 +914872,8 @@ converted_entries:
   pages: 343
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914066,7 +914922,8 @@ converted_entries:
   pages: 158
   topics:
   - ΕΛΛΗΝΙΚΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914116,7 +914973,8 @@ converted_entries:
   pages: 397
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914168,7 +915026,8 @@ converted_entries:
   pages: 345
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914220,7 +915079,8 @@ converted_entries:
   pages: 508
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914271,7 +915131,8 @@ converted_entries:
   pages: 267
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914323,7 +915184,8 @@ converted_entries:
   pages: 277
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -914374,7 +915236,8 @@ converted_entries:
   pages: 335
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΑΝΤΩΝΗΣ ΚΟΤΣΟΚΩΣΤΑΣ
+  donors:
+  - ΚΟΥΤΣΟΚΩΣΤΑΣ,ΑΝΤΩΝΗΣ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -915302,7 +916165,8 @@ converted_entries:
     30: null
 - dbase_number: 18212
   authors:
-  - NICHOLLS,SALLY-HERBA,GOSIA
+  - NICHOLLS,SALLY
+  - HERBA,GOSIA
   language: el
   title: ΜΥΤΗ ΠΟΔΙΑ ΚΑΙ ΚΟΙΛΙΤΣΑ
   dewey: 808.899 NIC
@@ -916996,7 +917860,8 @@ converted_entries:
     30: null
 - dbase_number: 18246
   authors:
-  - HOGAN,CHUCK-GUILLERMO DEL TORO
+  - HOGAN,CHUCK
+  - GUILLERMO DEL TORO
   language: el
   title: Η ΠΤΩΣΗ
   dewey: 810.11 TOR
@@ -918700,7 +919565,8 @@ converted_entries:
   pages: 444
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -918752,7 +919618,8 @@ converted_entries:
   pages: 361
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -918804,7 +919671,8 @@ converted_entries:
   pages: 363
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
@@ -918856,7 +919724,8 @@ converted_entries:
   pages: 380
   topics:
   - ΞΕΝΗ ΛΟΓΟΤΕΧΝΙΑ
-  notes: ΔΩΡΕΑ ΕΙΡΗΝΗ ΓΕΩΡΓΟΥΛΗ
+  donors:
+  - ΓΕΩΡΓΟΥΛΗ,ΕΙΡΗΝΗ
   has_cd: false
   has_dvd: false
   offprint: false
