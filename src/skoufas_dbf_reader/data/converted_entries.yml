@@ -173089,7 +173089,7 @@ converted_entries:
   title: ΠΕΡΑ ΑΠΟ ΤΟ ΑΝΘΡΩΠΙΝΟ
   dewey: 889.21 ΑΘΑ
   entry_numbers:
-  - '54092182'
+  - '5409'
   editor: ΣΤΕΓΗ ΤΟΥ ΒΙΒΛΙΟΥ // ΑΘΗΝΑ
   edition_year: 1956
   pages: 540
@@ -176034,7 +176034,7 @@ converted_entries:
   title: ΒΙΟΛΙ ΓΙΑ ΜΟΝΟΧΕΙΡΑ
   dewey: 889.21 ΛΕΙ
   entry_numbers:
-  - '587170'
+  - '5870'
   editor: ΚΕΔΡΟΣ // ΑΘΗΝΑ
   edition_year: 1976
   pages: 27
@@ -236420,9 +236420,11 @@ converted_entries:
   title: ΜΑΓΚΑΣ
   dewey: 808.899 ΔΕΛ
   entry_numbers:
-  - 6669,9191,17978,2095
-  translators:
-  - 8,22848
+  - '6669'
+  - '9191'
+  - '17978'
+  - '20958'
+  - '22848'
   edition: Γ
   editor: ΕΣΤΙΑ // ΑΘΗΝΑ
   edition_year: 1956
@@ -286006,7 +286008,8 @@ converted_entries:
   title: Ο ΝΑΥΑΓΟΣ ΤΗΣ ΚΥΝΘΙΑΣ
   dewey: 808.899 ΒΕΡ
   entry_numbers:
-  - 6983,20177
+  - '6983'
+  - '20177'
   translators:
   - Κ.Α.ΣΦΑΕΛΟΥ
   editor: ΑΣΤΗΡ // ΑΘΗΝΑ
@@ -351526,8 +351529,9 @@ converted_entries:
   - '9091'
   - 09169
   - '1590'
-  translators:
-  - 12490-20971-21744,45
+  - '12490'
+  - '20971'
+  - '21744'
   editor: ΑΛΚΥΩΝ,ΠΑΠΑΔΟΠΟΥΛΟΣ // ΑΘΗΝΑ
   edition_year: 2004
   pages: 271
@@ -354959,7 +354963,7 @@ converted_entries:
   title: ΘΕΟΔΩΡΟΣ ΓΡΙΒΑΣ
   dewey: 938.009 ΚΑΜ
   entry_numbers:
-  - '49131'
+  - '9131'
   editor: ΚΑΡΑΒΙΑ // ΑΘΗΝΑ
   edition_year: 1896
   pages: 125
@@ -356867,7 +356871,10 @@ converted_entries:
   title: ΡΟΒΙΝΣΩΝ ΚΡΟΥΣΟΣ
   dewey: 808.899 ΝΤΕ
   entry_numbers:
-  - 9172,21326,21742,853
+  - '9172'
+  - '21326'
+  - '21742'
+  - '853'
   translators:
   - ΦΕΡΤΑΚΗ,ΑΝΝΙΚΑ
   editor: ΑΓΚΥΡΑ // ΑΘΗΝΑ
@@ -361842,7 +361849,8 @@ converted_entries:
   title: ΤΟ ΡΟΖ ΠΟΥ ΔΕΝ ΞΕΧΑΣΑ
   dewey: 889.21 ΞΑΝ
   entry_numbers:
-  - 9259,20342
+  - '9259'
+  - '20342'
   edition: '28'
   editor: ΚΑΣΤΑΝΙΩΤΗΣ // ΑΘΗΝΑ
   edition_year: 1994
@@ -391105,7 +391113,8 @@ converted_entries:
   title: ΠΑΛΑΙΟΠΩΛΗΣ ΑΝΑΜΝΗΣΕΩΝ
   dewey: 889.21 ΖΩΓ
   entry_numbers:
-  - 9462,23550
+  - '9462'
+  - '23550'
   edition: '3'
   editor: ΓΑΒΡΙΗΛΙΔΗΣ // ΑΘΗΝΑ
   edition_year: 1991
@@ -412575,7 +412584,9 @@ converted_entries:
   title: ΜΙΚΡΕΣ ΚΥΡΙΕΣ
   dewey: 808.899 ΑΛΚ
   entry_numbers:
-  - 10504,17842,20345
+  - '10504'
+  - '17842'
+  - '20345'
   translators:
   - ΤΣΟΥΚΑΛΑ,
   edition: '6'
@@ -497204,7 +497215,7 @@ converted_entries:
   title: THE ANALYSIS OF INTERNATIONAL RELATIONS
   dewey: 420 ΑΓΓ
   entry_numbers:
-  - '111463'
+  - '11146'
   topics:
   - ΑΓΓΛΙΚΑ
   - ΑΓΓΛΙΑ
@@ -509278,7 +509289,7 @@ converted_entries:
   authors: []
   language: el
   title: ΜΕΓΑΛΗ ΕΓΚΥΚΛΟΠΑΙΔΕΙΑ
-  dewey: 030 ΧΣ
+  dewey: '030'
   entry_numbers:
   - '12335'
   editor: ΓΙΟΒΑΝΗ // ΑΘΗΝΑ
@@ -542095,7 +542106,8 @@ converted_entries:
   subtitle: ΚΕΙΜΕΝΑ ΤΗΣ ΜΝΗΜΗΣ ΚΑΙ ΤΗΣ ΕΛΠΙΔΑΣ
   dewey: 938.939 ΠΑΠ
   entry_numbers:
-  - 13223,9663
+  - '13223'
+  - '9663'
   editor: ΕΝΤΥΠΩΣΙΣ // ΑΡΤΑ
   edition_year: 2010
   pages: 159
@@ -560440,7 +560452,7 @@ converted_entries:
   subtitle: ΟΝΕ-ΜΙΚΡΕΣ ΚΑΙ ΜΕΣΑΙΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ
   dewey: 338.94 ΧΣ
   entry_numbers:
-  - '132817'
+  - '13817'
   editor: ΙΣΤΑΜΕ // ΑΘΗΝΑ
   edition_year: 2000
   pages: 188
@@ -565498,7 +565510,7 @@ converted_entries:
   title: ΑΝΤΙΡΡΗΣΕΙΣ ΓΙΑ ΤΙΣ ΗΛΕΚΤΡΟΝΙΚΕΣ ΤΑΥΤΟΤΗΤΕΣ
   dewey: 323.448 ΚΑΛ
   entry_numbers:
-  - '139922'
+  - '13922'
   editor: ΠΑΠΑΝΙΚΟΛΑΟΥ // ΑΘΗΝΑ
   edition_year: 2000
   pages: 63
@@ -572411,7 +572423,7 @@ converted_entries:
   authors: []
   language: el
   title: Β ΔΙΕΘΝΕΣ ΣΙΦΝΑΙΚΟ ΣΥΜΠΟΣΙΟ
-  dewey: 027 ΧΣ
+  dewey: '027'
   entry_numbers:
   - '14003'
   editor: ΕΤΑΙΡΕΙΑ ΣΙΦΝΑΙΚΩΝ Μ // ΣΙΦΝΟΣ
@@ -575608,7 +575620,7 @@ converted_entries:
   authors: []
   language: el
   title: ΤΑ ΓΙΑΝΝΙΝΑ ΚΑΙ Ο ΑΛΗ ΠΑΣΑΣ
-  dewey: 010 ΧΣ
+  dewey: '010'
   entry_numbers:
   - '14006'
   editor: ΖΩΣΙΜΑΙΑ ΒΙΒΛΙΟΘΗΚΗ // ΙΩΑΝΝΙΝΑ
@@ -581434,7 +581446,7 @@ converted_entries:
   title: ΒΙΒΛΙΟΘΗΚΗ ΑΡΧΑΙΑΣ ΕΛΛΑΔΑΣ
   dewey: 880.08 ΠΛΑ
   entry_numbers:
-  - '150089'
+  - '15089'
   editor: ΚΟΠΕΛΙΑΔΗΣ // None
   topics:
   - ΙΣΤΟΡΙΑ ΑΡΧΑΙΑΣ ΕΛΛΑΔΑΣ
@@ -588245,7 +588257,7 @@ converted_entries:
   authors: []
   language: el
   title: Η ΟΣΙΟΠΑΡΘΕΝΟΜΑΡΤΥΣ ΘΕΟΔΩΡΑ Η ΠΕΛΟΠΟΝΝΗΣΙΑ
-  dewey: 230 ΧΣ
+  dewey: '230'
   entry_numbers:
   - '15180'
   editor: None // ΑΘΗΝΑ
@@ -593506,7 +593518,7 @@ converted_entries:
   title: Ο ΑΓΩΝΑΣ ΤΟΥ 1821 ΣΤΗ ΜΑΚΕΔΟΝΙΑ
   dewey: 938.535 ΒΑΣ
   entry_numbers:
-  - '77559'
+  - '7755'
   editor: None // ΘΕΣΣΑΛΟΝΙΚΗ
   edition_year: 1969
   pages: 146
@@ -593805,7 +593817,7 @@ converted_entries:
   title: Ο ΣΥΓΧΡΟΝΟΣ ΚΟΣΜΟΣ
   dewey: 940.28 ΒΕΡ
   entry_numbers:
-  - '79794'
+  - '7979'
   editor: ΓΝΩΗΣΗ // ΑΘΗΝΑ
   edition_year: 1982
   pages: 229
@@ -595910,7 +595922,8 @@ converted_entries:
   title: ΣΗΜΑ ΚΙΝΔΥΝΟΥ
   dewey: 810.11 CHI
   entry_numbers:
-  - 15303,23599
+  - '15303'
+  - '23599'
   translators:
   - ΜΠΑΡΟΥΞΗΣ,ΓΙΩΡΓΟΣ
   editor: BELL // ΑΘΗΝΑ
@@ -601327,7 +601340,7 @@ converted_entries:
   authors: []
   language: el
   title: ΕΚΑΤΟΝΤΑΕΤΗΡΙΣ ΤΟΥ ΣΥΝΤΑΓΜΑΤΟΣ 1864-1964
-  dewey: 342 ΧΣ
+  dewey: '342'
   entry_numbers:
   - '15409'
   editor: None // ΘΕΣΣΑΛΟΝΙΚΗ
@@ -663544,7 +663557,9 @@ converted_entries:
   title: ΟΙ ΑΘΛΙΟΙ
   dewey: 808.899 ΟΥΓ
   entry_numbers:
-  - 16677,19892,23440
+  - '16677'
+  - '19892'
+  - '23440'
   translators:
   - ΤΣΟΥΚΑΛΑ,Γ.
   editor: ΑΣΤΗΡ // ΑΘΗΝΑ
@@ -691807,7 +691822,7 @@ converted_entries:
   subtitle: ΠΡΟΣΕΥΧΑΙ-ΠΟΙΗΜΑΤΑ
   dewey: 230 ΓΕΡ
   entry_numbers:
-  - '172621'
+  - '17262'
   editor: None // ΑΓΙΟΝ ΟΡΟΣ
   edition_year: 1991
   pages: 83
@@ -761233,7 +761248,7 @@ converted_entries:
   title: ΟΙΔΙΠΟΥΣ  ΤΥΡΑΝΝΟΣ
   dewey: 889.21 ΣΟΦ
   entry_numbers:
-  - '199984'
+  - '19984'
   editor: ΣΑΒΒΑΛΑΣ // ΑΘΗΝΑ
   edition_year: 2003
   pages: 52
@@ -841470,7 +841485,7 @@ converted_entries:
   authors: []
   language: el
   title: Ο ΟΣΙΟΣ ΓΡΗΓΟΡΙΟΣ
-  dewey: 230 ΧΣ
+  dewey: '230'
   entry_numbers:
   - '7978'
   editor: Ι.Μ.ΟΣ.ΓΡΗΓΟΡΙΟΥ // ΑΓΙΟΝ ΟΡΟΣ
@@ -851567,7 +851582,7 @@ converted_entries:
   subtitle: ΠΡΟΤΥΠΟΠΟΙΗΣΕΩΣ ΤΗΣ ΕΡΓΑΣΙΑΣ
   dewey: 658.834 ΜΠΑ
   entry_numbers:
-  - '222187'
+  - '22287'
   editor: ΠΕΡ.ΣΠΟΥΔΑΙ // ΑΘΗΝΑ
   edition_year: 1968
   pages: 18
@@ -867322,7 +867337,7 @@ converted_entries:
   language: el
   title: ΠΛΗΡΟΦΟΡΙΑΚΟ ΥΛΙΚΟ ΥΠΗΡΕΣΙΩΝ ΚΑΙ ΠΑΡΟΧΩΝ ΓΙΑ ΑΤΟΜΑ ΜΕ ΑΝΑΠΗΡ
   subtitle: ΙΕΣ
-  dewey: 610 ΧΣ
+  dewey: '610'
   entry_numbers:
   - '8432'
   editor: None // ΑΘΗΝΑ
@@ -897061,6 +897076,7 @@ converted_entries:
   - MARTIN,GEORGE
   language: el
   title: Ο ΙΠΠΟΤΗΣ ΤΩΝ ΕΠΤΑ ΒΑΣΙΛΕΙΩΝ
+  dewey: 810.11 MAR
   entry_numbers:
   - '23679'
   editor: ΜΕΤΑΙΧΜΙΟ // ΑΘΗΝΑ
@@ -905242,6 +905258,7 @@ converted_entries:
   - NG,CELESTE
   language: el
   title: ΟΙ ΧΑΜΕΝΕΣ ΜΑΣ ΚΑΡΔΙΕΣ
+  dewey: 810.11 NG
   entry_numbers:
   - '23924'
   translators:
@@ -906327,6 +906344,7 @@ converted_entries:
   language: el
   title: ΜΩΥΣΗΣ
   subtitle: Ο ΠΡΙΓΚΙΠΑΣ ΤΟΥ ΝΕΙΛΟΥ
+  dewey: '808.899'
   entry_numbers:
   - '23791'
   editor: ΑΡΗΣ // None
@@ -906374,6 +906392,7 @@ converted_entries:
   language: el
   title: ΛΙΟΝΤΑΡΙ ΚΑΙ ΠΟΝΤΙΚΙ
   subtitle: ΑΙΣΩΠΟΥ ΜΥΘΟΙ
+  dewey: '808.899'
   entry_numbers:
   - '23792'
   editor: ΑΓΚΥΡΑ // ΑΘΗΝΑ
@@ -906422,6 +906441,7 @@ converted_entries:
   language: el
   title: ΖΗΤΩ ΟΙ ΠΡΩΤΑΘΛΗΤΕΣ
   subtitle: ΖΩΓΡΑΦΙΣΕ ΜΕ
+  dewey: '808.899'
   entry_numbers:
   - '23793'
   editor: ΜΙΝΩΑΣ // ΑΘΗΝΑ
@@ -906518,6 +906538,7 @@ converted_entries:
   authors: []
   language: el
   title: ΤΟ ΒΙΒΛΙΟ ΤΗΣ ΠΡΟΟΔΟΥ
+  dewey: '808.899'
   entry_numbers:
   - '23787'
   translators:
@@ -906712,6 +906733,7 @@ converted_entries:
   authors: []
   language: el
   title: ΜΥΘΟΛΟΓΙΑ ΚΑΙ ΙΣΤΟΡΙΑ ΤΗΣ ΑΡΧΑΙΑΣ ΕΛΛΑΔΑΣ
+  dewey: '808.899'
   entry_numbers:
   - '23789'
   translators:
@@ -906761,6 +906783,7 @@ converted_entries:
   authors: []
   language: el
   title: ΧΡΥΣΕΣ ΙΣΤΟΡΙΕΣ ΓΙΑ ΠΑΙΔΙΑ
+  dewey: '808.899'
   entry_numbers:
   - '23553'
   editor: ΣΑΒΒΑΛΑΣ // ΑΘΗΝΑ
@@ -906908,6 +906931,7 @@ converted_entries:
   language: el
   title: ΤΟ ΑΗΔΟΝΙ ΤΟΥ ΑΥΤΟΚΡΑΤΟΡΑ
   subtitle: ΤΟΥ ΚΟΣΜΟΥ ΠΑΡΑΜΥΘΙΑ
+  dewey: '808.899'
   entry_numbers:
   - '23794'
   editor: ΣΠΑΘΗΣ // ΑΘΗΝΑ
@@ -906954,6 +906978,7 @@ converted_entries:
   language: el
   title: ΤΡΩΙΚΟΣ ΠΟΛΕΜΟΣ
   subtitle: Η ΘΥΣΙΑ ΤΗΣ ΙΦΙΓΕΝΕΙΑΣ
+  dewey: '808.899'
   entry_numbers:
   - '23795'
   editor: ΠΑΠΑΔΟΠΟΥΛΟΣ // ΑΘΗΝΑ
@@ -907201,6 +907226,7 @@ converted_entries:
   language: el
   title: 50 ΠΑΙΧΝΙΑΔΙΑ ΦΥΣΙΚΗΣ ΑΓΩΓΗΣ
   subtitle: ΟΜΑΔΙΚΑ ΠΑΙΧΝΙΔΙΑ ΜΑΘΗΣΗ ΜΕΣΑ ΑΠΟ ΤΟ ΠΑΙΧΝΙΔΙ
+  dewey: '808.899'
   entry_numbers:
   - '23785'
   translators:
@@ -907251,6 +907277,7 @@ converted_entries:
   language: el
   title: 50 ΠΑΙΧΝΙΔΙΑ ΦΥΣΙΚΩΝ ΚΑΙ ΚΟΙΝΩΝΙΚΩΝ ΕΠΙΣΤΗΜΩΝ
   subtitle: ΟΜΑΔΙΚΑ ΠΑΙΧΝΙΔΙΑ ΜΑΘΗΣΗ ΜΕΣΑ ΑΠΟ ΤΟ ΠΑΙΧΝΙΔΙ
+  dewey: '808.899'
   entry_numbers:
   - '23786'
   translators:
@@ -907301,6 +907328,7 @@ converted_entries:
   - ΧΣ.
   language: el
   title: Η ΚΟΥΚΛΑ ΜΟΥ
+  dewey: '808.899'
   entry_numbers:
   - '23962'
   editor: ΣΑΒΒΑΛΑΣ // ΑΘΗΝΑ
@@ -907498,6 +907526,7 @@ converted_entries:
   - ΧΣ.
   language: el
   title: ΚΟΡΙΤΣΙΑ ΣΑΝ ΕΣΕΝΑ ΠΡΩΤΑΓΩΝΙΣΤΡΙΕΣ ΤΗΣ ΙΣΤΟΡΙΑΣ
+  dewey: '808.899'
   entry_numbers:
   - '23961'
   translators:
@@ -907547,6 +907576,7 @@ converted_entries:
   authors: []
   language: el
   title: ΙΠΠΟΤΕΣ ΚΑΙ ΚΑΣΤΡΑ
+  dewey: '808.899'
   entry_numbers:
   - '23957'
   editor: ΣΑΒΒΑΛΑΣ // ΑΘΗΝΑ
@@ -908250,6 +908280,7 @@ converted_entries:
   - ΒΑΣΙΛΕΙΟΥ,Ι.
   language: el
   title: ΑΣΙΑΤΙΚΑ ΠΟΙΗΜΑΤΑ
+  dewey: '895.61'
   entry_numbers:
   - '8455'
   editor: ΕΣΤΙΑ // ΑΘΗΝΑ
@@ -908647,6 +908678,7 @@ converted_entries:
   language: el
   title: Η ΑΡΙΣΤΕΡΑ ΣΤΗΝ  ΕΥΡΩΠΗ ΤΟΥ ΕΙΚΟΣΤΟΥ ΠΡΩΤΟΥ  ΑΙΩΝΑ
   subtitle: ΠΡΑΚΤΙΚΑ ΤΗΣ ΔΙΕΘΝΟΥΣ ΣΥΝΑΝΤΗΣΗΣ ΤΗΣ ΑΘΗΝΑΣ
+  dewey: '320'
   entry_numbers:
   - '4968'
   editor: ACCESS SOFT Ε.Π.Ε. // ΑΘΗΝΑ
@@ -908797,6 +908829,7 @@ converted_entries:
   authors: []
   language: el
   title: ΝΙΚΟΛΑΟΣ ΝΙΚ. ΣΑΡΙΠΟΛΟΣ
+  dewey: '342.495'
   entry_numbers:
   - '19259'
   editor: ΙΔΡΥΜΑ ΤΗΣ ΒΟΥΛΗΣ // ΑΘΗΝΑ
@@ -908845,6 +908878,7 @@ converted_entries:
   authors: []
   language: el
   title: ΘΕΟΔΩΡΟΣ ΦΛΟΓΑΙΤΗΣ
+  dewey: '938.609'
   entry_numbers:
   - '19261'
   editor: ΙΔΡΥΜΑ ΤΗΣ ΒΟΥΛΗΣ // ΑΘΗΝΑ
@@ -908892,6 +908926,7 @@ converted_entries:
   authors: []
   language: el
   title: ΝΙΚΟΛΑΟΣ ΙΩΑΝ. ΣΑΡΙΠΟΛΟΣ
+  dewey: '342.495'
   entry_numbers:
   - '19260'
   editor: ΙΔΡΥΜΑ ΤΗΣ ΒΟΥΛΗΣ // ΑΘΗΝΑ
