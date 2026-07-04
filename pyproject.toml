@@ -15,13 +15,9 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 requires-python = ">=3.14"
-version = "2026.06.27"
+version = "2026.07.05"
 
-dependencies = [
-    "dbfread==2.0.7",
-    "snakemd==2.4.1",
-    "PyYAML>=6.0"
-]
+dependencies = ["dbfread==2.0.7", "snakemd==2.4.1", "PyYAML>=6.0"]
 
 [project.optional-dependencies]
 test = [
@@ -35,7 +31,7 @@ test = [
     "pytest-github-actions-annotate-failures",
     "pytest-mock",
     "pytest-runner",
-    "pytest==9.1.0",
+    "pytest==9.1.1",
     "ruff",
     "shellcheck-py==0.11.0.1",
 ]
