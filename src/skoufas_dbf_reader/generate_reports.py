@@ -346,6 +346,14 @@ def report_isbns(reports_directory: str):
 
         doc.add_heading(result, level=2)
         doc.add_unordered_list([check for check in checks if check])
+        doc.add_paragraph(
+            str(
+                Inline(
+                    text="Στο library.skoufas.gr",
+                    link=f"https://library.skoufas.gr/admin/books/dbfentry/{entry[0]}/change/",
+                )
+            )
+        )
 
         doc.add_heading("Αρχική Καρτέλα στο DBASE", level=3)
         doc.add_code(code=entry_as_yaml(entry, minimal=True), lang="yaml")
@@ -371,6 +379,14 @@ def report_entry_numbers(reports_directory: str):
         )
         if not entry_numbers:
             no_entry_numbers.add_horizontal_rule()
+            no_entry_numbers.add_paragraph(
+                str(
+                    Inline(
+                        text="Στο library.skoufas.gr",
+                        link=f"https://library.skoufas.gr/admin/books/dbfentry/{entry[0]}/change/",
+                    )
+                )
+            )
             no_entry_numbers.add_code(entry_as_yaml(entry, minimal=True), lang="yaml")
         else:
             for n in entry_numbers:
@@ -402,6 +418,14 @@ def report_entry_numbers(reports_directory: str):
             dup.add_horizontal_rule()
             dup.add_paragraph(entry_number)
             for entry in entries:
+                dup.add_paragraph(
+                    str(
+                        Inline(
+                            text="Στο library.skoufas.gr",
+                            link=f"https://library.skoufas.gr/admin/books/dbfentry/{entry[0]}/change/",
+                        )
+                    )
+                )
                 dup.add_code(entry_as_yaml(entry, minimal=True), lang="yaml")
         outfile.write(str(dup))
 
@@ -478,7 +502,8 @@ def report_entries(reports_directory: str):
         doc.add_paragraph(
             str(
                 Inline(
-                    text="Στο library.skoufas.gr", link=f"https://library.skoufas.gr/books/by-entry-number/{entry[0]}"
+                    text="Στο library.skoufas.gr",
+                    link=f"https://library.skoufas.gr/admin/books/dbfentry/{entry[0]}/change/",
                 )
             )
         )
